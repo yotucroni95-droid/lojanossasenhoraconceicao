@@ -1,0 +1,13 @@
+document.documentElement.classList.add('js');
+const menuButton=document.querySelector('.menu-toggle'),menu=document.querySelector('#mobile-menu');
+menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!open));menuButton.setAttribute('aria-label',open?'Abrir menu':'Fechar menu');menu.hidden=open;});
+menu.addEventListener('click',e=>{if(e.target.closest('a')){menu.hidden=true;menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Abrir menu');}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){menu.hidden=true;menuButton.setAttribute('aria-expanded','false');}});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}}),{threshold:.06});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const cards=[...document.querySelectorAll('.product')];
+document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));cards.forEach(card=>{card.hidden=button.dataset.filter!=='todos'&&card.dataset.category!==button.dataset.filter;if(!card.hidden)card.classList.add('visible');});}));
+const whatsapp=subject=>'https://wa.me/558781715830?text='+encodeURIComponent('Olá! Vi o mostruário da Nossa Senhora da Conceição e gostaria de saber mais sobre '+subject+'.');
+document.querySelectorAll('[data-interest]').forEach(a=>a.href=whatsapp(a.dataset.interest));
+const dialog=document.querySelector('#photo-dialog');let previousFocus;
+document.querySelectorAll('[data-image]').forEach(button=>button.addEventListener('click',()=>{previousFocus=button;document.querySelector('#dialog-title').textContent=button.dataset.title;const img=document.querySelector('#dialog-photo');img.src=button.dataset.image;img.alt=button.querySelector('img').alt;document.querySelector('#dialog-contact').href=whatsapp(button.dataset.title.toLowerCase());dialog.showModal();document.body.classList.add('modal-open');}));
+document.querySelector('#close-dialog').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const b=dialog.getBoundingClientRect();if(e.clientX<b.left||e.clientX>b.right||e.clientY<b.top||e.clientY>b.bottom)dialog.close();}});dialog.addEventListener('close',()=>{document.body.classList.remove('modal-open');previousFocus?.focus();});document.querySelector('#year').textContent=new Date().getFullYear();
