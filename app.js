@@ -1,8 +1,8 @@
-import {modo, loja, entrega, pagamento, campanhas} from './config.js?v=3';
-import {products as produtosBase} from './catalogo.js?v=3';
-import {pendentesLoja} from './catalogo-loja.js?v=3';
+import {modo, loja, entrega, pagamento, campanhas} from './config.js?v=4';
+import {products as produtosBase} from './catalogo.js?v=4';
+import {pendentesLoja} from './catalogo-loja.js?v=4';
 import {categories, montarCatalogo, acharProduto, acharVariante, disponibilidade, medidasTexto, pendencias, galeria, cotar, faseCampanha,
-  mensagemProduto, mensagemPedido, linkWhatsapp, reais} from './loja/regras.js?v=3';
+  mensagemProduto, mensagemPedido, linkWhatsapp, reais} from './loja/regras.js?v=4';
 
 const $ = (s, root = document) => root.querySelector(s);
 const $$ = (s, root = document) => [...root.querySelectorAll(s)];
@@ -102,7 +102,7 @@ function catalog(params = new URLSearchParams(), lista = 'catalogo') {
   const ofertas = lista === 'ofertas', camp = campanhaVisivel();
   main.innerHTML = '<section class="catalog-heading"><div class="crumb"><a href="#/">Início</a><span>/</span><span>' + (ofertas ? 'Ofertas' : 'Catálogo') + '</span></div><div class="catalog-title"><div><p class="eyebrow">' + (ofertas ? 'OFERTAS VIGENTES' : 'ESCOLHAS PARA TODOS OS AMBIENTES') + '</p><h1>' + (ofertas ? 'Boas escolhas.<br><em>Bons preços.</em>' : 'Seu lar, <em>do seu jeito.</em>') + '</h1></div><p>' + (ofertas ? 'Somente ofertas confirmadas pela loja, com período definido.' : 'Explore os produtos, confira medidas e cores e compre pelo WhatsApp' + (pagamentoAtivo ? ' ou online' : '') + '.') + '</p></div></section>' + (ofertas ? campaignBanner(camp) : '') +
   '<section class="catalog-layout section"><aside class="catalog-sidebar"><span class="eyebrow">NAVEGUE POR AMBIENTE</span><div class="category-filters">' + ['todos', ...categoriasVisiveis.map(c => c.id)].map(id => '<button data-category="' + id + '" aria-pressed="' + (filtro.categoria === id) + '">' + (id === 'todos' ? 'Todos os produtos' : categoryName(id)) + '<span>' + baseLista().filter(p => id === 'todos' || p.category === id).length + '</span></button>').join('') + '</div><div class="sidebar-help"><p>Uma ajudinha<br>na escolha?</p><a href="' + loja.whatsapp + '" target="_blank" rel="noopener">Fale com a equipe ' + icon('diagonal') + '</a></div></aside>' +
-  '<div class="catalog-results"><div class="catalog-toolbar"><label class="search-field">' + icon('search') + '<input id="catalog-search" type="search" placeholder="O que você procura?" aria-label="Buscar no catálogo" value="' + esc(filtro.busca) + '"></label><label class="sort-field"><span>Ordenar</span><select id="catalog-sort" aria-label="Ordenar produtos"><option value="destaques">Destaques</option>' + (comPreco ? '<option value="menor">Menor preço</option><option value="maior">Maior preço</option>' : '') + '<option value="az">Nome: A a Z</option></select></label></div><div id="facet-area"></div><div class="results-heading"><h2 id="category-title"></h2><span id="result-count" role="status" aria-live="polite"></span></div><div class="product-grid" id="catalog-grid"></div><p class="catalog-note">Fotos dos catálogos oficiais dos fabricantes e fotos feitas na loja. Quando a foto mostra outra cor ou um conjunto, a descrição avisa.</p></div></section>';
+  '<div class="catalog-results"><div class="catalog-toolbar"><label class="search-field">' + icon('search') + '<input id="catalog-search" type="search" placeholder="O que você procura?" aria-label="Buscar no catálogo" value="' + esc(filtro.busca) + '"></label><label class="sort-field"><span>Ordenar</span><select id="catalog-sort" aria-label="Ordenar produtos"><option value="destaques">Destaques</option>' + (comPreco ? '<option value="menor">Menor preço</option><option value="maior">Maior preço</option>' : '') + '<option value="az">Nome: A a Z</option></select></label></div><div id="facet-area"></div><div class="results-heading"><h2 id="category-title"></h2><span id="result-count" role="status" aria-live="polite"></span></div><div class="product-grid" id="catalog-grid"></div><p class="catalog-note">Fotos oficiais dos fabricantes (catálogos e páginas oficiais dos produtos), conferidas modelo a modelo com o estoque da loja. Quando a foto mostra outra cor ou um conjunto, a descrição avisa.</p></div></section>';
   renderFacets(); renderResults();
   if (params.has('busca')) $('#catalog-search').focus({preventScroll: true});
 }
@@ -264,7 +264,7 @@ const api = {
   },
   async local() {
     if (this.nucleoLocal) return this.nucleoLocal;
-    const {criarNucleo} = await import('./loja/pedidos.js?v=3');
+    const {criarNucleo} = await import('./loja/pedidos.js?v=4');
     this.nucleoLocal = criarNucleo({modo: 'teste', segredo: 'simulacao-no-navegador-0001',
       armazenamento: {async ler() { return ls.get('conceicao-simulacao-pagamentos', null); }, async gravar(s) { ls.set('conceicao-simulacao-pagamentos', s); }},
       provedor: {async criarCobranca(p) { return {url: '#/pagamento-teste/' + p.id, referencia: 'simulado'}; }}});
@@ -352,7 +352,7 @@ async function simulatedProviderPage(id) {
   main.dataset.order = p.id;
 }
 async function simulate(status) {
-  const {assinar} = await import('./loja/pedidos.js?v=3');
+  const {assinar} = await import('./loja/pedidos.js?v=4');
   const n = await api.local(), p = await n.consultar(main.dataset.order);
   const corpo = JSON.stringify({id: 'evt_' + Math.random().toString(36).slice(2), pedido: p.id, status, valor: p.total});
   const sig = await assinar('simulacao-no-navegador-0001', corpo);

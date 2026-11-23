@@ -2,7 +2,7 @@
 // Nunca altere "id" de produto ou variante: eles formam os links já divulgados (#/produto/<id>?cor=<variante>).
 // Campos null = dado ainda não confirmado pela loja (aparece como pendente e "sob consulta").
 // Medidas em centímetros: largura, altura, profundidade. Preços em reais.
-import {produtosLoja} from './catalogo-loja.js?v=3';
+import {produtosLoja} from './catalogo-loja.js?v=4';
 
 export const categories = [
  {"id":"colchoes","name":"Colchões e camas box","image":"assets/catalogo/ti-realeza-amb.jpg","note":"Noites mais bem dormidas.","filtros":["tipo","tamanho","densidade"]},
@@ -10,7 +10,7 @@ export const categories = [
  {"id":"sala","name":"Sala de estar","image":"assets/painel.jpg","note":"Detalhes que acolhem.","filtros":["acabamento"]},
  {"id":"jantar","name":"Sala de jantar","image":"assets/jantar.jpg","note":"Mais espaço para encontros.","filtros":["lugares","acabamento"]},
  {"id":"quarto","name":"Quarto","image":"assets/quarto.jpg","note":"Seu momento de descanso.","filtros":["tamanho","densidade","acabamento"]},
- {"id":"cozinha","name":"Cozinha","image":"assets/cozinha-demo.jpg","note":"A vida acontece aqui.","demo":true,"oculta":true,"filtros":["acabamento"]},
+ {"id":"cozinha","name":"Cozinha","image":"assets/catalogo/web-000468.jpg","note":"A vida acontece aqui.","filtros":["acabamento"]},
  {"id":"eletros","name":"Eletrodomésticos","image":"assets/eletros-ia.jpg","note":"Praticidade todos os dias.","filtros":["voltagem","acabamento"]},
  {"id":"complementos","name":"Complementos","image":"assets/home-ia.jpg","note":"Cristaleiras, mesas de centro e mais.","filtros":["acabamento"]}
 ];

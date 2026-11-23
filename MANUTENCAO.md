@@ -23,6 +23,7 @@ Regras do cruzamento: fabricante + código primeiro; sem código, fabricante + m
 - Preços **não** aparecem no site (`exibirPrecos: false` em `config.js`). O cliente pede o preço pelo WhatsApp; a mensagem leva o **código interno da loja** (ex.: 000675) para dar baixa no sistema.
 - Os produtos reais estão em `catalogo-loja.js`, gerado por `python3 ferramentas/gerar-catalogo-loja.py` a partir de `dados-loja/estoque-relatorio-AAAA-MM-DD.tsv`. Para novo relatório: gerar o TSV com `ferramentas/ler-relatorio.py`, trocar o caminho no script e rodar de novo. Ids não mudam.
 - Para incluir um produto: ele só entra com foto que bata em modelo, medida e cor. Recorte a foto do PDF com `swift ferramentas/recorte/recortar.swift ferramentas/recorte/spec.txt dados-loja/catalogos <pasta-saida>` (uma linha por foto: nome|pdf|página|x0,y0,x1,y1|foto ou recorte) ou use foto da loja, salve em `assets/catalogo/` e acrescente o item na lista `PRODUTOS` do script.
+- Fotos da internet: só da página oficial do produto (fabricante ou loja grande), com modelo, cor e medida iguais ao relatório. Salve como `assets/catalogo/web-<código>.jpg` (até 1000 px, JPG 65%) e acrescente o produto na lista `WEB` do script, com a URL da página em cada variante; ela aparece em `fontes`.
 - Itens com dúvida ficam em `PENDENTES` (aparecem em `#/manutencao`). Lista completa do que foi publicado, do que está pendente e do que não tem foto: `dados-loja/catalogacao-2026-11-23.md`.
 - Testes: `node --test testes/loja.test.mjs`.
 
