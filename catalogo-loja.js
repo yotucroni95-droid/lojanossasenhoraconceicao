@@ -946,7 +946,8 @@ export const produtosLoja = [
     },
     "atributos": {
      "tamanho": "Casal",
-     "tipo": "Colchão"
+     "tipo": "Colchão",
+     "acabamento": "Cinza"
     }
    }
   ],
@@ -2093,6 +2094,22 @@ export const produtosLoja = [
     "atributos": {
      "acabamento": "Carvalho / Greige"
     }
+   },
+   {
+    "id": "carvalho-titanio",
+    "name": "Carvalho / Titânio",
+    "color": "#6f777b",
+    "image": "assets/catalogo/web-000713.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000713",
+    "descricaoLoja": "- BALCAO 2 PORTAS 2 GAVETAS NESHER REALEZA PREMIUM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Carvalho / Titânio"
+    }
    }
   ],
   "fontes": [
@@ -2100,6 +2117,11 @@ export const produtosLoja = [
     "campo": "foto Carvalho / Greige",
     "codigo": "000712",
     "url": "https://www.madeiramadeira.com.br/balcao-de-cozinha-realeza-premium-120cm-2-portas-e-2-gavetas-carvalho-greige-com-tampo-mdf-nesher-257000523.html"
+   },
+   {
+    "campo": "imagem ilustrativa Carvalho / Titânio",
+    "codigo": "000713",
+    "url": "https://www.extra.com.br/balcao-cozinha-nesher-realeza-c-2-portas-2gavs-120cm-carvalho-titanio/p/1580819675"
    },
    {
     "campo": "códigos e estoque",
@@ -2431,6 +2453,22 @@ export const produtosLoja = [
     "atributos": {
      "acabamento": "Damasco / Off White"
     }
+   },
+   {
+    "id": "castanho-off-white",
+    "name": "Castanho / Off White",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000386.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000386",
+    "descricaoLoja": "KIT DUDA 90 CASTANHO/OFF WHITE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Castanho / Off White"
+    }
    }
   ],
   "fontes": [
@@ -2438,6 +2476,11 @@ export const produtosLoja = [
     "campo": "foto Damasco ripado / Off White",
     "codigo": "000385",
     "url": "https://www.extra.com.br/kit-duda-2pts-correr-1gav-090-damasco-ripado-off-white/p/1576679315"
+   },
+   {
+    "campo": "imagem ilustrativa Castanho / Off White",
+    "codigo": "000386",
+    "url": "https://www.pontofrio.com.br/cozinha-compacta-duda-em-mdp-com-4-portas-1-gaveta-poquema-castanho-off-white/p/1571328055"
    },
    {
     "campo": "códigos e estoque",
@@ -2514,6 +2557,22 @@ export const produtosLoja = [
     "atributos": {
      "acabamento": "Damasco / Off White"
     }
+   },
+   {
+    "id": "damasco-off-conjunto",
+    "name": "Damasco / Off White · conjunto com balcão",
+    "color": "#c8a27a",
+    "image": "assets/catalogo/web-000585.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000585",
+    "descricaoLoja": "680.49 COZ.DORA CONJ.C/BALCAO DM/OFF",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Damasco / Off White"
+    }
    }
   ],
   "fontes": [
@@ -2521,6 +2580,11 @@ export const produtosLoja = [
     "campo": "foto Damasco ripado / Off White",
     "codigo": "000584",
     "url": "https://www.extra.com.br/kit-cozinha-dora-com-balcao-damasco-ripado-off-white-poquema/p/1576374091"
+   },
+   {
+    "campo": "imagem ilustrativa Damasco / Off White · conjunto com balcão",
+    "codigo": "000585",
+    "url": "https://www.extra.com.br/kit-cozinha-dora-com-balcao-damasco-ripado-off-white-poquema/p/1582438418"
    },
    {
     "campo": "códigos e estoque",
@@ -2556,6 +2620,38 @@ export const produtosLoja = [
     "atributos": {
      "acabamento": "Freijó / Baunilha"
     }
+   },
+   {
+    "id": "freijo-chumbo",
+    "name": "Freijó / Chumbo",
+    "color": "#4a4a4a",
+    "image": "assets/catalogo/web-000682.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000682",
+    "descricaoLoja": "KIT SANTIAGO 90 MDP FREIJO / CHUMBO / FREIJO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 4,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Freijó / Chumbo"
+    }
+   },
+   {
+    "id": "freijo-moka",
+    "name": "Freijó / Moka",
+    "color": "#6d5444",
+    "image": "assets/catalogo/web-000684.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000684",
+    "descricaoLoja": "KIT SANTIAGO 90 MDP FREIJO / MOKA / FREIJO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Freijó / Moka"
+    }
    }
   ],
   "fontes": [
@@ -2563,6 +2659,16 @@ export const produtosLoja = [
     "campo": "foto Freijó / Baunilha",
     "codigo": "000683",
     "url": "https://www.extra.com.br/armario-de-cozinha-santiago-90cm-freijo-baunilha/p/1575339736"
+   },
+   {
+    "campo": "imagem ilustrativa Freijó / Chumbo",
+    "codigo": "000682",
+    "url": "https://www.pontofrio.com.br/armario-de-cozinha-santiago-90-cm-com-6-portas-e-1-gaveta/p/1571262115"
+   },
+   {
+    "campo": "imagem ilustrativa Freijó / Moka",
+    "codigo": "000684",
+    "url": "https://www.pontofrio.com.br/armario-de-cozinha-santiago-90-cm-com-6-portas-e-1-gaveta/p/1571300175"
    },
    {
     "campo": "códigos e estoque",
@@ -2787,6 +2893,22 @@ export const produtosLoja = [
     "atributos": {
      "acabamento": "Jequitibá / Off White"
     }
+   },
+   {
+    "id": "jequitiba",
+    "name": "Jequitibá",
+    "color": "#b07a4a",
+    "image": "assets/catalogo/web-000602.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000602",
+    "descricaoLoja": "BANCADA DALLAS JEQUITIBA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Jequitibá"
+    }
    }
   ],
   "fontes": [
@@ -2794,6 +2916,11 @@ export const produtosLoja = [
     "campo": "foto Jequitibá / Off White perolizado",
     "codigo": "000601",
     "url": "https://www.extra.com.br/bancada-dallas-3-portas-jequitiba-off-white-perolizado-lukaliam/p/1579456281"
+   },
+   {
+    "campo": "imagem ilustrativa Jequitibá",
+    "codigo": "000602",
+    "url": "https://www.extra.com.br/bancada-dallas-suporte-para-tvs-c-3-portas-e-nichos-jequitiba-off-white-perolizado/p/1574813359"
    },
    {
     "campo": "códigos e estoque",
@@ -3118,7 +3245,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 2,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Preto"
+    }
    }
   ],
   "fontes": [
@@ -3160,7 +3289,8 @@ export const produtosLoja = [
     "estoque": 1,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Branco"
     }
    }
   ],
@@ -3203,7 +3333,8 @@ export const produtosLoja = [
     "estoque": 1,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Branco"
     }
    }
   ],
@@ -3245,7 +3376,25 @@ export const produtosLoja = [
     "estoque": 0,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "preto",
+    "name": "Preto (LX1022PT, 220 V)",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000655.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000655",
+    "descricaoLoja": "LAV 10KG SUGGAR LAVAMAX LX1022PT PRETO 220 VOLTS",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "voltagem": "220 V",
+     "acabamento": "Preto"
     }
    }
   ],
@@ -3254,6 +3403,11 @@ export const produtosLoja = [
     "campo": "foto Branco",
     "codigo": "000654",
     "url": "https://www.gazin.com.br/produto/tanquinho-suggar-lavamax-10kg-semiautomatico-lx1022/9718/branco/220-volts"
+   },
+   {
+    "campo": "foto Preto (LX1022PT, 220 V)",
+    "codigo": "000655",
+    "url": "https://www.pontofrio.com.br/tanquinho-semiautomatico-suggar-lavamax-eco-10kg-preta/p/1554654456"
    },
    {
     "campo": "códigos e estoque",
@@ -3287,7 +3441,8 @@ export const produtosLoja = [
     "estoque": 1,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Branco"
     }
    },
    {
@@ -3303,7 +3458,8 @@ export const produtosLoja = [
     "estoque": 1,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Prata"
     }
    }
   ],
@@ -3350,7 +3506,8 @@ export const produtosLoja = [
     "estoque": 1,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Preto"
     }
    }
   ],
@@ -3390,7 +3547,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 12,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Preto / Inox"
+    }
    }
   ],
   "fontes": [
@@ -3430,7 +3589,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 24,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Preto"
+    }
    }
   ],
   "fontes": [
@@ -3471,7 +3632,8 @@ export const produtosLoja = [
     "estoque": 10,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Preto"
     }
    }
   ],
@@ -3511,7 +3673,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 9,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Preto"
+    }
    }
   ],
   "fontes": [
@@ -3552,7 +3716,8 @@ export const produtosLoja = [
     "estoque": 3,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Preto"
     }
    }
   ],
@@ -3593,7 +3758,8 @@ export const produtosLoja = [
     "estoque": 0,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Vermelho"
     }
    },
    {
@@ -3608,7 +3774,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 0,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Preto"
+    }
    }
   ],
   "fontes": [
@@ -3652,7 +3820,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 1,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Branco"
+    }
    }
   ],
   "fontes": [
@@ -3692,7 +3862,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 1,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Branco / Cinza"
+    }
    },
    {
     "id": "vermelho",
@@ -3707,7 +3879,25 @@ export const produtosLoja = [
     "estoque": 0,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Vermelho"
+    }
+   },
+   {
+    "id": "preto-500w",
+    "name": "Preto (L-99, 500 W, 220 V)",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000436.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000436",
+    "descricaoLoja": "LIQ MONDIAL L99 TURBO FILTRO 3V. 500W 1518-02 PRETO 220",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "voltagem": "220 V",
+     "acabamento": "Preto"
     }
    }
   ],
@@ -3721,6 +3911,11 @@ export const produtosLoja = [
     "campo": "foto Vermelho (L-99, 220 V)",
     "codigo": "000435",
     "url": "https://www.extra.com.br/liquidificador-mondial-l99-turbo-filtro-3v-500w-1528-06-vermelho-220v/p/1582458893"
+   },
+   {
+    "campo": "imagem ilustrativa Preto (L-99, 500 W, 220 V)",
+    "codigo": "000436",
+    "url": "https://www.pontofrio.com.br/liquidificador-mondial-3-velocidades-500w-l99-com-filtro-postamos-24h-preto-110v/p/1570077459"
    },
    {
     "campo": "códigos e estoque",
@@ -3752,7 +3947,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 4,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Branco"
+    }
    },
    {
     "id": "vermelho",
@@ -3766,7 +3963,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 5,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Vermelho"
+    }
    },
    {
     "id": "preto",
@@ -3780,7 +3979,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 0,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Preto"
+    }
    }
   ],
   "fontes": [
@@ -3830,7 +4031,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 6,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Preto"
+    }
    }
   ],
   "fontes": [
@@ -3872,7 +4075,8 @@ export const produtosLoja = [
     "estoque": 1,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Inox / Preto"
     }
    }
   ],
@@ -3913,7 +4117,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 1,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Branco"
+    }
    },
    {
     "id": "preto",
@@ -3927,7 +4133,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 3,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Preto"
+    }
    }
   ],
   "fontes": [
@@ -3972,7 +4180,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 5,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Azul"
+    }
    }
   ],
   "fontes": [
@@ -4012,7 +4222,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 3,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Vermelho"
+    }
    }
   ],
   "fontes": [
@@ -4054,7 +4266,8 @@ export const produtosLoja = [
     "estoque": 4,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Preto"
     }
    }
   ],
@@ -4095,7 +4308,9 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 8,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Branco"
+    }
    }
   ],
   "fontes": [
@@ -4224,7 +4439,8 @@ export const produtosLoja = [
     "estoque": 8,
     "medidas": null,
     "atributos": {
-     "voltagem": "220 V"
+     "voltagem": "220 V",
+     "acabamento": "Bronze"
     }
    }
   ],
@@ -4259,13 +4475,14 @@ export const produtosLoja = [
     "image": "assets/catalogo/web-000658.jpg",
     "imageTipo": "catalogo",
     "sku": "000658",
-    "descricaoLoja": "FG GAS DELICATO 5B - BRANCOV2 - Qtd: 1,00 - Vlr.Unit.: 630,30 ||",
+    "descricaoLoja": "FG GAS DELICATO 5B - BRANCOV2",
     "preco": null,
     "parcelado": null,
     "estoque": 1,
     "medidas": null,
     "atributos": {
-     "tamanho": "5 bocas"
+     "tamanho": "5 bocas",
+     "acabamento": "Branco"
     }
    },
    {
@@ -4275,13 +4492,65 @@ export const produtosLoja = [
     "image": "assets/catalogo/web-000619.jpg",
     "imageTipo": "catalogo",
     "sku": "000619",
-    "descricaoLoja": "FG GAS DELICATO 6B - PRETO FOSCO - Qtd: 3,00 - Vlr.Unit.:",
+    "descricaoLoja": "FG GAS DELICATO 6B - PRETO FOSCO",
     "preco": null,
     "parcelado": null,
     "estoque": 5,
     "medidas": null,
     "atributos": {
-     "tamanho": "6 bocas"
+     "tamanho": "6 bocas",
+     "acabamento": "Preto fosco"
+    }
+   },
+   {
+    "id": "4-bocas-branco",
+    "name": "4 bocas · Branco",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000372.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000372",
+    "descricaoLoja": "FG GAS DELICATO 4B BRANCOV2",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 7,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "4 bocas",
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "4-bocas-preto",
+    "name": "4 bocas · Preto fosco",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000373.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000373",
+    "descricaoLoja": "FG GAS DELICATO 4B PRETO FOSCO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 7,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "4 bocas",
+     "acabamento": "Preto fosco"
+    }
+   },
+   {
+    "id": "6-bocas-branco",
+    "name": "6 bocas · Branco",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000622.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000622",
+    "descricaoLoja": "FG GAS DELICATO 6B - BRANCOV2",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "6 bocas",
+     "acabamento": "Branco"
     }
    }
   ],
@@ -4295,6 +4564,21 @@ export const produtosLoja = [
     "campo": "foto 6 bocas · Preto fosco",
     "codigo": "000619",
     "url": "https://www.extra.com.br/fogao-a-gas-6-bocas-delicato-clarice-preto-fosco/p/1580591674"
+   },
+   {
+    "campo": "imagem ilustrativa 4 bocas · Branco",
+    "codigo": "000372",
+    "url": "https://www.pontofrio.com.br/fogao-atlas-coliseum-4-bocas-plus-pes-altos-queimadores-limpa-facil-branco/p/55072278"
+   },
+   {
+    "campo": "imagem ilustrativa 4 bocas · Preto fosco",
+    "codigo": "000373",
+    "url": "https://www.pontofrio.com.br/fogao-itatiaia-4-bocas-star-clean-new-preto/p/1570701358"
+   },
+   {
+    "campo": "imagem ilustrativa 6 bocas · Branco",
+    "codigo": "000622",
+    "url": "https://www.pontofrio.com.br/fogao-brastemp-6-bocas-bfs6ncb-com-mesa-de-inox-botoes-removiveis-e-exclusivo-aro-protetor-bivolt-branco/p/12731668"
    },
    {
     "campo": "códigos e estoque",
@@ -4327,7 +4611,25 @@ export const produtosLoja = [
     "parcelado": null,
     "estoque": 6,
     "medidas": null,
-    "atributos": {}
+    "atributos": {
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "preto",
+    "name": "Preto",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000448.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000448",
+    "descricaoLoja": "FOGAO 4B BRASLAR NEW SIRIUS S/ACEND 10010104 PRETO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 6,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto"
+    }
    }
   ],
   "fontes": [
@@ -4335,6 +4637,5419 @@ export const produtosLoja = [
     "campo": "foto Branco",
     "codigo": "000447",
     "url": "https://www.extra.com.br/fogao-4-bocas-de-piso-braslar-new-sirius-2023-branco/p/1571953436"
+   },
+   {
+    "campo": "imagem ilustrativa Preto",
+    "codigo": "000448",
+    "url": "https://www.pontofrio.com.br/fogao-new-sirius-4-bocas-manual-mesa-em-inox-forno-easy-clean-braslar/p/1566830755"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "aereo-nesher-realeza-premium-120",
+  "ref": "NSC-181",
+  "fabricante": "Nesher",
+  "name": "Armário aéreo Realeza Premium 120 cm",
+  "category": "cozinha",
+  "description": "Armário aéreo da linha Realeza Premium, em 100% MDF, com porta basculante em 120 cm de largura. Complementa a cozinha Realeza e amplia o espaço de guarda sem ocupar a bancada.",
+  "details": [
+   "1 porta basculante",
+   "120 cm de largura",
+   "100% MDF"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "carvalho-greige",
+    "name": "Carvalho / Greige",
+    "color": "#c9bfae",
+    "image": "assets/catalogo/web-000710.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000710",
+    "descricaoLoja": "- ARMARIO AEREO 1 PORTA BASC NESHER REALEZA PREMIUM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Carvalho / Greige"
+    }
+   },
+   {
+    "id": "carvalho-titanio",
+    "name": "Carvalho / Titânio",
+    "color": "#6f777b",
+    "image": "assets/catalogo/web-000711.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000711",
+    "descricaoLoja": "- ARMARIO AEREO 1 PORTA BASC NESHER REALEZA PREMIUM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Carvalho / Titânio"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "foto Carvalho / Greige",
+    "codigo": "000710",
+    "url": "https://www.extra.com.br/armario-aereo-1-porta-basculante-e-nicho-120cm-100-mdf-realeza-premium-carvalho-greige/p/1580573609"
+   },
+   {
+    "campo": "imagem ilustrativa Carvalho / Titânio",
+    "codigo": "000711",
+    "url": "https://www.extra.com.br/armario-aereo-cozinha-nesher-realeza-1-porta-120cm-carvalho-titanio/p/1580819682"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "aereo-divina-80-geladeira",
+  "ref": "NSC-182",
+  "fabricante": "MGM",
+  "name": "Armário aéreo Divina 80 cm para geladeira",
+  "category": "cozinha",
+  "description": "Armário aéreo da linha Divina pensado para ficar sobre a geladeira: 80 cm de largura e porta basculante que facilita o acesso. Aproveita um espaço que costuma ficar vazio.",
+  "details": [
+   "1 porta basculante",
+   "80 cm de largura",
+   "Para instalar sobre a geladeira"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "freijo",
+    "name": "Freijó",
+    "color": "#b38b5d",
+    "image": "assets/catalogo/web-000461.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000461",
+    "descricaoLoja": "AEREO DIVINA 80CM GELADEIRA 1PT BASCULANTE - FREIJO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Freijó"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Freijó",
+    "codigo": "000461",
+    "url": "https://www.pontofrio.com.br/armario-aereo-80cm-1-porta-basculante-isabelle-freijo-arenas/p/1567443739"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "kit-cozinha-livia",
+  "ref": "NSC-183",
+  "fabricante": null,
+  "name": "Kit de cozinha Lívia 2 m",
+  "category": "cozinha",
+  "description": "Cozinha em kit com cerca de 2 metros, 8 portas e 2 gavetas, no acabamento freijó com off white. Organiza louças, mantimentos e utensílios em uma composição completa.",
+  "details": [
+   "8 portas e 2 gavetas",
+   "Aprox. 2 m de composição"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "freijo-off-white",
+    "name": "Freijó / Off White",
+    "color": "#b38b5d",
+    "image": "assets/catalogo/web-000464.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000464",
+    "descricaoLoja": "KIT LIVIA 2MT 8P 2G - FREIJO/OFF WHITE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Freijó / Off White"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Freijó / Off White",
+    "codigo": "000464",
+    "url": "https://www.pontofrio.com.br/kit-armario-cozinha-compacta-completa-new-livia-6-portas-1-gaveta-freijo-off-white-poliman/p/1582773716"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "kit-cozinha-new-montevideu",
+  "ref": "NSC-184",
+  "fabricante": null,
+  "name": "Kit de cozinha New Montevidéu 1,50 m",
+  "category": "cozinha",
+  "description": "Cozinha em kit da linha New Montevidéu, em MDP, com cerca de 1,50 m. Disponível em freijó com chumbo ou freijó com moka.",
+  "details": [
+   "Aprox. 1,50 m de composição",
+   "MDP"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "freijo-chumbo",
+    "name": "Freijó / Chumbo",
+    "color": "#4a4a4a",
+    "image": "assets/catalogo/web-000685.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000685",
+    "descricaoLoja": "KIT NEW MONTEVIDEU 1.505 MDP FREIJO / FREIJO / CHUMBO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Freijó / Chumbo"
+    }
+   },
+   {
+    "id": "freijo-moka",
+    "name": "Freijó / Moka",
+    "color": "#6d5444",
+    "image": "assets/catalogo/web-000686.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000686",
+    "descricaoLoja": "KIT NEW MONTEVIDEU 1.505 MDP FREIJO / FREIJO / MOKA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Freijó / Moka"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Freijó / Chumbo",
+    "codigo": "000685",
+    "url": "https://www.pontofrio.com.br/armario-de-cozinha-new-jully-184-cm-com-8-portas-e-2-gavetas-freijo-chumbo/p/1579460623"
+   },
+   {
+    "campo": "imagem ilustrativa Freijó / Moka",
+    "codigo": "000686",
+    "url": "https://www.pontofrio.com.br/armario-de-cozinha-kit-new-livia-com-6-portas-e-1-gaveta/p/1579444682"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "mesa-forno-fruteira",
+  "ref": "NSC-185",
+  "fabricante": null,
+  "name": "Mesa para forno com fruteira",
+  "category": "cozinha",
+  "description": "Móvel de apoio para forno elétrico ou micro-ondas, com fruteira integrada. Deixa o eletro na altura certa e libera a bancada.",
+  "details": [
+   "Apoio para forno",
+   "Fruteira integrada"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "branca",
+    "name": "Branca",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000719.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000719",
+    "descricaoLoja": "MESA PARA FORNO COM FRUTEIRA BRANCA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "preta",
+    "name": "Preta",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000718.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000718",
+    "descricaoLoja": "MESA PARA FORNO COM FRUTEIRA PRETA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Branca",
+    "codigo": "000719",
+    "url": "https://www.pontofrio.com.br/vr-balcao-cooktop-105m-branco-branco/p/1575391382"
+   },
+   {
+    "campo": "imagem ilustrativa Preta",
+    "codigo": "000718",
+    "url": "https://www.pontofrio.com.br/vr-balcao-cooktop-105m-preto-preto/p/1575485240"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "fruteira-agata-38",
+  "ref": "NSC-186",
+  "fabricante": null,
+  "name": "Fruteira Ágata 38",
+  "category": "cozinha",
+  "description": "Fruteira de chão Ágata em MDP, no acabamento freijó com baunilha. Mantém frutas e legumes arejados e à mão.",
+  "details": [
+   "MDP",
+   "Fruteira de chão"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "freijo-baunilha",
+    "name": "Freijó / Baunilha",
+    "color": "#b38b5d",
+    "image": "assets/catalogo/web-000681.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000681",
+    "descricaoLoja": "FRUTEIRA AGATA 38 MDP FREIJO / BAUNILHA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Freijó / Baunilha"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Freijó / Baunilha",
+    "codigo": "000681",
+    "url": "https://www.pontofrio.com.br/fruteira-agata-38-mdp-branco/p/1572410815"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "fruteira-madri",
+  "ref": "NSC-187",
+  "fabricante": null,
+  "name": "Fruteira Madri",
+  "category": "cozinha",
+  "description": "Fruteira de chão Madri com cestos vazados que deixam frutas e legumes ventilados. Peça prática para qualquer canto da cozinha.",
+  "details": [
+   "Fruteira de chão",
+   "Cestos vazados"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "branca",
+    "name": "Branca",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000263.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000263",
+    "descricaoLoja": "FRUTEIRA MADRI BRANCA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "preta",
+    "name": "Preta",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000150.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000150",
+    "descricaoLoja": "FRUTEIRA MADRI PRETA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Branca",
+    "codigo": "000263",
+    "url": "https://www.pontofrio.com.br/fruteira-cozinha-aco-granito-chao-3-cestos-bebedouro-branca/p/1572315859"
+   },
+   {
+    "campo": "imagem ilustrativa Preta",
+    "codigo": "000150",
+    "url": "https://www.pontofrio.com.br/fruteira-de-chao-movel-3-andares-preta-cesto-frutas-triplo/p/1558336768"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "fruteira-barcelona",
+  "ref": "NSC-188",
+  "fabricante": null,
+  "name": "Fruteira Barcelona",
+  "category": "cozinha",
+  "description": "Fruteira Barcelona na cor preta com tampo em mármore topázio: organiza frutas e ainda serve de apoio.",
+  "details": [
+   "Tampo mármore topázio"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "preta-topazio",
+    "name": "Preta / Mármore topázio",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000788.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000788",
+    "descricaoLoja": "FRUTEIRA BARCELONA PRETA MÁRMORE TOPAZIO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto / Topázio"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Preta / Mármore topázio",
+    "codigo": "000788",
+    "url": "https://www.pontofrio.com.br/fruteira-com-suporte-para-micro-ondas-barcelona-aco-cobre-cesto-cobre-tampo-canela/p/1563366463"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "fruteira-valencia",
+  "ref": "NSC-189",
+  "fabricante": null,
+  "name": "Fruteira Valência",
+  "category": "cozinha",
+  "description": "Fruteira Valência preta com tampo topázio. Cestos amplos para frutas e legumes e tampo que funciona como apoio.",
+  "details": [
+   "Tampo topázio"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "preta-topazio",
+    "name": "Preta / Topázio",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000789.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000789",
+    "descricaoLoja": "FRUTEIRA VALENCIA PRETA TOPAZIO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 4,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto / Topázio"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Preta / Topázio",
+    "codigo": "000789",
+    "url": "https://www.pontofrio.com.br/fruteira-cozinha-aco-granito-chao-3-cestos-bebedouro-preta/p/1572286268"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "roupeiro-atlas",
+  "ref": "NSC-190",
+  "fabricante": "Poquema",
+  "name": "Roupeiro Atlas",
+  "category": "quarto",
+  "description": "Roupeiro da linha Atlas com portas e gaveta, em versões de 3 e 5 portas. Acabamentos damasco com off white ou castanho para combinar com o quarto.",
+  "details": [
+   "Versões de 3 e 5 portas",
+   "1 gaveta"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "3p-damasco-off",
+    "name": "3 portas · Damasco / Off White",
+    "color": "#c8a27a",
+    "image": "assets/catalogo/web-000586.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000586",
+    "descricaoLoja": "906.49 ROUPEIRO ATLAS 3P1G DM/OF",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 6,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Damasco / Off White"
+    }
+   },
+   {
+    "id": "5p-damasco-off",
+    "name": "5 portas · Damasco / Off White",
+    "color": "#c8a27a",
+    "image": "assets/catalogo/web-000587.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000587",
+    "descricaoLoja": "907.49 ROUPEIRO ATLAS 5P1G DM/OF",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Damasco / Off White"
+    }
+   },
+   {
+    "id": "5p-castanho",
+    "name": "5 portas · Castanho",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000588.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000588",
+    "descricaoLoja": "907.99 ROUPEIRO ATLAS 5P1G CT",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Castanho"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "foto 3 portas · Damasco / Off White",
+    "codigo": "000586",
+    "url": "https://www.extra.com.br/guarda-roupa-solteiro-com-3-portas-e-1-gavetas-atlas-poquema/p/1579891978"
+   },
+   {
+    "campo": "foto 5 portas · Damasco / Off White",
+    "codigo": "000587",
+    "url": "https://www.extra.com.br/guarda-roupa-casal-com-5-portas-e-1-gavetas-atlas-poquema-damasco-off-white/p/1577154843"
+   },
+   {
+    "campo": "foto 5 portas · Castanho",
+    "codigo": "000588",
+    "url": "https://www.extra.com.br/guarda-roupa-casal-com-5-portas-e-1-gavetas-atlas-poquema-castanho/p/1579460219"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "roupeiro-capri-4p2g",
+  "ref": "NSC-191",
+  "fabricante": "Poquema",
+  "name": "Roupeiro Capri 4 portas e 2 gavetas",
+  "category": "quarto",
+  "description": "Roupeiro Capri com 4 portas e 2 gavetas, em damasco ou castanho combinados com off white. Divisão prática para roupas dobradas e cabideiro.",
+  "details": [
+   "4 portas e 2 gavetas"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "damasco-off-white",
+    "name": "Damasco / Off White",
+    "color": "#c8a27a",
+    "image": "assets/catalogo/web-000387.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000387",
+    "descricaoLoja": "ROUPEIRO CAPRI 4P2G DAMASCO/OFF WHITE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Damasco / Off White"
+    }
+   },
+   {
+    "id": "castanho-off-white",
+    "name": "Castanho / Off White",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000388.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000388",
+    "descricaoLoja": "ROUPEIRO CAPRI 4P2G CASTANHO/OFFWHITE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Castanho / Off White"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Damasco / Off White",
+    "codigo": "000387",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-solteiro-capri-2-portas-6-gav-c-espelho/p/1557214034"
+   },
+   {
+    "campo": "imagem ilustrativa Castanho / Off White",
+    "codigo": "000388",
+    "url": "https://www.extra.com.br/guarda-roupa-poquema-capri-6-portas-2-gavetas-castanho-off-white/p/1575361921"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "roupeiro-cecilia-6p",
+  "ref": "NSC-192",
+  "fabricante": null,
+  "name": "Roupeiro Cecília 6 portas",
+  "category": "quarto",
+  "description": "Roupeiro Cecília de 6 portas, amplo para o quarto de casal. A versão cinamomo/off white acompanha kit de 8 pés.",
+  "details": [
+   "6 portas"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "cinamomo-off-white",
+    "name": "Cinamomo / Off White (com kit de pés)",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000395.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000395",
+    "descricaoLoja": "ROUPEIRO CECILIA 6 PORTAS COM KIT 8 PES RETANGULAR",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Cinamomo / Off White"
+    }
+   },
+   {
+    "id": "jequitiba",
+    "name": "Jequitibá",
+    "color": "#b07a4a",
+    "image": "assets/catalogo/web-000580.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000580",
+    "descricaoLoja": "ROUPEIRO CECÍLIA 6 PORTAS JEQUITBÁ",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Jequitibá"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Cinamomo / Off White (com kit de pés)",
+    "codigo": "000395",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-6-portas-e-6-gavetas-c-pes-cecilia-cinamomo-panan/p/1572745304"
+   },
+   {
+    "campo": "imagem ilustrativa Jequitibá",
+    "codigo": "000580",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-6-portas-c-pes-aurora-jequitiba-panan/p/1582692131"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "roupeiro-clara-6p",
+  "ref": "NSC-193",
+  "fabricante": null,
+  "name": "Roupeiro Clara 6 portas com espelho giratório",
+  "category": "quarto",
+  "description": "Roupeiro Clara de 6 portas, linha Flex, com espelho giratório: de um lado espelho, do outro porta comum. Acabamento jequitibá.",
+  "details": [
+   "6 portas",
+   "Espelho giratório"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "jequitiba",
+    "name": "Jequitibá",
+    "color": "#b07a4a",
+    "image": "assets/catalogo/web-000579.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000579",
+    "descricaoLoja": "ROUPEIRO CLARA 6 PORTAS FLEX COM ESPELHO GIRATÓRIO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Jequitibá"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Jequitibá",
+    "codigo": "000579",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-6-portas-e-3-gavetas-clara-cinamomo-panan/p/1572443071"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "roupeiro-fortaleza-plus",
+  "ref": "NSC-194",
+  "fabricante": null,
+  "name": "Roupeiro Fortaleza Plus 6 portas",
+  "category": "quarto",
+  "description": "Roupeiro Fortaleza Plus com 6 portas e 2 gavetas: espaço de sobra para o guarda-roupa da família.",
+  "details": [
+   "6 portas e 2 gavetas"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Fortaleza Plus",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000645.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000645",
+    "descricaoLoja": "ROUPEIRO FORTALEZA PLUS 6 PORTAS 2 GV .",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Fortaleza Plus",
+    "codigo": "000645",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-com-espelho-6-portas-fortaleza-atualle-canelato-rustico-com-off-white/p/1580617791"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "roupeiro-light-plus-4p",
+  "ref": "NSC-195",
+  "fabricante": null,
+  "name": "Roupeiro Light Plus 4 portas com pés",
+  "category": "quarto",
+  "description": "Roupeiro Light Plus de 4 portas, apoiado sobre pés, que deixam o móvel mais leve e facilitam a limpeza. Três acabamentos.",
+  "details": [
+   "4 portas",
+   "Com pés"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "branco",
+    "name": "Branco",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000688.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000688",
+    "descricaoLoja": "ROUPEIRO LIGHT PLUS 4 PTS COM PE - BRANCO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "cinamomo-off-white",
+    "name": "Cinamomo / Off White",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000690.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000690",
+    "descricaoLoja": "ROUPEIRO LIGHT PLUS 4 PTS COM PE - CINAMO/OFF",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Cinamomo / Off White"
+    }
+   },
+   {
+    "id": "cinamomo",
+    "name": "Cinamomo",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000689.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000689",
+    "descricaoLoja": "ROUPEIRO LIGHT PLUS 4 PTS COM PE - CINAMOMO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Cinamomo"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Branco",
+    "codigo": "000688",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-4-portas-4-gavetas-com-pes-domo-branco-branco/p/1582891394"
+   },
+   {
+    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "codigo": "000690",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-solteiro-4-portas-4-gavetas-e-pes-mdf-cambori-cinamomo-off-white-cinamomo-off-white/p/1583006731"
+   },
+   {
+    "campo": "imagem ilustrativa Cinamomo",
+    "codigo": "000689",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-solteiro-4-portas-2-gavetas-e-pes-noronha-marrom-cinamomo-cinamomo/p/1583006651"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "roupeiro-light-plus-6p",
+  "ref": "NSC-196",
+  "fabricante": null,
+  "name": "Roupeiro Light Plus 6 portas com pés",
+  "category": "quarto",
+  "description": "Roupeiro Light Plus de 6 portas com pés, para quarto de casal. Linhas retas e três opções de acabamento.",
+  "details": [
+   "6 portas",
+   "Com pés"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "branco",
+    "name": "Branco",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000691.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000691",
+    "descricaoLoja": "ROUPEIRO LIGHT PLUS 6 PTS COM PE - BRANCO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "cinamomo-off-white",
+    "name": "Cinamomo / Off White",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000693.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000693",
+    "descricaoLoja": "ROUPEIRO LIGHT PLUS 6 PTS COM PE - CINAMO/OFF",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Cinamomo / Off White"
+    }
+   },
+   {
+    "id": "cinamomo",
+    "name": "Cinamomo",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000692.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000692",
+    "descricaoLoja": "ROUPEIRO LIGHT PLUS 6 PTS COM PE - CINAMOMO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Cinamomo"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Branco",
+    "codigo": "000691",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-6-portas-6-gavetas-com-pes-denver-branco/p/1576350244"
+   },
+   {
+    "campo": "foto Cinamomo / Off White",
+    "codigo": "000693",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-6-portas-2-gavetas-e-pes-light-plus-cinamomo-off-white-cinamomo-off-white/p/1583006621"
+   },
+   {
+    "campo": "imagem ilustrativa Cinamomo",
+    "codigo": "000692",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-6-portas-6-gavetas-maximus-plus-cinamomo/p/1565308659"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "roupeiro-milao-3p2g",
+  "ref": "NSC-197",
+  "fabricante": "Poquema",
+  "name": "Roupeiro Milão 3 portas e 2 gavetas",
+  "category": "quarto",
+  "description": "Roupeiro Milão compacto, com 3 portas e 2 gavetas, ideal para quartos de solteiro. Em castanho ou chocolate com off white.",
+  "details": [
+   "3 portas e 2 gavetas"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "castanho-off-white",
+    "name": "Castanho / Off White",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000384.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000384",
+    "descricaoLoja": "ROUPEIRO MILAO 3P2G CASTANHO/OFFWHITE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Castanho / Off White"
+    }
+   },
+   {
+    "id": "chocolate-off-white",
+    "name": "Chocolate / Off White",
+    "color": "#4b3226",
+    "image": "assets/catalogo/web-000383.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000383",
+    "descricaoLoja": "ROUPEIRO MILAO 3P2G CHOCOLATE/OFFWHITE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Chocolate / Off White"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Castanho / Off White",
+    "codigo": "000384",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-solteiro-milao-3-portas-branco-brilho-poquema/p/1567079818"
+   },
+   {
+    "campo": "foto Chocolate / Off White",
+    "codigo": "000383",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-solteiro-milao-3-portas-2-gavetas-poquema-chocolate/p/1571327741"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "roupeiro-mirabilis",
+  "ref": "NSC-198",
+  "fabricante": null,
+  "name": "Roupeiro Mirabilis com espelho e pés",
+  "category": "quarto",
+  "description": "Roupeiro com espelho e pés, no acabamento cinamomo com off white. Espelho na porta para se arrumar no próprio quarto.",
+  "details": [
+   "Com espelho",
+   "Com pés"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "cinamomo-off-white",
+    "name": "Cinamomo / Off White",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000697.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000697",
+    "descricaoLoja": "ROUPEIRO MIRABILIS COM PE E ESPELHO - CINAMO/OFF",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Cinamomo / Off White"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "codigo": "000697",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-solteiro-capelinha-com-espelho-4-portas-3-gavetas-e-pes-mirabilis-cinamomo-off-white-cinamomo-off-white/p/1583004666"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "roupeiro-real-6p",
+  "ref": "NSC-199",
+  "fabricante": null,
+  "name": "Roupeiro Real 6 portas",
+  "category": "quarto",
+  "description": "Roupeiro Real de 6 portas na cor mocaccino com rust: tons amadeirados e muito espaço interno.",
+  "details": [
+   "6 portas"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "mocaccino-rust",
+    "name": "Mocaccino / Rust",
+    "color": "#7a5a45",
+    "image": "assets/catalogo/web-000377.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000377",
+    "descricaoLoja": "ROUPEIRO REAL 06 PORTAS COR MOCACCINO / RUST",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Mocaccino / Rust"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Mocaccino / Rust",
+    "codigo": "000377",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-real-6-portas-2-gavetas-espelho-atualle-branco-brilho/p/1571321952"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "roupeiro-sao-luis-6p",
+  "ref": "NSC-200",
+  "fabricante": null,
+  "name": "Roupeiro São Luís New 6 portas",
+  "category": "quarto",
+  "description": "Roupeiro São Luís New com 6 portas e 2 gavetas, acabamento nogueira.",
+  "details": [
+   "6 portas e 2 gavetas"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "nogueira",
+    "name": "Nogueira",
+    "color": "#7a5233",
+    "image": "assets/catalogo/web-000646.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000646",
+    "descricaoLoja": "ROUPEIRO 6 PTS 2 GV SAO LUIS NEW NOGUE.",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Nogueira"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Nogueira",
+    "codigo": "000646",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-bartira-new-brusque-6-portas-2-gavetas-pintura-uv/p/55070836"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "roupeiro-capelinha-casal",
+  "ref": "NSC-201",
+  "fabricante": null,
+  "name": "Roupeiro Capelinha casal",
+  "category": "quarto",
+  "description": "Roupeiro Capelinha para casal, com 4 portas e 2 gavetas ou na versão com espelho.",
+  "details": [
+   "Casal"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "4p-2g",
+    "name": "4 portas e 2 gavetas",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000651.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000651",
+    "descricaoLoja": "ROUPEIRO CAPELINHA CASAL 4 PORTAS 2 GV",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {}
+   },
+   {
+    "id": "com-espelho",
+    "name": "Com espelho",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000652.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000652",
+    "descricaoLoja": "ROUPEIRO CAPELINHA CASAL C/ ESPELHO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa 4 portas e 2 gavetas",
+    "codigo": "000651",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-capelinha-com-4-portas-2-gavetas/p/1567763233"
+   },
+   {
+    "campo": "imagem ilustrativa Com espelho",
+    "codigo": "000652",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-com-espelho-4-portas-2-gavetas-capelinha-atualle/p/1582696949"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "guarda-roupa-lolly-infantil",
+  "ref": "NSC-202",
+  "fabricante": null,
+  "name": "Guarda-roupa infantil Lolly",
+  "category": "quarto",
+  "description": "Guarda-roupa infantil Lolly, na medida certa para o quarto das crianças.",
+  "details": [
+   "Infantil"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Lolly",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000276.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000276",
+    "descricaoLoja": "GUARDA ROUPAS LOLLY / INFANTIL .",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Lolly",
+    "codigo": "000276",
+    "url": "https://www.pontofrio.com.br/guarda-roupa-infantil/p/1576692441"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "comoda-esmeralda",
+  "ref": "NSC-203",
+  "fabricante": null,
+  "name": "Cômoda Esmeralda",
+  "category": "quarto",
+  "description": "Cômoda Esmeralda com portas e gavetas para organizar roupas, toalhas e objetos do dia a dia.",
+  "details": [
+   "Portas e gavetas"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Esmeralda",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000351.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000351",
+    "descricaoLoja": "COMODA ESMERALDA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Esmeralda",
+    "codigo": "000351",
+    "url": "https://www.pontofrio.com.br/comoda-para-quarto-2-portas-8-gavetas-esmeralda-expresso-moveis-cinamomo/p/1571742998"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "comoda-free",
+  "ref": "NSC-204",
+  "fabricante": null,
+  "name": "Cômoda Free com pés",
+  "category": "quarto",
+  "description": "Cômoda Free com pés, em cinamomo com off white. Gavetas amplas e tampo livre para apoio.",
+  "details": [
+   "Com pés"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "cinamomo-off-white",
+    "name": "Cinamomo / Off White",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000687.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000687",
+    "descricaoLoja": "COMODA FREE - COM PE CINAMO/OFF",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Cinamomo / Off White"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "codigo": "000687",
+    "url": "https://www.pontofrio.com.br/comoda-5-gavetas-premium-com-pes-tcil-moveis-cinamomo-off-white/p/1556802820"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "comoda-itauna",
+  "ref": "NSC-205",
+  "fabricante": null,
+  "name": "Cômoda Itaúna com pés",
+  "category": "quarto",
+  "description": "Cômoda Itaúna com pés, em cinamomo com off white, combinando portas e gavetas.",
+  "details": [
+   "Com pés"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "cinamomo-off-white",
+    "name": "Cinamomo / Off White",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000698.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000698",
+    "descricaoLoja": "COMODA ITAUNA - COM PE CINAMO/OFF",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Cinamomo / Off White"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "codigo": "000698",
+    "url": "https://www.pontofrio.com.br/comoda-2-portas-5-gavetas-cinnamomo-evidencia-moveis-com-pes-cinnamomo/p/1564876504"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "comoda-malu",
+  "ref": "NSC-206",
+  "fabricante": null,
+  "name": "Cômoda Malu",
+  "category": "quarto",
+  "description": "Cômoda Malu no acabamento jequitibá, com espaço para organizar roupas e acessórios.",
+  "details": [
+   "Jequitibá"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "jequitiba",
+    "name": "Jequitibá",
+    "color": "#b07a4a",
+    "image": "assets/catalogo/web-000582.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000582",
+    "descricaoLoja": "COMÔDA MALU JEQUITIBÁ",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Jequitibá"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Jequitibá",
+    "codigo": "000582",
+    "url": "https://www.pontofrio.com.br/comoda-com-pes-1-porta-4-gavetas-jequitiba-new-opcao-jequitiba/p/1570954478"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "multiuso-versatile",
+  "ref": "NSC-207",
+  "fabricante": null,
+  "name": "Multiuso Versatile com pés",
+  "category": "quarto",
+  "description": "Conjunto multiuso Versatile com pés: cômoda e armário que se adaptam ao quarto, ao escritório ou à lavanderia.",
+  "details": [
+   "Com pés"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "cinamomo-off-white",
+    "name": "Cinamomo / Off White",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000695.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000695",
+    "descricaoLoja": "MULTIUSO VERSATILE COM PE - CINAMO/OFF",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Cinamomo / Off White"
+    }
+   },
+   {
+    "id": "cinamomo",
+    "name": "Cinamomo",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000694.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000694",
+    "descricaoLoja": "MULTIUSO VERSATILE COM PE - CINAMOMO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Cinamomo"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "codigo": "000695",
+    "url": "https://www.pontofrio.com.br/comoda-madri-com-armario-multiuso-versatile-carvalho-americano-off-white-incorplac/p/1570706733"
+   },
+   {
+    "campo": "imagem ilustrativa Cinamomo",
+    "codigo": "000694",
+    "url": "https://www.pontofrio.com.br/comoda-madri-com-armario-multiuso-versatile-carvalho-americano-grafite-incorplac/p/1570706731"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "sapateira-paris",
+  "ref": "NSC-208",
+  "fabricante": null,
+  "name": "Sapateira Paris",
+  "category": "quarto",
+  "description": "Sapateira Paris em MDP, no acabamento freijó com baunilha. Mantém os calçados organizados e fora de vista.",
+  "details": [
+   "MDP"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "freijo-baunilha",
+    "name": "Freijó / Baunilha",
+    "color": "#b38b5d",
+    "image": "assets/catalogo/web-000680.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000680",
+    "descricaoLoja": "SAPATEIRA PARIS MDP FREIJO / BAUNILHA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 4,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Freijó / Baunilha"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Freijó / Baunilha",
+    "codigo": "000680",
+    "url": "https://www.pontofrio.com.br/sapateira-para-quarto-24-pares-lisboa-creme-freijo/p/1581670984"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "penteadeira-camarim-glow",
+  "ref": "NSC-209",
+  "fabricante": null,
+  "name": "Penteadeira camarim Glow",
+  "category": "quarto",
+  "description": "Penteadeira estilo camarim, linha Glow, na cor branca. Um cantinho para maquiagem e cuidados pessoais.",
+  "details": [
+   "Estilo camarim"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "branco",
+    "name": "Branco",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000756.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000756",
+    "descricaoLoja": "PENTEADEIRA CAMARIM GLOW BRANCO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Branco"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Branco",
+    "codigo": "000756",
+    "url": "https://www.pontofrio.com.br/penteadeira-camarim-escrivaninha-de-canto-glow-branco/p/1582022158"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "penteadeira-camarim-rouge",
+  "ref": "NSC-210",
+  "fabricante": null,
+  "name": "Penteadeira camarim Rouge",
+  "category": "quarto",
+  "description": "Penteadeira estilo camarim, linha Rouge, na cor branca. Espelho e tampo para organizar a rotina de beleza.",
+  "details": [
+   "Estilo camarim"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "branco",
+    "name": "Branco",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000755.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000755",
+    "descricaoLoja": "PENTEADEIRA CAMARIM ROUGE BRANCO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Branco"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Branco",
+    "codigo": "000755",
+    "url": "https://www.pontofrio.com.br/penteadeira-camarim-rouge-branco-naturalle-bechara-moveis/p/1582176367"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "bicama-ib",
+  "ref": "NSC-211",
+  "fabricante": "IB Estofados",
+  "name": "Bicama",
+  "category": "quarto",
+  "description": "Bicama estofada: duas camas de solteiro no espaço de uma. Ótima para quarto de hóspedes ou de crianças.",
+  "details": [
+   "Duas camas em uma"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Bicama",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/web-000565.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000565",
+    "descricaoLoja": "BICAMA IB ESTOFADOS",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Bicama",
+    "codigo": "000565",
+    "url": "https://www.extra.com.br/bicama-solteiro-verona-mona-imbuia-estofado-capitone-veludo-bege/p/1573166348"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "tag": "Duas camas em uma"
+ },
+ {
+  "id": "cabeceira-reta-balao",
+  "ref": "NSC-212",
+  "fabricante": null,
+  "name": "Cabeceira reta Balão",
+  "category": "quarto",
+  "description": "Cabeceira estofada reta, modelo Balão, que dá acabamento e conforto à cama box. Tamanhos casal e solteirão.",
+  "details": [
+   "Estofada"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "casal-bege",
+    "name": "Casal · Bege",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/web-000746.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000746",
+    "descricaoLoja": "CABECEIRA CASAL RETA BALÃO BEGE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal",
+     "acabamento": "Bege"
+    }
+   },
+   {
+    "id": "casal-cinza",
+    "name": "Casal · Cinza",
+    "color": "#8a8d90",
+    "image": "assets/catalogo/web-000748.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000748",
+    "descricaoLoja": "CABECEIRA CASAL RETA BALÃO CINZA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal",
+     "acabamento": "Cinza"
+    }
+   },
+   {
+    "id": "casal-marrom",
+    "name": "Casal · Marrom",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000747.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000747",
+    "descricaoLoja": "CABECEIRA CASAL RETA BALÃO MARROM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal",
+     "acabamento": "Marrom"
+    }
+   },
+   {
+    "id": "solteirao-bege",
+    "name": "Solteirão · Bege",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/web-000752.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000752",
+    "descricaoLoja": "CABECEIRA SOLTEIRÃO RETA BALÃO BEGE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Solteirão",
+     "acabamento": "Bege"
+    }
+   },
+   {
+    "id": "solteirao-marrom",
+    "name": "Solteirão · Marrom",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000753.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000753",
+    "descricaoLoja": "CABECEIRA SOLTEIRÃO RETA BALÃO MARROM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Solteirão",
+     "acabamento": "Marrom"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Casal · Bege",
+    "codigo": "000746",
+    "url": "https://www.extra.com.br/cabeceira-estofada-casal-baronesa-veludo-bege/p/1554084426"
+   },
+   {
+    "campo": "imagem ilustrativa Casal · Cinza",
+    "codigo": "000748",
+    "url": "https://www.extra.com.br/cabeceira-casal-estofada-amarula-cinza/p/1554055173"
+   },
+   {
+    "campo": "imagem ilustrativa Casal · Marrom",
+    "codigo": "000747",
+    "url": "https://www.extra.com.br/cabeceira-casal-estofada-berlim-marrom/p/1533669482"
+   },
+   {
+    "campo": "imagem ilustrativa Solteirão · Bege",
+    "codigo": "000752",
+    "url": "https://www.extra.com.br/cabeceira-solteiro-estofada-cancun-bege/p/1533667497"
+   },
+   {
+    "campo": "imagem ilustrativa Solteirão · Marrom",
+    "codigo": "000753",
+    "url": "https://www.pontofrio.com.br/cabeceira-solteiro-marrom-090cm-estofada-capitone-madrid-para-cama-box/p/1570415903"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "cabeceira-reta-quadrada",
+  "ref": "NSC-213",
+  "fabricante": null,
+  "name": "Cabeceira reta Quadrada",
+  "category": "quarto",
+  "description": "Cabeceira estofada reta com desenho em quadrados. Tamanhos casal e solteirão, em tons neutros.",
+  "details": [
+   "Estofada"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "casal-bege",
+    "name": "Casal · Bege",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/web-000743.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000743",
+    "descricaoLoja": "CABECEIRA CASAL RETA QUADRADA BEGE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal",
+     "acabamento": "Bege"
+    }
+   },
+   {
+    "id": "casal-cinza",
+    "name": "Casal · Cinza",
+    "color": "#8a8d90",
+    "image": "assets/catalogo/web-000745.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000745",
+    "descricaoLoja": "CABECEIRA CASAL RETA QUADRADA CINZA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal",
+     "acabamento": "Cinza"
+    }
+   },
+   {
+    "id": "casal-marrom",
+    "name": "Casal · Marrom",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000744.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000744",
+    "descricaoLoja": "CABECEIRA CASAL RETA QUADRADA MARROM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal",
+     "acabamento": "Marrom"
+    }
+   },
+   {
+    "id": "solteirao-bege",
+    "name": "Solteirão · Bege",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/web-000749.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000749",
+    "descricaoLoja": "CABECEIRA SOLTEIRÃO RETA QUADRADA BEGE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Solteirão",
+     "acabamento": "Bege"
+    }
+   },
+   {
+    "id": "solteirao-marrom",
+    "name": "Solteirão · Marrom",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000750.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000750",
+    "descricaoLoja": "CABECEIRA SOLTEIRÃO RETA QUADRADA MARROM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Solteirão",
+     "acabamento": "Marrom"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Casal · Bege",
+    "codigo": "000743",
+    "url": "https://www.extra.com.br/cabeceira-casal-140m-suede-bege/p/1531881997"
+   },
+   {
+    "campo": "imagem ilustrativa Casal · Cinza",
+    "codigo": "000745",
+    "url": "https://www.extra.com.br/cabeceira-casal-estofada-malbec-cinza/p/1554459824"
+   },
+   {
+    "campo": "imagem ilustrativa Casal · Marrom",
+    "codigo": "000744",
+    "url": "https://www.pontofrio.com.br/cabeceira-estofada-casal-140cm-ana-marrom/p/1553105100"
+   },
+   {
+    "campo": "imagem ilustrativa Solteirão · Bege",
+    "codigo": "000749",
+    "url": "https://www.pontofrio.com.br/cabeceira-solteiro-90cm-suede-bege/p/1553823501"
+   },
+   {
+    "campo": "imagem ilustrativa Solteirão · Marrom",
+    "codigo": "000750",
+    "url": "https://www.pontofrio.com.br/cabeceira-solteiro-90cm-sintetico-marrom/p/1553823802"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "cabeceira-reta-vertical",
+  "ref": "NSC-214",
+  "fabricante": null,
+  "name": "Cabeceira reta Vertical",
+  "category": "quarto",
+  "description": "Cabeceira estofada reta com gomos verticais, tamanho solteirão, na cor azul.",
+  "details": [
+   "Estofada"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "solteirao-azul",
+    "name": "Solteirão · Azul",
+    "color": "#2d3f6b",
+    "image": "assets/catalogo/web-000751.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000751",
+    "descricaoLoja": "CABECEIRA SOLTEIRÃO RETA VERTICAL AZUL",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Solteirão",
+     "acabamento": "Azul"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Solteirão · Azul",
+    "codigo": "000751",
+    "url": "https://www.pontofrio.com.br/cabeceira-solteiro-estofada-90cm-amandita-azul/p/1561099141"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "cabeceira-balao-suede",
+  "ref": "NSC-215",
+  "fabricante": null,
+  "name": "Cabeceira Balão suede",
+  "category": "quarto",
+  "description": "Cabeceira Balão em suede, tamanho solteiro, na cor marrom. Toque macio e acabamento capitonê.",
+  "details": [
+   "Suede"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "solteiro-marrom",
+    "name": "Solteiro · Marrom",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000528.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000528",
+    "descricaoLoja": "CABECEIRA BALÃO SUED SOLTEIRO MARROM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Solteiro",
+     "acabamento": "Marrom"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Solteiro · Marrom",
+    "codigo": "000528",
+    "url": "https://www.extra.com.br/cabeceira-solteiro-90cm-suede-marrom-id-suede-marrom/p/1569947870"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "cabeceira-quadrado-suede",
+  "ref": "NSC-216",
+  "fabricante": null,
+  "name": "Cabeceira Quadrado suede",
+  "category": "quarto",
+  "description": "Cabeceira em suede com desenho quadriculado, para cama de casal ou de solteiro.",
+  "details": [
+   "Suede"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "casal-castor-bege",
+    "name": "Casal · Castor / Bege",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/web-000523.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000523",
+    "descricaoLoja": "CABECEIRA QUADRADO SUED CASAL CASTOR/BEGE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal",
+     "acabamento": "Castor / Bege"
+    }
+   },
+   {
+    "id": "solteiro-marrom",
+    "name": "Solteiro · Marrom",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000526.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000526",
+    "descricaoLoja": "CABECEIRA QUADRADO SUED SOLTEIRO MARROM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Solteiro",
+     "acabamento": "Marrom"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Casal · Castor / Bege",
+    "codigo": "000523",
+    "url": "https://www.extra.com.br/cabeceira-castor-casal-revollution-bege-138cm/p/1570308515"
+   },
+   {
+    "campo": "imagem ilustrativa Solteiro · Marrom",
+    "codigo": "000526",
+    "url": "https://www.extra.com.br/cabeceira-solteiro-090m-suede-marrom/p/1531881534"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "base-box-bege",
+  "ref": "NSC-217",
+  "fabricante": null,
+  "name": "Base box bege 30 cm",
+  "category": "colchoes",
+  "description": "Base box de 30 cm de altura revestida em tecido bege, nos tamanhos queen e king. Firmeza e apoio para o colchão.",
+  "details": [
+   "30 cm de altura"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "queen",
+    "name": "Queen 158 × 198",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/web-000486.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000486",
+    "descricaoLoja": "BASE BOX BEGE 30CM X 1,98M X 1,58M",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Queen"
+    }
+   },
+   {
+    "id": "king",
+    "name": "King 193 × 203",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/web-000741.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000741",
+    "descricaoLoja": "BASE BOX BEGE 30CM X 203CM X 193CM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "King"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Queen 158 × 198",
+    "codigo": "000486",
+    "url": "https://www.extra.com.br/base-box-queen-30cmx158cmx198cm-ortobom-bege/p/1547772834"
+   },
+   {
+    "campo": "imagem ilustrativa King 193 × 203",
+    "codigo": "000741",
+    "url": "https://www.extra.com.br/base-box-king-193x203x37cm-bege/p/1560532637"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "base-box-cinza",
+  "ref": "NSC-218",
+  "fabricante": null,
+  "name": "Base box cinza 30 cm",
+  "category": "colchoes",
+  "description": "Base box de 30 cm de altura revestida em tecido cinza, nos tamanhos casal e queen.",
+  "details": [
+   "30 cm de altura"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "casal",
+    "name": "Casal 138 × 188",
+    "color": "#8a8d90",
+    "image": "assets/catalogo/web-000733.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000733",
+    "descricaoLoja": "BASE BOX CINZA 30CM X 1,88M X 1,38M",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal"
+    }
+   },
+   {
+    "id": "queen",
+    "name": "Queen 158 × 198",
+    "color": "#8a8d90",
+    "image": "assets/catalogo/web-000732.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000732",
+    "descricaoLoja": "BASE BOX CINZA 30CM X 1,98M X 1,58M",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Queen"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Casal 138 × 188",
+    "codigo": "000733",
+    "url": "https://www.extra.com.br/base-box-casal-cinza-40x138x188/p/1535532894"
+   },
+   {
+    "campo": "imagem ilustrativa Queen 158 × 198",
+    "codigo": "000732",
+    "url": "https://www.extra.com.br/base-box-queen-30cmx158cmx198cm-ortobom-cinza/p/1500533378"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "base-box-palace",
+  "ref": "NSC-219",
+  "fabricante": null,
+  "name": "Base box Palace casal",
+  "category": "colchoes",
+  "description": "Base box Palace no tamanho casal (138 × 188).",
+  "details": [
+   "Casal 138 × 188"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "casal",
+    "name": "Casal 138 × 188",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000285.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000285",
+    "descricaoLoja": "BASE BOX PALACE 1,38 1,88",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Casal 138 × 188",
+    "codigo": "000285",
+    "url": "https://www.extra.com.br/conjunto-box-casal-colchao-molas-probel-prolastic-palace-base-crc-suede-brown-138x188/p/1570033849"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "base-realeza",
+  "ref": "NSC-220",
+  "fabricante": null,
+  "name": "Base box Realeza 198 × 198",
+  "category": "colchoes",
+  "description": "Base box Realeza de 30 cm de altura, no tamanho 198 × 198 cm, para colchões grandes.",
+  "details": [
+   "198 × 198 × 30 cm"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "198x198",
+    "name": "198 × 198 × 30",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/web-000700.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000700",
+    "descricaoLoja": "BASE REALEZA 198X198X30 CM QUEEN SIZE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "198 × 198"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa 198 × 198 × 30",
+    "codigo": "000700",
+    "url": "https://www.extra.com.br/base-cama-box-queen-198x158-bipartida/p/1582883700"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "cama-box-ortonobre",
+  "ref": "NSC-221",
+  "fabricante": "Ortonobre",
+  "name": "Cama box casal Ortonobre com pillow",
+  "category": "colchoes",
+  "description": "Conjunto cama box casal Ortonobre com pillow top, para quem busca maciez extra na superfície do colchão.",
+  "details": [
+   "Casal",
+   "Pillow top"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "preta",
+    "name": "Casal · Preta",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000623.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000623",
+    "descricaoLoja": "CAMA BOX CASAL ORTONOBRE COM PILLOW PRETA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal",
+     "acabamento": "Preto"
+    }
+   },
+   {
+    "id": "europillow-deluxe",
+    "name": "Casal · Europillow Deluxe",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/web-000625.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000625",
+    "descricaoLoja": "CAMA BOX EUROPILLOW DELUXE CASAL ORTONOBRE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Casal · Preta",
+    "codigo": "000623",
+    "url": "https://www.pontofrio.com.br/cama-box-casal-colchao-molas-qatar-138x188x60cm-branco-preto-suporta-ate-200kg-por-pessoa/p/1550064283"
+   },
+   {
+    "campo": "imagem ilustrativa Casal · Europillow Deluxe",
+    "codigo": "000625",
+    "url": "https://www.pontofrio.com.br/cama-box-colchao-casal-molas-ensacadas-city-pillow-top-138x188x61cm/p/1565601855"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "cama-box-simples-conjugada",
+  "ref": "NSC-222",
+  "fabricante": null,
+  "name": "Cama box simples conjugada",
+  "category": "colchoes",
+  "description": "Cama box conjugada (colchão e base em uma peça), solução econômica para o quarto. Casal e solteirão.",
+  "details": [
+   "Colchão e base conjugados"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "casal",
+    "name": "Casal",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000729.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000729",
+    "descricaoLoja": "CAMA BOX SIMPLES CONJUGADA CASAL",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 10,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal"
+    }
+   },
+   {
+    "id": "solteirao",
+    "name": "Solteirão",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000730.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000730",
+    "descricaoLoja": "CAMA BOX SIMPLES SOLTEIRÃO CONJUGADA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 4,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Solteirão"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Casal",
+    "codigo": "000729",
+    "url": "https://www.pontofrio.com.br/cama-box-casal-conjugada-ortopedica-preto/p/1582454467"
+   },
+   {
+    "campo": "imagem ilustrativa Solteirão",
+    "codigo": "000730",
+    "url": "https://www.pontofrio.com.br/cama-box-solteirao-conjugada-188x110x55/p/1561588249"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "cama-unibox-d28-premium",
+  "ref": "NSC-223",
+  "fabricante": null,
+  "name": "Cama Unibox D28 Premium casal",
+  "category": "colchoes",
+  "description": "Cama Unibox com espuma D28 Premium, conjugada, no tamanho casal 138 × 188 cm e 52 cm de altura.",
+  "details": [
+   "Espuma D28",
+   "138 × 188 × 52 cm"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "casal",
+    "name": "Casal 138 × 188",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000318.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000318",
+    "descricaoLoja": "CAMA UNIBOX D28 PREMIUM 1380 X 1880 X 520 MM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 8,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal",
+     "densidade": "D28"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Casal 138 × 188",
+    "codigo": "000318",
+    "url": "https://www.pontofrio.com.br/cama-box-casal-conjugada-unyco-d28-ortopedico/p/14069534"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "cama-unibox-star",
+  "ref": "NSC-224",
+  "fabricante": null,
+  "name": "Cama Unibox Star + espuma casal",
+  "category": "colchoes",
+  "description": "Cama Unibox Star com camada extra de espuma, tamanho casal 138 × 188 cm, na cor azul.",
+  "details": [
+   "138 × 188 × 57 cm"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "casal-azul",
+    "name": "Casal · Azul",
+    "color": "#2d3f6b",
+    "image": "assets/catalogo/web-000403.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000403",
+    "descricaoLoja": "CAMA UNIBOX STAR + ESPUMA CASAL 138X188X57- 07CM AZUL",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Casal",
+     "acabamento": "Azul"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Casal · Azul",
+    "codigo": "000403",
+    "url": "https://www.pontofrio.com.br/conjunto-cama-box-king-size-lagras-193x203x66-azul-c-molas-ensacadas/p/1560707264"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "unibox-rubi-solteiro",
+  "ref": "NSC-225",
+  "fabricante": null,
+  "name": "Unibox Rubi solteiro",
+  "category": "colchoes",
+  "description": "Cama Unibox Rubi de solteiro, 88 × 188 cm e 56 cm de altura, com acabamento cinza grafite.",
+  "details": [
+   "88 × 188 × 56 cm"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "solteiro",
+    "name": "Solteiro 88 × 188",
+    "color": "#4a4d52",
+    "image": "assets/catalogo/web-000507.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000507",
+    "descricaoLoja": "UNIBOX RUBI 56CMX1,88MX88CM TP ML10 BCA FX ML10/CINZA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Solteiro"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Solteiro 88 × 188",
+    "codigo": "000507",
+    "url": "https://www.pontofrio.com.br/cama-box-solteiro-conjugado-espuma-ortopedica-unibox-selado-88x188/p/1511634919"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "colchao-eurosono-infantil",
+  "ref": "NSC-226",
+  "fabricante": "Eurosono",
+  "name": "Colchão infantil Eurosono D18",
+  "category": "colchoes",
+  "description": "Colchão de espuma D18 Eurosono para berço e cama infantil.",
+  "details": [
+   "Espuma D18"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "berco-60x130",
+    "name": "Berço 60 × 130",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000243.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000243",
+    "descricaoLoja": "COLCHAO EUROSONO BERÇO D-18 60X1,30",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Berço",
+     "densidade": "D18"
+    }
+   },
+   {
+    "id": "infantil-70x150",
+    "name": "Infantil 70 × 150",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000279.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000279",
+    "descricaoLoja": "COCHAO INFANTIL EUROSONO D 18 0,70 X 1,50",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Infantil",
+     "densidade": "D18"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Berço 60 × 130",
+    "codigo": "000243",
+    "url": "https://www.pontofrio.com.br/colchao-para-berco-60x130-cm-gazin/p/1572953159"
+   },
+   {
+    "campo": "imagem ilustrativa Infantil 70 × 150",
+    "codigo": "000279",
+    "url": "https://www.pontofrio.com.br/colchao-infantil-d18-baby-70x150x10-polar/p/1568483165"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "colchao-gazin-d20",
+  "ref": "NSC-227",
+  "fabricante": "Gazin",
+  "name": "Colchão de espuma D20 Gazin solteiro",
+  "category": "colchoes",
+  "description": "Colchão de espuma D20 Gazin, solteiro 78 × 188 cm, com 12 cm de altura.",
+  "details": [
+   "Espuma D20",
+   "78 × 188 × 12 cm"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "solteiro",
+    "name": "Solteiro 78 × 188 × 12",
+    "color": "#3c5a9a",
+    "image": "assets/catalogo/web-000158.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000158",
+    "descricaoLoja": "COLCHÃO D 20 12 CM 188X 78 SOLTEIRO GAZIN",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Solteiro",
+     "densidade": "D20"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "foto Solteiro 78 × 188 × 12",
+    "codigo": "000158",
+    "url": "https://www.pontofrio.com.br/colchao-de-espuma-d20-solteiro-gazin-supreme-78x188x12cm/p/1555365590"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "travesseiro-ortobom",
+  "ref": "NSC-228",
+  "fabricante": "Ortobom",
+  "name": "Travesseiro Ortobom",
+  "category": "colchoes",
+  "description": "Travesseiro Ortobom para completar o conforto da cama.",
+  "details": [
+   "Ortobom"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Travesseiro",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000576.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000576",
+    "descricaoLoja": "TRAVESSEIRO ORTOBOM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Travesseiro",
+    "codigo": "000576",
+    "url": "https://www.pontofrio.com.br/travesseiro-ortobom-confort-flock-40x60cm-macio-confortavel/p/1582979895"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "estofado-vital-2x3",
+  "ref": "NSC-229",
+  "fabricante": null,
+  "name": "Conjunto de estofados Vital 2 e 3 lugares",
+  "category": "estofados",
+  "description": "Conjunto Vital com sofás de 2 e 3 lugares, em tecido de luxo ou veludo. Assentos acolhedores para a sala da família.",
+  "details": [
+   "Sofás de 2 e 3 lugares"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "tecido-luxo",
+    "name": "Tecido de luxo",
+    "color": "#8a8d90",
+    "image": "assets/catalogo/web-000267.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000267",
+    "descricaoLoja": "ESTOFADO VITAL 2X 3 LUGARES TEC. DE LUXO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "lugares": "2 + 3",
+     "acabamento": "Tecido de luxo"
+    }
+   },
+   {
+    "id": "veludo-marrom",
+    "name": "Veludo marrom",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000574.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000574",
+    "descricaoLoja": "ESTOFADO VITAL 2 X 3 LUGARES EM TECIDO VELUDO .COR",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "lugares": "2 + 3",
+     "acabamento": "Veludo marrom"
+    }
+   },
+   {
+    "id": "veludo-telha",
+    "name": "Veludo telha",
+    "color": "#b4532f",
+    "image": "assets/catalogo/web-000222.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000222",
+    "descricaoLoja": "ESTOFADO VITAL 2 X 3 LUGARES TEC. VELUDO . COR TELHA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "lugares": "2 + 3",
+     "acabamento": "Veludo telha"
+    }
+   },
+   {
+    "id": "veludo-bege",
+    "name": "Veludo bege",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/web-000575.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000575",
+    "descricaoLoja": "ESTOFADO VITAL 2X3 LUGARES EM TECIDO VELUDO / COR",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "lugares": "2 + 3",
+     "acabamento": "Veludo bege"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Tecido de luxo",
+    "codigo": "000267",
+    "url": "https://www.pontofrio.com.br/conjunto-de-sofa-2-e-3-lugares-bertioga-veludo-cinza-luizzi/p/1569542536"
+   },
+   {
+    "campo": "imagem ilustrativa Veludo marrom",
+    "codigo": "000574",
+    "url": "https://www.pontofrio.com.br/conjunto-sofa-3-e-2-lugares-suede-istambul-flash/p/1566577719"
+   },
+   {
+    "campo": "imagem ilustrativa Veludo telha",
+    "codigo": "000222",
+    "url": "https://www.pontofrio.com.br/conjunto-sofa-orquidea-2-e-3-lugares-em-veludo-cabecasa-madeiramadeira-terracota/p/1560072767"
+   },
+   {
+    "campo": "imagem ilustrativa Veludo bege",
+    "codigo": "000575",
+    "url": "https://www.pontofrio.com.br/conjunto-sofas-2-e-3-lugares-estofados-m-175-veludo-martins-bege/p/1566198365"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "estofado-ibiza-2x3",
+  "ref": "NSC-230",
+  "fabricante": null,
+  "name": "Conjunto de estofados Ibiza 2 e 3 lugares",
+  "category": "estofados",
+  "description": "Conjunto Ibiza com sofás de 2 e 3 lugares, para receber bem a família e as visitas.",
+  "details": [
+   "Sofás de 2 e 3 lugares"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Ibiza",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000374.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000374",
+    "descricaoLoja": "ESTOFADO IBIZA 2 X 3 LUGARES",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "lugares": "2 + 3"
+    },
+    "alertaEstoque": "Relatório com saldo negativo (-1.0); exibido como 0."
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Ibiza",
+    "codigo": "000374",
+    "url": "https://www.pontofrio.com.br/conjunto-sofa-2-e-3-lugares-linoforte-mercury-revestido-em-tecido-suede-encosto-fixo/p/1001182934"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "estofado-soberano-2x3",
+  "ref": "NSC-231",
+  "fabricante": null,
+  "name": "Conjunto de estofados Soberano 2 e 3 lugares",
+  "category": "estofados",
+  "description": "Conjunto Soberano com sofás de 2 e 3 lugares, de linhas generosas e assento confortável.",
+  "details": [
+   "Sofás de 2 e 3 lugares"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Soberano",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000311.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000311",
+    "descricaoLoja": "ESTOFADO SOBERANO 2 X 3 LUGARES .",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "lugares": "2 + 3"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Soberano",
+    "codigo": "000311",
+    "url": "https://www.pontofrio.com.br/conjunto-sofa-luxemburgo-3-e-2-lugares-152m-e-202m-suede-cafe/p/1501116385"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "estofado-luna-retratil",
+  "ref": "NSC-232",
+  "fabricante": null,
+  "name": "Sofá Luna retrátil e reclinável",
+  "category": "estofados",
+  "description": "Sofá Luna com assento retrátil e encosto reclinável: vira um espaço para esticar as pernas na hora do filme.",
+  "details": [
+   "Retrátil e reclinável"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Luna",
+    "color": "#8a8d90",
+    "image": "assets/catalogo/web-000660.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000660",
+    "descricaoLoja": "ESTOFADO LUNA RETRÁTIL E RECLINAVEL",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {},
+    "alertaEstoque": "Relatório com saldo negativo (-1.0); exibido como 0."
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Luna",
+    "codigo": "000660",
+    "url": "https://www.pontofrio.com.br/sofa-retratil-reclinavel-2-lugares-luna-para-sala-veludo/p/1574645350"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "tag": "Retrátil e reclinável"
+ },
+ {
+  "id": "estofado-orion-retratil",
+  "ref": "NSC-233",
+  "fabricante": null,
+  "name": "Sofá Orion retrátil e reclinável",
+  "category": "estofados",
+  "description": "Sofá Orion retrátil e reclinável, para relaxar com conforto na sala.",
+  "details": [
+   "Retrátil e reclinável"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Orion",
+    "color": "#8a8d90",
+    "image": "assets/catalogo/web-000280.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000280",
+    "descricaoLoja": "ESTOFADO ORION RETRATIL E RECLINAVEL",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Orion",
+    "codigo": "000280",
+    "url": "https://www.pontofrio.com.br/sofa-orion-retratil-reclinavel-220-cm-veludo-cinza/p/1568857421"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "tag": "Retrátil e reclinável"
+ },
+ {
+  "id": "bancada-harmony",
+  "ref": "NSC-234",
+  "fabricante": null,
+  "name": "Bancada Harmony",
+  "category": "sala",
+  "description": "Bancada Harmony para TV no acabamento havana com off white.",
+  "details": [
+   "Havana / Off White"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "havana-off-white",
+    "name": "Havana / Off White",
+    "color": "#8a5a3c",
+    "image": "assets/catalogo/web-000176.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000176",
+    "descricaoLoja": "BANCADA HARMONY HAVANA/OFF WHITE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Havana / Off White"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Havana / Off White",
+    "codigo": "000176",
+    "url": "https://www.extra.com.br/rack-2-portas-havana-cinamomo-off-white/p/1572580934"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "bancada-river-136",
+  "ref": "NSC-235",
+  "fabricante": null,
+  "name": "Bancada River 1,36 m",
+  "category": "sala",
+  "description": "Bancada River com 1,36 m de largura, para TV e aparelhos, no acabamento jequitibá.",
+  "details": [
+   "1,36 m de largura"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "jequitiba",
+    "name": "Jequitibá",
+    "color": "#b07a4a",
+    "image": "assets/catalogo/web-000609.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000609",
+    "descricaoLoja": "BANCADA RIVER 1.36 JEQUITIBA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Jequitibá"
+    }
+   },
+   {
+    "id": "jequitiba-off-white",
+    "name": "Jequitibá / Off White",
+    "color": "#b07a4a",
+    "image": "assets/catalogo/web-000607.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000607",
+    "descricaoLoja": "BANCADA RIVER 1.36 JEQUITIBA/OFF WHITE NEW",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Jequitibá / Off White"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Jequitibá",
+    "codigo": "000609",
+    "url": "https://www.extra.com.br/rack-movelove-2-portas-e-1-gaveta-com-painel-led-para-70-polegadas-river-183cm-jequitiba-jequitiba/p/1575485403"
+   },
+   {
+    "campo": "imagem ilustrativa Jequitibá / Off White",
+    "codigo": "000607",
+    "url": "https://www.extra.com.br/painel-bancada-riade-jequitiba-off-white-perolizado/p/1579458774"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "bancada-suspensa-julia",
+  "ref": "NSC-236",
+  "fabricante": null,
+  "name": "Bancada suspensa Júlia",
+  "category": "sala",
+  "description": "Bancada suspensa Júlia em titanium com carvalho: visual leve e piso livre.",
+  "details": [
+   "Suspensa"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "titanium-carvalho",
+    "name": "Titanium / Carvalho",
+    "color": "#6f777b",
+    "image": "assets/catalogo/web-000274.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000274",
+    "descricaoLoja": "BANCADA SUSPENSA JULIA/ COR TITANIUM COM CARVALHO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Titanium / Carvalho"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Titanium / Carvalho",
+    "codigo": "000274",
+    "url": "https://www.extra.com.br/painel-bancada-suspensa-tv-50-frizz-select-titanio-carvalho/p/1540377664"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "aparador-cairo",
+  "ref": "NSC-237",
+  "fabricante": null,
+  "name": "Aparador Cairo",
+  "category": "sala",
+  "description": "Aparador Cairo em off white com jequitibá, para hall, sala de estar ou de jantar.",
+  "details": [
+   "Off White / Jequitibá"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "off-white-jequitiba",
+    "name": "Off White / Jequitibá",
+    "color": "#ece6da",
+    "image": "assets/catalogo/web-000612.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000612",
+    "descricaoLoja": "APARADOR CAIRO 2024 OFF WHITE NEW/JEQUITIBA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Off White / Jequitibá"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Off White / Jequitibá",
+    "codigo": "000612",
+    "url": "https://www.extra.com.br/aparador-cairo-com-prateleira-off-white-freijo-lukaliam/p/1575304991"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "home-apollo-madetec",
+  "ref": "NSC-238",
+  "fabricante": "Madetec",
+  "name": "Home Apollo",
+  "category": "sala",
+  "description": "Home para TV Apollo, da Madetec, no acabamento imperial sépia. Reúne TV, aparelhos e decoração em um só móvel.",
+  "details": [
+   "Imperial sépia"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "imperial-sepia",
+    "name": "Imperial Sépia",
+    "color": "#7a5233",
+    "image": "assets/catalogo/web-000420.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000420",
+    "descricaoLoja": "HOME APOLLO IMPERIAL SÉPIA MADETEC",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Imperial Sépia"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Imperial Sépia",
+    "codigo": "000420",
+    "url": "https://www.pontofrio.com.br/estante-home-theater-nilo-para-tv-ate-75-madetec/p/1578454843"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "home-florenca",
+  "ref": "NSC-239",
+  "fabricante": null,
+  "name": "Home Florença",
+  "category": "sala",
+  "description": "Home para TV Florença no acabamento jequitibá, com nichos e espaço para aparelhos.",
+  "details": [
+   "Jequitibá"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "jequitiba",
+    "name": "Jequitibá",
+    "color": "#b07a4a",
+    "image": "assets/catalogo/web-000605.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000605",
+    "descricaoLoja": "HOME FLORENCA 2024 JEQUITIBA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Jequitibá"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Jequitibá",
+    "codigo": "000605",
+    "url": "https://www.pontofrio.com.br/estante-home-painel-p-tv-65-pol-valenca-162cm-jequitiba-off-linea/p/1583027091"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "home-taurus",
+  "ref": "NSC-240",
+  "fabricante": null,
+  "name": "Home Taurus ripado",
+  "category": "sala",
+  "description": "Home para TV Taurus com detalhe ripado, em tom natural com off white.",
+  "details": [
+   "Detalhe ripado"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "natural-off-white",
+    "name": "Natural / Off White ripado",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000754.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000754",
+    "descricaoLoja": "HOME TAURUS NAT/OFF/RIP",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Natural / Off White"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Natural / Off White ripado",
+    "codigo": "000754",
+    "url": "https://www.pontofrio.com.br/home-para-tvs-47-taurus-cinamomo-e-off-white-ripado-bechara/p/1575073584"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "painel-eros",
+  "ref": "NSC-241",
+  "fabricante": null,
+  "name": "Painel para TV Eros",
+  "category": "sala",
+  "description": "Painel para TV Eros no acabamento nogal trend. Organiza fios e valoriza a parede da TV.",
+  "details": [
+   "Nogal trend"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "nogal-trend",
+    "name": "Nogal Trend",
+    "color": "#6d4c35",
+    "image": "assets/catalogo/web-000643.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000643",
+    "descricaoLoja": "PAINEL EROS NOGAL TREND/ NOGAL",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Nogal Trend"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Nogal Trend",
+    "codigo": "000643",
+    "url": "https://www.pontofrio.com.br/painel-para-tv-ate-49-polegadas-com-nicho-eros-nogal-trend-notavel-moveis/p/1501947259"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "painel-frank",
+  "ref": "NSC-242",
+  "fabricante": null,
+  "name": "Painel Frank tábua única",
+  "category": "sala",
+  "description": "Painel Frank em tábua única, simples e funcional para a TV da sala ou do quarto.",
+  "details": [
+   "Tábua única"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Frank",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000566.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000566",
+    "descricaoLoja": "PAINEL FRANK TÁBUA ÚNICA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Frank",
+    "codigo": "000566",
+    "url": "https://www.pontofrio.com.br/rack-para-tv-ate-50-polegadas-frank-cinamomo-off-white-artely/p/1570560358"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "painel-link",
+  "ref": "NSC-243",
+  "fabricante": null,
+  "name": "Painel Link",
+  "category": "sala",
+  "description": "Painel para TV Link, com prateleira para aparelhos e decoração.",
+  "details": [
+   "Painel para TV"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Link",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000296.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000296",
+    "descricaoLoja": "PAINEL LINK",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Link",
+    "codigo": "000296",
+    "url": "https://www.pontofrio.com.br/painel-para-tv-orlando/p/1563350767"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "painel-river-136",
+  "ref": "NSC-244",
+  "fabricante": null,
+  "name": "Painel River 1,36 m",
+  "category": "sala",
+  "description": "Painel para TV River com 1,36 m, no acabamento jequitibá, liso ou com ripado 3D.",
+  "details": [
+   "1,36 m de largura"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "jequitiba",
+    "name": "Jequitibá",
+    "color": "#b07a4a",
+    "image": "assets/catalogo/web-000606.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000606",
+    "descricaoLoja": "PAINEL RIVER 1.36 JEQUITIBA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Jequitibá"
+    }
+   },
+   {
+    "id": "jequitiba-ripado-3d",
+    "name": "Jequitibá ripado 3D",
+    "color": "#b07a4a",
+    "image": "assets/catalogo/web-000611.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000611",
+    "descricaoLoja": "PAINEL RIVER 1.36 JEQUITIBA RIPADO 3D",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Jequitibá ripado"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Jequitibá",
+    "codigo": "000606",
+    "url": "https://www.pontofrio.com.br/painel-tv-berlim-jequitiba/p/1576275215"
+   },
+   {
+    "campo": "imagem ilustrativa Jequitibá ripado 3D",
+    "codigo": "000611",
+    "url": "https://www.pontofrio.com.br/painel-para-tv-de-ate-65-2-gavetas-elise-jequitiba-ripado/p/1577733951"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "rack-lisboa",
+  "ref": "NSC-245",
+  "fabricante": null,
+  "name": "Rack Lisboa",
+  "category": "sala",
+  "description": "Rack Lisboa no acabamento jequitibá, para TV e aparelhos.",
+  "details": [
+   "Jequitibá"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "jequitiba",
+    "name": "Jequitibá",
+    "color": "#b07a4a",
+    "image": "assets/catalogo/web-000615.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000615",
+    "descricaoLoja": "RACK LISBOA JEQUITIBA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Jequitibá"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Jequitibá",
+    "codigo": "000615",
+    "url": "https://www.pontofrio.com.br/rack-bancada-tv-lisboa-lukaliam-moveis-ate-32-40-42-50-polegadas-off-white-new-jequitiba/p/1582456452"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "rack-orion",
+  "ref": "NSC-246",
+  "fabricante": null,
+  "name": "Rack Orion",
+  "category": "sala",
+  "description": "Rack Orion para TV, com espaço para aparelhos e objetos.",
+  "details": [
+   "Rack para TV"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Orion",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000076.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000076",
+    "descricaoLoja": "RACK ORION",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {},
+    "alertaEstoque": "Relatório com saldo negativo (-1.0); exibido como 0."
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Orion",
+    "codigo": "000076",
+    "url": "https://www.pontofrio.com.br/rack-bancada-orion-180cm-para-tv-ate-80-moveis-henn/p/1582461389"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "conjunto-marsala",
+  "ref": "NSC-247",
+  "fabricante": null,
+  "name": "Conjunto Marsala com 4 cadeiras",
+  "category": "jantar",
+  "description": "Mesa Marsala com tampo topázio e 4 cadeiras pretas, em versão quadrada de 75 cm ou redonda de 80 cm.",
+  "details": [
+   "4 cadeiras",
+   "Tampo topázio"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "quadrada-75",
+    "name": "Quadrada 75 cm",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000787.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000787",
+    "descricaoLoja": "CONJ 04 CAD MARSALA 75 QUAD - TC 18 PRETA TOPÁZIO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 5,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4"
+    }
+   },
+   {
+    "id": "redonda-80",
+    "name": "Redonda 80 cm",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000786.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000786",
+    "descricaoLoja": "CONJ 04 CAD MARSALA 80 RED - TC 89 PRETA TOPÁZIO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Quadrada 75 cm",
+    "codigo": "000787",
+    "url": "https://www.pontofrio.com.br/conjunto-sala-de-jantar-mesa-quadrada-70x70cm-tampo-granito-topazio-4-cadeiras-paraty-creme-branco/p/1565790450"
+   },
+   {
+    "campo": "imagem ilustrativa Redonda 80 cm",
+    "codigo": "000786",
+    "url": "https://www.pontofrio.com.br/conjunto-sala-de-jantar-mesa-redonda-70cm-tampo-granito-topazio-4-cadeiras-linda-yescasa-marrom/p/1566725378"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "conjunto-palma-120",
+  "ref": "NSC-248",
+  "fabricante": null,
+  "name": "Conjunto Palma 1,20 m com 4 cadeiras",
+  "category": "jantar",
+  "description": "Mesa Palma de 1,20 × 0,75 m com tampo topázio e 4 cadeiras pretas. Duas opções de tecido no assento.",
+  "details": [
+   "4 cadeiras",
+   "1,20 × 0,75 m"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "tc83",
+    "name": "Tecido 83",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000784.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000784",
+    "descricaoLoja": "CONJ 04 CAD PALMA 1,20X75 - TC 83 PRETA TOPÁZIO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4"
+    }
+   },
+   {
+    "id": "tc84",
+    "name": "Tecido 84",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000785.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000785",
+    "descricaoLoja": "CONJ 04 CAD PALMA 1,20X75 - TC 84 PRETA TOPÁZIO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Tecido 83",
+    "codigo": "000784",
+    "url": "https://www.pontofrio.com.br/conjunto-de-jantar-mesa-tampo-redondo-de-granito-topazio-com-4-cadeiras-sara-yescasa-preto-liso-mart-prata/p/1561150731"
+   },
+   {
+    "campo": "imagem ilustrativa Tecido 84",
+    "codigo": "000785",
+    "url": "https://www.pontofrio.com.br/conjunto-de-jantar-mesa-100x60cm-tampo-de-granito-topazio-com-4-cadeiras-sara-yescasa-preto-floral-branco/p/1561191152"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "cadeiras-ana-valdemoveis",
+  "ref": "NSC-249",
+  "fabricante": "Valdemóveis",
+  "name": "Kit 2 cadeiras Ana",
+  "category": "jantar",
+  "description": "Par de cadeiras Ana da Valdemóveis, com assento estofado bege e estrutura cinamomo.",
+  "details": [
+   "Kit com 2 cadeiras"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "bege-cinamomo",
+    "name": "Bege / Cinamomo",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/web-000764.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000764",
+    "descricaoLoja": "CONJUNTO 2 CADEIRAS VALDEMOVEIS ANA - BG02 CIN",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Bege / Cinamomo"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Bege / Cinamomo",
+    "codigo": "000764",
+    "url": "https://www.pontofrio.com.br/mesa-de-jantar-ana-135cm-redonda-vidro18mm-cinamomo-off-white-com-kit-4-cadeiras-ana-linho-bege-valdemoveis/p/1582901565"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "mesa-maia-valdemoveis",
+  "ref": "NSC-250",
+  "fabricante": "Valdemóveis",
+  "name": "Mesa de jantar Maia 1,60 m",
+  "category": "jantar",
+  "description": "Mesa de jantar Maia da Valdemóveis, 1600 × 800 mm, com tampo de vidro e estrutura de 25 mm em cinamomo com off white.",
+  "details": [
+   "1600 × 800 mm",
+   "Tampo com vidro"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "cinamomo-off-white",
+    "name": "Cinamomo / Off White",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000765.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000765",
+    "descricaoLoja": "MESA DE JANTAR VALDEMOVEIS MAIA (25MM) - 1600X800",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Cinamomo / Off White"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "codigo": "000765",
+    "url": "https://www.pontofrio.com.br/mesa-de-jantar-julia-160x80cm-cinamomo-off-white-valdemoveis/p/1568527646"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "mesa-londres",
+  "ref": "NSC-251",
+  "fabricante": null,
+  "name": "Mesa de madeira Londres com 4 cadeiras",
+  "category": "jantar",
+  "description": "Conjunto Londres com mesa de madeira e 4 cadeiras: aconchego para as refeições em família.",
+  "details": [
+   "4 cadeiras"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "madeira",
+    "name": "Madeira",
+    "color": "#a8754a",
+    "image": "assets/catalogo/web-000628.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000628",
+    "descricaoLoja": "MESA DE MADEIRA 4 CADEIRAS LONDRES",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Madeira",
+    "codigo": "000628",
+    "url": "https://www.pontofrio.com.br/conjunto-sala-de-jantar-madesa-talita-mesa-tampo-de-madeira-com-4-cadeiras/p/1500377758"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "mesa-marmore-4",
+  "ref": "NSC-252",
+  "fabricante": null,
+  "name": "Mesa de mármore com 4 cadeiras",
+  "category": "jantar",
+  "description": "Conjunto com mesa de tampo marmorizado e 4 cadeiras, em branco ou preto.",
+  "details": [
+   "4 cadeiras"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "branca",
+    "name": "Branca",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000573.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000573",
+    "descricaoLoja": "MESA DE MÁRMORE 4 CADEIRAS BRANCA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4",
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "preta",
+    "name": "Preta",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000559.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000559",
+    "descricaoLoja": "MESA DE MÁRMORE 4 CADEIRAS PRETA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4",
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Branca",
+    "codigo": "000573",
+    "url": "https://www.pontofrio.com.br/conjunto-de-mesa-italia-com-4-cadeiras-120m-artefamol-branco-granito/p/1582536904"
+   },
+   {
+    "campo": "imagem ilustrativa Preta",
+    "codigo": "000559",
+    "url": "https://www.pontofrio.com.br/conjunto-mesa-de-jantar-eiffel-90cm-preta-com-4-cadeiras/p/1562166333"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "mesa-havai-granito",
+  "ref": "NSC-253",
+  "fabricante": null,
+  "name": "Mesa Havaí de granito com 4 cadeiras",
+  "category": "jantar",
+  "description": "Mesa Havaí com tampo de granito e 4 cadeiras, estrutura branca ou preta.",
+  "details": [
+   "4 cadeiras",
+   "Tampo de granito"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "branca",
+    "name": "Branca",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000715.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000715",
+    "descricaoLoja": "MESA HAVAÍ DE GRANITO 4 CADEIRAS BRANCA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4",
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "preta",
+    "name": "Preta",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000041.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000041",
+    "descricaoLoja": "MESA HAVAÍ GRANITO 04 CADEIRAS PRETA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4",
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Branca",
+    "codigo": "000715",
+    "url": "https://www.pontofrio.com.br/conjunto-de-mesa-tubular-100x60cm-tampo-em-granito-com-4-cadeiras-arabesco-branco/p/1570970508"
+   },
+   {
+    "campo": "imagem ilustrativa Preta",
+    "codigo": "000041",
+    "url": "https://www.pontofrio.com.br/conjunto-de-mesa-tubular-100x60cm-tampo-em-granito-com-4-cadeiras-preto/p/1570970050"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "mesa-paris",
+  "ref": "NSC-254",
+  "fabricante": null,
+  "name": "Mesa Paris com cadeiras",
+  "category": "jantar",
+  "description": "Conjunto de jantar Paris em versões de 4, 6 e 8 cadeiras, nas cores branca ou preta.",
+  "details": [
+   "4, 6 ou 8 cadeiras"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "4-branca",
+    "name": "4 cadeiras · Branca",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000562.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000562",
+    "descricaoLoja": "MESA PARIS 4 CADEIRAS BRANCA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4",
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "4-preta",
+    "name": "4 cadeiras · Preta",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000178.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000178",
+    "descricaoLoja": "MESA PARIS 4 CADEIRAS PRETA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 4,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4",
+     "acabamento": "Preto"
+    }
+   },
+   {
+    "id": "6-branca",
+    "name": "6 cadeiras · Branca",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000457.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000457",
+    "descricaoLoja": "MESA PARIS 6 CADEIRAS BRANCA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "lugares": "6",
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "6-preta",
+    "name": "6 cadeiras · Preta",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000456.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000456",
+    "descricaoLoja": "MESA PARIS 6 CADEIRAS PRETA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "lugares": "6",
+     "acabamento": "Preto"
+    }
+   },
+   {
+    "id": "8-preta",
+    "name": "8 cadeiras · Preta",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000561.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000561",
+    "descricaoLoja": "MESA PARIS 8 CADEIRAS PRETA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "lugares": "8",
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa 4 cadeiras · Branca",
+    "codigo": "000562",
+    "url": "https://www.pontofrio.com.br/conjunto-mesa-de-jantar-eiffel-branca-80cm-4-cadeiras-italia/p/1579470676"
+   },
+   {
+    "campo": "imagem ilustrativa 4 cadeiras · Preta",
+    "codigo": "000178",
+    "url": "https://www.pontofrio.com.br/conjunto-mesa-de-jantar-redonda-venezia-70x70cm-preta-com-4-cadeiras-roma-preto/p/1581561843"
+   },
+   {
+    "campo": "imagem ilustrativa 6 cadeiras · Branca",
+    "codigo": "000457",
+    "url": "https://www.pontofrio.com.br/conjunto-mesa-de-jantar-hairpin-130x80-branca-com-6-cadeiras-eiffel-slim-preto/p/1566812477"
+   },
+   {
+    "campo": "imagem ilustrativa 6 cadeiras · Preta",
+    "codigo": "000456",
+    "url": "https://www.pontofrio.com.br/conjunto-mesa-de-jantar-6-cadeiras-nairobi-cinamo-preto-preto-ma/p/1562327102"
+   },
+   {
+    "campo": "imagem ilustrativa 8 cadeiras · Preta",
+    "codigo": "000561",
+    "url": "https://www.pontofrio.com.br/conjunto-mesa-de-jantar-rustica-madeira-macica-com-8-cadeiras-mona-marrom-preto/p/1564186701"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "organizador-delta",
+  "ref": "NSC-255",
+  "fabricante": null,
+  "name": "Organizador Delta New",
+  "category": "complementos",
+  "description": "Organizador Delta New com portas, para livros, documentos e objetos. Em freijó ou jequitibá.",
+  "details": [
+   "Com portas"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "freijo",
+    "name": "Freijó",
+    "color": "#b38b5d",
+    "image": "assets/catalogo/web-000599.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000599",
+    "descricaoLoja": "ORGANIZADOR DELTA NEW FREIJO TOQUE BP",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Freijó"
+    }
+   },
+   {
+    "id": "jequitiba",
+    "name": "Jequitibá",
+    "color": "#b07a4a",
+    "image": "assets/catalogo/web-000613.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000613",
+    "descricaoLoja": "ORGANIZADOR DELTA NEW JEQUITIBA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Jequitibá"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Freijó",
+    "codigo": "000599",
+    "url": "https://www.pontofrio.com.br/organizador-delta-2-portas-para-livros-e-materiais-diversos-freijo/p/1574964083"
+   },
+   {
+    "campo": "imagem ilustrativa Jequitibá",
+    "codigo": "000613",
+    "url": "https://www.pontofrio.com.br/organizador-delta-2-portas-para-livros-e-materiais-diversos-freijo/p/1576588869"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "conjunto-area-vitoria",
+  "ref": "NSC-256",
+  "fabricante": null,
+  "name": "Conjunto para área Vitória com mesa de centro",
+  "category": "complementos",
+  "description": "Conjunto Vitória para varanda e área externa: poltronas com mesa de centro.",
+  "details": [
+   "Poltronas + mesa de centro"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Vitória",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000662.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000662",
+    "descricaoLoja": "CONJUNTO AREA VITORIA COM CENTRO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Vitória",
+    "codigo": "000662",
+    "url": "https://www.pontofrio.com.br/conjunto-2-poltronas-e-mesa-de-centro-com-tampo-de-vidro-em-aco-e-corda-nautica-rami-makuni/p/1582802511"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "conjunto-paradao-fibra",
+  "ref": "NSC-257",
+  "fabricante": null,
+  "name": "Conjunto Paradão em fibra com mesa de centro",
+  "category": "complementos",
+  "description": "Conjunto Paradão em fibra sintética com mesa de centro, para varanda e área de lazer.",
+  "details": [
+   "Fibra sintética"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Paradão",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000663.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000663",
+    "descricaoLoja": "CONJUNTO PARADAO FIBRA COM CENTRO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 4,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Paradão",
+    "codigo": "000663",
+    "url": "https://www.pontofrio.com.br/mesa-de-centro-venus-em-fibra-sintetica-trama/p/1560355605"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "cadeira-balanco-naja",
+  "ref": "NSC-258",
+  "fabricante": null,
+  "name": "Cadeira de balanço Naja em fibra",
+  "category": "complementos",
+  "description": "Cadeira de balanço Naja em fibra sintética, para descansar na varanda.",
+  "details": [
+   "Fibra sintética"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Naja",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/web-000664.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000664",
+    "descricaoLoja": "CADEIRA BALANCO NAJA FIBRA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 17,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Naja",
+    "codigo": "000664",
+    "url": "https://www.pontofrio.com.br/cadeira-balanco-sem-mola-fibra-sintetica-argila/p/1566061754"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "poltrona-plastica-thai",
+  "ref": "NSC-259",
+  "fabricante": null,
+  "name": "Poltrona plástica Thai",
+  "category": "complementos",
+  "description": "Poltrona plástica Thai na cor vinho, resistente e fácil de limpar.",
+  "details": [
+   "Plástico"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "vinho",
+    "name": "Vinho",
+    "color": "#6b1f2a",
+    "image": "assets/catalogo/web-000545.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000545",
+    "descricaoLoja": "POLTRONA PLÁSTICA THAI VINHO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 7,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Vinho"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Vinho",
+    "codigo": "000545",
+    "url": "https://www.pontofrio.com.br/poltrona-de-pl-stico-thai-duoplastic/p/1576543729"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "cadeira-plastica-bistro",
+  "ref": "NSC-260",
+  "fabricante": null,
+  "name": "Cadeira plástica Bistrô sem braços",
+  "category": "complementos",
+  "description": "Cadeira plástica Bistrô sem braços, empilhável e prática para área, festas e comércio.",
+  "details": [
+   "Sem braços"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Bistrô",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000090.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000090",
+    "descricaoLoja": "CADEIRA PLASTICA BISTRO / SEM BRAÇOS",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 7,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Bistrô",
+    "codigo": "000090",
+    "url": "https://www.pontofrio.com.br/cadeira-plastico-bistro-preta-sem-braco-182kg-mor/p/1560794806"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "cadeira-plastica",
+  "ref": "NSC-261",
+  "fabricante": null,
+  "name": "Cadeira plástica",
+  "category": "complementos",
+  "description": "Cadeira plástica com braços, resistente e fácil de limpar. Ideal para varanda, área e eventos.",
+  "details": [
+   "Plástico"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Cadeira plástica",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000548.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000548",
+    "descricaoLoja": "CADEIRA PLÁSTICA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 50,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Cadeira plástica",
+    "codigo": "000548",
+    "url": "https://www.pontofrio.com.br/cadeira-plastica-com-bracos-atalaia-branca-tramontina/p/1582874707"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "banquinho-plastico",
+  "ref": "NSC-262",
+  "fabricante": null,
+  "name": "Banquinho plástico",
+  "category": "complementos",
+  "description": "Banquinho plástico preto, leve e resistente, para o dia a dia da casa.",
+  "details": [
+   "Plástico"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "preto",
+    "name": "Preto",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000546.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000546",
+    "descricaoLoja": "BANQUINHO PLÁSTICO PRETO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 5,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Preto",
+    "codigo": "000546",
+    "url": "https://www.pontofrio.com.br/banqueta-dobravel-com-alca-portatil-banco-de-plastico-multiuso-22cm-capacidade-ate-150kg-preto/p/1568307498"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "mesa-plastica-duo",
+  "ref": "NSC-263",
+  "fabricante": null,
+  "name": "Mesa plástica Duo",
+  "category": "complementos",
+  "description": "Mesa plástica Duo, prática para área, varanda e eventos.",
+  "details": [
+   "Plástico"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Duo",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000547.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000547",
+    "descricaoLoja": "MESA PLÁSTICA DUO PLÁSTICO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 10,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Duo",
+    "codigo": "000547",
+    "url": "https://www.pontofrio.com.br/mesa-diana-4-lugares-quadrada-plastico-70cm-preto-tramontina-polipropileno-aluminio/p/1582830693"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "mesa-plastica-plasmaster",
+  "ref": "NSC-264",
+  "fabricante": "Plasmaster",
+  "name": "Mesa plástica Plasmaster",
+  "category": "complementos",
+  "description": "Mesa plástica Plasmaster branca, leve e fácil de limpar.",
+  "details": [
+   "Plástico"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "branca",
+    "name": "Branca",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000045.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000045",
+    "descricaoLoja": "MESAS PLASMASTER BRANCA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Branco"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Branca",
+    "codigo": "000045",
+    "url": "https://www.pontofrio.com.br/mesa-plastica-mor-bela-vista-branca/p/1572446635"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "tabua-passar",
+  "ref": "NSC-265",
+  "fabricante": null,
+  "name": "Tábua de passar",
+  "category": "complementos",
+  "description": "Tábua de passar roupa, nas cores branca e preta.",
+  "details": [
+   "Tábua de passar"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "branca",
+    "name": "Branca",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000717.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000717",
+    "descricaoLoja": "TABUA DE PASSAR BRANCA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "preta",
+    "name": "Preta",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000716.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000716",
+    "descricaoLoja": "TABUA DE PASSAR PRETA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Branca",
+    "codigo": "000717",
+    "url": "https://www.pontofrio.com.br/tabua-de-passar-roupa-mariana-branco-ajl-moveis/p/9124356"
+   },
+   {
+    "campo": "imagem ilustrativa Preta",
+    "codigo": "000716",
+    "url": "https://www.pontofrio.com.br/tabua-de-passar-roupas-havai-cinamomo-off-white-rv-moveis/p/1582289189"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "tabua-passar-miami",
+  "ref": "NSC-266",
+  "fabricante": null,
+  "name": "Tábua de passar Miami",
+  "category": "complementos",
+  "description": "Móvel Miami com tábua de passar e espaço para guardar, em MDP freijó com baunilha.",
+  "details": [
+   "MDP"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "freijo-baunilha",
+    "name": "Freijó / Baunilha",
+    "color": "#b38b5d",
+    "image": "assets/catalogo/web-000679.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000679",
+    "descricaoLoja": "TABUA DE PASSAR MIAMI MDP FREIJO / BAUNILHA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Freijó / Baunilha"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Freijó / Baunilha",
+    "codigo": "000679",
+    "url": "https://www.pontofrio.com.br/tabua-de-passar-roupa-miami-com-1-porta-e-nicho/p/1571276355"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "bicicleta-colli-a29",
+  "ref": "NSC-267",
+  "fabricante": "Colli",
+  "name": "Bicicleta Colli aro 29",
+  "category": "complementos",
+  "description": "Bicicleta Colli aro 29, quadro tamanho 17, preto fosco com amarelo neon.",
+  "details": [
+   "Aro 29",
+   "Quadro 17"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "preto-amarelo",
+    "name": "Preto fosco / Amarelo neon",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000550.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000550",
+    "descricaoLoja": "BICICLETA COLLI A29 TM17 PRETO FOSCO/AMARELO NEON",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto fosco / Amarelo neon"
+    },
+    "alertaEstoque": "Relatório com saldo negativo (-1.0); exibido como 0."
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Preto fosco / Amarelo neon",
+    "codigo": "000550",
+    "url": "https://www.extra.com.br/bicicleta-aro-29-colli-nantes-21-marchas-freio-a-disco-quadro-preto-fosco-e-amarelo-neon/p/55073611"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "bicicleta-colli-montadinha",
+  "ref": "NSC-268",
+  "fabricante": "Colli",
+  "name": "Bicicleta Colli Montadinha",
+  "category": "complementos",
+  "description": "Bicicleta infantil Colli Montadinha, amarelo neon.",
+  "details": [
+   "Infantil"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "amarelo-neon",
+    "name": "Amarelo neon",
+    "color": "#d6e000",
+    "image": "assets/catalogo/web-000557.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000557",
+    "descricaoLoja": "BICICLETA COLLI MONTADINHA AMARELO NEON",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Amarelo neon"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "foto Amarelo neon",
+    "codigo": "000557",
+    "url": "https://www.extra.com.br/bicicleta-colli-montadinha-aro-20-selim-mobik-bagageiro-cor-amarelo-neon-tamanho-do-quadro-12-amarelo/p/1579189192"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "bicicleta-monaco-a26",
+  "ref": "NSC-269",
+  "fabricante": null,
+  "name": "Bicicleta Mônaco aro 26",
+  "category": "complementos",
+  "description": "Bicicleta Mônaco aro 26, azul com champagne.",
+  "details": [
+   "Aro 26"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "azul-champagne",
+    "name": "Azul / Champagne",
+    "color": "#4f8fc0",
+    "image": "assets/catalogo/web-000554.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000554",
+    "descricaoLoja": "BICICLETA MONACO AZUL CHAMPAGNE A. 26",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Azul / Champagne"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "foto Azul / Champagne",
+    "codigo": "000554",
+    "url": "https://www.extra.com.br/bicicleta-colli-monaco-aro-26-disco-21-v-rapid-fire-cor-vermelho-tamanho-do-quadro-135-azul/p/1579189522"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "bicicleta-celina-a16",
+  "ref": "NSC-270",
+  "fabricante": null,
+  "name": "Bicicleta infantil Celina aro 16",
+  "category": "complementos",
+  "description": "Bicicleta infantil Celina aro 16, rosa com lilás.",
+  "details": [
+   "Aro 16",
+   "Infantil"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "rosa-lilas",
+    "name": "Rosa / Lilás",
+    "color": "#b48ad6",
+    "image": "assets/catalogo/web-000556.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000556",
+    "descricaoLoja": "BICICLETA CELINA ROSA C/ LILÁS INFANTIL A. 16",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Rosa / Lilás"
+    },
+    "alertaEstoque": "Relatório com saldo negativo (-1.0); exibido como 0."
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Rosa / Lilás",
+    "codigo": "000556",
+    "url": "https://www.extra.com.br/bicicleta-sweet-girl-aro-16-v-brake-lilas-infantil-com-cesta-e-rodinhas-mormaii/p/1582613386"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "bicicleta-spimossauro",
+  "ref": "NSC-271",
+  "fabricante": null,
+  "name": "Bicicleta infantil Spimossauro",
+  "category": "complementos",
+  "description": "Bicicleta infantil Spimossauro, azul.",
+  "details": [
+   "Infantil"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "azul",
+    "name": "Azul",
+    "color": "#2d5fb0",
+    "image": "assets/catalogo/web-000555.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000555",
+    "descricaoLoja": "BICICLETA SPIMOSSAURO AZUL INFATIL MASCULINA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Azul"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Azul",
+    "codigo": "000555",
+    "url": "https://www.extra.com.br/bicicleta-infantil-pro-aventura-aro-16-com-rodinhas-azul/p/1582592955"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "liquidificador-agratto-forza",
+  "ref": "NSC-272",
+  "fabricante": "Agratto",
+  "name": "Liquidificador Agratto Forza 850 W",
+  "category": "eletros",
+  "description": "Liquidificador Agratto Forza de 850 W com copo leitoso de 1,5 L. Potência para sucos, vitaminas e massas.",
+  "details": [
+   "850 W",
+   "Copo leitoso 1,5 L"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "lqlf-02-220v",
+    "name": "Preto (LQLF-02, 220 V)",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000412.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000412",
+    "descricaoLoja": "LIQUIDIFICADOR FORZA LQLF-02 PR LEITOSO 1,5L 850W 220V",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 24,
+    "medidas": null,
+    "atributos": {
+     "voltagem": "220 V",
+     "acabamento": "Preto"
+    }
+   },
+   {
+    "id": "forza",
+    "name": "Forza copo leitoso",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000001.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000001",
+    "descricaoLoja": "LIQUIDIFICADOR AGRATO FORZA COPO LEITOSO 850 W",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {}
+   },
+   {
+    "id": "preto",
+    "name": "Preto copo leitoso",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000146.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000146",
+    "descricaoLoja": "LIQUIDIFICADOR AGRATO COPO LEITOSO PRETO 850 W",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 12,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "foto Preto (LQLF-02, 220 V)",
+    "codigo": "000412",
+    "url": "https://www.pontofrio.com.br/liquidificador-850w-220v-forza-cristal-lqlf-02-leitoso-agratto/p/1577398731"
+   },
+   {
+    "campo": "imagem ilustrativa Forza copo leitoso",
+    "codigo": "000001",
+    "url": "https://www.pontofrio.com.br/liquidificador-agratto-lqlf-01-leitoso-850w-cristal-127v/p/1571446028"
+   },
+   {
+    "campo": "imagem ilustrativa Preto copo leitoso",
+    "codigo": "000146",
+    "url": "https://www.pontofrio.com.br/liquidificador-agrato-forza-850w-jarra-15l-127v-preto/p/1571446685"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "ferro-agratto",
+  "ref": "NSC-273",
+  "fabricante": "Agratto",
+  "name": "Ferro de passar Agratto",
+  "category": "eletros",
+  "description": "Ferro de passar Agratto para o dia a dia.",
+  "details": [
+   "Agratto"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Agratto",
+    "color": "#2aa6b5",
+    "image": "assets/catalogo/web-000012.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000012",
+    "descricaoLoja": "FERRO AGRATO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Agratto",
+    "codigo": "000012",
+    "url": "https://www.pontofrio.com.br/ferro-de-passar-agratto-facile-ff-01-127v/p/1517873131"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "fogao-clarice-delicato-plus",
+  "ref": "NSC-274",
+  "fabricante": "Clarice",
+  "name": "Fogão a gás Delicato Plus",
+  "category": "eletros",
+  "description": "Fogão a gás Clarice Delicato Plus, de piso. Versões de 6 bocas e Glass de 5 bocas com respaldo.",
+  "details": [
+   "Fogão de piso a gás"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "6-bocas-branco",
+    "name": "6 bocas · Branco",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000621.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000621",
+    "descricaoLoja": "FG GAS DELICATO PLUS 6B - BRANCOV2",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "6 bocas",
+     "acabamento": "Branco"
+    }
+   },
+   {
+    "id": "6-bocas-preto",
+    "name": "6 bocas · Preto fosco",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000620.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000620",
+    "descricaoLoja": "FG GAS DELICATO PLUS 6B - PRETO FOSCO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "6 bocas",
+     "acabamento": "Preto fosco"
+    }
+   },
+   {
+    "id": "glass-5-bocas-preto",
+    "name": "Glass 5 bocas com respaldo · Preto fosco",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000659.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000659",
+    "descricaoLoja": "FG GAS DELICATO PLUS GLASS 5B COM RESPALDO - PRETO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "5 bocas",
+     "acabamento": "Preto fosco"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa 6 bocas · Branco",
+    "codigo": "000621",
+    "url": "https://www.pontofrio.com.br/fogao-itatiaia-5-bocas-itaglass-plus-branco-bivolt/p/1568752496"
+   },
+   {
+    "campo": "imagem ilustrativa 6 bocas · Preto fosco",
+    "codigo": "000620",
+    "url": "https://www.pontofrio.com.br/fogao-a-gas-6-bocas-delicato-clarice-preto-fosco/p/1580591674"
+   },
+   {
+    "campo": "imagem ilustrativa Glass 5 bocas com respaldo · Preto fosco",
+    "codigo": "000659",
+    "url": "https://www.pontofrio.com.br/fogao-itatiaia-5-bocas-electra-glass-plus-preto-bivolt/p/1575575206"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "fogao-braslar-fenix-glass",
+  "ref": "NSC-275",
+  "fabricante": "Braslar",
+  "name": "Fogão Braslar Fênix Glass 5 bocas",
+  "category": "eletros",
+  "description": "Fogão Braslar Fênix Glass de 5 bocas com mesa de vidro, na cor branca.",
+  "details": [
+   "5 bocas",
+   "Mesa de vidro"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "branco",
+    "name": "Branco",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000362.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000362",
+    "descricaoLoja": "FOGÃO 5 BC BRASLAR FENIX GLASS MESA DE VIDRO BRANCO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Branco"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Branco",
+    "codigo": "000362",
+    "url": "https://www.pontofrio.com.br/fogao-5-bocas-dako-supreme-glass-com-mesa-de-vidro-e-acendimento-automatico-preto-bivolt/p/55068999"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "fogao-gourmet-4b-vidro",
+  "ref": "NSC-276",
+  "fabricante": null,
+  "name": "Fogão Gourmet 4 bocas tampo de vidro",
+  "category": "eletros",
+  "description": "Fogão Gourmet de 4 bocas com tampo de vidro, na cor branca.",
+  "details": [
+   "4 bocas",
+   "Tampo de vidro"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "branco",
+    "name": "Branco",
+    "color": "#f4f4f2",
+    "image": "assets/catalogo/web-000051.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000051",
+    "descricaoLoja": "FOGÃO GOURMET 4B TAMPO DE VIDRO COR . BRANCO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Branco"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Branco",
+    "codigo": "000051",
+    "url": "https://www.pontofrio.com.br/fogao-mueller-branco-4-bocas-com-mesa-de-vidro-e-acendimento-mfv4bb/p/1561333258"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "air-fryer-agratto-supremma",
+  "ref": "NSC-277",
+  "fabricante": "Agratto",
+  "name": "Air fryer Agratto Supremma 4 L",
+  "category": "eletros",
+  "description": "Fritadeira elétrica sem óleo Agratto Supremma, mecânica, 4 L e 1400 W, na cor preta. 220 V.",
+  "details": [
+   "4 L",
+   "1400 W",
+   "220 V"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "preta",
+    "name": "Preta",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000727.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000727",
+    "descricaoLoja": "FRITADEIRA ELETRICA AIR FRYER SUPREMMA AFSC01N-02",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 6,
+    "medidas": null,
+    "atributos": {
+     "voltagem": "220 V",
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Preta",
+    "codigo": "000727",
+    "url": "https://www.pontofrio.com.br/fritadeira-eletrica-sem-oleo-air-fryer-36l-1500w-preta-supremma-fes02-220v/p/1553159232"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "sanduicheira-britania-crome",
+  "ref": "NSC-278",
+  "fabricante": "Britânia",
+  "name": "Grill e sanduicheira Britânia Crome Inox",
+  "category": "eletros",
+  "description": "Grill e sanduicheira 2 em 1 Britânia Crome Inox: lanches e grelhados rápidos.",
+  "details": [
+   "2 em 1"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "inox",
+    "name": "Inox",
+    "color": "#b9bcbf",
+    "image": "assets/catalogo/web-000006.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000006",
+    "descricaoLoja": "SANDUICHEIRA BRITÂNIA GRILL E SANDUICHEIRA CROME INOX",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Inox"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "foto Inox",
+    "codigo": "000006",
+    "url": "https://www.pontofrio.com.br/grill-e-sanduicheira-britania-crome-inox/p/298901"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "sanduicheira-grill",
+  "ref": "NSC-279",
+  "fabricante": null,
+  "name": "Sanduicheira e grill",
+  "category": "eletros",
+  "description": "Sanduicheira e grill para lanches e grelhados rápidos, nas versões preta e inox.",
+  "details": [
+   "2 em 1"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "preta",
+    "name": "Preta",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000235.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000235",
+    "descricaoLoja": "SANDUICHEIRA E GRIL / BLACK",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto"
+    }
+   },
+   {
+    "id": "inox",
+    "name": "Inox",
+    "color": "#b9bcbf",
+    "image": "assets/catalogo/web-000234.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000234",
+    "descricaoLoja": "SANDUICHEIRA E GRILL / INOX",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Inox"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Preta",
+    "codigo": "000235",
+    "url": "https://www.pontofrio.com.br/sanduicheira-fast-grill-e-sandwich-mondial-s-12-750w-preta/p/3230329"
+   },
+   {
+    "campo": "imagem ilustrativa Inox",
+    "codigo": "000234",
+    "url": "https://www.pontofrio.com.br/grill-e-sanduicheira-eletrica-220-v-inox-essencial-itatiaia/p/1582665778"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "panela-pressao-panelux-45",
+  "ref": "NSC-280",
+  "fabricante": "Panelux",
+  "name": "Panela de pressão Panelux 4,5 L",
+  "category": "eletros",
+  "description": "Panela de pressão Panelux de 4,5 litros em alumínio polido.",
+  "details": [
+   "4,5 L"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "polida",
+    "name": "Alumínio polido",
+    "color": "#c9ccd0",
+    "image": "assets/catalogo/web-000313.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000313",
+    "descricaoLoja": "PANELA DE PRESÃO PANELUX 4,5 LITROS.",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "foto Alumínio polido",
+    "codigo": "000313",
+    "url": "https://www.pontofrio.com.br/panela-de-pressao-panelux-aluminio-polido-45-l/p/438304"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "tv-semp-32-roku",
+  "ref": "NSC-281",
+  "fabricante": "Semp",
+  "name": "Smart TV Semp 32\" Roku",
+  "category": "eletros",
+  "description": "Smart TV LED Semp de 32\" com sistema Roku e Wi-Fi (modelo 32S42R).",
+  "details": [
+   "32\"",
+   "Roku TV",
+   "Wi-Fi"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "preto",
+    "name": "Preto",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000792.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000792",
+    "descricaoLoja": "TV 32P SEMP LED SMART ROKU FULL HD WIFI 32S42R",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 6,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Preto",
+    "codigo": "000792",
+    "url": "https://www.pontofrio.com.br/smart-tv-philco-32-quot-led-roku-ptv32k34rkgb/p/1572005800"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "tv-aoc-43-roku",
+  "ref": "NSC-282",
+  "fabricante": "AOC",
+  "name": "Smart TV AOC 43\" Roku Full HD",
+  "category": "eletros",
+  "description": "Smart TV LED AOC de 43\" Full HD com Roku, Wi-Fi, USB e HDMI (modelo 43S5155/78G).",
+  "details": [
+   "43\" Full HD",
+   "Roku TV",
+   "Wi-Fi"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "preto",
+    "name": "Preto",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000791.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000791",
+    "descricaoLoja": "TV 43P AOC LED SMART ROKU WIFI FULL HD USB HDMI",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "foto Preto",
+    "codigo": "000791",
+    "url": "https://www.pontofrio.com.br/smart-tv-43-aoc-43s5155-78g-full-hd-led-wi-fi-roku-tv-dolby-audio/p/55071718"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "conversor-keo",
+  "ref": "NSC-283",
+  "fabricante": "Keo",
+  "name": "Conversor e gravador digital Keo",
+  "category": "eletros",
+  "description": "Conversor de TV digital com função de gravação, da Keo.",
+  "details": [
+   "Conversor e gravador"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Keo",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000019.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000019",
+    "descricaoLoja": "CONVERSOR E GRAVADOR DIGITAL KEO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Keo",
+    "codigo": "000019",
+    "url": "https://www.pontofrio.com.br/conversor-e-gravador-digital-full-hd-dtv-9000/p/1578591914"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "home-theater-zeus",
+  "ref": "NSC-284",
+  "fabricante": null,
+  "name": "Home theater Zeus",
+  "category": "eletros",
+  "description": "Home theater Zeus para deixar filmes, jogos e músicas com som mais encorpado.",
+  "details": [
+   "Home theater"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "padrao",
+    "name": "Zeus",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000066.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000066",
+    "descricaoLoja": "HOME THEATER ZEUS",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {}
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Zeus",
+    "codigo": "000066",
+    "url": "https://www.pontofrio.com.br/soundbar-lg-sh5a-bluetooth-600w-rms-4-1-canais-subwoofer-preto/p/55071389"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "ventilador-ventisol-40",
+  "ref": "NSC-285",
+  "fabricante": "Ventisol",
+  "name": "Ventilador Ventisol 40 cm preto",
+  "category": "eletros",
+  "description": "Ventilador Ventisol de 40 cm na cor preta.",
+  "details": [
+   "40 cm"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "preto",
+    "name": "Preto",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000136.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000136",
+    "descricaoLoja": "VENTILADOR 40 CM VENTISOL COR PT",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Preto",
+    "codigo": "000136",
+    "url": "https://www.pontofrio.com.br/ventilador-de-coluna-40-cm-220v-turbo6-preto-ventisol/p/1554600410"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ]
+ },
+ {
+  "id": "ventilador-parede-50",
+  "ref": "NSC-286",
+  "fabricante": null,
+  "name": "Ventilador de parede 50 cm",
+  "category": "eletros",
+  "description": "Ventilador de parede de 50 cm: ventilação forte sem ocupar espaço no chão.",
+  "details": [
+   "50 cm",
+   "De parede"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "preto",
+    "name": "Preto",
+    "color": "#1d1d1d",
+    "image": "assets/catalogo/web-000678.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000678",
+    "descricaoLoja": "VENTILADOR DE PAREDE 50 CM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 3,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Preto"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "imagem ilustrativa Preto",
+    "codigo": "000678",
+    "url": "https://www.pontofrio.com.br/ventilador-oscilante-de-parede-ventura-venti-delta-50-cm-preto-bivolt/p/13658278"
    },
    {
     "campo": "códigos e estoque",

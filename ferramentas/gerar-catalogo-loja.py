@@ -3,10 +3,12 @@
 Uso: python3 ferramentas/gerar-catalogo-loja.py
 - Estoque vem do relatório (dados-loja/estoque-relatorio-AAAA-MM-DD.tsv), pelo código interno da loja.
 - Preço NÃO é publicado (decisão da loja): o cliente consulta pelo WhatsApp.
-- Só entram pares exatos (modelo + medida/cor). O que tem conflito fica em PENDENTES, fora da vitrine.
+- Foto de catálogo/oficial só com par exato (modelo + medida/cor). O que tem conflito fica em PENDENTES, fora da vitrine.
+- Itens sem foto oficial usam imagem ilustrativa da internet (catalogo_ilustrativo.py + fotos-web.tsv); o site avisa o cliente.
 - Ids de produto e variante são estáveis: não renomeie depois de divulgar links."""
 import json, re, sys
 from pathlib import Path
+from catalogo_ilustrativo import NOVOS, VARIANTES_EXTRAS
 
 RAIZ = Path(__file__).resolve().parent.parent
 RELATORIO = RAIZ / 'dados-loja/estoque-relatorio-2026-11-23.tsv'
@@ -17,7 +19,7 @@ def ler_relatorio():
         c = l.split('\t')
         if len(c) >= 5:
             q = c[2].replace('.', '').replace(',', '.')
-            r[c[0]] = {'qtd': float(q) if q else None, 'desc': c[4].strip()}
+            r[c[0]] = {'qtd': float(q) if q else None, 'desc': re.split(r'\s*-\s*Qtd:', c[4])[0].strip()}  # o relatório às vezes cola quantidade e valor unitário: não publicar
     return r
 
 def M(l, a, p):
@@ -1082,15 +1084,50 @@ PENDENTES = [
  ('000731', 'Conjunto Montreal 47 cm: catálogo Caza Nobre tem Montreal e Montreal Premium; confirmar qual.'),
 ]
 
+def com_fotos_web(produtos):
+    """Junta NOVOS e VARIANTES_EXTRAS (catalogo_ilustrativo.py) com a foto e a página de fotos-web.tsv."""
+    fotos = {}
+    for linha in (Path(__file__).parent / 'fotos-web.tsv').read_text(encoding='utf-8').splitlines():
+        if linha and not linha.startswith('#'):
+            cod, tipo, url = linha.split('\t')
+            fotos[cod] = ('catalogo' if tipo == 'E' else 'ilustrativa', url)
+
+    def variante(v):
+        vid, nome, cod, cor = v[:4]
+        tipo, url = fotos[cod]
+        return (vid, nome, cod, None, v[4] if len(v) > 4 else {}, cor, 'web-' + cod, url, tipo)
+
+    por_id = {d['id']: d for d in produtos}
+    for pid, extras in VARIANTES_EXTRAS.items():
+        por_id[pid]['variants'] = list(por_id[pid]['variants']) + [variante(v) for v in extras]
+    return produtos + [dict(d, variants=[variante(v) for v in d['variants']]) for d in NOVOS]
+
+
+CORES = {'Branco', 'Branca', 'Preto', 'Preta', 'Cinza', 'Bege', 'Marrom', 'Azul', 'Vermelho', 'Prata', 'Inox', 'Bronze',
+         'Amarelo', 'Rosa', 'Vinho', 'Castor'}
+
+
+def com_acabamento(nome, attrs):
+    """Filtro "Cor / acabamento": usa o acabamento informado ou a cor que aparece no nome da variante."""
+    attrs = dict(attrs or {})
+    if 'acabamento' not in attrs:
+        cor = re.sub(r'\s*\(.*\)', '', nome.split(' · ')[-1]).strip()
+        if cor.split(' ')[0].split('/')[0] in CORES:
+            attrs['acabamento'] = cor.replace('Branca', 'Branco').replace('Preta', 'Preto')
+    return attrs
+
+
 def main():
     rel = ler_relatorio()
     saida, erros = [], []
-    for n, d in enumerate(PRODUTOS + WEB, start=101):
+    for n, d in enumerate(com_fotos_web(PRODUTOS + WEB), start=101):
+        fontes_foto = []
         if 'fonte' in d:
             arquivo, pagina = d['fonte']
             fontes_foto = [{'campo': 'fotos e medidas do modelo', 'arquivo': 'dados-loja/catalogos/' + arquivo, 'pagina': str(pagina)}]
-        else:  # foto oficial da internet: cada variante traz a página de onde veio a foto
-            fontes_foto = [{'campo': 'foto ' + it[1], 'codigo': it[2], 'url': it[7]} for it in d['variants']]
+        # foto da internet: cada variante traz a página de onde veio a foto
+        fontes_foto += [{'campo': ('imagem ilustrativa ' if len(it) > 8 and it[8] == 'ilustrativa' else 'foto ') + it[1], 'codigo': it[2], 'url': it[7]}
+                        for it in d['variants'] if len(it) > 7]
         variants = []
         for item in d['variants']:
             vid, nome, cod, med, attrs = item[:5]
@@ -1100,9 +1137,9 @@ def main():
                 erros.append(cod); continue
             q = r['qtd']
             estoque = None if q is None else max(0, int(q))
-            v = {'id': vid, 'name': nome, 'color': cor, 'image': 'assets/catalogo/' + (item[6] if len(item) > 6 else d['img']) + '.jpg', 'imageTipo': 'catalogo',
+            v = {'id': vid, 'name': nome, 'color': cor, 'image': 'assets/catalogo/' + (item[6] if len(item) > 6 else d['img']) + '.jpg', 'imageTipo': item[8] if len(item) > 8 else 'catalogo',
                  'sku': cod, 'descricaoLoja': r['desc'], 'preco': None, 'parcelado': None, 'estoque': estoque,
-                 'medidas': med, 'atributos': attrs}
+                 'medidas': med, 'atributos': com_acabamento(nome, attrs)}
             if q is not None and q < 0:
                 v['alertaEstoque'] = 'Relatório com saldo negativo (' + str(q) + '); exibido como 0.'
             variants.append(v)

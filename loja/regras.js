@@ -1,8 +1,8 @@
 // Regras compartilhadas entre o site e o servidor de pagamento: preço vigente, campanha,
 // estoque, frete e mensagens. O servidor recalcula tudo com este mesmo código antes de cobrar.
-import {products, categories} from '../catalogo.js?v=4';
-import {campanhas, entrega, loja} from '../config.js?v=4';
-import {variantesTeste, ofertasTeste} from '../dados-teste.js?v=4';
+import {products, categories} from '../catalogo.js?v=5';
+import {campanhas, entrega, loja} from '../config.js?v=5';
+import {variantesTeste, ofertasTeste} from '../dados-teste.js?v=5';
 
 export {categories, campanhas, loja, entrega};
 
@@ -76,7 +76,7 @@ export function pendencias(p, v) {
   return lista;
 }
 
-const rotuloFoto = {catalogo: 'Foto oficial do produto', ia: 'Ambientação ilustrativa criada com IA a partir do produto', real: 'Foto do produto na loja', detalhe: 'Detalhe — foto do produto na loja'};
+const rotuloFoto = {catalogo: 'Foto oficial do produto', ilustrativa: 'Imagem ilustrativa: o produto pode variar em detalhes', ia: 'Ambientação ilustrativa criada com IA a partir do produto', real: 'Foto do produto na loja', detalhe: 'Detalhe — foto do produto na loja'};
 export function galeria(p, v) {
   const fotos = [{src: v.image, tipo: v.imageTipo || 'ia', alt: p.name + ' — ' + v.name}];
   for (const img of [...(v.images || []), ...(p.images || [])]) if (!img.variante || img.variante === v.id) fotos.push(img);

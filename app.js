@@ -1,8 +1,8 @@
-import {modo, loja, entrega, pagamento, campanhas} from './config.js?v=4';
-import {products as produtosBase} from './catalogo.js?v=4';
-import {pendentesLoja} from './catalogo-loja.js?v=4';
+import {modo, loja, entrega, pagamento, campanhas} from './config.js?v=5';
+import {products as produtosBase} from './catalogo.js?v=5';
+import {pendentesLoja} from './catalogo-loja.js?v=5';
 import {categories, montarCatalogo, acharProduto, acharVariante, disponibilidade, medidasTexto, pendencias, galeria, cotar, faseCampanha,
-  mensagemProduto, mensagemPedido, linkWhatsapp, reais} from './loja/regras.js?v=4';
+  mensagemProduto, mensagemPedido, linkWhatsapp, reais} from './loja/regras.js?v=5';
 
 const $ = (s, root = document) => root.querySelector(s);
 const $$ = (s, root = document) => [...root.querySelectorAll(s)];
@@ -50,7 +50,7 @@ function card(p) {
   const disp = disponibilidade(v);
   const badge = v.campanha ? '<span class="card-badge campaign">' + esc(v.nomeCampanha) + '</span>' : p.demo ? '<span class="card-badge demo">Demonstração</span>' : disp.codigo === 'esgotado' ? '<span class="card-badge">Esgotado</span>' : p.tag ? '<span class="card-badge">' + esc(p.tag) + '</span>' : '';
   return '<article class="product-card' + (economia ? '' : ' reveal') + '"><a class="product-cover" href="#/produto/' + p.id + '?cor=' + v.id + '">' +
-    '<img' + (v.imageTipo === 'catalogo' ? ' class="foto-catalogo"' : '') + ' src="' + v.image + '" alt="' + esc(p.name + ' — ' + v.name) + '" loading="lazy" decoding="async" width="1536" height="1024">' + badge + '</a>' +
+    '<img' + ((v.imageTipo === 'catalogo' || v.imageTipo === 'ilustrativa') ? ' class="foto-catalogo"' : '') + ' src="' + v.image + '" alt="' + esc(p.name + ' — ' + v.name) + '" loading="lazy" decoding="async" width="1536" height="1024">' + badge + '</a>' +
     '<div class="product-meta"><span>' + categoryName(p.category) + '</span><small>' + esc(p.fabricante || p.ref) + '</small></div>' +
     '<a class="product-title" href="#/produto/' + p.id + '?cor=' + v.id + '">' + esc(p.name) + '</a>' + precoHtml(v, true) +
     '<div class="product-card-foot"><div class="color-dots" aria-label="' + p.variants.length + (p.variants.length === 1 ? ' opção' : ' opções') + '">' + p.variants.filter(x => x.color !== '#d9d2c5').map(x => '<span style="--swatch:' + x.color + '" title="' + esc(x.name + (x.demo ? ' — simulação' : '')) + '"></span>').join('') + '<small>' + p.variants.length + (p.variants.length === 1 ? ' opção' : ' opções') + '</small></div><a class="round-link" href="#/produto/' + p.id + '?cor=' + v.id + '" aria-label="Ver ' + esc(p.name) + '">' + icon('plus') + '</a></div></article>';
@@ -94,7 +94,7 @@ function setHeroPause() { const btn = $('[data-hero-pause]'); if (btn) { btn.tex
 
 // Catálogo e filtros
 let filtro = {categoria: 'todos', busca: '', ordem: 'destaques', disponiveis: false, attrs: {}, lista: 'catalogo'};
-const valorAttr = (v, chave) => chave === 'acabamento' ? v.name : v.atributos?.[chave];
+const valorAttr = (v, chave) => v.atributos?.[chave];
 const nomesFiltro = {acabamento: 'Cor / acabamento', tamanho: 'Tamanho', densidade: 'Densidade', lugares: 'Lugares', voltagem: 'Voltagem', tipo: 'Tipo', tecnologia: 'Tecnologia'};
 function baseLista() { return filtro.lista === 'ofertas' ? catalogo.filter(p => p.variants.some(v => v.precoDe && v.preco != null && v.precoDe > v.preco)) : catalogo; }
 function catalog(params = new URLSearchParams(), lista = 'catalogo') {
@@ -102,7 +102,7 @@ function catalog(params = new URLSearchParams(), lista = 'catalogo') {
   const ofertas = lista === 'ofertas', camp = campanhaVisivel();
   main.innerHTML = '<section class="catalog-heading"><div class="crumb"><a href="#/">Início</a><span>/</span><span>' + (ofertas ? 'Ofertas' : 'Catálogo') + '</span></div><div class="catalog-title"><div><p class="eyebrow">' + (ofertas ? 'OFERTAS VIGENTES' : 'ESCOLHAS PARA TODOS OS AMBIENTES') + '</p><h1>' + (ofertas ? 'Boas escolhas.<br><em>Bons preços.</em>' : 'Seu lar, <em>do seu jeito.</em>') + '</h1></div><p>' + (ofertas ? 'Somente ofertas confirmadas pela loja, com período definido.' : 'Explore os produtos, confira medidas e cores e compre pelo WhatsApp' + (pagamentoAtivo ? ' ou online' : '') + '.') + '</p></div></section>' + (ofertas ? campaignBanner(camp) : '') +
   '<section class="catalog-layout section"><aside class="catalog-sidebar"><span class="eyebrow">NAVEGUE POR AMBIENTE</span><div class="category-filters">' + ['todos', ...categoriasVisiveis.map(c => c.id)].map(id => '<button data-category="' + id + '" aria-pressed="' + (filtro.categoria === id) + '">' + (id === 'todos' ? 'Todos os produtos' : categoryName(id)) + '<span>' + baseLista().filter(p => id === 'todos' || p.category === id).length + '</span></button>').join('') + '</div><div class="sidebar-help"><p>Uma ajudinha<br>na escolha?</p><a href="' + loja.whatsapp + '" target="_blank" rel="noopener">Fale com a equipe ' + icon('diagonal') + '</a></div></aside>' +
-  '<div class="catalog-results"><div class="catalog-toolbar"><label class="search-field">' + icon('search') + '<input id="catalog-search" type="search" placeholder="O que você procura?" aria-label="Buscar no catálogo" value="' + esc(filtro.busca) + '"></label><label class="sort-field"><span>Ordenar</span><select id="catalog-sort" aria-label="Ordenar produtos"><option value="destaques">Destaques</option>' + (comPreco ? '<option value="menor">Menor preço</option><option value="maior">Maior preço</option>' : '') + '<option value="az">Nome: A a Z</option></select></label></div><div id="facet-area"></div><div class="results-heading"><h2 id="category-title"></h2><span id="result-count" role="status" aria-live="polite"></span></div><div class="product-grid" id="catalog-grid"></div><p class="catalog-note">Fotos oficiais dos fabricantes (catálogos e páginas oficiais dos produtos), conferidas modelo a modelo com o estoque da loja. Quando a foto mostra outra cor ou um conjunto, a descrição avisa.</p></div></section>';
+  '<div class="catalog-results"><div class="catalog-toolbar"><label class="search-field">' + icon('search') + '<input id="catalog-search" type="search" placeholder="O que você procura?" aria-label="Buscar no catálogo" value="' + esc(filtro.busca) + '"></label><label class="sort-field"><span>Ordenar</span><select id="catalog-sort" aria-label="Ordenar produtos"><option value="destaques">Destaques</option>' + (comPreco ? '<option value="menor">Menor preço</option><option value="maior">Maior preço</option>' : '') + '<option value="az">Nome: A a Z</option></select></label></div><div id="facet-area"></div><div class="results-heading"><h2 id="category-title"></h2><span id="result-count" role="status" aria-live="polite"></span></div><div class="product-grid" id="catalog-grid"></div><p class="catalog-note">Fotos oficiais dos fabricantes conferidas modelo a modelo com o estoque da loja. Onde não há foto oficial, usamos uma imagem ilustrativa de produto parecido, sempre identificada: confirme detalhes, cor e medidas pelo WhatsApp.</p></div></section>';
   renderFacets(); renderResults();
   if (params.has('busca')) $('#catalog-search').focus({preventScroll: true});
 }
@@ -156,7 +156,7 @@ function productPage(id, params) {
 function renderGallery() {
   const p = currentProduct, v = p.variants[selectedVariant], fotos = galeria(p, v);
   photoIndex = Math.min(photoIndex, fotos.length - 1);
-  $('#gallery').innerHTML = '<div class="gallery-track" id="gallery-track" tabindex="-1">' + fotos.map((f, i) => '<button class="main-product-photo" data-zoom="' + i + '" aria-label="Ampliar foto ' + (i + 1) + ' de ' + fotos.length + ': ' + esc(f.alt) + '"><img' + (f.tipo === 'catalogo' ? ' class="foto-catalogo"' : '') + ' src="' + f.src + '" alt="' + esc(f.alt) + '" width="1536" height="1024" ' + (i ? 'loading="lazy"' : 'fetchpriority="high"') + ' decoding="async"><span>' + icon('plus') + ' Ampliar</span><em class="photo-kind">' + esc(f.rotulo) + '</em></button>').join('') + '</div>' +
+  $('#gallery').innerHTML = '<div class="gallery-track" id="gallery-track" tabindex="-1">' + fotos.map((f, i) => '<button class="main-product-photo" data-zoom="' + i + '" aria-label="Ampliar foto ' + (i + 1) + ' de ' + fotos.length + ': ' + esc(f.alt) + '"><img' + ((f.tipo === 'catalogo' || f.tipo === 'ilustrativa') ? ' class="foto-catalogo"' : '') + ' src="' + f.src + '" alt="' + esc(f.alt) + '" width="1536" height="1024" ' + (i ? 'loading="lazy"' : 'fetchpriority="high"') + ' decoding="async"><span>' + icon('plus') + ' Ampliar</span><em class="photo-kind">' + esc(f.rotulo) + '</em></button>').join('') + '</div>' +
     (fotos.length > 1 ? '<div class="photo-options" role="group" aria-label="Fotos do produto">' + fotos.map((f, i) => '<button data-photo="' + i + '" class="photo-thumbnail ' + (i === photoIndex ? 'selected' : '') + '" aria-label="Ver foto ' + (i + 1) + ': ' + esc(f.alt) + '" aria-pressed="' + (i === photoIndex) + '"><img src="' + f.src + '" alt="" width="120" height="80" loading="lazy"></button>').join('') + '<span class="photo-count" id="photo-count">' + (photoIndex + 1) + ' / ' + fotos.length + '</span></div>' : '') +
     (v.modelo3d ? '<button class="button light view-3d" data-view-3d>' + icon('plus') + ' Ver em 3D</button><div id="viewer-3d"></div>' : '');
   const track = $('#gallery-track');
@@ -264,7 +264,7 @@ const api = {
   },
   async local() {
     if (this.nucleoLocal) return this.nucleoLocal;
-    const {criarNucleo} = await import('./loja/pedidos.js?v=4');
+    const {criarNucleo} = await import('./loja/pedidos.js?v=5');
     this.nucleoLocal = criarNucleo({modo: 'teste', segredo: 'simulacao-no-navegador-0001',
       armazenamento: {async ler() { return ls.get('conceicao-simulacao-pagamentos', null); }, async gravar(s) { ls.set('conceicao-simulacao-pagamentos', s); }},
       provedor: {async criarCobranca(p) { return {url: '#/pagamento-teste/' + p.id, referencia: 'simulado'}; }}});
@@ -352,7 +352,7 @@ async function simulatedProviderPage(id) {
   main.dataset.order = p.id;
 }
 async function simulate(status) {
-  const {assinar} = await import('./loja/pedidos.js?v=4');
+  const {assinar} = await import('./loja/pedidos.js?v=5');
   const n = await api.local(), p = await n.consultar(main.dataset.order);
   const corpo = JSON.stringify({id: 'evt_' + Math.random().toString(36).slice(2), pedido: p.id, status, valor: p.total});
   const sig = await assinar('simulacao-no-navegador-0001', corpo);
