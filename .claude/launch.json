@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "loja", "runtimeExecutable": "node", "runtimeArgs": ["servidor/servidor.mjs"], "port": 8096 },
+    { "name": "loja-estatica", "runtimeExecutable": "python3", "runtimeArgs": ["-m", "http.server", "8097"], "port": 8097 }
+  ]
+}

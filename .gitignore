@@ -1,0 +1,6 @@
+servidor/dados/
+.DS_Store
+
+# Dados internos da loja (relatório de estoque com valores, PDFs dos fabricantes de até 183 MB).
+# O repositório é público e o GitHub Pages publica a pasta inteira: isto fica só na máquina.
+dados-loja/
