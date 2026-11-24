@@ -1,7 +1,7 @@
 // Painel da loja (#/painel): a equipe entra com e-mail e senha e edita produtos, fotos, estoque e campanhas.
 // Os dados vão para o banco (Supabase). As regras do banco só deixam e-mails da tabela "equipe" alterar algo.
-import {banco} from '../config.js?v=12';
-import {bancoAtivo} from '../loja/remoto.js?v=12';
+import {banco} from '../config.js?v=13';
+import {bancoAtivo} from '../loja/remoto.js?v=13';
 
 const SUPABASE = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm';
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
@@ -24,7 +24,7 @@ const lerReais = t => { t = String(t || '').replace(/[R$\s]/g, ''); if (!t) retu
 export async function abrirPainel(el, contexto) {
   raiz = el; ctx = contexto;
   if (!document.querySelector('link[data-painel]')) {
-    const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'painel/painel.css?v=12'; l.dataset.painel = '1'; document.head.appendChild(l);
+    const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'painel/painel.css?v=13'; l.dataset.painel = '1'; document.head.appendChild(l);
   }
   if (!bancoAtivo()) {
     raiz.innerHTML = '<div class="pn-caixa"><h1>Painel da loja</h1><p>O painel ainda não foi ativado. Falta ligar o site ao banco de dados (Supabase).</p><p>Siga o guia em <b>painel/ATIVAR.md</b> e preencha <code>banco</code> em <code>config.js</code>.</p></div>';

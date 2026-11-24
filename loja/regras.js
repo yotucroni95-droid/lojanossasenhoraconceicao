@@ -1,8 +1,8 @@
 // Regras compartilhadas entre o site e o servidor de pagamento: preço vigente, campanha,
 // estoque, frete e mensagens. O servidor recalcula tudo com este mesmo código antes de cobrar.
-import {products, categories} from '../catalogo.js?v=12';
-import {campanhas, entrega, loja} from '../config.js?v=12';
-import {variantesTeste, ofertasTeste} from '../dados-teste.js?v=12';
+import {products, categories} from '../catalogo.js?v=13';
+import {campanhas, entrega, loja} from '../config.js?v=13';
+import {variantesTeste, ofertasTeste} from '../dados-teste.js?v=13';
 
 export {categories, campanhas, loja, entrega};
 
