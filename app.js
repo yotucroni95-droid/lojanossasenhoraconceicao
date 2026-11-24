@@ -1,8 +1,8 @@
-import {modo, loja, entrega, pagamento, campanhas} from './config.js?v=5';
-import {products as produtosBase} from './catalogo.js?v=5';
-import {pendentesLoja} from './catalogo-loja.js?v=5';
+import {modo, loja, entrega, pagamento, campanhas} from './config.js?v=6';
+import {products as produtosBase} from './catalogo.js?v=6';
+import {pendentesLoja, produtosLoja} from './catalogo-loja.js?v=6';
 import {categories, montarCatalogo, acharProduto, acharVariante, disponibilidade, medidasTexto, pendencias, galeria, cotar, faseCampanha,
-  mensagemProduto, mensagemPedido, linkWhatsapp, reais} from './loja/regras.js?v=5';
+  mensagemProduto, mensagemPedido, linkWhatsapp, reais} from './loja/regras.js?v=6';
 
 const $ = (s, root = document) => root.querySelector(s);
 const $$ = (s, root = document) => [...root.querySelectorAll(s)];
@@ -56,7 +56,7 @@ function card(p) {
     '<div class="product-card-foot"><div class="color-dots" aria-label="' + p.variants.length + (p.variants.length === 1 ? ' opção' : ' opções') + '">' + p.variants.filter(x => x.color !== '#d9d2c5').map(x => '<span style="--swatch:' + x.color + '" title="' + esc(x.name + (x.demo ? ' — simulação' : '')) + '"></span>').join('') + '<small>' + p.variants.length + (p.variants.length === 1 ? ' opção' : ' opções') + '</small></div><a class="round-link" href="#/produto/' + p.id + '?cor=' + v.id + '" aria-label="Ver ' + esc(p.name) + '">' + icon('plus') + '</a></div></article>';
 }
 function categoryCard(c, n) { return '<a class="category-tile" href="#/catalogo?categoria=' + c.id + '"><img src="' + c.image + '" alt="" loading="lazy" decoding="async" width="640" height="800"><div><span>0' + (n + 1) + '</span><h3>' + c.name + '</h3><p>' + c.note + '</p></div><span class="category-arrow">' + icon('diagonal') + '</span>' + (c.demo ? '<small class="image-demo">Imagem ilustrativa</small>' : '') + '</a>'; }
-const searchForm = (valor = '') => '<form class="quick-search" role="search" action="#/catalogo" data-search-form><label class="search-field">' + icon('search') + '<span class="sr-only">Buscar produtos</span><input name="busca" type="search" placeholder="Buscar sofá, cama, guarda-roupa…" value="' + esc(valor) + '" autocomplete="off"></label><button class="button dark" type="submit">Buscar</button></form>';
+const searchForm = (valor = '') => '<form class="quick-search" role="search" action="#/catalogo" data-search-form><label class="search-field">' + icon('search') + '<span class="sr-only">Buscar produtos</span><input name="busca" type="search" placeholder="Buscar sofá, cama, guarda-roupa…" enterkeyhint="search" value="' + esc(valor) + '" autocomplete="off"></label><button class="button dark" type="submit">Buscar</button></form>';
 const dataCurta = iso => new Date(iso).toLocaleDateString('pt-BR', {day: '2-digit', month: '2-digit', timeZone: 'America/Recife'});
 function campaignBanner(c) {
   if (!c) return '';
@@ -65,21 +65,60 @@ function campaignBanner(c) {
 }
 function testBar() { return teste ? '<div class="test-bar" role="note"><strong>Prévia de testes</strong> · ' + (comPreco ? 'preços, estoque e pagamentos fictícios.' : 'estoque do relatório da loja de 23/11; pedidos simulados.') + ' <a href="#/manutencao">Manutenção</a></div>' : ''; }
 
+// ---------- vitrine e busca ----------
+// Vitrine = produtos do estoque real da loja. Os modelos de demonstração antigos continuam abrindo pelo link, mas saem das listas.
+const idsLoja = new Set(produtosLoja.map(p => p.id));
+const naVitrine = p => idsLoja.has(p.id);
+const SINONIMOS = {roupa: ['roupeiro', 'guarda-roupa'], guarda: ['roupeiro', 'guarda'], sofa: ['estofado', 'sofa'], estofado: ['estofado', 'sofa'],
+  televisao: ['tv'], tv: ['tv'], cama: ['cama', 'box', 'colchao'], armario: ['armario', 'aereo', 'cozinha', 'multiuso', 'roupeiro'],
+  mesa: ['mesa', 'conjunto'], cadeira: ['cadeira', 'poltrona'], bike: ['bicicleta'], geladeira: ['geladeira', 'refrigerador'],
+  rack: ['rack', 'bancada', 'painel', 'home'], painel: ['painel', 'home', 'rack'], cabeceira: ['cabeceira'], tanquinho: ['tanquinho', 'lavadora', 'lavamax']};
+const textoBusca = p => p._busca ??= normal([p.name, p.ref, p.fabricante, categoryName(p.category), p.description, ...(p.details || []), ...p.variants.flatMap(v => [v.name, v.sku])].join(' '));
+const termos = busca => normal(busca).split(/[\s,.;/-]+/).filter(t => t.length > 1 || /\d/.test(t));
+function bateBusca(p, busca) {
+  const lista = termos(busca); if (!lista.length) return true;
+  const t = textoBusca(p);
+  return lista.every(k => /^\d{1,3}$/.test(k) ? new RegExp('(^|\\D)' + k + '(\\D|$)').test(t) // número curto ("6 bocas") só como número inteiro
+    : [k, ...(SINONIMOS[k] || []), k.length > 3 && k.endsWith('s') ? k.slice(0, -1) : null].filter(Boolean).some(x => t.includes(x)));
+}
+const noNome = (p, busca) => termos(busca).every(k => normal(p.name).includes(k.length > 3 && k.endsWith('s') ? k.slice(0, -1) : k));
+const pontos = p => (p.variants.some(v => disponibilidade(v).codigo === 'disponivel') ? 2 : 0) + (p.variants.some(v => v.imageTipo === 'catalogo') ? 1 : 0);
+function buscar(lista, busca) { const r = lista.filter(p => bateBusca(p, busca)); return busca ? r.sort((a, b) => noNome(b, busca) - noNome(a, busca) || pontos(b) - pontos(a)) : r; }
+function destaques(lista, n) {
+  const porCat = categoriasVisiveis.map(c => lista.filter(p => p.category === c.id).sort((a, b) => pontos(b) - pontos(a))).filter(l => l.length);
+  const out = []; for (let i = 0; out.length < n && porCat.some(l => l[i]); i++) for (const l of porCat) if (l[i] && out.length < n) out.push(l[i]);
+  return out;
+}
+function sugestoes(input) {
+  const form = input.closest('[data-search-form]'); let box = form.querySelector('.search-suggest');
+  const busca = input.value.trim();
+  if (termos(busca).length === 0) { box?.remove(); return; }
+  if (!box) { box = document.createElement('div'); box.className = 'search-suggest'; box.id = 'search-suggest'; form.append(box); input.setAttribute('aria-controls', box.id); }
+  const achados = buscar(catalogo.filter(naVitrine), busca);
+  box.innerHTML = achados.length ? achados.slice(0, 6).map(p => { const v = p.variants[0]; return '<a href="#/produto/' + p.id + '?cor=' + v.id + '"><img src="' + v.image + '" alt="" width="56" height="56" loading="lazy"><span><b>' + esc(p.name) + '</b><small>' + categoryName(p.category) + (p.variants.length > 1 ? ' · ' + p.variants.length + ' opções' : '') + '</small></span></a>'; }).join('') +
+    '<a class="suggest-all" href="#/catalogo?busca=' + encodeURIComponent(busca) + '">Ver ' + (achados.length === 1 ? 'o resultado' : 'os ' + achados.length + ' resultados') + ' para “' + esc(busca) + '” ' + icon('arrow') + '</a>'
+    : '<p class="suggest-empty">Nada encontrado para “' + esc(busca) + '”.</p><button type="button" class="suggest-all" data-wa-text="' + esc('Olá! Procurei no site por "' + busca + '" e não encontrei. Vocês têm?') + '">Perguntar à loja pelo WhatsApp ' + icon('whatsapp') + '</button>';
+}
+
 // ---------- páginas ----------
 function home() {
   const camp = campanhaVisivel();
   const ofertas = catalogo.filter(p => p.variants.some(v => v.precoDe && v.preco != null && v.precoDe > v.preco));
-  main.innerHTML = '<section class="home-top">' + searchForm() + '<nav class="category-chips" aria-label="Categorias">' + categoriasVisiveis.map(c => '<a href="#/catalogo?categoria=' + c.id + '">' + c.name + '</a>').join('') + '</nav></section>' + campaignBanner(camp) +
-  '<section class="editorial-hero"><div class="hero-slides">' +
-  [{img: 'assets/jantar.jpg', title: 'Para reunir.<br>Para viver.<br><em>Para ser seu.</em>', label: 'ENCONTROS QUE VIRAM MEMÓRIAS', category: 'jantar', product: 'jantar-01', item: 'Conjunto de jantar'},
-   {img: 'assets/sofa.jpg', title: 'O melhor lugar<br>do mundo?<br><em>A sua casa.</em>', label: 'CONFORTO EM CADA DETALHE', category: 'estofados', product: 'estofado-01', item: 'Estofados para acolher'},
-   {img: 'assets/quarto.jpg', title: 'Desacelere.<br>Seu descanso<br><em>começa aqui.</em>', label: 'SEU REFÚGIO PARTICULAR', category: 'quarto', product: 'cama-01', item: 'Camas e colchões'}].map((s, i) => '<article class="hero-slide ' + (i === 0 ? 'active' : '') + '" aria-hidden="' + (i !== 0) + '"><img src="' + s.img + '" alt="' + s.item + '" width="1536" height="1024" ' + (i ? 'loading="lazy"' : 'fetchpriority="high"') + '><div class="hero-scrim"></div><div class="hero-copy"><p class="eyebrow">' + s.label + '</p><h1>' + s.title + '</h1><p>Móveis, eletros e escolhas que fazem<br>a casa ter a sua essência.</p><a class="button gold" href="#/catalogo?categoria=' + s.category + '" ' + (i ? 'tabindex="-1"' : '') + '>Explore a coleção ' + icon('arrow') + '</a></div><a class="hero-hotspot" href="#/produto/' + s.product + '" ' + (i ? 'tabindex="-1"' : '') + '><span>' + icon('plus') + '</span><div><small>UM NOVO OLHAR PARA O LAR</small><b>' + s.item + '</b></div></a></article>').join('') +
-  '</div><div class="hero-bottom"><span>CONCEIÇÃO · MÓVEIS & ELETROS</span><div class="hero-controls"><button data-hero-prev class="icon-button" aria-label="Ambiente anterior">' + icon('arrow') + '</button><span id="slide-number" aria-live="polite">01 / 03</span><button data-hero-next class="icon-button" aria-label="Próximo ambiente">' + icon('arrow') + '</button><button data-hero-pause aria-label="Pausar apresentação" class="pause-button">Pausar</button></div></div></section>' +
+  const vitrine = catalogo.filter(naVitrine);
+  const conta = id => vitrine.filter(p => p.category === id).length;
+  main.innerHTML = '<section class="home-search"><p class="eyebrow">MÓVEIS & ELETROS EM LAGOA DO OURO – PE</p><h2 class="home-title">O que você procura <em>para a sua casa?</em></h2>' + searchForm() +
+  '<nav class="category-chips" aria-label="Categorias">' + categoriasVisiveis.map(c => '<a href="#/catalogo?categoria=' + c.id + '">' + c.name + ' <small>' + conta(c.id) + '</small></a>').join('') + '</nav>' +
+  '<p class="home-search-note">' + vitrine.length + ' produtos no catálogo · preço, entrega e disponibilidade pelo WhatsApp</p></section>' + campaignBanner(camp) +
   (ofertas.length ? '<section class="section offers"><div class="section-heading"><div><p class="eyebrow">' + (camp?.fase === 'ativa' ? esc(camp.nome).toUpperCase() + ' · ATÉ ' + dataCurta(camp.fim) : 'OFERTAS VIGENTES') + '</p><h2>Ofertas<br><em>de agora.</em></h2></div><a class="text-link" href="#/promocoes">Ver todas as ofertas ' + icon('arrow') + '</a></div><div class="product-grid home-grid">' + ofertas.slice(0, 4).map(card).join('') + '</div></section>' : '') +
-  '<section class="section collections"><div class="section-heading"><div><p class="eyebrow">CADA AMBIENTE, UMA POSSIBILIDADE</p><h2>Qual é o seu<br><em>próximo espaço?</em></h2></div><div class="section-side"><p>Da sala que recebe ao quarto que abraça.<br>Encontre a sua próxima boa escolha.</p><a class="text-link" href="#/catalogo">Conheça todos os produtos ' + icon('arrow') + '</a></div></div><div class="category-track">' + categoriasVisiveis.map(categoryCard).join('') + '</div><div class="track-hint">Explore os ambientes <span>DESLIZE PARA VER MAIS ' + icon('arrow') + '</span></div></section>' +
-  '<section class="section selection"><div class="section-heading"><div><p class="eyebrow">UM OLHAR ESPECIAL PARA O SEU LAR</p><h2>Peças que fazem<br><em>a diferença.</em></h2></div><a class="text-link" href="#/catalogo">Ver catálogo completo ' + icon('arrow') + '</a></div><div class="product-grid home-grid">' + ['estofado-01', 'jantar-01', 'painel-01', 'air-fryer-01'].map(productById).filter(Boolean).map(card).join('') + '</div></section>' +
-  '<section class="room-story"><img src="assets/home-ia.jpg" alt="Home amadeirado ambientado em uma sala (ambientação ilustrativa)" loading="lazy" width="1536" height="1024"><div class="room-story-copy"><p class="eyebrow">A CASA É FEITA DE ESCOLHAS</p><h2>Encontre beleza<br>no seu<br> <em>dia a dia.</em></h2><p>Texturas, formas e acabamentos que conversam com o seu jeito de viver.</p><a href="#/catalogo?categoria=sala" class="button light">Descubra a sala de estar ' + icon('arrow') + '</a></div><a href="#/produto/home-01" class="story-tag">' + icon('plus') + ' Conheça este home</a></section>' +
-  '<section class="process section"><div class="section-heading"><div><p class="eyebrow">DO PRIMEIRO OLHAR À SUA CASA</p><h2>Escolha com calma.<br><em>Compre do seu jeito.</em></h2></div></div><div class="process-grid"><article><span>01</span><h3>Escolha o modelo</h3><p>Veja fotos, medidas e cores de cada produto.</p></article><article><span>02</span><h3>Monte o carrinho</h3><p>Escolha variante e quantidade e confira o total.</p></article><article><span>03</span><h3>Finalize</h3><p>Envie o pedido pelo WhatsApp' + (pagamentoAtivo ? ' ou pague online com Pix ou cartão' : '') + '.</p></article></div></section>' +
+  '<section class="section home-rooms"><div class="section-heading"><div><p class="eyebrow">NAVEGUE POR AMBIENTE</p><h2>Escolha o <em>ambiente.</em></h2></div><a class="text-link" href="#/catalogo">Ver todos os produtos ' + icon('arrow') + '</a></div><div class="room-grid">' +
+  categoriasVisiveis.map(c => '<a class="room-tile" href="#/catalogo?categoria=' + c.id + '"><img src="' + c.image + '" alt="" loading="lazy" decoding="async" width="640" height="480"><span><b>' + c.name + '</b><small>' + conta(c.id) + ' produtos</small></span></a>').join('') + '</div></section>' +
+  '<section class="section selection"><div class="section-heading"><div><p class="eyebrow">DESTAQUES DA LOJA</p><h2>Peças que fazem<br><em>a diferença.</em></h2></div><a class="text-link" href="#/catalogo">Ver catálogo completo ' + icon('arrow') + '</a></div><div class="product-grid home-grid">' + destaques(vitrine, 8).map(card).join('') + '</div><div class="home-more"><a class="button dark" href="#/catalogo">Ver os ' + vitrine.length + ' produtos ' + icon('arrow') + '</a></div></section>' +
+  '<section class="editorial-hero"><div class="hero-slides">' +
+  [{img: 'assets/jantar.jpg', title: 'Para reunir.<br>Para viver.<br><em>Para ser seu.</em>', label: 'ENCONTROS QUE VIRAM MEMÓRIAS', category: 'jantar', item: 'Sala de jantar'},
+   {img: 'assets/sofa.jpg', title: 'O melhor lugar<br>do mundo?<br><em>A sua casa.</em>', label: 'CONFORTO EM CADA DETALHE', category: 'estofados', item: 'Estofados'},
+   {img: 'assets/quarto.jpg', title: 'Desacelere.<br>Seu descanso<br><em>começa aqui.</em>', label: 'SEU REFÚGIO PARTICULAR', category: 'quarto', item: 'Quarto'}].map((s, i) => '<article class="hero-slide ' + (i === 0 ? 'active' : '') + '" aria-hidden="' + (i !== 0) + '"><img src="' + s.img + '" alt="' + s.item + ' (ambientação ilustrativa)" width="1536" height="1024" loading="lazy"><div class="hero-scrim"></div><div class="hero-copy"><p class="eyebrow">' + s.label + '</p><h1>' + s.title + '</h1><p>Móveis, eletros e escolhas que fazem<br>a casa ter a sua essência.</p><a class="button gold" href="#/catalogo?categoria=' + s.category + '" ' + (i ? 'tabindex="-1"' : '') + '>Ver ' + s.item.toLowerCase() + ' ' + icon('arrow') + '</a></div></article>').join('') +
+  '</div><div class="hero-bottom"><span>CONCEIÇÃO · MÓVEIS & ELETROS</span><div class="hero-controls"><button data-hero-prev class="icon-button" aria-label="Ambiente anterior">' + icon('arrow') + '</button><span id="slide-number" aria-live="polite">01 / 03</span><button data-hero-next class="icon-button" aria-label="Próximo ambiente">' + icon('arrow') + '</button><button data-hero-pause aria-label="Pausar apresentação" class="pause-button">Pausar</button></div></div></section>' +
+  '<section class="process section"><div class="section-heading"><div><p class="eyebrow">DO PRIMEIRO OLHAR À SUA CASA</p><h2>Escolha com calma.<br><em>Compre do seu jeito.</em></h2></div></div><div class="process-grid"><article><span>01</span><h3>Encontre o produto</h3><p>Busque pelo nome ou navegue pelos ambientes. Veja fotos, cores e opções.</p></article><article><span>02</span><h3>Monte o seu pedido</h3><p>Escolha cor, tamanho e quantidade e adicione ao pedido.</p></article><article><span>03</span><h3>Finalize no WhatsApp</h3><p>A loja confirma preço, entrega e pagamento' + (pagamentoAtivo ? ', ou pague online com Pix ou cartão' : '') + '.</p></article></div><button class="button whatsapp-button process-wa" data-wa-text="Olá! Vim pelo site da loja e gostaria de atendimento.">' + icon('whatsapp') + ' Falar com a loja agora</button></section>' +
   '<section class="vip-banner"><div><p class="eyebrow">FIQUE POR DENTRO, EM PRIMEIRA MÃO</p><h2>Um lugar na nossa<br><em>lista de novidades.</em></h2><p>Entre no grupo VIP e acompanhe o que chega à loja.</p></div><a class="button gold" href="' + loja.grupoVip + '" target="_blank" rel="noopener">Entrar no grupo VIP ' + icon('whatsapp') + '</a><span class="vip-monogram" aria-hidden="true">C</span></section>' +
   '<section class="store-teaser section"><img src="assets/logo.jpg" width="1254" height="1254" alt="Logo oficial Nossa Senhora da Conceição" loading="lazy"><div><p class="eyebrow">DE LAGOA DO OURO, PARA A SUA CASA</p><h2>Prazer,<br><em>Conceição.</em></h2><p>Na nossa loja, sua escolha começa com uma boa conversa. Conheça os detalhes de perto e descubra possibilidades para o seu lar.</p><a class="text-link" href="#/loja">Conheça a loja e venha nos visitar ' + icon('arrow') + '</a></div></section>';
   heroIndex = 0; heroPaused = economia; setHeroPause(); startHero();
@@ -96,13 +135,13 @@ function setHeroPause() { const btn = $('[data-hero-pause]'); if (btn) { btn.tex
 let filtro = {categoria: 'todos', busca: '', ordem: 'destaques', disponiveis: false, attrs: {}, lista: 'catalogo'};
 const valorAttr = (v, chave) => v.atributos?.[chave];
 const nomesFiltro = {acabamento: 'Cor / acabamento', tamanho: 'Tamanho', densidade: 'Densidade', lugares: 'Lugares', voltagem: 'Voltagem', tipo: 'Tipo', tecnologia: 'Tecnologia'};
-function baseLista() { return filtro.lista === 'ofertas' ? catalogo.filter(p => p.variants.some(v => v.precoDe && v.preco != null && v.precoDe > v.preco)) : catalogo; }
+function baseLista() { return filtro.lista === 'ofertas' ? catalogo.filter(p => p.variants.some(v => v.precoDe && v.preco != null && v.precoDe > v.preco)) : catalogo.filter(naVitrine); }
 function catalog(params = new URLSearchParams(), lista = 'catalogo') {
   filtro = {categoria: categories.some(c => c.id === params.get('categoria')) ? params.get('categoria') : 'todos', busca: params.get('busca') || '', ordem: 'destaques', disponiveis: false, attrs: {}, lista};
   const ofertas = lista === 'ofertas', camp = campanhaVisivel();
   main.innerHTML = '<section class="catalog-heading"><div class="crumb"><a href="#/">Início</a><span>/</span><span>' + (ofertas ? 'Ofertas' : 'Catálogo') + '</span></div><div class="catalog-title"><div><p class="eyebrow">' + (ofertas ? 'OFERTAS VIGENTES' : 'ESCOLHAS PARA TODOS OS AMBIENTES') + '</p><h1>' + (ofertas ? 'Boas escolhas.<br><em>Bons preços.</em>' : 'Seu lar, <em>do seu jeito.</em>') + '</h1></div><p>' + (ofertas ? 'Somente ofertas confirmadas pela loja, com período definido.' : 'Explore os produtos, confira medidas e cores e compre pelo WhatsApp' + (pagamentoAtivo ? ' ou online' : '') + '.') + '</p></div></section>' + (ofertas ? campaignBanner(camp) : '') +
   '<section class="catalog-layout section"><aside class="catalog-sidebar"><span class="eyebrow">NAVEGUE POR AMBIENTE</span><div class="category-filters">' + ['todos', ...categoriasVisiveis.map(c => c.id)].map(id => '<button data-category="' + id + '" aria-pressed="' + (filtro.categoria === id) + '">' + (id === 'todos' ? 'Todos os produtos' : categoryName(id)) + '<span>' + baseLista().filter(p => id === 'todos' || p.category === id).length + '</span></button>').join('') + '</div><div class="sidebar-help"><p>Uma ajudinha<br>na escolha?</p><a href="' + loja.whatsapp + '" target="_blank" rel="noopener">Fale com a equipe ' + icon('diagonal') + '</a></div></aside>' +
-  '<div class="catalog-results"><div class="catalog-toolbar"><label class="search-field">' + icon('search') + '<input id="catalog-search" type="search" placeholder="O que você procura?" aria-label="Buscar no catálogo" value="' + esc(filtro.busca) + '"></label><label class="sort-field"><span>Ordenar</span><select id="catalog-sort" aria-label="Ordenar produtos"><option value="destaques">Destaques</option>' + (comPreco ? '<option value="menor">Menor preço</option><option value="maior">Maior preço</option>' : '') + '<option value="az">Nome: A a Z</option></select></label></div><div id="facet-area"></div><div class="results-heading"><h2 id="category-title"></h2><span id="result-count" role="status" aria-live="polite"></span></div><div class="product-grid" id="catalog-grid"></div><p class="catalog-note">Fotos oficiais dos fabricantes conferidas modelo a modelo com o estoque da loja. Onde não há foto oficial, usamos uma imagem ilustrativa de produto parecido, sempre identificada: confirme detalhes, cor e medidas pelo WhatsApp.</p></div></section>';
+  '<div class="catalog-results"><div class="catalog-toolbar"><label class="search-field">' + icon('search') + '<input id="catalog-search" type="search" placeholder="Nome, ambiente, cor ou código" aria-label="Buscar no catálogo" value="' + esc(filtro.busca) + '"></label><label class="sort-field"><span>Ordenar</span><select id="catalog-sort" aria-label="Ordenar produtos"><option value="destaques">Destaques</option>' + (comPreco ? '<option value="menor">Menor preço</option><option value="maior">Maior preço</option>' : '') + '<option value="az">Nome: A a Z</option></select></label></div><div id="facet-area"></div><div class="results-heading"><h2 id="category-title"></h2><span id="result-count" role="status" aria-live="polite"></span></div><div class="product-grid" id="catalog-grid"></div><p class="catalog-note">Fotos oficiais dos fabricantes conferidas modelo a modelo com o estoque da loja. Onde não há foto oficial, usamos uma imagem ilustrativa de produto parecido, sempre identificada: confirme detalhes, cor e medidas pelo WhatsApp.</p></div></section>';
   renderFacets(); renderResults();
   if (params.has('busca')) $('#catalog-search').focus({preventScroll: true});
 }
@@ -116,10 +155,10 @@ function renderFacets() {
     grupos.map(g => '<fieldset class="facet"><legend>' + (nomesFiltro[g.chave] || g.chave) + '</legend>' + g.valores.map(val => '<button type="button" class="chip" data-facet="' + esc(g.chave) + '" data-value="' + esc(val) + '" aria-pressed="' + (filtro.attrs[g.chave] === val) + '">' + esc(val) + '</button>').join('') + '</fieldset>').join('') + '</div>' : '';
 }
 function renderResults() {
-  let list = baseLista().filter(p => (filtro.categoria === 'todos' || p.category === filtro.categoria) &&
-    normal(p.name + ' ' + p.ref + ' ' + (p.fabricante || '') + ' ' + categoryName(p.category) + ' ' + p.description + ' ' + p.variants.map(v => v.name).join(' ')).includes(normal(filtro.busca)) &&
+  let list = buscar(baseLista(), filtro.busca).filter(p => (filtro.categoria === 'todos' || p.category === filtro.categoria) &&
     p.variants.some(v => (!filtro.disponiveis || disponibilidade(v).codigo === 'disponivel') && Object.entries(filtro.attrs).every(([k, val]) => valorAttr(v, k) === val)));
   const precoMin = p => Math.min(...p.variants.map(v => v.preco ?? Infinity));
+  if (filtro.ordem === 'destaques' && !filtro.busca) list.sort((a, b) => pontos(b) - pontos(a));
   if (filtro.ordem === 'az') list.sort((a, b) => a.name.localeCompare(b.name, 'pt-BR'));
   if (filtro.ordem === 'menor') list.sort((a, b) => precoMin(a) - precoMin(b));
   if (filtro.ordem === 'maior') list.sort((a, b) => (precoMin(b) === Infinity ? -1 : precoMin(b)) - (precoMin(a) === Infinity ? -1 : precoMin(a)));
@@ -264,7 +303,7 @@ const api = {
   },
   async local() {
     if (this.nucleoLocal) return this.nucleoLocal;
-    const {criarNucleo} = await import('./loja/pedidos.js?v=5');
+    const {criarNucleo} = await import('./loja/pedidos.js?v=6');
     this.nucleoLocal = criarNucleo({modo: 'teste', segredo: 'simulacao-no-navegador-0001',
       armazenamento: {async ler() { return ls.get('conceicao-simulacao-pagamentos', null); }, async gravar(s) { ls.set('conceicao-simulacao-pagamentos', s); }},
       provedor: {async criarCobranca(p) { return {url: '#/pagamento-teste/' + p.id, referencia: 'simulado'}; }}});
@@ -352,7 +391,7 @@ async function simulatedProviderPage(id) {
   main.dataset.order = p.id;
 }
 async function simulate(status) {
-  const {assinar} = await import('./loja/pedidos.js?v=5');
+  const {assinar} = await import('./loja/pedidos.js?v=6');
   const n = await api.local(), p = await n.consultar(main.dataset.order);
   const corpo = JSON.stringify({id: 'evt_' + Math.random().toString(36).slice(2), pedido: p.id, status, valor: p.total});
   const sig = await assinar('simulacao-no-navegador-0001', corpo);
@@ -400,6 +439,7 @@ function route() {
   else if (path === '/manutencao') maintenancePage();
   else if (path === '/' || !path) home();
   else notFound();
+  document.body.dataset.rota = path.split('/')[1] || 'inicio';
   const nav = path === '/catalogo' || path.startsWith('/produto/') ? 'catalog' : path === '/promocoes' || camp ? 'promos' : path === '/loja' || path === '/contato' ? 'store' : path === '/' ? 'home' : '';
   $$('[data-nav]').forEach(a => { if (a.dataset.nav === nav) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   const c = campanhaVisivel(); $$('[data-campaign-link]').forEach(a => { a.hidden = !c; if (c) { a.href = '#/' + c.slug; a.firstChild.textContent = c.nome + ' '; } });
@@ -454,6 +494,7 @@ document.addEventListener('submit', async event => {
 document.addEventListener('input', event => {
   const t = event.target;
   if (t.id === 'catalog-search') { filtro.busca = t.value; renderResults(); syncCatalogUrl(); }
+  if (t.matches('[data-search-form] input[name="busca"]')) sugestoes(t);
   if (t.id === 'cart-notes') updateMessage();
   if (t.id === 'cart-message') $('#send-whatsapp').href = linkWhatsapp(t.value);
   if (t.id === 'wa-text') $('#wa-open').href = linkWhatsapp(t.value);
@@ -465,7 +506,8 @@ document.addEventListener('change', event => {
   if (t.name === 'cidade') { cidadeEntrega = t.value; ls.set('conceicao-cidade', cidadeEntrega); renderCart(); }
   if (t.name === 'entrega') { entregaTipo = t.value; ls.set('conceicao-entrega', entregaTipo); renderCart(); $('input[name="entrega"][value="' + entregaTipo + '"]')?.focus(); }
 });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); if ($('#image-dialog').open && (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) $('[data-zoom-step="' + (e.key === 'ArrowRight' ? 1 : -1) + '"]')?.click(); });
+document.addEventListener('focusout', e => { const f = e.target.closest?.('[data-search-form]'); if (f) setTimeout(() => { if (!f.contains(document.activeElement)) f.querySelector('.search-suggest')?.remove(); }, 150); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeMenu(); $$('.search-suggest').forEach(b => b.remove()); } if ($('#image-dialog').open && (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) $('[data-zoom-step="' + (e.key === 'ArrowRight' ? 1 : -1) + '"]')?.click(); });
 for (const d of [cartDialog, $('#image-dialog'), waDialog]) {
   d.addEventListener('close', () => { document.body.classList.remove('dialog-open'); if (lastFocus?.isConnected) lastFocus.focus(); });
   d.addEventListener('click', e => { if (e.target !== d) return; const b = d.getBoundingClientRect(); if (e.clientX < b.left || e.clientX > b.right || e.clientY < b.top || e.clientY > b.bottom) d.close(); });
