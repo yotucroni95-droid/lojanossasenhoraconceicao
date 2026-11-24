@@ -54,7 +54,7 @@ Deno.serve(async req => {
     const {error: e1} = await admin.auth.admin.createUser({email, password: senha, email_confirm: true});
     const jaTinhaLogin = !!e1 && /already|registered|exists/i.test(e1.message);
     if (e1 && !jaTinhaLogin) return resp({erro: 'Não foi possível criar o login: ' + e1.message}, 400);
-    if (jaTinhaLogin && email.endsWith('.invalid')) return resp({erro: 'Esse nome de usuário já existe neste site. Escolha outro.'}, 400);
+    if (jaTinhaLogin && (dele || []).some(r => r.site === site)) return resp({erro: 'Esse usuário já está na equipe deste site. Para mudar a senha, use "Nova senha".'}, 400);
     const {error: e2} = await admin.from('equipe').upsert({email, site, papel});
     return e2 ? resp({erro: e2.message}, 500) : resp({ok: true, jaTinhaLogin});
   }
