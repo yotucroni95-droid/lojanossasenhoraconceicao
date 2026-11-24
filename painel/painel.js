@@ -31,7 +31,7 @@ export async function abrirPainel(el, contexto) {
     return;
   }
   const {createClient} = await import(SUPABASE);
-  sb = sb || createClient(banco.url, banco.chave, {auth: {persistSession: true, detectSessionInUrl: false, storageKey: 'conceicao-painel'}});
+  sb = sb || createClient(banco.url, banco.chave, {auth: {persistSession: true, detectSessionInUrl: false, storageKey: 'orbita-sites-sessao'}});
   const {data} = await sb.auth.getSession();
   if (data.session) await entrou(data.session); else telaLogin();
 }
@@ -57,9 +57,15 @@ async function entrou(sessao) {
   minhas = data || []; orbita = minhas.some(r => r.site === '*');
   const q = sb.from('sites').select('id,nome').order('nome');
   sites = (await (orbita ? q : q.in('id', minhas.map(r => r.site)))).data || [];
-  if (!sites.length) { await sb.auth.signOut(); return telaLogin('Este e-mail entrou, mas ainda não tem permissão para editar. Peça para o dono da loja liberar o seu acesso.'); }
+  if (!sites.length) return semAcesso();
   if (!sites.some(x => x.id === siteAtual)) siteAtual = sites[0].id;
   await carregar(); desenhar();
+}
+
+// A sessão é a mesma em todos os painéis da Órbita: sem acesso aqui, não desloga (a pessoa pode estar usando outro site).
+function semAcesso() {
+  raiz.innerHTML = '<div class="pn-caixa"><h1>Sem acesso a este site</h1><p>O usuário ' + esc(mostrarUsuario(email)) + ' não tem permissão para editar esta loja.</p><button class="pn-bt pn-principal" data-trocar>Entrar com outro usuário</button></div>';
+  raiz.querySelector('[data-trocar]').onclick = async () => { await sb.auth.signOut(); telaLogin(); };
 }
 
 async function carregar() {
