@@ -7,6 +7,8 @@ create table if not exists public.sites (
   id text primary key check (id ~ '^[a-z0-9-]{2,40}$'),
   nome text not null
 );
+alter table public.sites add column if not exists url text;
+alter table public.sites add column if not exists painel text;
 
 -- Produtos: cada linha guarda um produto completo (nome, descrição, variações, fotos, estoque).
 create table if not exists public.produtos (
@@ -132,6 +134,7 @@ create policy "equipe apaga fotos" on storage.objects for delete to authenticate
 
 -- Primeiro site:
 insert into public.sites (id, nome) values ('conceicao', 'Loja Nossa Senhora da Conceição') on conflict (id) do nothing;
+update public.sites set url = 'https://yotucroni95-droid.github.io/lojanossasenhoraconceicao/', painel = 'https://yotucroni95-droid.github.io/lojanossasenhoraconceicao/#/painel' where id = 'conceicao' and url is null;
 
 -- >>> Para liberar uma pessoa, troque o e-mail e rode (uma linha por pessoa):
 -- (Depois de instalar a função "equipe", o dono cadastra a equipe pelo próprio painel, aba Equipe.)

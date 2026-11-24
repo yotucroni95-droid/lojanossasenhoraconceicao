@@ -1,7 +1,7 @@
 // Painel da loja (#/painel): a equipe entra com e-mail e senha e edita produtos, fotos, estoque e campanhas.
 // Os dados vão para o banco (Supabase). As regras do banco só deixam e-mails da tabela "equipe" alterar algo.
-import {banco} from '../config.js?v=11';
-import {bancoAtivo} from '../loja/remoto.js?v=11';
+import {banco} from '../config.js?v=12';
+import {bancoAtivo} from '../loja/remoto.js?v=12';
 
 const SUPABASE = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/+esm';
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
@@ -12,6 +12,9 @@ const TIPOS_FOTO = [['real', 'Foto tirada na loja'], ['catalogo', 'Foto oficial 
 let sb, raiz, ctx, linhas = [], aba = 'produtos', busca = '', categoria = 'todas', email = '';
 // siteAtual: qual site está sendo editado. A Órbita (site '*') pode trocar; o dono e os funcionários ficam no(s) seu(s).
 let siteAtual = banco.site, orbita = false, minhas = [], sites = [];
+// Nome de usuário vira um endereço interno "usuario@site.invalid" (ninguém recebe e-mail nele).
+const paraLogin = v => { v = String(v || '').trim().toLowerCase(); return v.includes('@') ? v : v + '@' + banco.site + '.invalid'; };
+const mostrarUsuario = e => String(e || '').endsWith('.invalid') ? String(e).split('@')[0] : e;
 const souDono = () => orbita || minhas.some(r => r.site === siteAtual && r.papel === 'dono');
 const nomeSite = () => sites.find(s => s.id === siteAtual)?.nome || siteAtual;
 const reaisTexto = v => v == null ? '' : Number(v).toFixed(2).replace('.', ',');
@@ -21,7 +24,7 @@ const lerReais = t => { t = String(t || '').replace(/[R$\s]/g, ''); if (!t) retu
 export async function abrirPainel(el, contexto) {
   raiz = el; ctx = contexto;
   if (!document.querySelector('link[data-painel]')) {
-    const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'painel/painel.css?v=11'; l.dataset.painel = '1'; document.head.appendChild(l);
+    const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'painel/painel.css?v=12'; l.dataset.painel = '1'; document.head.appendChild(l);
   }
   if (!bancoAtivo()) {
     raiz.innerHTML = '<div class="pn-caixa"><h1>Painel da loja</h1><p>O painel ainda não foi ativado. Falta ligar o site ao banco de dados (Supabase).</p><p>Siga o guia em <b>painel/ATIVAR.md</b> e preencha <code>banco</code> em <code>config.js</code>.</p></div>';
@@ -35,15 +38,15 @@ export async function abrirPainel(el, contexto) {
 
 // ---------- login ----------
 function telaLogin(msg = '') {
-  raiz.innerHTML = '<form class="pn-caixa pn-login" data-login><img src="assets/simbolo.jpg" alt="" width="64" height="64"><h1>Painel da loja</h1><p>Entre com o e-mail e a senha da equipe.</p>' +
+  raiz.innerHTML = '<form class="pn-caixa pn-login" data-login><img src="assets/simbolo.jpg" alt="" width="64" height="64"><h1>Painel da loja</h1><p>Entre com o seu usuário e senha.</p>' +
     (msg ? '<p class="pn-erro" role="alert">' + esc(msg) + '</p>' : '') +
-    '<label>E-mail<input name="email" type="email" autocomplete="username" required></label>' +
+    '<label>Usuário<input name="email" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>' +
     '<label>Senha<input name="senha" type="password" autocomplete="current-password" required></label>' +
     '<button class="pn-bt pn-principal" type="submit">Entrar</button><p class="pn-nota">Esqueceu a senha? Peça para o dono da loja criar uma nova na aba Equipe.</p></form>';
   raiz.querySelector('[data-login]').addEventListener('submit', async e => {
     e.preventDefault(); const f = new FormData(e.target); const bt = e.target.querySelector('button'); bt.disabled = true; bt.textContent = 'Entrando…';
-    const {data, error} = await sb.auth.signInWithPassword({email: f.get('email').trim(), password: f.get('senha')});
-    if (error) return telaLogin('E-mail ou senha incorretos.');
+    const {data, error} = await sb.auth.signInWithPassword({email: paraLogin(f.get('email')), password: f.get('senha')});
+    if (error) return telaLogin('Usuário ou senha incorretos.');
     await entrou(data.session);
   });
 }
@@ -70,7 +73,7 @@ function desenhar() {
   const abas = [['produtos', 'Produtos'], ['loja', 'Preços e loja'], ['campanhas', 'Black Friday e campanhas'], ...(souDono() ? [['equipe', 'Equipe']] : []), ...(orbita ? [['sites', 'Sites (Órbita)']] : []), ['historico', 'Histórico'], ['conta', 'Minha senha']];
   if (!abas.some(([id]) => id === aba)) aba = 'produtos';
   const trocar = sites.length > 1 ? '<label class="pn-site">Site que você está editando<select data-site>' + sites.map(x => '<option value="' + esc(x.id) + '"' + (x.id === siteAtual ? ' selected' : '') + '>' + esc(x.nome) + '</option>').join('') + '</select></label>' : '';
-  raiz.innerHTML = '<header class="pn-topo"><div><p class="pn-sobre">PAINEL · ' + esc(nomeSite()).toUpperCase() + '</p><h1>Olá! O que vamos atualizar?</h1><p class="pn-nota">Entrou como ' + esc(email) + (orbita ? ' · acesso Órbita (todos os sites)' : souDono() ? ' · dono' : '') + '</p>' + trocar + '</div>' +
+  raiz.innerHTML = '<header class="pn-topo"><div><p class="pn-sobre">PAINEL · ' + esc(nomeSite()).toUpperCase() + '</p><h1>Olá! O que vamos atualizar?</h1><p class="pn-nota">Entrou como ' + esc(mostrarUsuario(email)) + (orbita ? ' · acesso Órbita (todos os sites)' : souDono() ? ' · dono' : '') + '</p>' + trocar + '</div>' +
     '<div class="pn-acoes">' + (siteAtual === banco.site ? '<a class="pn-bt" href="#/" target="_blank" rel="noopener">Ver o site</a>' : '') + '<button class="pn-bt" data-sair>Sair</button></div></header>' +
     '<nav class="pn-abas" role="tablist">' + abas.map(([id, n]) => '<button role="tab" aria-selected="' + (aba === id) + '" data-aba="' + id + '">' + n + '</button>').join('') + '</nav><div class="pn-conteudo" id="pn-conteudo"></div>';
   raiz.querySelector('[data-sair]').onclick = async () => { await sb.auth.signOut(); telaLogin(); };
@@ -272,24 +275,24 @@ async function telaEquipe() {
   let lista;
   try { lista = (await chamarEquipe({acao: 'listar'})).equipe; } catch (e) { conteudo().innerHTML = '<div class="pn-caixa"><p class="pn-erro">' + esc(e.message) + '</p></div>'; return; }
   const nomePapel = {dono: 'Dono (edita tudo e cadastra a equipe)', funcionario: 'Funcionário (edita produtos, preços e campanhas)'};
-  conteudo().innerHTML = '<ul class="pn-lista pn-hist">' + lista.map(r => '<li><div><b>' + esc(r.email) + '</b><small>' + esc(nomePapel[r.papel] || r.papel) + '</small></div><div class="pn-acoes">' +
+  conteudo().innerHTML = '<ul class="pn-lista pn-hist">' + lista.map(r => '<li><div><b>' + esc(mostrarUsuario(r.email)) + '</b><small>' + esc(nomePapel[r.papel] || r.papel) + '</small></div><div class="pn-acoes">' +
       (r.email !== email.toLowerCase() ? '<button class="pn-bt" data-senha-de="' + esc(r.email) + '">Nova senha</button><button class="pn-bt pn-perigo" data-tirar="' + esc(r.email) + '">Tirar acesso</button>' : '<small>você</small>') + '</div></li>').join('') + '</ul>' +
-    '<form class="pn-caixa" data-add-pessoa><h2>Cadastrar pessoa</h2><p class="pn-nota">Crie o login aqui e passe o e-mail e a senha para a pessoa. Ela entra neste mesmo endereço e pode trocar a senha depois.</p>' +
-    '<label>E-mail da pessoa<input name="email" type="email" required autocomplete="off"></label><label>Senha inicial (mínimo 8 caracteres)<input name="senha" type="text" minlength="8" required autocomplete="off"></label>' +
+    '<form class="pn-caixa" data-add-pessoa><h2>Cadastrar pessoa</h2><p class="pn-nota">Crie o usuário aqui e passe o usuário e a senha para a pessoa. Ela entra neste mesmo endereço e pode trocar a senha depois.</p>' +
+    '<label>Nome de usuário (ex.: joao)<input name="email" required autocomplete="off" autocapitalize="none" spellcheck="false" pattern="[a-zA-Z0-9._@-]{3,60}"></label><label>Senha inicial (mínimo 8 caracteres)<input name="senha" type="text" minlength="8" required autocomplete="off"></label>' +
     (orbita ? '<label>Função<select name="papel"><option value="funcionario">Funcionário</option><option value="dono">Dono</option></select></label>' : '') +
     '<button class="pn-bt pn-principal">Cadastrar</button></form>';
   conteudo().querySelector('[data-add-pessoa]').onsubmit = async e => {
     e.preventDefault(); const d = new FormData(e.target); const bt = e.target.querySelector('button'); bt.disabled = true;
-    try { const r = await chamarEquipe({acao: 'adicionar', email: d.get('email'), senha: d.get('senha'), papel: d.get('papel') || 'funcionario'});
-      aviso(r.jaTinhaLogin ? 'Acesso liberado. Essa pessoa já tinha login: ela entra com a senha que já usa.' : 'Pessoa cadastrada! Passe o e-mail e a senha para ela.'); telaEquipe(); }
+    try { const r = await chamarEquipe({acao: 'adicionar', usuario: d.get('email'), senha: d.get('senha'), papel: d.get('papel') || 'funcionario'});
+      aviso(r.jaTinhaLogin ? 'Acesso liberado. Essa pessoa já tinha login: ela entra com a senha que já usa.' : 'Pessoa cadastrada! Passe o usuário e a senha para ela.'); telaEquipe(); }
     catch (err) { aviso(err.message, 'erro'); bt.disabled = false; }
   };
   conteudo().querySelectorAll('[data-tirar]').forEach(b => b.onclick = async () => {
-    if (!confirm('Tirar o acesso de ' + b.dataset.tirar + ' a este site?')) return;
+    if (!confirm('Tirar o acesso de ' + mostrarUsuario(b.dataset.tirar) + ' a este site?')) return;
     try { await chamarEquipe({acao: 'remover', email: b.dataset.tirar}); aviso('Acesso retirado.'); telaEquipe(); } catch (err) { aviso(err.message, 'erro'); }
   });
   conteudo().querySelectorAll('[data-senha-de]').forEach(b => b.onclick = async () => {
-    const senha = prompt('Nova senha para ' + b.dataset.senhaDe + ' (mínimo 8 caracteres):'); if (!senha) return;
+    const senha = prompt('Nova senha para ' + mostrarUsuario(b.dataset.senhaDe) + ' (mínimo 8 caracteres):'); if (!senha) return;
     if (senha.length < 8) return aviso('A senha precisa ter pelo menos 8 caracteres.', 'erro');
     try { await chamarEquipe({acao: 'senha', email: b.dataset.senhaDe, senha}); aviso('Senha trocada. Passe a nova senha para a pessoa.'); } catch (err) { aviso(err.message, 'erro'); }
   });

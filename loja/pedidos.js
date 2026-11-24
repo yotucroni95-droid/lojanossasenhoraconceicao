@@ -2,7 +2,7 @@
 // - Recalcula preço, estoque e frete a partir do catálogo confiável antes de criar a cobrança.
 // - Pedido idempotente pela "chave" enviada pelo cliente (clique duplo não duplica o pedido).
 // - Notificação do provedor só é aceita com assinatura HMAC válida; eventos repetidos são ignorados.
-import {montarCatalogo, cotar, acharProduto, acharVariante} from './regras.js?v=11';
+import {montarCatalogo, cotar, acharProduto, acharVariante} from './regras.js?v=12';
 
 export const ESTADOS = {
   'aguardando-pagamento': 'Aguardando pagamento',

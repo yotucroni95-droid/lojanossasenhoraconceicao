@@ -33,9 +33,13 @@ Deno.serve(async req => {
     return error ? resp({erro: error.message}, 500) : resp({equipe: data});
   }
 
-  const email = String(b.email || '').trim().toLowerCase();
-  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return resp({erro: 'E-mail inválido.'}, 400);
+  // Aceita nome de usuário (vira "usuario@site.invalid", endereço interno que nunca recebe e-mail) ou e-mail.
+  const bruto = String(b.usuario || b.email || '').trim().toLowerCase();
+  const email = bruto.includes('@') ? bruto : /^[a-z0-9._-]{3,30}$/.test(bruto) ? bruto + '@' + site + '.invalid' : '';
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return resp({erro: 'Usuário inválido: use de 3 a 30 letras minúsculas, números, ponto, hífen ou _ (sem espaço e sem acento).'}, 400);
   if (email === eu) return resp({erro: 'Para a sua própria conta, use a aba "Minha senha".'}, 400);
+  const {data: existe} = await admin.from('sites').select('id').eq('id', site).maybeSingle();
+  if (!existe) return resp({erro: 'Site não encontrado.'}, 404);
 
   // O dono só mexe em quem é apenas deste site (não pode mexer na Órbita nem em pessoas de outras lojas).
   const {data: dele} = await admin.from('equipe').select('site,papel').eq('email', email);
@@ -50,6 +54,7 @@ Deno.serve(async req => {
     const {error: e1} = await admin.auth.admin.createUser({email, password: senha, email_confirm: true});
     const jaTinhaLogin = !!e1 && /already|registered|exists/i.test(e1.message);
     if (e1 && !jaTinhaLogin) return resp({erro: 'Não foi possível criar o login: ' + e1.message}, 400);
+    if (jaTinhaLogin && email.endsWith('.invalid')) return resp({erro: 'Esse nome de usuário já existe neste site. Escolha outro.'}, 400);
     const {error: e2} = await admin.from('equipe').upsert({email, site, papel});
     return e2 ? resp({erro: e2.message}, 500) : resp({ok: true, jaTinhaLogin});
   }
