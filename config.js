@@ -6,8 +6,9 @@ export const modo = host.endsWith('github.io') ? 'producao' : 'teste';
 
 // Banco do painel da loja (Supabase). "chave" é a chave pública (anon/publishable): pode ficar no site,
 // quem protege os dados são as regras do banco. NUNCA coloque aqui a chave "service_role" ou "secret".
+// "site" separa esta loja das outras no mesmo banco da Órbita.
 // Vazio = o site usa só o catálogo dos arquivos e o painel mostra como ativar.
-export const banco = {url: '', chave: ''};
+export const banco = {url: '', chave: '', site: 'conceicao'};
 
 export const loja = {
   nome: 'Nossa Senhora da Conceição',

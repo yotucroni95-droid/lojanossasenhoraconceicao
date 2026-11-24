@@ -4,7 +4,7 @@ import {products} from '../catalogo.js?v=10';
 import {campanhas, banco} from '../config.js?v=10';
 
 const CACHE = 'conceicao-catalogo-remoto';
-export const bancoAtivo = () => Boolean(banco?.url && banco?.chave);
+export const bancoAtivo = () => Boolean(banco?.url && banco?.chave && banco?.site);
 export let origemCatalogo = 'arquivos';
 
 // Só aceita fotos do próprio site ou do armazenamento do banco.
@@ -29,7 +29,7 @@ function aplicar(dados) {
 }
 
 async function buscar(tabela, campos, ordem) {
-  const r = await fetch(banco.url + '/rest/v1/' + tabela + '?select=' + campos + (ordem ? '&order=' + ordem : ''), {headers: {apikey: banco.chave, Authorization: 'Bearer ' + banco.chave}});
+  const r = await fetch(banco.url + '/rest/v1/' + tabela + '?select=' + campos + '&site=eq.' + encodeURIComponent(banco.site) + (ordem ? '&order=' + ordem : ''), {headers: {apikey: banco.chave, Authorization: 'Bearer ' + banco.chave}});
   if (!r.ok) throw new Error('banco ' + r.status);
   return r.json();
 }

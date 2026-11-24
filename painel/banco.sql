@@ -1,42 +1,57 @@
--- Banco do painel da loja Nossa Senhora da Conceição (Supabase).
--- Como usar: no Supabase, abra "SQL Editor", cole este arquivo inteiro e clique em "Run". Rode uma vez só.
--- Depois, no fim deste arquivo, troque o e-mail de exemplo pelo e-mail de quem pode editar e rode só aquela linha.
+-- Banco "Órbita Sites" (Supabase): um banco só para vários sites de clientes.
+-- Cada produto, ajuste e foto pertence a um site (ex.: 'conceicao'). Cada pessoa da equipe só edita o(s) site(s) liberado(s) para ela.
+-- Como usar: no Supabase, abra "SQL Editor", cole este arquivo inteiro e clique em "Run". Pode rodar de novo sem perder dados.
+
+-- Sites cadastrados (o "id" é o mesmo que vai em config.js → banco.site).
+create table if not exists public.sites (
+  id text primary key check (id ~ '^[a-z0-9-]{2,40}$'),
+  nome text not null
+);
 
 -- Produtos: cada linha guarda um produto completo (nome, descrição, variações, fotos, estoque).
 create table if not exists public.produtos (
-  id text primary key,
+  site text not null references public.sites(id) on delete cascade,
+  id text not null,
   dados jsonb not null,
   ordem integer not null default 0,
   atualizado_em timestamptz not null default now(),
-  atualizado_por text
+  atualizado_por text,
+  primary key (site, id)
 );
 
--- Ajustes gerais (ex.: campanhas como a Black Friday).
+-- Ajustes gerais de cada site (ex.: campanhas como a Black Friday).
 create table if not exists public.ajustes (
-  chave text primary key,
+  site text not null references public.sites(id) on delete cascade,
+  chave text not null,
   dados jsonb not null,
   atualizado_em timestamptz not null default now(),
-  atualizado_por text
+  atualizado_por text,
+  primary key (site, chave)
 );
 
--- Quem pode editar: só e-mails desta lista, mesmo que outra pessoa consiga criar login.
+-- Quem pode editar cada site. site = '*' libera todos (use só para a Órbita).
 create table if not exists public.equipe (
-  email text primary key
+  email text not null,
+  site text not null,
+  primary key (email, site)
 );
 
--- Histórico: guarda a versão anterior de cada produto alterado ou apagado (para desfazer).
+-- Histórico: versão anterior de cada produto alterado ou apagado (para desfazer).
 create table if not exists public.historico (
   id bigserial primary key,
+  site text not null,
   produto text not null,
   dados jsonb,
   acao text not null,
   quem text,
   quando timestamptz not null default now()
 );
+create index if not exists historico_site_quando on public.historico (site, quando desc);
 
-create or replace function public.eh_equipe() returns boolean
+create or replace function public.eh_equipe(s text) returns boolean
 language sql stable security definer set search_path = public as $$
-  select exists (select 1 from public.equipe where lower(email) = lower(coalesce(auth.jwt() ->> 'email', '')));
+  select exists (select 1 from public.equipe
+    where lower(email) = lower(coalesce(auth.jwt() ->> 'email', '')) and (site = s or site = '*'));
 $$;
 
 create or replace function public.guardar_historico() returns trigger
@@ -45,10 +60,10 @@ begin
   if tg_op = 'UPDATE' then
     new.atualizado_em := now();
     new.atualizado_por := auth.jwt() ->> 'email';
-    insert into public.historico (produto, dados, acao, quem) values (old.id, old.dados, 'alterado', auth.jwt() ->> 'email');
+    insert into public.historico (site, produto, dados, acao, quem) values (old.site, old.id, old.dados, 'alterado', auth.jwt() ->> 'email');
     return new;
   elsif tg_op = 'DELETE' then
-    insert into public.historico (produto, dados, acao, quem) values (old.id, old.dados, 'apagado', auth.jwt() ->> 'email');
+    insert into public.historico (site, produto, dados, acao, quem) values (old.site, old.id, old.dados, 'apagado', auth.jwt() ->> 'email');
     return old;
   else
     new.atualizado_por := auth.jwt() ->> 'email';
@@ -60,39 +75,54 @@ drop trigger if exists produtos_historico on public.produtos;
 create trigger produtos_historico before insert or update or delete on public.produtos
   for each row execute function public.guardar_historico();
 
+alter table public.sites enable row level security;
 alter table public.produtos enable row level security;
 alter table public.ajustes enable row level security;
 alter table public.equipe enable row level security;
 alter table public.historico enable row level security;
 
--- Qualquer visitante do site pode LER produtos e ajustes. Só a equipe pode mudar.
+-- Qualquer visitante pode LER produtos e ajustes (o site público precisa). Só a equipe do site pode mudar.
+drop policy if exists "todos leem sites" on public.sites;
+create policy "todos leem sites" on public.sites for select using (true);
+
 drop policy if exists "site le produtos" on public.produtos;
 create policy "site le produtos" on public.produtos for select using (true);
 drop policy if exists "equipe edita produtos" on public.produtos;
-create policy "equipe edita produtos" on public.produtos for all to authenticated using (public.eh_equipe()) with check (public.eh_equipe());
+create policy "equipe edita produtos" on public.produtos for all to authenticated using (public.eh_equipe(site)) with check (public.eh_equipe(site));
 
 drop policy if exists "site le ajustes" on public.ajustes;
 create policy "site le ajustes" on public.ajustes for select using (true);
 drop policy if exists "equipe edita ajustes" on public.ajustes;
-create policy "equipe edita ajustes" on public.ajustes for all to authenticated using (public.eh_equipe()) with check (public.eh_equipe());
+create policy "equipe edita ajustes" on public.ajustes for all to authenticated using (public.eh_equipe(site)) with check (public.eh_equipe(site));
 
-drop policy if exists "equipe ve equipe" on public.equipe;
-create policy "equipe ve equipe" on public.equipe for select to authenticated using (public.eh_equipe());
+-- Cada pessoa vê só as próprias liberações.
+drop policy if exists "pessoa ve suas liberacoes" on public.equipe;
+create policy "pessoa ve suas liberacoes" on public.equipe for select to authenticated
+  using (lower(email) = lower(coalesce(auth.jwt() ->> 'email', '')));
 
 drop policy if exists "equipe ve historico" on public.historico;
-create policy "equipe ve historico" on public.historico for select to authenticated using (public.eh_equipe());
+create policy "equipe ve historico" on public.historico for select to authenticated using (public.eh_equipe(site));
 
--- Fotos: pasta pública "fotos" (qualquer um vê; só a equipe envia ou apaga).
+-- Fotos: pasta pública "fotos"; cada site usa a subpasta com o seu id (ex.: fotos/conceicao/...).
 insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
 values ('fotos', 'fotos', true, 5242880, array['image/jpeg', 'image/png', 'image/webp'])
 on conflict (id) do nothing;
 
 drop policy if exists "equipe envia fotos" on storage.objects;
-create policy "equipe envia fotos" on storage.objects for insert to authenticated with check (bucket_id = 'fotos' and public.eh_equipe());
+create policy "equipe envia fotos" on storage.objects for insert to authenticated
+  with check (bucket_id = 'fotos' and public.eh_equipe((storage.foldername(name))[1]));
 drop policy if exists "equipe troca fotos" on storage.objects;
-create policy "equipe troca fotos" on storage.objects for update to authenticated using (bucket_id = 'fotos' and public.eh_equipe());
+create policy "equipe troca fotos" on storage.objects for update to authenticated
+  using (bucket_id = 'fotos' and public.eh_equipe((storage.foldername(name))[1]));
 drop policy if exists "equipe apaga fotos" on storage.objects;
-create policy "equipe apaga fotos" on storage.objects for delete to authenticated using (bucket_id = 'fotos' and public.eh_equipe());
+create policy "equipe apaga fotos" on storage.objects for delete to authenticated
+  using (bucket_id = 'fotos' and public.eh_equipe((storage.foldername(name))[1]));
 
--- >>> Troque pelo e-mail de quem vai editar (uma linha por pessoa) e rode:
--- insert into public.equipe (email) values ('email.da.loja@exemplo.com');
+-- Primeiro site:
+insert into public.sites (id, nome) values ('conceicao', 'Loja Nossa Senhora da Conceição') on conflict (id) do nothing;
+
+-- >>> Para liberar uma pessoa, troque o e-mail e rode (uma linha por pessoa):
+-- insert into public.equipe (email, site) values ('pessoa.da.loja@gmail.com', 'conceicao');
+-- Você (Órbita), com acesso a todos os sites:
+-- insert into public.equipe (email, site) values ('seu.email@gmail.com', '*');
+-- >>> Novo cliente: insert into public.sites (id, nome) values ('nome-do-cliente', 'Nome do Cliente');

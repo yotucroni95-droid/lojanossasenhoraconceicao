@@ -43,13 +43,13 @@ function telaLogin(msg = '') {
 
 async function entrou(sessao) {
   email = sessao.user.email;
-  const {data} = await sb.from('equipe').select('email').limit(1);
-  if (!data?.length) { await sb.auth.signOut(); return telaLogin('Este e-mail entrou, mas ainda não tem permissão para editar. Peça para incluir na lista da equipe.'); }
+  const {data} = await sb.from('equipe').select('site').in('site', [banco.site, '*']).limit(1);
+  if (!data?.length) { await sb.auth.signOut(); return telaLogin('Este e-mail entrou, mas ainda não tem permissão para editar. Peça para liberar este e-mail para este site.'); }
   await carregar(); desenhar();
 }
 
 async function carregar() {
-  const {data, error} = await sb.from('produtos').select('id,dados,ordem,atualizado_em,atualizado_por').order('ordem');
+  const {data, error} = await sb.from('produtos').select('id,dados,ordem,atualizado_em,atualizado_por').eq('site', banco.site).order('ordem');
   if (error) throw error;
   linhas = data || [];
 }
@@ -97,12 +97,12 @@ function listaProdutos() {
 
 async function importar(e) {
   e.target.disabled = true; e.target.textContent = 'Importando…';
-  const rows = ctx.produtosBase.map((p, i) => ({id: p.id, ordem: i, dados: {...p, vitrine: ctx.idsLoja.has(p.id)}}));
+  const rows = ctx.produtosBase.map((p, i) => ({site: banco.site, id: p.id, ordem: i, dados: {...p, vitrine: ctx.idsLoja.has(p.id)}}));
   for (let i = 0; i < rows.length; i += 50) {
-    const {error} = await sb.from('produtos').upsert(rows.slice(i, i + 50));
+    const {error} = await sb.from('produtos').upsert(rows.slice(i, i + 50), {onConflict: 'site,id'});
     if (error) { aviso('Não foi possível importar: ' + error.message, 'erro'); e.target.disabled = false; e.target.textContent = 'Tentar de novo'; return; }
   }
-  await sb.from('ajustes').upsert({chave: 'campanhas', dados: ctx.campanhas});
+  await sb.from('ajustes').upsert({site: banco.site, chave: 'campanhas', dados: ctx.campanhas}, {onConflict: 'site,chave'});
   await carregar(); aviso('Catálogo importado: ' + rows.length + ' produtos.'); listaProdutos();
 }
 
@@ -152,7 +152,7 @@ function editor(linha) {
   f.querySelector('[data-voltar]').onclick = () => listaProdutos();
   f.querySelector('[data-apagar]')?.addEventListener('click', async () => {
     if (!confirm('Apagar "' + p.name + '"? O link dele deixa de funcionar. Se for só tirar do site por um tempo, desmarque "Mostrar este produto no site". (Dá para recuperar pelo Histórico.)')) return;
-    const {error} = await sb.from('produtos').delete().eq('id', p.id);
+    const {error} = await sb.from('produtos').delete().eq('site', banco.site).eq('id', p.id);
     if (error) return aviso('Não foi possível apagar: ' + error.message, 'erro');
     await carregar(); aviso('Produto apagado.'); listaProdutos();
   });
@@ -169,7 +169,7 @@ function editor(linha) {
     p.variants.forEach(v => { if (!v.id) { let id = slug(v.name), n = 2; while (usados.has(id) || p.variants.some(o => o !== v && o.id === id)) id = slug(v.name) + '-' + n++; v.id = id; } usados.add(v.id); v.sku = String(v.sku || '').trim() || null; });
     const ordem = linha ? linha.ordem : Math.min(0, ...linhas.map(r => r.ordem)) - 1;
     const bt = f.querySelector('[type=submit]'); bt.disabled = true; bt.textContent = 'Salvando…';
-    const {error} = await sb.from('produtos').upsert({id: p.id, ordem, dados: p});
+    const {error} = await sb.from('produtos').upsert({site: banco.site, id: p.id, ordem, dados: p}, {onConflict: 'site,id'});
     bt.disabled = false; bt.textContent = 'Salvar';
     if (error) return aviso('Não foi possível salvar: ' + error.message, 'erro');
     await carregar(); aviso('Salvo! Já aparece no site.'); listaProdutos();
@@ -183,7 +183,7 @@ async function enviarFoto(arq, pasta) {
   const c = document.createElement('canvas'); c.width = Math.round(bmp.width * k); c.height = Math.round(bmp.height * k);
   const g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height); g.drawImage(bmp, 0, 0, c.width, c.height);
   const blob = await new Promise(ok => c.toBlob(ok, 'image/jpeg', .8));
-  const caminho = slug(pasta) + '/' + Date.now() + '.jpg';
+  const caminho = banco.site + '/' + slug(pasta) + '/' + Date.now() + '.jpg';
   const {error} = await sb.storage.from('fotos').upload(caminho, blob, {contentType: 'image/jpeg', cacheControl: '31536000'});
   if (error) throw error;
   return sb.storage.from('fotos').getPublicUrl(caminho).data.publicUrl;
@@ -193,7 +193,7 @@ async function enviarFoto(arq, pasta) {
 const paraCampo = iso => { if (!iso) return ''; const d = new Date(new Date(iso).getTime() - 3 * 3600e3); return d.toISOString().slice(0, 16); };
 const deCampo = v => v ? v + ':00-03:00' : null;
 async function telaCampanhas() {
-  const {data} = await sb.from('ajustes').select('dados').eq('chave', 'campanhas').maybeSingle();
+  const {data} = await sb.from('ajustes').select('dados').eq('site', banco.site).eq('chave', 'campanhas').maybeSingle();
   const lista = structuredClone(data?.dados || ctx.campanhas);
   conteudo().innerHTML = '<form class="pn-editor" data-camp><p class="pn-nota">Horário de Brasília. Fora do período, a campanha some sozinha do site.</p>' + lista.map((c, i) => '<fieldset data-i="' + i + '"><legend>' + esc(c.nome) + '</legend>' +
     '<div class="pn-2"><label>Nome<input data-c="nome" value="' + esc(c.nome) + '"></label><label>Frase de chamada<input data-c="chamada" value="' + esc(c.chamada) + '"></label></div>' +
@@ -206,14 +206,14 @@ async function telaCampanhas() {
     e.preventDefault();
     f.querySelectorAll('fieldset').forEach(fs => { const c = lista[+fs.dataset.i]; fs.querySelectorAll('[data-c]').forEach(inp => { const k = inp.dataset.c; c[k] = inp.type === 'checkbox' ? inp.checked : inp.type === 'datetime-local' ? deCampo(inp.value) : inp.value.trim(); }); });
     if (lista.some(c => !c.inicio || !c.fim || new Date(c.fim) <= new Date(c.inicio))) return aviso('Confira as datas: o fim precisa ser depois do começo.', 'erro');
-    const {error} = await sb.from('ajustes').upsert({chave: 'campanhas', dados: lista});
+    const {error} = await sb.from('ajustes').upsert({site: banco.site, chave: 'campanhas', dados: lista}, {onConflict: 'site,chave'});
     aviso(error ? 'Não foi possível salvar: ' + error.message : 'Campanhas salvas!', error ? 'erro' : 'ok');
   };
 }
 
 // ---------- histórico ----------
 async function telaHistorico() {
-  const {data, error} = await sb.from('historico').select('id,produto,dados,acao,quem,quando').order('quando', {ascending: false}).limit(60);
+  const {data, error} = await sb.from('historico').select('id,produto,dados,acao,quem,quando').eq('site', banco.site).order('quando', {ascending: false}).limit(60);
   if (error) { conteudo().innerHTML = '<p>Não foi possível ler o histórico.</p>'; return; }
   const quando = t => new Date(t).toLocaleString('pt-BR', {dateStyle: 'short', timeStyle: 'short'});
   conteudo().innerHTML = '<p class="pn-nota">Últimas mudanças. "Voltar a esta versão" restaura o produto como ele estava antes da mudança.</p><ul class="pn-lista pn-hist">' + (data.length ? data.map(h => '<li><div><b>' + esc(h.dados?.name || h.produto) + '</b><small>' + (h.acao === 'apagado' ? 'Apagado' : 'Alterado') + ' por ' + esc(h.quem || '—') + ' em ' + quando(h.quando) + '</small></div><button class="pn-bt" data-voltar="' + h.id + '">Voltar a esta versão</button></li>').join('') : '<li>Nenhuma mudança ainda.</li>') + '</ul>';
@@ -221,7 +221,7 @@ async function telaHistorico() {
     const h = data.find(x => String(x.id) === b.dataset.voltar);
     if (!confirm('Voltar "' + (h.dados?.name || h.produto) + '" para a versão de ' + quando(h.quando) + '?')) return;
     const atual = linhas.find(r => r.id === h.produto);
-    const {error} = await sb.from('produtos').upsert({id: h.produto, ordem: atual?.ordem ?? 0, dados: h.dados});
+    const {error} = await sb.from('produtos').upsert({site: banco.site, id: h.produto, ordem: atual?.ordem ?? 0, dados: h.dados}, {onConflict: 'site,id'});
     if (error) return aviso('Não foi possível restaurar: ' + error.message, 'erro');
     await carregar(); aviso('Versão restaurada.'); telaHistorico();
   });
