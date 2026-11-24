@@ -40,9 +40,11 @@ export const campanhas = [
     id: 'black-friday-2026',
     slug: 'black-friday',
     nome: 'Black Friday',
-    chamada: 'Uma semana de boas escolhas para a sua casa.',
+    chamada: 'Todos os produtos com preço de Black Friday. Consulte pelo WhatsApp.',
+    // todosOsProdutos: a loja aplica preço de Black em todo o catálogo (preço não aparece no site; o cliente consulta).
+    todosOsProdutos: true,
     anuncioDesde: '2026-11-20T00:00:00-03:00',
-    inicio: '2026-11-27T00:00:00-03:00',
+    inicio: '2026-11-23T00:00:00-03:00',
     fim: '2026-11-30T23:59:59-03:00',
     ofertas: []
   }

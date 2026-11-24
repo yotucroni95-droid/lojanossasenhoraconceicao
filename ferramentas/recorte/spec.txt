@@ -25,7 +25,9 @@ tb-camille|tuboarte-2026-09.pdf|53|0.0,0.0,1.0,0.85|foto
 tb-suellen|tuboarte-2026-09.pdf|54|0.0,0.0,1.0,0.85|foto
 tb-flavia|tuboarte-2026-09.pdf|57|0.0,0.0,0.67,0.835|foto
 tb-maya|tuboarte-2026-09.pdf|139|0.0,0.0,1.0,0.855|foto
-tb-stambul|tuboarte-2026-09.pdf|142|0.0,0.0,0.73,1.0|foto
+tb-stambul|tuboarte-2026-09.pdf|142|0.225,0.0,0.73,1.0|foto
 tb-sibele|tuboarte-2026-09.pdf|144|0.0,0.0,1.0,0.855|foto
-tb-tais120|tuboarte-2026-09.pdf|131|0.0,0.0,1.0,0.655|foto
-jw-dubai|jw-2026-06.pdf|31|0.0,0.0,1.0,0.855|foto
+# tb-tais120: depois do recorte, tapar logo e piso (60,522,130,560 66,355,101,420 em 900px)
+tb-tais120|tuboarte-2026-09.pdf|131|0.11,0.0,1.0,0.724|recorte
+jw-dubai-ocre|jw-2026-06.pdf|31|0.0,0.0,0.515,0.855|foto
+jw-dubai-preto|jw-2026-06.pdf|31|0.522,0.0,1.0,0.855|foto

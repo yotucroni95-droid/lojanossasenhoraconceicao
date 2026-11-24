@@ -1727,7 +1727,7 @@ export const produtosLoja = [
   "details": [
    "Reclinável",
    "Opções em corano ou veludo",
-   "Na foto: duas cores do modelo"
+   "Fotos do catálogo nas cores ocre e preta"
   ],
   "images": [],
   "variants": [
@@ -1735,7 +1735,7 @@ export const produtosLoja = [
     "id": "corano-preto",
     "name": "Corano preto",
     "color": "#232120",
-    "image": "assets/catalogo/jw-dubai.jpg",
+    "image": "assets/catalogo/jw-dubai-preto.jpg",
     "imageTipo": "catalogo",
     "sku": "000423",
     "descricaoLoja": "POLTRONA DO PAPAI DUBAI - CORANO PRETO",
@@ -1751,7 +1751,7 @@ export const produtosLoja = [
     "id": "corano-ocre",
     "name": "Corano ocre",
     "color": "#9a6a3c",
-    "image": "assets/catalogo/jw-dubai.jpg",
+    "image": "assets/catalogo/jw-dubai-ocre.jpg",
     "imageTipo": "catalogo",
     "sku": "000424",
     "descricaoLoja": "POLTRONA DO PAPAI DUBAI - CORANO OCRE",
@@ -1767,7 +1767,7 @@ export const produtosLoja = [
     "id": "veludo-chocolate",
     "name": "Veludo chocolate",
     "color": "#5a3b2b",
-    "image": "assets/catalogo/jw-dubai.jpg",
+    "image": "assets/catalogo/jw-dubai-ocre.jpg",
     "imageTipo": "catalogo",
     "sku": "000721",
     "descricaoLoja": "POLTRONA DO PAPAI DUBAI - VELUDO CHOCOLATE V07",
@@ -1783,7 +1783,7 @@ export const produtosLoja = [
     "id": "veludo-grafite",
     "name": "Veludo grafite",
     "color": "#4a4a4c",
-    "image": "assets/catalogo/jw-dubai.jpg",
+    "image": "assets/catalogo/jw-dubai-preto.jpg",
     "imageTipo": "catalogo",
     "sku": "000722",
     "descricaoLoja": "POLTRONA DO PAPAI DUBAI - VELUDO GRAFITE V02",

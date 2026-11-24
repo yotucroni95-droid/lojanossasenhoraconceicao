@@ -139,3 +139,4 @@ body[data-rota="produto"] .wa-float,body[data-rota="checkout"] .wa-float,body.di
  .wa-float{right:14px;bottom:14px;padding:13px}
  .wa-float span{display:none}
 }
+.photo-thumbnail img,.cart-item>img{object-fit:contain;background:#f6f1ea}

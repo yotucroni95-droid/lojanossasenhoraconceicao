@@ -53,7 +53,7 @@ Moveis X,Sofá Lisboa,Cinza,230,90,95,assets/cat/lisboa.jpg,moveisx.pdf,4`);
 });
 
 test('carrinho: total, frete por cotação e mensagem', () => {
-  const cat = montarCatalogo({modo: 'teste', precos: true, agora: new Date('2026-11-23T12:00:00-03:00')});
+  const cat = montarCatalogo({modo: 'teste', precos: true, agora: new Date('2026-11-20T12:00:00-03:00')}); // antes da Black Friday
   const c = cotar(cat, [{id: 'estofado-01', variant: 'caramelo', qty: 2}, {id: 'air-fryer-01', variant: 'preto', qty: 1}]);
   assert.equal(c.total, 4347);
   assert.ok(c.podePagar);

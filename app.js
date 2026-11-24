@@ -1,8 +1,8 @@
-import {modo, loja, entrega, pagamento, campanhas} from './config.js?v=6';
-import {products as produtosBase} from './catalogo.js?v=6';
-import {pendentesLoja, produtosLoja} from './catalogo-loja.js?v=6';
+import {modo, loja, entrega, pagamento, campanhas} from './config.js?v=7';
+import {products as produtosBase} from './catalogo.js?v=7';
+import {pendentesLoja, produtosLoja} from './catalogo-loja.js?v=7';
 import {categories, montarCatalogo, acharProduto, acharVariante, disponibilidade, medidasTexto, pendencias, galeria, cotar, faseCampanha,
-  mensagemProduto, mensagemPedido, linkWhatsapp, reais} from './loja/regras.js?v=6';
+  mensagemProduto, mensagemPedido, linkWhatsapp, reais} from './loja/regras.js?v=7';
 
 const $ = (s, root = document) => root.querySelector(s);
 const $$ = (s, root = document) => [...root.querySelectorAll(s)];
@@ -22,6 +22,7 @@ let catalogo = [], toastTimer, revealObserver, heroTimer, heroPaused = false, he
 const agora = () => { const d = teste && ls.get('conceicao-data-teste', null); return d ? new Date(d) : new Date(); };
 const recarregarCatalogo = () => { catalogo = montarCatalogo({modo, agora: agora()}); };
 const productById = id => acharProduto(catalogo, id);
+const blackGeral = () => { const c = campanhaVisivel(); return c?.fase === 'ativa' && c.todosOsProdutos ? c : null; };
 const campanhaVisivel = () => campanhas.map(c => ({...c, fase: faseCampanha(c, agora())})).find(c => c.fase === 'anuncio' || c.fase === 'ativa');
 recarregarCatalogo();
 
@@ -40,7 +41,7 @@ function closeMenu() { $('#mobile-nav').hidden = true; $('.menu-toggle').setAttr
 
 // ---------- peças de interface ----------
 function precoHtml(v, compacto = false) {
-  if (v.preco == null) return '<p class="price-consult">' + (comPreco || compacto ? 'Preço sob consulta' : 'Consulte o preço pelo WhatsApp') + '</p>';
+  if (v.preco == null) return '<p class="price-consult">' + (blackGeral() ? (compacto ? 'Preço de Black Friday · consulte' : 'Preço de Black Friday: consulte pelo WhatsApp') : comPreco || compacto ? 'Preço sob consulta' : 'Consulte o preço pelo WhatsApp') + '</p>';
   return '<div class="price' + (compacto ? ' compact' : '') + '">' + (v.precoDe && v.precoDe > v.preco ? '<s>' + reais(v.precoDe) + '</s>' : '') +
     '<strong>' + reais(v.preco) + '</strong><span>à vista</span>' + (v.parcelado ? '<small>ou ' + v.parcelado.vezes + 'x de ' + reais(v.parcelado.valor) + '</small>' : '') +
     (teste && v.valoresTeste ? '<em class="test-flag">Valor de teste</em>' : '') + '</div>';
@@ -48,7 +49,7 @@ function precoHtml(v, compacto = false) {
 function card(p) {
   const v = p.variants.find(x => disponibilidade(x).codigo !== 'esgotado') || p.variants[0];
   const disp = disponibilidade(v);
-  const badge = v.campanha ? '<span class="card-badge campaign">' + esc(v.nomeCampanha) + '</span>' : p.demo ? '<span class="card-badge demo">Demonstração</span>' : disp.codigo === 'esgotado' ? '<span class="card-badge">Esgotado</span>' : p.tag ? '<span class="card-badge">' + esc(p.tag) + '</span>' : '';
+  const badge = v.campanha ? '<span class="card-badge campaign">' + esc(v.nomeCampanha) + '</span>' : p.demo ? '<span class="card-badge demo">Demonstração</span>' : disp.codigo === 'esgotado' ? '<span class="card-badge">Esgotado</span>' : blackGeral() ? '<span class="card-badge campaign">' + esc(blackGeral().nome) + '</span>' : p.tag ? '<span class="card-badge">' + esc(p.tag) + '</span>' : '';
   return '<article class="product-card' + (economia ? '' : ' reveal') + '"><a class="product-cover" href="#/produto/' + p.id + '?cor=' + v.id + '">' +
     '<img' + ((v.imageTipo === 'catalogo' || v.imageTipo === 'ilustrativa') ? ' class="foto-catalogo"' : '') + ' src="' + v.image + '" alt="' + esc(p.name + ' — ' + v.name) + '" loading="lazy" decoding="async" width="1536" height="1024">' + badge + '</a>' +
     '<div class="product-meta"><span>' + categoryName(p.category) + '</span><small>' + esc(p.fabricante || p.ref) + '</small></div>' +
@@ -61,7 +62,7 @@ const dataCurta = iso => new Date(iso).toLocaleDateString('pt-BR', {day: '2-digi
 function campaignBanner(c) {
   if (!c) return '';
   const ofertas = catalogo.filter(p => p.variants.some(v => v.campanha === c.id)).length;
-  return '<a class="campaign-banner" href="#/' + c.slug + '"><span class="campaign-tag">' + esc(c.nome) + '</span><strong>' + (c.fase === 'ativa' ? (ofertas ? ofertas + (ofertas === 1 ? ' oferta vigente' : ' ofertas vigentes') + ' até ' + dataCurta(c.fim) : 'Ofertas sendo publicadas') : 'Começa em ' + dataCurta(c.inicio)) + '</strong><span>' + esc(c.chamada) + ' ' + icon('arrow') + '</span></a>';
+  return '<a class="campaign-banner" href="#/' + c.slug + '"><span class="campaign-tag">' + esc(c.nome) + '</span><strong>' + (c.fase === 'ativa' && c.todosOsProdutos ? 'Acontecendo agora · todos os produtos até ' + dataCurta(c.fim) : c.fase === 'ativa' ? (ofertas ? ofertas + (ofertas === 1 ? ' oferta vigente' : ' ofertas vigentes') + ' até ' + dataCurta(c.fim) : 'Ofertas sendo publicadas') : 'Começa em ' + dataCurta(c.inicio)) + '</strong><span>' + esc(c.chamada) + ' ' + icon('arrow') + '</span></a>';
 }
 function testBar() { return teste ? '<div class="test-bar" role="note"><strong>Prévia de testes</strong> · ' + (comPreco ? 'preços, estoque e pagamentos fictícios.' : 'estoque do relatório da loja de 23/11; pedidos simulados.') + ' <a href="#/manutencao">Manutenção</a></div>' : ''; }
 
@@ -171,9 +172,9 @@ function syncCatalogUrl() { const params = new URLSearchParams(); if (filtro.cat
 
 function campaignPage(c) {
   const fase = faseCampanha(c, agora());
-  const itens = catalogo.filter(p => p.variants.some(v => v.campanha === c.id));
+  const itens = c.todosOsProdutos ? catalogo.filter(naVitrine).sort((a, b) => pontos(b) - pontos(a)) : catalogo.filter(p => p.variants.some(v => v.campanha === c.id));
   main.innerHTML = '<section class="campaign-hero"><div class="crumb"><a href="#/">Início</a><span>/</span><span>' + esc(c.nome) + '</span></div><p class="eyebrow">' + (fase === 'ativa' ? 'DE ' + dataCurta(c.inicio) + ' A ' + dataCurta(c.fim) : fase === 'encerrada' ? 'CAMPANHA ENCERRADA' : 'COMEÇA EM ' + dataCurta(c.inicio)) + '</p><h1>' + esc(c.nome) + '<br><em>Conceição.</em></h1><p>' + esc(c.chamada) + '</p></section>' +
-  '<section class="section">' + (fase === 'ativa' && itens.length ? '<div class="product-grid">' + itens.map(card).join('') + '</div><p class="catalog-note">Preços válidos de ' + dataCurta(c.inicio) + ' a ' + dataCurta(c.fim) + ' ou enquanto durar o estoque.' + (teste ? ' Na prévia, as ofertas são fictícias.' : '') + '</p>' :
+  '<section class="section">' + (fase === 'ativa' && itens.length ? '<div class="product-grid">' + itens.map(card).join('') + '</div><p class="catalog-note">' + (c.todosOsProdutos ? 'Todos os produtos com preço de Black Friday até ' + dataCurta(c.fim) + ' ou enquanto durar o estoque. Consulte o preço pelo WhatsApp.' : 'Preços válidos de ' + dataCurta(c.inicio) + ' a ' + dataCurta(c.fim) + ' ou enquanto durar o estoque.') + (teste ? ' Na prévia, as ofertas são fictícias.' : '') + '</p>' :
    '<div class="empty-state"><h3>' + (fase === 'encerrada' ? 'A ' + esc(c.nome) + ' terminou.' : fase === 'ativa' ? 'As ofertas estão sendo publicadas.' : 'Ofertas a partir de ' + dataCurta(c.inicio) + '.') + '</h3><p>' + (fase === 'encerrada' ? 'Obrigado por visitar! O catálogo continua disponível.' : 'Entre no grupo VIP para receber as ofertas em primeira mão.') + '</p><a class="button dark" href="#/catalogo">Ver catálogo ' + icon('arrow') + '</a><a class="text-link" href="' + loja.grupoVip + '" target="_blank" rel="noopener">Entrar no grupo VIP ' + icon('whatsapp') + '</a></div>') + '</section>';
   document.title = c.nome + ' | Nossa Senhora da Conceição';
 }
@@ -213,7 +214,7 @@ function renderVariant() {
   '<div class="measures"><h2>Medidas</h2>' + (med ? '<dl><div><dt>Largura</dt><dd>' + v.medidas.largura + ' cm</dd></div><div><dt>Altura</dt><dd>' + v.medidas.altura + ' cm</dd></div><div><dt>Profundidade</dt><dd>' + v.medidas.profundidade + ' cm</dd></div></dl>' + (teste && v.valoresTeste ? '<p class="test-flag">Medidas de teste</p>' : '') +
     '<details class="fit-check"><summary>Será que cabe no meu espaço?</summary><form data-fit><p>Meça o espaço livre onde o móvel vai ficar.</p><div class="fit-fields"><label>Largura livre (cm)<input name="largura" type="number" inputmode="numeric" min="1" max="2000" required></label><label>Profundidade livre (cm)<input name="profundidade" type="number" inputmode="numeric" min="1" max="2000" required></label><label>Altura livre (cm) <small>opcional</small><input name="altura" type="number" inputmode="numeric" min="1" max="2000"></label></div><button class="button dark" type="submit">Conferir</button><p id="fit-result" role="status" aria-live="polite"></p></form></details>'
     : '<p class="missing">Medidas (largura, altura e profundidade) ainda não confirmadas pela loja. Pergunte pelo WhatsApp antes de comprar.</p>') + '</div>';
-  $('#sticky-buy').innerHTML = '<div><strong>' + (v.preco == null ? 'Sob consulta' : reais(v.preco)) + '</strong><small>' + esc(v.name) + '</small></div><button class="icon-button" data-ask-product aria-label="Perguntar sobre este produto no WhatsApp">' + icon('whatsapp') + '</button><button class="button dark" data-add-product ' + (disp.codigo === 'esgotado' ? 'disabled' : '') + '>' + (disp.codigo === 'esgotado' ? 'Esgotado' : comPreco ? 'Comprar' : 'Adicionar') + '</button>';
+  $('#sticky-buy').innerHTML = '<div><strong>' + (v.preco == null ? (blackGeral() ? 'Preço de Black' : 'Sob consulta') : reais(v.preco)) + '</strong><small>' + esc(v.name) + '</small></div><button class="icon-button" data-ask-product aria-label="Perguntar sobre este produto no WhatsApp">' + icon('whatsapp') + '</button><button class="button dark" data-add-product ' + (disp.codigo === 'esgotado' ? 'disabled' : '') + '>' + (disp.codigo === 'esgotado' ? 'Esgotado' : comPreco ? 'Comprar' : 'Adicionar') + '</button>';
 }
 function chooseVariant(index) {
   if (!currentProduct?.variants[index]) return; selectedVariant = index; photoIndex = 0;
@@ -303,7 +304,7 @@ const api = {
   },
   async local() {
     if (this.nucleoLocal) return this.nucleoLocal;
-    const {criarNucleo} = await import('./loja/pedidos.js?v=6');
+    const {criarNucleo} = await import('./loja/pedidos.js?v=7');
     this.nucleoLocal = criarNucleo({modo: 'teste', segredo: 'simulacao-no-navegador-0001',
       armazenamento: {async ler() { return ls.get('conceicao-simulacao-pagamentos', null); }, async gravar(s) { ls.set('conceicao-simulacao-pagamentos', s); }},
       provedor: {async criarCobranca(p) { return {url: '#/pagamento-teste/' + p.id, referencia: 'simulado'}; }}});
@@ -391,7 +392,7 @@ async function simulatedProviderPage(id) {
   main.dataset.order = p.id;
 }
 async function simulate(status) {
-  const {assinar} = await import('./loja/pedidos.js?v=6');
+  const {assinar} = await import('./loja/pedidos.js?v=7');
   const n = await api.local(), p = await n.consultar(main.dataset.order);
   const corpo = JSON.stringify({id: 'evt_' + Math.random().toString(36).slice(2), pedido: p.id, status, valor: p.total});
   const sig = await assinar('simulacao-no-navegador-0001', corpo);
@@ -466,7 +467,7 @@ document.addEventListener('click', event => {
   if (el.matches('[data-photo]')) goPhoto(Number(el.dataset.photo));
   if (el.matches('[data-quantity]')) { productQuantity = Math.max(1, Math.min(99, productQuantity + Number(el.dataset.quantity))); $('#product-quantity').textContent = productQuantity; }
   if (el.matches('[data-add-product]')) addProduct();
-  if (el.matches('[data-ask-product]')) { const v = currentProduct.variants[selectedVariant]; openWhatsapp(mensagemProduto({p: currentProduct, v, qtd: productQuantity, modo}), 'Perguntar sobre ' + currentProduct.name); }
+  if (el.matches('[data-ask-product]')) { const v = currentProduct.variants[selectedVariant]; openWhatsapp(mensagemProduto({p: currentProduct, v, qtd: productQuantity, modo}).replace('Pode me passar o preço', blackGeral() ? 'Vi que está na ' + blackGeral().nome + '. Pode me passar o preço' : 'Pode me passar o preço'), 'Perguntar sobre ' + currentProduct.name); }
   if (el.matches('[data-wa-text]')) openWhatsapp(el.dataset.waText, 'Falar com a loja');
   if (el.matches('[data-view-3d]')) open3d();
   if (el.matches('[data-zoom]')) { photoIndex = Number(el.dataset.zoom); showZoom(); }

@@ -187,12 +187,12 @@ PRODUTOS = [
   variants=[('freijo', 'Freijó · 4 cadeiras Star', '000768', M(120, 80, 80), {'acabamento': 'Freijó', 'lugares': '4 lugares'}, '#c08a52')]),
  # ---------------- JW Estofados ----------------
  dict(id='poltrona-dubai', name='Poltrona do papai Dubai', fabricante='JW Estofados', category='estofados', tag='Reclinável',
-  img='jw-dubai', fonte=('jw-2026-06.pdf', 31),
+  img='jw-dubai-preto', fonte=('jw-2026-06.pdf', 31),
   description='Poltrona reclinável de encosto alto e braços acolchoados, feita para relaxar. Disponível em corano e em veludo, em tons que combinam com qualquer sala.',
-  details=['Reclinável', 'Opções em corano ou veludo', 'Na foto: duas cores do modelo'],
+  details=['Reclinável', 'Opções em corano ou veludo', 'Fotos do catálogo nas cores ocre e preta'],
   variants=[('corano-preto', 'Corano preto', '000423', None, {'acabamento': 'Corano preto'}, '#232120'),
-            ('corano-ocre', 'Corano ocre', '000424', None, {'acabamento': 'Corano ocre'}, '#9a6a3c'),
-            ('veludo-chocolate', 'Veludo chocolate', '000721', None, {'acabamento': 'Veludo chocolate'}, '#5a3b2b'),
+            ('corano-ocre', 'Corano ocre', '000424', None, {'acabamento': 'Corano ocre'}, '#9a6a3c', 'jw-dubai-ocre'),
+            ('veludo-chocolate', 'Veludo chocolate', '000721', None, {'acabamento': 'Veludo chocolate'}, '#5a3b2b', 'jw-dubai-ocre'),
             ('veludo-grafite', 'Veludo grafite', '000722', None, {'acabamento': 'Veludo grafite'}, '#4a4a4c')]),
 ]
 
