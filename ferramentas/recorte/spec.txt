@@ -31,3 +31,17 @@ tb-sibele|tuboarte-2026-09.pdf|144|0.0,0.0,1.0,0.855|foto
 tb-tais120|tuboarte-2026-09.pdf|131|0.11,0.0,1.0,0.724|recorte
 jw-dubai-ocre|jw-2026-06.pdf|31|0.0,0.0,0.515,0.855|foto
 jw-dubai-preto|jw-2026-06.pdf|31|0.522,0.0,1.0,0.855|foto
+tb-helena120|tuboarte-2026-09.pdf|124|0.0,0.0,1.0,0.69|foto
+# tb-helena160 e tb-tais160: depois do recorte, tapar o selo (330,150,680,490 / 1870,260,2230,620 px) com tapar2
+tb-helena160|tuboarte-2026-09.pdf|116|0.0,0.0,1.0,0.69|foto
+tb-tais160|tuboarte-2026-09.pdf|130|0.0,0.0,1.0,0.69|foto
+tb-nice|tuboarte-2026-09.pdf|67|0.0,0.09,0.88,0.9|foto
+tb-sevilha|tuboarte-2026-09.pdf|49|0.04,0.0,0.75,0.83|foto
+tb-oregon|tuboarte-2026-09.pdf|141|0.0,0.0,1.0,0.86|foto
+jw-napoles|jw-2026-06.pdf|17|0.0,0.0,1.0,0.855|foto
+jw-montana|jw-2026-06.pdf|23|0.0,0.0,1.0,0.855|foto
+jw-valencia|jw-2026-06.pdf|25|0.0,0.0,1.0,0.855|foto
+jw-santiago|jw-2026-06.pdf|27|0.0,0.0,1.0,0.855|foto
+cn-athenas|caza-nobre-2026-06.pdf|9|0.0,0.0,0.775,0.705|foto
+cn-montreal|caza-nobre-2026-06.pdf|38|0.0,0.0,0.755,0.705|foto
+ti-maximo|titanio-2026.pdf|11|0.5,0.15,0.97,0.72|recorte

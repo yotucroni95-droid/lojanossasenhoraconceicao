@@ -196,6 +196,119 @@ PRODUTOS = [
             ('veludo-grafite', 'Veludo grafite', '000722', None, {'acabamento': 'Veludo grafite'}, '#4a4a4c')]),
 ]
 
+# ---------------- Itens que estavam em espera (publicados em 24/11/2026 a pedido da loja) ----------------
+# Foto do mesmo modelo no catálogo do fabricante. Quando cor, cadeira ou medida da foto diferem do relatório,
+# a foto entra como ilustrativa (o site avisa o cliente) e a diferença fica em "conflitos".
+IL = 'ilustrativa'
+
+
+def _junta(pid, *vs):
+    d = next(p for p in PRODUTOS if p['id'] == pid)
+    d['variants'] = list(d['variants']) + list(vs)
+
+
+_junta('colchao-montevideu', ('solteirao', 'Solteirão 88 × 188 × 30', '000653', M(88, 30, 188), {'tamanho': 'Solteirão', 'tipo': 'Colchão'}, '#8a8d90'))
+_junta('colchao-oxford', ('casal-mps', 'Casal 138 × 188 × 24 · cód. 000641', '000641', M(138, 24, 188), {'tamanho': 'Casal', 'tipo': 'Colchão'}))
+_junta('colchao-lotus', ('casal-14-chumbo', 'Casal 138 × 188 × 14 · Chumbo', '000737', M(138, 14, 188), {'tamanho': 'Casal', 'tipo': 'Colchão', 'acabamento': 'Chumbo'}, '#4a4a4c', 'cn-lotus', None, IL),
+        ('solteiro-14-chumbo', 'Solteiro 88 × 188 × 14 · Chumbo', '000738', M(88, 14, 188), {'tamanho': 'Solteiro', 'tipo': 'Colchão', 'acabamento': 'Chumbo'}, '#4a4a4c', 'cn-lotus', None, IL))
+_junta('colchao-ouro-d20', ('solteiro-284', 'Solteiro 78 × 188 × 12 · cód. 000284', '000284', M(78, 12, 188), {'tamanho': 'Solteiro', 'densidade': 'D20', 'tipo': 'Colchão'}))
+_junta('colchao-d45-jconfort', ('solteiro-88', 'Solteiro 88 cm de largura', '000639', None, {'tamanho': 'Solteiro', 'densidade': 'D45', 'tipo': 'Colchão'}))
+
+PRODUTOS += [
+ dict(id='base-box-berlim-titanio', name='Base box Berlim casal', fabricante='Titanio', category='colchoes',
+  img='ti-berlim', fonte=('titanio-2026.pdf', 25),
+  description='Base box da linha Berlim, da Titanio, para colchão casal. Estrutura firme e acabamento em tecido que acompanha o colchão Berlim.',
+  details=['Casal 138 × 188 cm', 'Altura informada pela loja: 40 cm', 'Na foto: conjunto Berlim (colchão e base)'],
+  variants=[('casal-40', 'Casal 138 × 188 × 40', '000704', M(138, 40, 188), {'tamanho': 'Casal', 'tipo': 'Base box'}, '#3d4655', 'ti-berlim', None, IL)],
+  conflitos=[{'campo': 'altura', 'nota': 'Relatório diz 40 cm; catálogo Titanio mostra base de 30 cm.'}]),
+ dict(id='base-box-maximo', name='Base box Máximo casal', fabricante='Titanio', category='colchoes',
+  img='ti-maximo', fonte=('titanio-2026.pdf', 11),
+  description='Base box Máximo para colchão casal padrão, com 30 cm de altura. Dá firmeza ao colchão e deixa a cama na altura certa.',
+  details=['Casal 138 × 188 × 30 cm', 'Na foto: conjunto Máximo (colchão e base)'],
+  variants=[('casal', 'Casal 138 × 188 × 30', '000667', M(138, 30, 188), {'tamanho': 'Casal', 'tipo': 'Base box'}, '#cfc4b3', 'ti-maximo', None, IL)],
+  conflitos=[{'campo': 'fabricante', 'nota': 'Existe linha Máximo na J.Confort e na Titanio; confirmar.'}]),
+ dict(id='colchao-athenas-ice', name='Colchão Athenas Ice king', fabricante='Caza Nobre', category='colchoes',
+  img='cn-athenas', fonte=('caza-nobre-2026-06.pdf', 9),
+  description='Colchão king de 32 cm de altura da linha Athenas Ice, nas cores bege e azul. Medida de 193 × 203 cm, com espaço de sobra para o casal.',
+  details=['King 193 × 203 × 32 cm', 'Cores: bege ou azul', 'Na foto: linha Athenas'],
+  variants=[('king-bege', 'King 193 × 203 × 32 · Bege', '000740', M(193, 32, 203), {'tamanho': 'King', 'tipo': 'Colchão', 'acabamento': 'Bege'}, '#d8c8a8', 'cn-athenas', None, IL),
+            ('king-azul', 'King 193 × 203 × 32 · Azul', '000742', M(193, 32, 203), {'tamanho': 'King', 'tipo': 'Colchão', 'acabamento': 'Azul'}, '#2f4a7a', 'cn-athenas', None, IL)],
+  conflitos=[{'campo': 'modelo', 'nota': 'Catálogos têm Athenas 18/20 cm (J.Confort) e Athenas Premium (Caza Nobre); confirmar.'}]),
+ dict(id='conjunto-box-montreal', name='Conjunto box Montreal solteiro', fabricante='Caza Nobre', category='colchoes',
+  img='cn-montreal', fonte=('caza-nobre-2026-06.pdf', 38),
+  description='Conjunto box solteiro Montreal, com 47 cm de altura total. Prático e resistente, ideal para quartos de solteiro e de hóspedes.',
+  details=['Solteiro 88 × 188 cm', 'Altura do conjunto: 47 cm', 'Na foto: Montreal com cama auxiliar'],
+  variants=[('solteiro', 'Solteiro 88 × 188 × 47', '000731', M(88, 47, 188), {'tamanho': 'Solteiro', 'tipo': 'Cama box conjugada'}, '#8a8d90', 'cn-montreal', None, IL)],
+  conflitos=[{'campo': 'modelo', 'nota': 'Catálogo Caza Nobre tem Montreal e Montreal Premium; confirmar qual.'}]),
+ dict(id='sala-jantar-tais-160', name='Sala de jantar Taís 1,60 com 6 cadeiras', fabricante='Tuboarte', category='jantar',
+  img='tb-tais160', fonte=('tuboarte-2026-09.pdf', 130),
+  description='Conjunto de jantar em Freijó com mesa de 1,60 m e seis cadeiras Star de assento estofado. Espaço para receber a família toda.',
+  details=['Mesa de 1,60 m', 'Seis cadeiras Star', 'Na foto: mesa Taís 1,60 com cadeiras Eduarda'],
+  variants=[('freijo', 'Freijó · 6 cadeiras Star', '000769', None, {'acabamento': 'Freijó', 'lugares': '6 lugares'}, '#c08a52', 'tb-tais160', None, IL)],
+  conflitos=[{'campo': 'cadeira', 'nota': 'Catálogo só mostra a Taís 1,60 com cadeira Eduarda.'}]),
+ dict(id='sala-jantar-helena-120', name='Sala de jantar Helena 1,20 com 4 cadeiras Coral', fabricante='Tuboarte', category='jantar',
+  img='tb-helena120', fonte=('tuboarte-2026-09.pdf', 124),
+  description='Mesa Helena de 1,20 m em Canelado/Freijó com quatro cadeiras Coral estofadas e pés de madeira. Linhas modernas para a sala de jantar.',
+  details=['Mesa de 1,20 m', 'Quatro cadeiras Coral com pés de madeira', 'Na foto: cadeira Coral com pé MDF'],
+  variants=[('cod-000773', 'Opção cód. 000773', '000773', None, {'lugares': '4 lugares'}, '#c08a52', 'tb-helena120', None, IL),
+            ('cod-000774', 'Opção cód. 000774', '000774', None, {'lugares': '4 lugares'}, '#a9b0ad', 'tb-helena120', None, IL)],
+  conflitos=[{'campo': 'pés das cadeiras', 'nota': 'Relatório diz pés de madeira; catálogo mostra Coral com pé MDF.'}]),
+ dict(id='sala-jantar-helena-160', name='Sala de jantar Helena 1,60 com 6 cadeiras Coral', fabricante='Tuboarte', category='jantar',
+  img='tb-helena160', fonte=('tuboarte-2026-09.pdf', 116),
+  description='Mesa Helena de 1,60 m em Canelado/Freijó com seis cadeiras Coral estofadas e pés de madeira. Para quem recebe bem e quer conforto à mesa.',
+  details=['Mesa de 1,60 m', 'Seis cadeiras Coral com pés de madeira', 'Na foto: mesa Helena 1,60 com cadeiras Olívia'],
+  variants=[('cod-000775', 'Opção cód. 000775', '000775', None, {'lugares': '6 lugares'}, '#c08a52', 'tb-helena160', None, IL),
+            ('cod-000776', 'Opção cód. 000776', '000776', None, {'lugares': '6 lugares'}, '#a9b0ad', 'tb-helena160', None, IL)],
+  conflitos=[{'campo': 'cadeira', 'nota': 'Sem foto exata da Helena 1,60 com cadeira Coral no catálogo.'}]),
+ dict(id='cozinha-nice', name='Cozinha Nice', fabricante='Tuboarte', category='cozinha',
+  img='tb-nice', fonte=('tuboarte-2026-09.pdf', 67),
+  description='Cozinha completa Nice, com armários aéreos, balcões e cristaleira de vidro. Muito espaço para louças e eletros, com visual leve e moderno.',
+  details=['Aéreos, balcões e cristaleira', 'Acabamento Cinamomo / Off White', 'Na foto: Freijó / Off White'],
+  variants=[('cinamomo-off-white', 'Cinamomo / Off White', '000699', None, {'acabamento': 'Cinamomo / Off White'}, '#a8754a', 'tb-nice', None, IL)],
+  conflitos=[{'campo': 'cor', 'nota': 'Sistema diz Cinamo/Off; catálogo Tuboarte usa Freijó/Off White e Freijó/Cinza.'}]),
+ dict(id='painel-sevilha', name='Painel Sevilha para TV', fabricante='Tuboarte', category='sala',
+  img='tb-sevilha', fonte=('tuboarte-2026-09.pdf', 49),
+  description='Painel amplo em Freijó com rack suspenso de portas em palhinha. Organiza a sala e valoriza TVs grandes.',
+  details=['Rack suspenso com portas em palhinha', 'Acabamento Freijó / Off White', 'Catálogo: TVs de até 65"'],
+  variants=[('freijo-off-white', 'Freijó / Off White', '000770', None, {'acabamento': 'Freijó / Off White'}, '#c08a52')],
+  conflitos=[{'campo': 'tamanho da TV', 'nota': 'Sistema diz TV até 70"; catálogo Tuboarte diz até 65".'}]),
+ dict(id='aparador-oregon', name='Aparador Oregon', fabricante='Tuboarte', category='sala',
+  img='tb-oregon', fonte=('tuboarte-2026-09.pdf', 141),
+  description='Aparador Oregon com base em V de linhas marcantes. Peça de destaque para hall, sala de estar ou de jantar.',
+  details=['120 × 89,2 × 35 cm', 'Tampo em madeira', 'Na foto: tampo Off White'],
+  variants=[('freijo', 'Freijó · tampo em madeira', '000777', M(120, 89.2, 35), {'acabamento': 'Freijó'}, '#c08a52', 'tb-oregon', None, IL)],
+  conflitos=[{'campo': 'tampo', 'nota': 'Sistema diz "c/ tampo madeira"; catálogo mostra tampo Off White.'}]),
+ dict(id='conjunto-sofas-valencia', name='Conjunto de sofás Valência 2 e 3 lugares', fabricante='JW Estofados', category='estofados',
+  img='jw-valencia', fonte=('jw-2026-06.pdf', 25),
+  description='Conjunto de sofás de 2 e 3 lugares em veludo, com encosto capitonê e braços largos. Conforto para a família toda.',
+  details=['Sofás de 2 e 3 lugares', 'Veludo', 'Na foto: Valência em azul'],
+  variants=[('veludo-castor', 'Veludo castor', '000725', None, {'acabamento': 'Veludo castor'}, '#8a7560', 'jw-valencia', None, IL),
+            ('veludo-cinza', 'Veludo cinza', '000726', None, {'acabamento': 'Veludo cinza'}, '#8a8d90', 'jw-valencia', None, IL),
+            ('veludo-cinza-539', 'Veludo cinza · cód. 000539', '000539', None, {'acabamento': 'Veludo cinza'}, '#8a8d90', 'jw-valencia', None, IL)],
+  conflitos=[{'campo': 'cor', 'nota': 'Catálogo JW mostra Valência só em azul.'}]),
+ dict(id='conjunto-sofas-napoles', name='Conjunto de sofás Nápoles 2 e 3 lugares', fabricante='JW Estofados', category='estofados',
+  img='jw-napoles', fonte=('jw-2026-06.pdf', 17),
+  description='Conjunto de sofás Nápoles de 2 e 3 lugares, com assento macio e braços acolchoados. Disponível em veludo e em bouclê.',
+  details=['Sofás de 2 e 3 lugares', 'Veludo ou bouclê', 'Na foto: Nápoles em cinza'],
+  variants=[('veludo-terracota', 'Veludo terracota', '000723', None, {'acabamento': 'Veludo terracota'}, '#b5563a', 'jw-napoles', None, IL),
+            ('veludo-vermelho', 'Veludo vermelho', '000724', None, {'acabamento': 'Veludo vermelho'}, '#9c2a2a', 'jw-napoles', None, IL),
+            ('veludo-castor', 'Veludo castor', '000533', None, {'acabamento': 'Veludo castor'}, '#8a7560', 'jw-napoles', None, IL),
+            ('boucle-marrom', 'Bouclê marrom', '000535', None, {'acabamento': 'Bouclê marrom'}, '#6b4a33', 'jw-napoles', None, IL)],
+  conflitos=[{'campo': 'cor', 'nota': 'Catálogo JW mostra Nápoles em cinza.'}]),
+ dict(id='sofa-montana', name='Sofá retrátil e reclinável Montana', fabricante='JW Estofados', category='estofados', tag='Retrátil',
+  img='jw-montana', fonte=('jw-2026-06.pdf', 23),
+  description='Sofá retrátil e reclinável Montana em veludo. Assento que avança e encosto que reclina para assistir TV com todo o conforto.',
+  details=['Retrátil e reclinável', 'Veludo', 'Na foto: Montana New'],
+  variants=[('veludo', 'Veludo', '000542', None, {'acabamento': 'Veludo'}, '#8a7d70', 'jw-montana', None, IL)],
+  conflitos=[{'campo': 'modelo e cor', 'nota': 'Catálogo JW tem "Montana New"; confirmar modelo e cor.'}]),
+ dict(id='sofa-santiago', name='Sofá Santiago em linho', fabricante='JW Estofados', category='estofados',
+  img='jw-santiago', fonte=('jw-2026-06.pdf', 27),
+  description='Sofá Santiago em linho bege, com encosto capitonê e braços retos. Visual clássico que combina com qualquer sala.',
+  details=['Linho bege', 'Na foto: Santiago em outro tom'],
+  variants=[('linho-bege', 'Linho bege', '000536', None, {'acabamento': 'Linho bege'}, '#d8c8a8', 'jw-santiago', None, IL)],
+  conflitos=[{'campo': 'cor', 'nota': 'Catálogo JW mostra Santiago em outro tom.'}]),
+]
+
 # Itens do relatório com foto encontrada, mas fora da vitrine até a loja confirmar.
 # ---------------- Fotos oficiais da internet (página do fabricante ou de loja oficial) ----------------
 # Cada variante usa a foto da sua própria página (assets/catalogo/web-<código>.jpg). Só pares exatos: modelo + cor + medida.
@@ -1053,35 +1166,7 @@ WEB = [
   'variants': [('branco', 'Branco', '000447', None, {}, '#f4f4f2', 'web-000447', 'https://www.extra.com.br/fogao-4-bocas-de-piso-braslar-new-sirius-2023-branco/p/1571953436')]},
 ]
 
-PENDENTES = [
- ('000704', 'Base Berlim: relatório diz 40 cm de altura; catálogo Titanio mostra base de 30 cm.'),
- ('000667', 'Base Máximo: existe linha Máximo na J.Confort e na Titanio; confirmar fabricante.'),
- ('000740', 'Colchão Athenas Ice 32 cm: catálogos têm Athenas 18/20 cm (J.Confort) e Athenas Premium (Caza Nobre); confirmar.'),
- ('000742', 'Colchão Athenas Ice 32 cm azul: mesma dúvida do 000740.'),
- ('000653', 'Colchão Montevidéu solteirão: cor não informada (catálogo tem cinza e azul).'),
- ('000641', 'Colchão Oxford casal "MPS": mesma medida do 000736; confirmar se é duplicidade no sistema.'),
- ('000737', 'Colchão Lotus 14 cm chumbo: catálogo mostra Lotus em azul-marinho.'),
- ('000738', 'Colchão Lotus 14 cm solteiro chumbo: idem.'),
- ('000284', 'Colchão D20 12 cm 78 × 188 "Ouro": mesma medida do 000734; confirmar se é duplicidade.'),
- ('000639', 'Colchão D45 J.Confort: medida no sistema "0,88 × 1,38" parece erro de digitação (provável 0,88 × 1,88).'),
- ('000769', 'Sala Taís 1,60 + 6 cadeiras Star: catálogo só mostra a 1,60 com cadeira Eduarda.'),
- ('000699', 'Cozinha Nice: sistema diz Cinamo/Off; catálogo Tuboarte usa Freijó/Off White e Freijó/Cinza.'),
- ('000770', 'Painel Sevilha: sistema diz TV até 70"; catálogo Tuboarte diz até 65".'),
- ('000777', 'Aparador Oregon: sistema diz "c/ tampo madeira"; catálogo mostra tampo Off White.'),
- ('000773', 'Sala Helena 1,20 + 4 cadeiras Coral pés madeira: catálogo mostra Coral com pé MDF.'),
- ('000774', 'Sala Helena 1,20 (segundo código): idem.'),
- ('000775', 'Sala Helena 1,60 + 6 cadeiras Coral: sem foto exata no catálogo.'),
- ('000776', 'Sala Helena 1,60 (segundo código): idem.'),
- ('000725', 'Conjunto Valência veludo castor: catálogo JW mostra Valência só em azul.'),
- ('000726', 'Conjunto Valência veludo cinza: idem.'),
- ('000539', 'Estofado Valência veludo cinza: idem.'),
- ('000723', 'Conjunto Nápoles veludo terracota: catálogo JW mostra Nápoles em cinza.'),
- ('000724', 'Conjunto Nápoles veludo vermelho: idem.'),
- ('000533', 'Estofado Nápoles veludo castor: idem.'),
- ('000535', 'Estofado Nápoles bouclê marrom: idem.'),
- ('000542', 'Estofado Montana veludo: catálogo JW tem "Montana New"; confirmar modelo e cor.'),
- ('000536', 'Estofado Santiago linho bege: catálogo JW mostra Santiago em outro tom.'),
- ('000731', 'Conjunto Montreal 47 cm: catálogo Caza Nobre tem Montreal e Montreal Premium; confirmar qual.'),
+PENDENTES = [  # vazio: os itens em espera foram publicados em 24/11/2026 (ver bloco "Itens que estavam em espera")
 ]
 
 def com_fotos_web(produtos):

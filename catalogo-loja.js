@@ -633,6 +633,24 @@ export const produtosLoja = [
      "densidade": "D45",
      "tipo": "Colchão"
     }
+   },
+   {
+    "id": "solteiro-88",
+    "name": "Solteiro 88 cm de largura",
+    "color": "#d9d2c5",
+    "image": "assets/catalogo/jc-d45.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000639",
+    "descricaoLoja": "COLCHÃO D45 J. CONFORT 0,88X1,38 BORDADO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 5,
+    "medidas": null,
+    "atributos": {
+     "tamanho": "Solteiro",
+     "densidade": "D45",
+     "tipo": "Colchão"
+    }
    }
   ],
   "fontes": [
@@ -949,6 +967,27 @@ export const produtosLoja = [
      "tipo": "Colchão",
      "acabamento": "Cinza"
     }
+   },
+   {
+    "id": "solteirao",
+    "name": "Solteirão 88 × 188 × 30",
+    "color": "#8a8d90",
+    "image": "assets/catalogo/cn-montevideu.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000653",
+    "descricaoLoja": "COLCHÃO MONTEVIDÉU 30CM 1.88X88 SOLTEIRÃO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 4,
+    "medidas": {
+     "largura": 88,
+     "altura": 30,
+     "profundidade": 188
+    },
+    "atributos": {
+     "tamanho": "Solteirão",
+     "tipo": "Colchão"
+    }
    }
   ],
   "fontes": [
@@ -1016,6 +1055,27 @@ export const produtosLoja = [
     },
     "atributos": {
      "tamanho": "Queen",
+     "tipo": "Colchão"
+    }
+   },
+   {
+    "id": "casal-mps",
+    "name": "Casal 138 × 188 × 24 · cód. 000641",
+    "color": "#d9d2c5",
+    "image": "assets/catalogo/cn-oxford.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000641",
+    "descricaoLoja": "COLCHAO OXFORD 24 CM 1,88 X 1,38 MPS",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": {
+     "largura": 138,
+     "altura": 24,
+     "profundidade": 188
+    },
+    "atributos": {
+     "tamanho": "Casal",
      "tipo": "Colchão"
     }
    }
@@ -1207,6 +1267,50 @@ export const produtosLoja = [
      "densidade": "D33",
      "tipo": "Colchão"
     }
+   },
+   {
+    "id": "casal-14-chumbo",
+    "name": "Casal 138 × 188 × 14 · Chumbo",
+    "color": "#4a4a4c",
+    "image": "assets/catalogo/cn-lotus.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000737",
+    "descricaoLoja": "COLCHAO LOTUS 14CM X 1,88M X 1,38M CHUMBO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 10,
+    "medidas": {
+     "largura": 138,
+     "altura": 14,
+     "profundidade": 188
+    },
+    "atributos": {
+     "tamanho": "Casal",
+     "tipo": "Colchão",
+     "acabamento": "Chumbo"
+    }
+   },
+   {
+    "id": "solteiro-14-chumbo",
+    "name": "Solteiro 88 × 188 × 14 · Chumbo",
+    "color": "#4a4a4c",
+    "image": "assets/catalogo/cn-lotus.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000738",
+    "descricaoLoja": "COLCHAO LOTUS 14CM X 1,88M X 88CM CHUMBO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 9,
+    "medidas": {
+     "largura": 88,
+     "altura": 14,
+     "profundidade": 188
+    },
+    "atributos": {
+     "tamanho": "Solteiro",
+     "tipo": "Colchão",
+     "acabamento": "Chumbo"
+    }
    }
   ],
   "fontes": [
@@ -1214,6 +1318,16 @@ export const produtosLoja = [
     "campo": "fotos e medidas do modelo",
     "arquivo": "dados-loja/catalogos/caza-nobre-2026-06.pdf",
     "pagina": "42"
+   },
+   {
+    "campo": "imagem ilustrativa Casal 138 × 188 × 14 · Chumbo",
+    "codigo": "000737",
+    "url": null
+   },
+   {
+    "campo": "imagem ilustrativa Solteiro 88 × 188 × 14 · Chumbo",
+    "codigo": "000738",
+    "url": null
    },
    {
     "campo": "códigos e estoque",
@@ -1275,6 +1389,28 @@ export const produtosLoja = [
     },
     "atributos": {
      "tamanho": "Casal",
+     "densidade": "D20",
+     "tipo": "Colchão"
+    }
+   },
+   {
+    "id": "solteiro-284",
+    "name": "Solteiro 78 × 188 × 12 · cód. 000284",
+    "color": "#d9d2c5",
+    "image": "assets/catalogo/cn-ouro.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000284",
+    "descricaoLoja": "COLCHAO D 20 12 CM 1,88 X 78 / SOLTEIRO/ OURO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 9,
+    "medidas": {
+     "largura": 78,
+     "altura": 12,
+     "profundidade": 188
+    },
+    "atributos": {
+     "tamanho": "Solteiro",
      "densidade": "D20",
      "tipo": "Colchão"
     }
@@ -1810,8 +1946,958 @@ export const produtosLoja = [
   "tag": "Reclinável"
  },
  {
-  "id": "cozinha-nesher-realeza-160",
+  "id": "base-box-berlim-titanio",
   "ref": "NSC-128",
+  "fabricante": "Titanio",
+  "name": "Base box Berlim casal",
+  "category": "colchoes",
+  "description": "Base box da linha Berlim, da Titanio, para colchão casal. Estrutura firme e acabamento em tecido que acompanha o colchão Berlim.",
+  "details": [
+   "Casal 138 × 188 cm",
+   "Altura informada pela loja: 40 cm",
+   "Na foto: conjunto Berlim (colchão e base)"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "casal-40",
+    "name": "Casal 138 × 188 × 40",
+    "color": "#3d4655",
+    "image": "assets/catalogo/ti-berlim.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000704",
+    "descricaoLoja": "BASE BERLIM 188X138X40 CM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": {
+     "largura": 138,
+     "altura": 40,
+     "profundidade": 188
+    },
+    "atributos": {
+     "tamanho": "Casal",
+     "tipo": "Base box"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/titanio-2026.pdf",
+    "pagina": "25"
+   },
+   {
+    "campo": "imagem ilustrativa Casal 138 × 188 × 40",
+    "codigo": "000704",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "altura",
+    "nota": "Relatório diz 40 cm; catálogo Titanio mostra base de 30 cm."
+   }
+  ]
+ },
+ {
+  "id": "base-box-maximo",
+  "ref": "NSC-129",
+  "fabricante": "Titanio",
+  "name": "Base box Máximo casal",
+  "category": "colchoes",
+  "description": "Base box Máximo para colchão casal padrão, com 30 cm de altura. Dá firmeza ao colchão e deixa a cama na altura certa.",
+  "details": [
+   "Casal 138 × 188 × 30 cm",
+   "Na foto: conjunto Máximo (colchão e base)"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "casal",
+    "name": "Casal 138 × 188 × 30",
+    "color": "#cfc4b3",
+    "image": "assets/catalogo/ti-maximo.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000667",
+    "descricaoLoja": "BASE MAXIMO CASAL PADRÃO - 1,38 X 1,88 X 0,3 M",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": {
+     "largura": 138,
+     "altura": 30,
+     "profundidade": 188
+    },
+    "atributos": {
+     "tamanho": "Casal",
+     "tipo": "Base box"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/titanio-2026.pdf",
+    "pagina": "11"
+   },
+   {
+    "campo": "imagem ilustrativa Casal 138 × 188 × 30",
+    "codigo": "000667",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "fabricante",
+    "nota": "Existe linha Máximo na J.Confort e na Titanio; confirmar."
+   }
+  ]
+ },
+ {
+  "id": "colchao-athenas-ice",
+  "ref": "NSC-130",
+  "fabricante": "Caza Nobre",
+  "name": "Colchão Athenas Ice king",
+  "category": "colchoes",
+  "description": "Colchão king de 32 cm de altura da linha Athenas Ice, nas cores bege e azul. Medida de 193 × 203 cm, com espaço de sobra para o casal.",
+  "details": [
+   "King 193 × 203 × 32 cm",
+   "Cores: bege ou azul",
+   "Na foto: linha Athenas"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "king-bege",
+    "name": "King 193 × 203 × 32 · Bege",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/cn-athenas.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000740",
+    "descricaoLoja": "COLCHAO ATHENAS ICE 32CM X 1,93M X 2,03M BEGE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": {
+     "largura": 193,
+     "altura": 32,
+     "profundidade": 203
+    },
+    "atributos": {
+     "tamanho": "King",
+     "tipo": "Colchão",
+     "acabamento": "Bege"
+    }
+   },
+   {
+    "id": "king-azul",
+    "name": "King 193 × 203 × 32 · Azul",
+    "color": "#2f4a7a",
+    "image": "assets/catalogo/cn-athenas.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000742",
+    "descricaoLoja": "COLCHAO ATHENAS ICE 32CM X 1,93M X 2,03M AZUL",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": {
+     "largura": 193,
+     "altura": 32,
+     "profundidade": 203
+    },
+    "atributos": {
+     "tamanho": "King",
+     "tipo": "Colchão",
+     "acabamento": "Azul"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/caza-nobre-2026-06.pdf",
+    "pagina": "9"
+   },
+   {
+    "campo": "imagem ilustrativa King 193 × 203 × 32 · Bege",
+    "codigo": "000740",
+    "url": null
+   },
+   {
+    "campo": "imagem ilustrativa King 193 × 203 × 32 · Azul",
+    "codigo": "000742",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "modelo",
+    "nota": "Catálogos têm Athenas 18/20 cm (J.Confort) e Athenas Premium (Caza Nobre); confirmar."
+   }
+  ]
+ },
+ {
+  "id": "conjunto-box-montreal",
+  "ref": "NSC-131",
+  "fabricante": "Caza Nobre",
+  "name": "Conjunto box Montreal solteiro",
+  "category": "colchoes",
+  "description": "Conjunto box solteiro Montreal, com 47 cm de altura total. Prático e resistente, ideal para quartos de solteiro e de hóspedes.",
+  "details": [
+   "Solteiro 88 × 188 cm",
+   "Altura do conjunto: 47 cm",
+   "Na foto: Montreal com cama auxiliar"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "solteiro",
+    "name": "Solteiro 88 × 188 × 47",
+    "color": "#8a8d90",
+    "image": "assets/catalogo/cn-montreal.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000731",
+    "descricaoLoja": "CJ MONTREAL 47CM X 1,88M X 88CM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 4,
+    "medidas": {
+     "largura": 88,
+     "altura": 47,
+     "profundidade": 188
+    },
+    "atributos": {
+     "tamanho": "Solteiro",
+     "tipo": "Cama box conjugada"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/caza-nobre-2026-06.pdf",
+    "pagina": "38"
+   },
+   {
+    "campo": "imagem ilustrativa Solteiro 88 × 188 × 47",
+    "codigo": "000731",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "modelo",
+    "nota": "Catálogo Caza Nobre tem Montreal e Montreal Premium; confirmar qual."
+   }
+  ]
+ },
+ {
+  "id": "sala-jantar-tais-160",
+  "ref": "NSC-132",
+  "fabricante": "Tuboarte",
+  "name": "Sala de jantar Taís 1,60 com 6 cadeiras",
+  "category": "jantar",
+  "description": "Conjunto de jantar em Freijó com mesa de 1,60 m e seis cadeiras Star de assento estofado. Espaço para receber a família toda.",
+  "details": [
+   "Mesa de 1,60 m",
+   "Seis cadeiras Star",
+   "Na foto: mesa Taís 1,60 com cadeiras Eduarda"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "freijo",
+    "name": "Freijó · 6 cadeiras Star",
+    "color": "#c08a52",
+    "image": "assets/catalogo/tb-tais160.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000769",
+    "descricaoLoja": "SALA TAIS 1,60 +6 CAD STAR",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Freijó",
+     "lugares": "6 lugares"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/tuboarte-2026-09.pdf",
+    "pagina": "130"
+   },
+   {
+    "campo": "imagem ilustrativa Freijó · 6 cadeiras Star",
+    "codigo": "000769",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "cadeira",
+    "nota": "Catálogo só mostra a Taís 1,60 com cadeira Eduarda."
+   }
+  ]
+ },
+ {
+  "id": "sala-jantar-helena-120",
+  "ref": "NSC-133",
+  "fabricante": "Tuboarte",
+  "name": "Sala de jantar Helena 1,20 com 4 cadeiras Coral",
+  "category": "jantar",
+  "description": "Mesa Helena de 1,20 m em Canelado/Freijó com quatro cadeiras Coral estofadas e pés de madeira. Linhas modernas para a sala de jantar.",
+  "details": [
+   "Mesa de 1,20 m",
+   "Quatro cadeiras Coral com pés de madeira",
+   "Na foto: cadeira Coral com pé MDF"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "cod-000773",
+    "name": "Opção cód. 000773",
+    "color": "#c08a52",
+    "image": "assets/catalogo/tb-helena120.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000773",
+    "descricaoLoja": "SALA HELENA 1,20 +4 CAD CORAL (PES MAD)",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4 lugares"
+    }
+   },
+   {
+    "id": "cod-000774",
+    "name": "Opção cód. 000774",
+    "color": "#a9b0ad",
+    "image": "assets/catalogo/tb-helena120.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000774",
+    "descricaoLoja": "SALA HELENA 1,20 +4 CAD CORAL (PES MAD)",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "lugares": "4 lugares"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/tuboarte-2026-09.pdf",
+    "pagina": "124"
+   },
+   {
+    "campo": "imagem ilustrativa Opção cód. 000773",
+    "codigo": "000773",
+    "url": null
+   },
+   {
+    "campo": "imagem ilustrativa Opção cód. 000774",
+    "codigo": "000774",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "pés das cadeiras",
+    "nota": "Relatório diz pés de madeira; catálogo mostra Coral com pé MDF."
+   }
+  ]
+ },
+ {
+  "id": "sala-jantar-helena-160",
+  "ref": "NSC-134",
+  "fabricante": "Tuboarte",
+  "name": "Sala de jantar Helena 1,60 com 6 cadeiras Coral",
+  "category": "jantar",
+  "description": "Mesa Helena de 1,60 m em Canelado/Freijó com seis cadeiras Coral estofadas e pés de madeira. Para quem recebe bem e quer conforto à mesa.",
+  "details": [
+   "Mesa de 1,60 m",
+   "Seis cadeiras Coral com pés de madeira",
+   "Na foto: mesa Helena 1,60 com cadeiras Olívia"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "cod-000775",
+    "name": "Opção cód. 000775",
+    "color": "#c08a52",
+    "image": "assets/catalogo/tb-helena160.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000775",
+    "descricaoLoja": "SALA HELENA 1,60 +6 CAD CORAL (PES MAD)",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "lugares": "6 lugares"
+    }
+   },
+   {
+    "id": "cod-000776",
+    "name": "Opção cód. 000776",
+    "color": "#a9b0ad",
+    "image": "assets/catalogo/tb-helena160.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000776",
+    "descricaoLoja": "SALA HELENA 1,60 +6 CAD CORAL (PES MAD)",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 1,
+    "medidas": null,
+    "atributos": {
+     "lugares": "6 lugares"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/tuboarte-2026-09.pdf",
+    "pagina": "116"
+   },
+   {
+    "campo": "imagem ilustrativa Opção cód. 000775",
+    "codigo": "000775",
+    "url": null
+   },
+   {
+    "campo": "imagem ilustrativa Opção cód. 000776",
+    "codigo": "000776",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "cadeira",
+    "nota": "Sem foto exata da Helena 1,60 com cadeira Coral no catálogo."
+   }
+  ]
+ },
+ {
+  "id": "cozinha-nice",
+  "ref": "NSC-135",
+  "fabricante": "Tuboarte",
+  "name": "Cozinha Nice",
+  "category": "cozinha",
+  "description": "Cozinha completa Nice, com armários aéreos, balcões e cristaleira de vidro. Muito espaço para louças e eletros, com visual leve e moderno.",
+  "details": [
+   "Aéreos, balcões e cristaleira",
+   "Acabamento Cinamomo / Off White",
+   "Na foto: Freijó / Off White"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "cinamomo-off-white",
+    "name": "Cinamomo / Off White",
+    "color": "#a8754a",
+    "image": "assets/catalogo/tb-nice.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000699",
+    "descricaoLoja": "COZINHA NICE - CINAMO/OFF",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Cinamomo / Off White"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/tuboarte-2026-09.pdf",
+    "pagina": "67"
+   },
+   {
+    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "codigo": "000699",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "cor",
+    "nota": "Sistema diz Cinamo/Off; catálogo Tuboarte usa Freijó/Off White e Freijó/Cinza."
+   }
+  ]
+ },
+ {
+  "id": "painel-sevilha",
+  "ref": "NSC-136",
+  "fabricante": "Tuboarte",
+  "name": "Painel Sevilha para TV",
+  "category": "sala",
+  "description": "Painel amplo em Freijó com rack suspenso de portas em palhinha. Organiza a sala e valoriza TVs grandes.",
+  "details": [
+   "Rack suspenso com portas em palhinha",
+   "Acabamento Freijó / Off White",
+   "Catálogo: TVs de até 65\""
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "freijo-off-white",
+    "name": "Freijó / Off White",
+    "color": "#c08a52",
+    "image": "assets/catalogo/tb-sevilha.jpg",
+    "imageTipo": "catalogo",
+    "sku": "000770",
+    "descricaoLoja": "PAINEL SEVILHA PTV ATE 70\"",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 4,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Freijó / Off White"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/tuboarte-2026-09.pdf",
+    "pagina": "49"
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "tamanho da TV",
+    "nota": "Sistema diz TV até 70\"; catálogo Tuboarte diz até 65\"."
+   }
+  ]
+ },
+ {
+  "id": "aparador-oregon",
+  "ref": "NSC-137",
+  "fabricante": "Tuboarte",
+  "name": "Aparador Oregon",
+  "category": "sala",
+  "description": "Aparador Oregon com base em V de linhas marcantes. Peça de destaque para hall, sala de estar ou de jantar.",
+  "details": [
+   "120 × 89,2 × 35 cm",
+   "Tampo em madeira",
+   "Na foto: tampo Off White"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "freijo",
+    "name": "Freijó · tampo em madeira",
+    "color": "#c08a52",
+    "image": "assets/catalogo/tb-oregon.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000777",
+    "descricaoLoja": "APARADOR OREGON CTAMPO MADEIRA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": {
+     "largura": 120,
+     "altura": 89.2,
+     "profundidade": 35
+    },
+    "atributos": {
+     "acabamento": "Freijó"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/tuboarte-2026-09.pdf",
+    "pagina": "141"
+   },
+   {
+    "campo": "imagem ilustrativa Freijó · tampo em madeira",
+    "codigo": "000777",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "tampo",
+    "nota": "Sistema diz \"c/ tampo madeira\"; catálogo mostra tampo Off White."
+   }
+  ]
+ },
+ {
+  "id": "conjunto-sofas-valencia",
+  "ref": "NSC-138",
+  "fabricante": "JW Estofados",
+  "name": "Conjunto de sofás Valência 2 e 3 lugares",
+  "category": "estofados",
+  "description": "Conjunto de sofás de 2 e 3 lugares em veludo, com encosto capitonê e braços largos. Conforto para a família toda.",
+  "details": [
+   "Sofás de 2 e 3 lugares",
+   "Veludo",
+   "Na foto: Valência em azul"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "veludo-castor",
+    "name": "Veludo castor",
+    "color": "#8a7560",
+    "image": "assets/catalogo/jw-valencia.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000725",
+    "descricaoLoja": "CJ VALENCIA 2/3L - VELUDO CASTOR T04",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Veludo castor"
+    }
+   },
+   {
+    "id": "veludo-cinza",
+    "name": "Veludo cinza",
+    "color": "#8a8d90",
+    "image": "assets/catalogo/jw-valencia.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000726",
+    "descricaoLoja": "CJ VALENCIA 2/3L - VELUDO CINZA (T13)",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Veludo cinza"
+    }
+   },
+   {
+    "id": "veludo-cinza-539",
+    "name": "Veludo cinza · cód. 000539",
+    "color": "#8a8d90",
+    "image": "assets/catalogo/jw-valencia.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000539",
+    "descricaoLoja": "ESTOFADO VALÊNCIA VELUDO CINZA",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Veludo cinza"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/jw-2026-06.pdf",
+    "pagina": "25"
+   },
+   {
+    "campo": "imagem ilustrativa Veludo castor",
+    "codigo": "000725",
+    "url": null
+   },
+   {
+    "campo": "imagem ilustrativa Veludo cinza",
+    "codigo": "000726",
+    "url": null
+   },
+   {
+    "campo": "imagem ilustrativa Veludo cinza · cód. 000539",
+    "codigo": "000539",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "cor",
+    "nota": "Catálogo JW mostra Valência só em azul."
+   }
+  ]
+ },
+ {
+  "id": "conjunto-sofas-napoles",
+  "ref": "NSC-139",
+  "fabricante": "JW Estofados",
+  "name": "Conjunto de sofás Nápoles 2 e 3 lugares",
+  "category": "estofados",
+  "description": "Conjunto de sofás Nápoles de 2 e 3 lugares, com assento macio e braços acolchoados. Disponível em veludo e em bouclê.",
+  "details": [
+   "Sofás de 2 e 3 lugares",
+   "Veludo ou bouclê",
+   "Na foto: Nápoles em cinza"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "veludo-terracota",
+    "name": "Veludo terracota",
+    "color": "#b5563a",
+    "image": "assets/catalogo/jw-napoles.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000723",
+    "descricaoLoja": "CJ NAPOLES 2/3L - VELUDO TERRACOTA T08",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Veludo terracota"
+    }
+   },
+   {
+    "id": "veludo-vermelho",
+    "name": "Veludo vermelho",
+    "color": "#9c2a2a",
+    "image": "assets/catalogo/jw-napoles.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000724",
+    "descricaoLoja": "CJ NAPOLES 2/3L - VELUDO VERMELHO (T14)",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 2,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Veludo vermelho"
+    }
+   },
+   {
+    "id": "veludo-castor",
+    "name": "Veludo castor",
+    "color": "#8a7560",
+    "image": "assets/catalogo/jw-napoles.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000533",
+    "descricaoLoja": "ESTOFADO NÁPOLES VELUDO CASTOR",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Veludo castor"
+    }
+   },
+   {
+    "id": "boucle-marrom",
+    "name": "Bouclê marrom",
+    "color": "#6b4a33",
+    "image": "assets/catalogo/jw-napoles.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000535",
+    "descricaoLoja": "ESTOFADO NÁPOLES BOUCLE MARROM",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Bouclê marrom"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/jw-2026-06.pdf",
+    "pagina": "17"
+   },
+   {
+    "campo": "imagem ilustrativa Veludo terracota",
+    "codigo": "000723",
+    "url": null
+   },
+   {
+    "campo": "imagem ilustrativa Veludo vermelho",
+    "codigo": "000724",
+    "url": null
+   },
+   {
+    "campo": "imagem ilustrativa Veludo castor",
+    "codigo": "000533",
+    "url": null
+   },
+   {
+    "campo": "imagem ilustrativa Bouclê marrom",
+    "codigo": "000535",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "cor",
+    "nota": "Catálogo JW mostra Nápoles em cinza."
+   }
+  ]
+ },
+ {
+  "id": "sofa-montana",
+  "ref": "NSC-140",
+  "fabricante": "JW Estofados",
+  "name": "Sofá retrátil e reclinável Montana",
+  "category": "estofados",
+  "description": "Sofá retrátil e reclinável Montana em veludo. Assento que avança e encosto que reclina para assistir TV com todo o conforto.",
+  "details": [
+   "Retrátil e reclinável",
+   "Veludo",
+   "Na foto: Montana New"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "veludo",
+    "name": "Veludo",
+    "color": "#8a7d70",
+    "image": "assets/catalogo/jw-montana.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000542",
+    "descricaoLoja": "ESTOFADO RETRÁTIL E RECLINÁVEL MONTANA VELUDO",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Veludo"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/jw-2026-06.pdf",
+    "pagina": "23"
+   },
+   {
+    "campo": "imagem ilustrativa Veludo",
+    "codigo": "000542",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "tag": "Retrátil",
+  "conflitos": [
+   {
+    "campo": "modelo e cor",
+    "nota": "Catálogo JW tem \"Montana New\"; confirmar modelo e cor."
+   }
+  ]
+ },
+ {
+  "id": "sofa-santiago",
+  "ref": "NSC-141",
+  "fabricante": "JW Estofados",
+  "name": "Sofá Santiago em linho",
+  "category": "estofados",
+  "description": "Sofá Santiago em linho bege, com encosto capitonê e braços retos. Visual clássico que combina com qualquer sala.",
+  "details": [
+   "Linho bege",
+   "Na foto: Santiago em outro tom"
+  ],
+  "images": [],
+  "variants": [
+   {
+    "id": "linho-bege",
+    "name": "Linho bege",
+    "color": "#d8c8a8",
+    "image": "assets/catalogo/jw-santiago.jpg",
+    "imageTipo": "ilustrativa",
+    "sku": "000536",
+    "descricaoLoja": "ESTOFADO SANTIAGO LINHO BEGE",
+    "preco": null,
+    "parcelado": null,
+    "estoque": 0,
+    "medidas": null,
+    "atributos": {
+     "acabamento": "Linho bege"
+    }
+   }
+  ],
+  "fontes": [
+   {
+    "campo": "fotos e medidas do modelo",
+    "arquivo": "dados-loja/catalogos/jw-2026-06.pdf",
+    "pagina": "27"
+   },
+   {
+    "campo": "imagem ilustrativa Linho bege",
+    "codigo": "000536",
+    "url": null
+   },
+   {
+    "campo": "códigos e estoque",
+    "arquivo": "dados-loja/estoque-relatorio-2026-11-23.tsv"
+   }
+  ],
+  "conflitos": [
+   {
+    "campo": "cor",
+    "nota": "Catálogo JW mostra Santiago em outro tom."
+   }
+  ]
+ },
+ {
+  "id": "cozinha-nesher-realeza-160",
+  "ref": "NSC-142",
   "fabricante": "Nesher",
   "name": "Cozinha compacta Realeza 160 cm",
   "category": "cozinha",
@@ -1875,7 +2961,7 @@ export const produtosLoja = [
  },
  {
   "id": "cozinha-nesher-realeza-220",
-  "ref": "NSC-129",
+  "ref": "NSC-143",
   "fabricante": "Nesher",
   "name": "Cozinha compacta Realeza 220 cm",
   "category": "cozinha",
@@ -1939,7 +3025,7 @@ export const produtosLoja = [
  },
  {
   "id": "cozinha-nesher-nobreza-160",
-  "ref": "NSC-130",
+  "ref": "NSC-144",
   "fabricante": "Nesher",
   "name": "Cozinha compacta Nobreza 160 cm",
   "category": "cozinha",
@@ -2003,7 +3089,7 @@ export const produtosLoja = [
  },
  {
   "id": "cozinha-nesher-nobreza-210",
-  "ref": "NSC-131",
+  "ref": "NSC-145",
   "fabricante": "Nesher",
   "name": "Cozinha compacta Nobreza 210 cm",
   "category": "cozinha",
@@ -2067,7 +3153,7 @@ export const produtosLoja = [
  },
  {
   "id": "balcao-nesher-realeza-premium-120",
-  "ref": "NSC-132",
+  "ref": "NSC-146",
   "fabricante": "Nesher",
   "name": "Balcão Realeza Premium 120 cm",
   "category": "cozinha",
@@ -2131,7 +3217,7 @@ export const produtosLoja = [
  },
  {
   "id": "paneleiro-nesher-realeza-premium",
-  "ref": "NSC-133",
+  "ref": "NSC-147",
   "fabricante": "Nesher",
   "name": "Paneleiro torre angular Realeza Premium 65 cm",
   "category": "cozinha",
@@ -2195,7 +3281,7 @@ export const produtosLoja = [
  },
  {
   "id": "armario-geladeira-nesher-rainha",
-  "ref": "NSC-134",
+  "ref": "NSC-148",
   "fabricante": "Nesher",
   "name": "Armário de geladeira Rainha 80 cm",
   "category": "cozinha",
@@ -2238,7 +3324,7 @@ export const produtosLoja = [
  },
  {
   "id": "armario-valdemoveis-rubi",
-  "ref": "NSC-135",
+  "ref": "NSC-149",
   "fabricante": "Valdemóveis",
   "name": "Armário de cozinha Rubi",
   "category": "cozinha",
@@ -2301,7 +3387,7 @@ export const produtosLoja = [
  },
  {
   "id": "armario-valdemoveis-monte-rey",
-  "ref": "NSC-136",
+  "ref": "NSC-150",
   "fabricante": "Valdemóveis",
   "name": "Armário de cozinha Monte Rey",
   "category": "cozinha",
@@ -2343,7 +3429,7 @@ export const produtosLoja = [
  },
  {
   "id": "armario-valdemoveis-diamante",
-  "ref": "NSC-137",
+  "ref": "NSC-151",
   "fabricante": "Valdemóveis",
   "name": "Armário de cozinha Diamante",
   "category": "cozinha",
@@ -2385,7 +3471,7 @@ export const produtosLoja = [
  },
  {
   "id": "armario-valdemoveis-canastra",
-  "ref": "NSC-138",
+  "ref": "NSC-152",
   "fabricante": "Valdemóveis",
   "name": "Armário de cozinha Canastra",
   "category": "cozinha",
@@ -2427,7 +3513,7 @@ export const produtosLoja = [
  },
  {
   "id": "kit-cozinha-duda-90",
-  "ref": "NSC-139",
+  "ref": "NSC-153",
   "fabricante": "Poquema",
   "name": "Kit de cozinha Duda 90 cm",
   "category": "cozinha",
@@ -2490,7 +3576,7 @@ export const produtosLoja = [
  },
  {
   "id": "kit-cozinha-coral",
-  "ref": "NSC-140",
+  "ref": "NSC-154",
   "fabricante": "Poquema",
   "name": "Kit de cozinha Coral",
   "category": "cozinha",
@@ -2531,7 +3617,7 @@ export const produtosLoja = [
  },
  {
   "id": "kit-cozinha-dora",
-  "ref": "NSC-141",
+  "ref": "NSC-155",
   "fabricante": "Poquema",
   "name": "Kit de cozinha Dora com balcão",
   "category": "cozinha",
@@ -2594,7 +3680,7 @@ export const produtosLoja = [
  },
  {
   "id": "kit-cozinha-santiago-90",
-  "ref": "NSC-142",
+  "ref": "NSC-156",
   "fabricante": "Dacheri",
   "name": "Kit de cozinha Santiago 90 cm",
   "category": "cozinha",
@@ -2678,7 +3764,7 @@ export const produtosLoja = [
  },
  {
   "id": "aereo-divina-120",
-  "ref": "NSC-143",
+  "ref": "NSC-157",
   "fabricante": "MGM",
   "name": "Armário aéreo Divina 120 cm",
   "category": "cozinha",
@@ -2720,7 +3806,7 @@ export const produtosLoja = [
  },
  {
   "id": "torre-quente-divina-70",
-  "ref": "NSC-144",
+  "ref": "NSC-158",
   "fabricante": "MGM",
   "name": "Torre quente Divina 70 cm",
   "category": "cozinha",
@@ -2762,7 +3848,7 @@ export const produtosLoja = [
  },
  {
   "id": "home-chicago-lukaliam",
-  "ref": "NSC-145",
+  "ref": "NSC-159",
   "fabricante": "Lukaliam",
   "name": "Home Chicago para TV até 60\"",
   "category": "sala",
@@ -2826,7 +3912,7 @@ export const produtosLoja = [
  },
  {
   "id": "home-cross-lukaliam",
-  "ref": "NSC-146",
+  "ref": "NSC-160",
   "fabricante": "Lukaliam",
   "name": "Home Cross frisado para TV até 55\"",
   "category": "sala",
@@ -2868,7 +3954,7 @@ export const produtosLoja = [
  },
  {
   "id": "bancada-dallas-lukaliam",
-  "ref": "NSC-147",
+  "ref": "NSC-161",
   "fabricante": "Lukaliam",
   "name": "Bancada Dallas 3 portas",
   "category": "sala",
@@ -2930,7 +4016,7 @@ export const produtosLoja = [
  },
  {
   "id": "rack-houston-valdemoveis",
-  "ref": "NSC-148",
+  "ref": "NSC-162",
   "fabricante": "Valdemóveis",
   "name": "Rack Houston para TV até 50\"",
   "category": "sala",
@@ -2972,7 +4058,7 @@ export const produtosLoja = [
  },
  {
   "id": "bancada-mariana-valdemoveis",
-  "ref": "NSC-149",
+  "ref": "NSC-163",
   "fabricante": "Valdemóveis",
   "name": "Bancada Mariana",
   "category": "sala",
@@ -3014,7 +4100,7 @@ export const produtosLoja = [
  },
  {
   "id": "painel-paraty-bechara",
-  "ref": "NSC-150",
+  "ref": "NSC-164",
   "fabricante": "Bechara",
   "name": "Painel Paraty",
   "category": "sala",
@@ -3056,7 +4142,7 @@ export const produtosLoja = [
  },
  {
   "id": "mesa-centro-perola-valdemoveis",
-  "ref": "NSC-151",
+  "ref": "NSC-165",
   "fabricante": "Valdemóveis",
   "name": "Mesa de centro Pérola",
   "category": "complementos",
@@ -3097,7 +4183,7 @@ export const produtosLoja = [
  },
  {
   "id": "mesa-centro-floripa-bechara",
-  "ref": "NSC-152",
+  "ref": "NSC-166",
   "fabricante": "Bechara",
   "name": "Mesa de centro Floripa",
   "category": "complementos",
@@ -3139,7 +4225,7 @@ export const produtosLoja = [
  },
  {
   "id": "buffet-elegance-lukaliam",
-  "ref": "NSC-153",
+  "ref": "NSC-167",
   "fabricante": "Lukaliam",
   "name": "Buffet Elegance 4 portas",
   "category": "jantar",
@@ -3180,7 +4266,7 @@ export const produtosLoja = [
  },
  {
   "id": "penteadeira-wish-bechara",
-  "ref": "NSC-154",
+  "ref": "NSC-168",
   "fabricante": "Bechara",
   "name": "Penteadeira camarim Wish",
   "category": "quarto",
@@ -3222,7 +4308,7 @@ export const produtosLoja = [
  },
  {
   "id": "tv-aoc-32-roku",
-  "ref": "NSC-155",
+  "ref": "NSC-169",
   "fabricante": "AOC",
   "name": "Smart TV AOC 32\" Roku",
   "category": "eletros",
@@ -3264,7 +4350,7 @@ export const produtosLoja = [
  },
  {
   "id": "geladeira-esmaltec-roc31",
-  "ref": "NSC-156",
+  "ref": "NSC-170",
   "fabricante": "Esmaltec",
   "name": "Geladeira Esmaltec 245 L Inverter ROC31",
   "category": "eletros",
@@ -3308,7 +4394,7 @@ export const produtosLoja = [
  },
  {
   "id": "geladeira-esmaltec-rcd34",
-  "ref": "NSC-157",
+  "ref": "NSC-171",
   "fabricante": "Esmaltec",
   "name": "Geladeira Esmaltec Duplex Inverter RCD34",
   "category": "eletros",
@@ -3352,7 +4438,7 @@ export const produtosLoja = [
  },
  {
   "id": "tanquinho-suggar-lavamax-10",
-  "ref": "NSC-158",
+  "ref": "NSC-172",
   "fabricante": "Suggar",
   "name": "Tanquinho Suggar Lavamax 10 kg",
   "category": "eletros",
@@ -3417,7 +4503,7 @@ export const produtosLoja = [
  },
  {
   "id": "tanquinho-suggar-lavamatic-16",
-  "ref": "NSC-159",
+  "ref": "NSC-173",
   "fabricante": "Suggar",
   "name": "Tanquinho Suggar Lavamatic 16 kg",
   "category": "eletros",
@@ -3482,7 +4568,7 @@ export const produtosLoja = [
  },
  {
   "id": "micro-ondas-agratto-32",
-  "ref": "NSC-160",
+  "ref": "NSC-174",
   "fabricante": "Agratto",
   "name": "Micro-ondas Agratto 32 L",
   "category": "eletros",
@@ -3525,7 +4611,7 @@ export const produtosLoja = [
  },
  {
   "id": "air-fryer-mondial-af36",
-  "ref": "NSC-161",
+  "ref": "NSC-175",
   "fabricante": "Mondial",
   "name": "Air fryer Mondial Pratic 3,6 L",
   "category": "eletros",
@@ -3566,7 +4652,7 @@ export const produtosLoja = [
  },
  {
   "id": "sanduicheira-fama-fgr01",
-  "ref": "NSC-162",
+  "ref": "NSC-176",
   "fabricante": "Fama",
   "name": "Grill e sanduicheira Fama 750 W",
   "category": "eletros",
@@ -3608,7 +4694,7 @@ export const produtosLoja = [
  },
  {
   "id": "sanduicheira-agratto-sa02",
-  "ref": "NSC-163",
+  "ref": "NSC-177",
   "fabricante": "Agratto",
   "name": "Sanduicheira e grill Agratto SA02",
   "category": "eletros",
@@ -3651,7 +4737,7 @@ export const produtosLoja = [
  },
  {
   "id": "sanduicheira-mondial-ultra",
-  "ref": "NSC-164",
+  "ref": "NSC-178",
   "fabricante": "Mondial",
   "name": "Sanduicheira e grill Mondial Ultra",
   "category": "eletros",
@@ -3692,7 +4778,7 @@ export const produtosLoja = [
  },
  {
   "id": "liquidificador-arno-power-mix",
-  "ref": "NSC-165",
+  "ref": "NSC-179",
   "fabricante": "Arno",
   "name": "Liquidificador Arno Power Mix",
   "category": "eletros",
@@ -3735,7 +4821,7 @@ export const produtosLoja = [
  },
  {
   "id": "liquidificador-mondial-easy-power",
-  "ref": "NSC-166",
+  "ref": "NSC-180",
   "fabricante": "Mondial",
   "name": "Liquidificador Mondial Easy Power",
   "category": "eletros",
@@ -3798,7 +4884,7 @@ export const produtosLoja = [
  },
  {
   "id": "liquidificador-mondial-pratic-power",
-  "ref": "NSC-167",
+  "ref": "NSC-181",
   "fabricante": "Mondial",
   "name": "Liquidificador Mondial Pratic Power",
   "category": "eletros",
@@ -3839,7 +4925,7 @@ export const produtosLoja = [
  },
  {
   "id": "liquidificador-mondial-turbo-power",
-  "ref": "NSC-168",
+  "ref": "NSC-182",
   "fabricante": "Mondial",
   "name": "Liquidificador Mondial Turbo Power",
   "category": "eletros",
@@ -3888,7 +4974,7 @@ export const produtosLoja = [
     "name": "Preto (L-99, 500 W, 220 V)",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000436.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000436",
     "descricaoLoja": "LIQ MONDIAL L99 TURBO FILTRO 3V. 500W 1518-02 PRETO 220",
     "preco": null,
@@ -3913,9 +4999,9 @@ export const produtosLoja = [
     "url": "https://www.extra.com.br/liquidificador-mondial-l99-turbo-filtro-3v-500w-1528-06-vermelho-220v/p/1582458893"
    },
    {
-    "campo": "imagem ilustrativa Preto (L-99, 500 W, 220 V)",
+    "campo": "foto Preto (L-99, 500 W, 220 V)",
     "codigo": "000436",
-    "url": "https://www.pontofrio.com.br/liquidificador-mondial-3-velocidades-500w-l99-com-filtro-postamos-24h-preto-110v/p/1570077459"
+    "url": "https://www.madeiramadeira.com.br/liquidificador-mondial-turbo-power-l-99-fb-550-watts-3-velocidades-pulsar-220v--50-60-hz-preto-811336872.html"
    },
    {
     "campo": "códigos e estoque",
@@ -3925,7 +5011,7 @@ export const produtosLoja = [
  },
  {
   "id": "liquidificador-walita-problend4",
-  "ref": "NSC-169",
+  "ref": "NSC-183",
   "fabricante": "Philips Walita",
   "name": "Liquidificador Walita ProBlend 4",
   "category": "eletros",
@@ -4008,7 +5094,7 @@ export const produtosLoja = [
  },
  {
   "id": "liquidificador-walita-ri2112",
-  "ref": "NSC-170",
+  "ref": "NSC-184",
   "fabricante": "Philips Walita",
   "name": "Liquidificador Walita ProBlend 4 600 W",
   "category": "eletros",
@@ -4050,7 +5136,7 @@ export const produtosLoja = [
  },
  {
   "id": "cafeteira-agratto-inox-25",
-  "ref": "NSC-171",
+  "ref": "NSC-185",
   "fabricante": "Agratto",
   "name": "Cafeteira elétrica Agratto Inox 25 xícaras",
   "category": "eletros",
@@ -4094,7 +5180,7 @@ export const produtosLoja = [
  },
  {
   "id": "ferro-mondial-fsn55",
-  "ref": "NSC-172",
+  "ref": "NSC-186",
   "fabricante": "Mondial",
   "name": "Ferro a seco Mondial",
   "category": "eletros",
@@ -4157,7 +5243,7 @@ export const produtosLoja = [
  },
  {
   "id": "ferro-britania-bfv07",
-  "ref": "NSC-173",
+  "ref": "NSC-187",
   "fabricante": "Britânia",
   "name": "Ferro a vapor Britânia 210 ml",
   "category": "eletros",
@@ -4199,7 +5285,7 @@ export const produtosLoja = [
  },
  {
   "id": "ferro-britania-bfv201",
-  "ref": "NSC-174",
+  "ref": "NSC-188",
   "fabricante": "Britânia",
   "name": "Ferro a vapor Britânia Super Carbon",
   "category": "eletros",
@@ -4241,7 +5327,7 @@ export const produtosLoja = [
  },
  {
   "id": "ventilador-britania-bvt400",
-  "ref": "NSC-175",
+  "ref": "NSC-189",
   "fabricante": "Britânia",
   "name": "Ventilador Britânia Maxx Force 40 cm",
   "category": "eletros",
@@ -4285,7 +5371,7 @@ export const produtosLoja = [
  },
  {
   "id": "ventilador-mondial-super-power-40",
-  "ref": "NSC-176",
+  "ref": "NSC-190",
   "fabricante": "Mondial",
   "name": "Ventilador Mondial Super Power 40 cm",
   "category": "eletros",
@@ -4327,7 +5413,7 @@ export const produtosLoja = [
  },
  {
   "id": "ventilador-ventisol-turbo6-mesa",
-  "ref": "NSC-177",
+  "ref": "NSC-191",
   "fabricante": "Ventisol",
   "name": "Ventilador de mesa Ventisol Turbo 6",
   "category": "eletros",
@@ -4414,7 +5500,7 @@ export const produtosLoja = [
  },
  {
   "id": "ventilador-ventisol-turbo6-coluna",
-  "ref": "NSC-178",
+  "ref": "NSC-192",
   "fabricante": "Ventisol",
   "name": "Ventilador de coluna Ventisol Turbo 6 40 cm",
   "category": "eletros",
@@ -4458,7 +5544,7 @@ export const produtosLoja = [
  },
  {
   "id": "fogao-clarice-delicato",
-  "ref": "NSC-179",
+  "ref": "NSC-193",
   "fabricante": "Clarice",
   "name": "Fogão a gás Delicato",
   "category": "eletros",
@@ -4507,7 +5593,7 @@ export const produtosLoja = [
     "name": "4 bocas · Branco",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000372.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000372",
     "descricaoLoja": "FG GAS DELICATO 4B BRANCOV2",
     "preco": null,
@@ -4524,7 +5610,7 @@ export const produtosLoja = [
     "name": "4 bocas · Preto fosco",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000373.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000373",
     "descricaoLoja": "FG GAS DELICATO 4B PRETO FOSCO",
     "preco": null,
@@ -4541,7 +5627,7 @@ export const produtosLoja = [
     "name": "6 bocas · Branco",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000622.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000622",
     "descricaoLoja": "FG GAS DELICATO 6B - BRANCOV2",
     "preco": null,
@@ -4566,19 +5652,19 @@ export const produtosLoja = [
     "url": "https://www.extra.com.br/fogao-a-gas-6-bocas-delicato-clarice-preto-fosco/p/1580591674"
    },
    {
-    "campo": "imagem ilustrativa 4 bocas · Branco",
+    "campo": "foto 4 bocas · Branco",
     "codigo": "000372",
-    "url": "https://www.pontofrio.com.br/fogao-atlas-coliseum-4-bocas-plus-pes-altos-queimadores-limpa-facil-branco/p/55072278"
+    "url": "https://www.madeiramadeira.com.br/fogao-4-bocas-delicato-52l-clarice-eletrodomesticos-476813.html"
    },
    {
-    "campo": "imagem ilustrativa 4 bocas · Preto fosco",
+    "campo": "foto 4 bocas · Preto fosco",
     "codigo": "000373",
-    "url": "https://www.pontofrio.com.br/fogao-itatiaia-4-bocas-star-clean-new-preto/p/1570701358"
+    "url": "https://www.madeiramadeira.com.br/fogao-4-bocas-delicato-clarice-eletrodomesticos-476774.html"
    },
    {
-    "campo": "imagem ilustrativa 6 bocas · Branco",
+    "campo": "foto 6 bocas · Branco",
     "codigo": "000622",
-    "url": "https://www.pontofrio.com.br/fogao-brastemp-6-bocas-bfs6ncb-com-mesa-de-inox-botoes-removiveis-e-exclusivo-aro-protetor-bivolt-branco/p/12731668"
+    "url": "https://www.madeiramadeira.com.br/fogao-delicato-com-6-bocas-branco-clarice-branco-409221326.html"
    },
    {
     "campo": "códigos e estoque",
@@ -4588,7 +5674,7 @@ export const produtosLoja = [
  },
  {
   "id": "fogao-braslar-new-sirius",
-  "ref": "NSC-180",
+  "ref": "NSC-194",
   "fabricante": "Braslar",
   "name": "Fogão Braslar New Sirius 4 bocas",
   "category": "eletros",
@@ -4620,7 +5706,7 @@ export const produtosLoja = [
     "name": "Preto",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000448.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000448",
     "descricaoLoja": "FOGAO 4B BRASLAR NEW SIRIUS S/ACEND 10010104 PRETO",
     "preco": null,
@@ -4639,9 +5725,9 @@ export const produtosLoja = [
     "url": "https://www.extra.com.br/fogao-4-bocas-de-piso-braslar-new-sirius-2023-branco/p/1571953436"
    },
    {
-    "campo": "imagem ilustrativa Preto",
+    "campo": "foto Preto",
     "codigo": "000448",
-    "url": "https://www.pontofrio.com.br/fogao-new-sirius-4-bocas-manual-mesa-em-inox-forno-easy-clean-braslar/p/1566830755"
+    "url": "https://www.madeiramadeira.com.br/fogao-4-bocas-de-piso-braslar-new-sirius-2023-333565001.html"
    },
    {
     "campo": "códigos e estoque",
@@ -4651,7 +5737,7 @@ export const produtosLoja = [
  },
  {
   "id": "aereo-nesher-realeza-premium-120",
-  "ref": "NSC-181",
+  "ref": "NSC-195",
   "fabricante": "Nesher",
   "name": "Armário aéreo Realeza Premium 120 cm",
   "category": "cozinha",
@@ -4715,7 +5801,7 @@ export const produtosLoja = [
  },
  {
   "id": "aereo-divina-80-geladeira",
-  "ref": "NSC-182",
+  "ref": "NSC-196",
   "fabricante": "MGM",
   "name": "Armário aéreo Divina 80 cm para geladeira",
   "category": "cozinha",
@@ -4758,7 +5844,7 @@ export const produtosLoja = [
  },
  {
   "id": "kit-cozinha-livia",
-  "ref": "NSC-183",
+  "ref": "NSC-197",
   "fabricante": null,
   "name": "Kit de cozinha Lívia 2 m",
   "category": "cozinha",
@@ -4774,7 +5860,7 @@ export const produtosLoja = [
     "name": "Freijó / Off White",
     "color": "#b38b5d",
     "image": "assets/catalogo/web-000464.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000464",
     "descricaoLoja": "KIT LIVIA 2MT 8P 2G - FREIJO/OFF WHITE",
     "preco": null,
@@ -4788,9 +5874,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Freijó / Off White",
+    "campo": "foto Freijó / Off White",
     "codigo": "000464",
-    "url": "https://www.pontofrio.com.br/kit-armario-cozinha-compacta-completa-new-livia-6-portas-1-gaveta-freijo-off-white-poliman/p/1582773716"
+    "url": "https://www.madeiramadeira.com.br/cozinha-compacta-livia-200cm-8-portas-e-2-gavetas-freijo-off-white-mgm-467293878.html"
    },
    {
     "campo": "códigos e estoque",
@@ -4800,7 +5886,7 @@ export const produtosLoja = [
  },
  {
   "id": "kit-cozinha-new-montevideu",
-  "ref": "NSC-184",
+  "ref": "NSC-198",
   "fabricante": null,
   "name": "Kit de cozinha New Montevidéu 1,50 m",
   "category": "cozinha",
@@ -4863,7 +5949,7 @@ export const produtosLoja = [
  },
  {
   "id": "mesa-forno-fruteira",
-  "ref": "NSC-185",
+  "ref": "NSC-199",
   "fabricante": null,
   "name": "Mesa para forno com fruteira",
   "category": "cozinha",
@@ -4926,7 +6012,7 @@ export const produtosLoja = [
  },
  {
   "id": "fruteira-agata-38",
-  "ref": "NSC-186",
+  "ref": "NSC-200",
   "fabricante": null,
   "name": "Fruteira Ágata 38",
   "category": "cozinha",
@@ -4968,7 +6054,7 @@ export const produtosLoja = [
  },
  {
   "id": "fruteira-madri",
-  "ref": "NSC-187",
+  "ref": "NSC-201",
   "fabricante": null,
   "name": "Fruteira Madri",
   "category": "cozinha",
@@ -4984,7 +6070,7 @@ export const produtosLoja = [
     "name": "Branca",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000263.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000263",
     "descricaoLoja": "FRUTEIRA MADRI BRANCA",
     "preco": null,
@@ -5000,7 +6086,7 @@ export const produtosLoja = [
     "name": "Preta",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000150.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000150",
     "descricaoLoja": "FRUTEIRA MADRI PRETA",
     "preco": null,
@@ -5014,14 +6100,14 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Branca",
+    "campo": "foto Branca",
     "codigo": "000263",
-    "url": "https://www.pontofrio.com.br/fruteira-cozinha-aco-granito-chao-3-cestos-bebedouro-branca/p/1572315859"
+    "url": "https://www.madeiramadeira.com.br/fruteira-de-chao-cozinha-desmontada-aco-branco-tampo-branco-madri-723631304.html"
    },
    {
-    "campo": "imagem ilustrativa Preta",
+    "campo": "foto Preta",
     "codigo": "000150",
-    "url": "https://www.pontofrio.com.br/fruteira-de-chao-movel-3-andares-preta-cesto-frutas-triplo/p/1558336768"
+    "url": "https://www.madeiramadeira.com.br/fruteira-de-chao-cozinha-desmontada-aco-preto-tampo-preto-madri-609411849.html"
    },
    {
     "campo": "códigos e estoque",
@@ -5031,7 +6117,7 @@ export const produtosLoja = [
  },
  {
   "id": "fruteira-barcelona",
-  "ref": "NSC-188",
+  "ref": "NSC-202",
   "fabricante": null,
   "name": "Fruteira Barcelona",
   "category": "cozinha",
@@ -5072,7 +6158,7 @@ export const produtosLoja = [
  },
  {
   "id": "fruteira-valencia",
-  "ref": "NSC-189",
+  "ref": "NSC-203",
   "fabricante": null,
   "name": "Fruteira Valência",
   "category": "cozinha",
@@ -5113,7 +6199,7 @@ export const produtosLoja = [
  },
  {
   "id": "roupeiro-atlas",
-  "ref": "NSC-190",
+  "ref": "NSC-204",
   "fabricante": "Poquema",
   "name": "Roupeiro Atlas",
   "category": "quarto",
@@ -5197,7 +6283,7 @@ export const produtosLoja = [
  },
  {
   "id": "roupeiro-capri-4p2g",
-  "ref": "NSC-191",
+  "ref": "NSC-205",
   "fabricante": "Poquema",
   "name": "Roupeiro Capri 4 portas e 2 gavetas",
   "category": "quarto",
@@ -5259,7 +6345,7 @@ export const produtosLoja = [
  },
  {
   "id": "roupeiro-cecilia-6p",
-  "ref": "NSC-192",
+  "ref": "NSC-206",
   "fabricante": null,
   "name": "Roupeiro Cecília 6 portas",
   "category": "quarto",
@@ -5274,7 +6360,7 @@ export const produtosLoja = [
     "name": "Cinamomo / Off White (com kit de pés)",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000395.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000395",
     "descricaoLoja": "ROUPEIRO CECILIA 6 PORTAS COM KIT 8 PES RETANGULAR",
     "preco": null,
@@ -5304,9 +6390,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Cinamomo / Off White (com kit de pés)",
+    "campo": "foto Cinamomo / Off White (com kit de pés)",
     "codigo": "000395",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-6-portas-e-6-gavetas-c-pes-cecilia-cinamomo-panan/p/1572745304"
+    "url": "https://www.madeiramadeira.com.br/guarda-roupa-100-mdf-panan-cecilia-6-portas-4-gavetas-com-pes-cinamomo-off-white-com-espelho-946041762.html"
    },
    {
     "campo": "imagem ilustrativa Jequitibá",
@@ -5321,7 +6407,7 @@ export const produtosLoja = [
  },
  {
   "id": "roupeiro-clara-6p",
-  "ref": "NSC-193",
+  "ref": "NSC-207",
   "fabricante": null,
   "name": "Roupeiro Clara 6 portas com espelho giratório",
   "category": "quarto",
@@ -5353,7 +6439,7 @@ export const produtosLoja = [
    {
     "campo": "imagem ilustrativa Jequitibá",
     "codigo": "000579",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-6-portas-e-3-gavetas-clara-cinamomo-panan/p/1572443071"
+    "url": "https://www.madeiramadeira.com.br/roupeiro-panan-clara-flex-6-portas-3-gavetas-espelho-interior-642219655.html"
    },
    {
     "campo": "códigos e estoque",
@@ -5363,7 +6449,7 @@ export const produtosLoja = [
  },
  {
   "id": "roupeiro-fortaleza-plus",
-  "ref": "NSC-194",
+  "ref": "NSC-208",
   "fabricante": null,
   "name": "Roupeiro Fortaleza Plus 6 portas",
   "category": "quarto",
@@ -5402,7 +6488,7 @@ export const produtosLoja = [
  },
  {
   "id": "roupeiro-light-plus-4p",
-  "ref": "NSC-195",
+  "ref": "NSC-209",
   "fabricante": null,
   "name": "Roupeiro Light Plus 4 portas com pés",
   "category": "quarto",
@@ -5486,7 +6572,7 @@ export const produtosLoja = [
  },
  {
   "id": "roupeiro-light-plus-6p",
-  "ref": "NSC-196",
+  "ref": "NSC-210",
   "fabricante": null,
   "name": "Roupeiro Light Plus 6 portas com pés",
   "category": "quarto",
@@ -5570,7 +6656,7 @@ export const produtosLoja = [
  },
  {
   "id": "roupeiro-milao-3p2g",
-  "ref": "NSC-197",
+  "ref": "NSC-211",
   "fabricante": "Poquema",
   "name": "Roupeiro Milão 3 portas e 2 gavetas",
   "category": "quarto",
@@ -5632,7 +6718,7 @@ export const produtosLoja = [
  },
  {
   "id": "roupeiro-mirabilis",
-  "ref": "NSC-198",
+  "ref": "NSC-212",
   "fabricante": null,
   "name": "Roupeiro Mirabilis com espelho e pés",
   "category": "quarto",
@@ -5674,7 +6760,7 @@ export const produtosLoja = [
  },
  {
   "id": "roupeiro-real-6p",
-  "ref": "NSC-199",
+  "ref": "NSC-213",
   "fabricante": null,
   "name": "Roupeiro Real 6 portas",
   "category": "quarto",
@@ -5689,7 +6775,7 @@ export const produtosLoja = [
     "name": "Mocaccino / Rust",
     "color": "#7a5a45",
     "image": "assets/catalogo/web-000377.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000377",
     "descricaoLoja": "ROUPEIRO REAL 06 PORTAS COR MOCACCINO / RUST",
     "preco": null,
@@ -5703,9 +6789,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Mocaccino / Rust",
+    "campo": "foto Mocaccino / Rust",
     "codigo": "000377",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-real-6-portas-2-gavetas-espelho-atualle-branco-brilho/p/1571321952"
+    "url": "https://www.madeiramadeira.com.br/guarda-roupa-casal-com-espelho-6-portas-2-gavetas-real-atualle-moveis-588982.html"
    },
    {
     "campo": "códigos e estoque",
@@ -5715,7 +6801,7 @@ export const produtosLoja = [
  },
  {
   "id": "roupeiro-sao-luis-6p",
-  "ref": "NSC-200",
+  "ref": "NSC-214",
   "fabricante": null,
   "name": "Roupeiro São Luís New 6 portas",
   "category": "quarto",
@@ -5756,7 +6842,7 @@ export const produtosLoja = [
  },
  {
   "id": "roupeiro-capelinha-casal",
-  "ref": "NSC-201",
+  "ref": "NSC-215",
   "fabricante": null,
   "name": "Roupeiro Capelinha casal",
   "category": "quarto",
@@ -5814,7 +6900,7 @@ export const produtosLoja = [
  },
  {
   "id": "guarda-roupa-lolly-infantil",
-  "ref": "NSC-202",
+  "ref": "NSC-216",
   "fabricante": null,
   "name": "Guarda-roupa infantil Lolly",
   "category": "quarto",
@@ -5853,7 +6939,7 @@ export const produtosLoja = [
  },
  {
   "id": "comoda-esmeralda",
-  "ref": "NSC-203",
+  "ref": "NSC-217",
   "fabricante": null,
   "name": "Cômoda Esmeralda",
   "category": "quarto",
@@ -5892,7 +6978,7 @@ export const produtosLoja = [
  },
  {
   "id": "comoda-free",
-  "ref": "NSC-204",
+  "ref": "NSC-218",
   "fabricante": null,
   "name": "Cômoda Free com pés",
   "category": "quarto",
@@ -5933,7 +7019,7 @@ export const produtosLoja = [
  },
  {
   "id": "comoda-itauna",
-  "ref": "NSC-205",
+  "ref": "NSC-219",
   "fabricante": null,
   "name": "Cômoda Itaúna com pés",
   "category": "quarto",
@@ -5974,7 +7060,7 @@ export const produtosLoja = [
  },
  {
   "id": "comoda-malu",
-  "ref": "NSC-206",
+  "ref": "NSC-220",
   "fabricante": null,
   "name": "Cômoda Malu",
   "category": "quarto",
@@ -6015,7 +7101,7 @@ export const produtosLoja = [
  },
  {
   "id": "multiuso-versatile",
-  "ref": "NSC-207",
+  "ref": "NSC-221",
   "fabricante": null,
   "name": "Multiuso Versatile com pés",
   "category": "quarto",
@@ -6077,7 +7163,7 @@ export const produtosLoja = [
  },
  {
   "id": "sapateira-paris",
-  "ref": "NSC-208",
+  "ref": "NSC-222",
   "fabricante": null,
   "name": "Sapateira Paris",
   "category": "quarto",
@@ -6118,7 +7204,7 @@ export const produtosLoja = [
  },
  {
   "id": "penteadeira-camarim-glow",
-  "ref": "NSC-209",
+  "ref": "NSC-223",
   "fabricante": null,
   "name": "Penteadeira camarim Glow",
   "category": "quarto",
@@ -6133,7 +7219,7 @@ export const produtosLoja = [
     "name": "Branco",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000756.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000756",
     "descricaoLoja": "PENTEADEIRA CAMARIM GLOW BRANCO",
     "preco": null,
@@ -6147,7 +7233,7 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Branco",
+    "campo": "foto Branco",
     "codigo": "000756",
     "url": "https://www.pontofrio.com.br/penteadeira-camarim-escrivaninha-de-canto-glow-branco/p/1582022158"
    },
@@ -6159,7 +7245,7 @@ export const produtosLoja = [
  },
  {
   "id": "penteadeira-camarim-rouge",
-  "ref": "NSC-210",
+  "ref": "NSC-224",
   "fabricante": null,
   "name": "Penteadeira camarim Rouge",
   "category": "quarto",
@@ -6174,7 +7260,7 @@ export const produtosLoja = [
     "name": "Branco",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000755.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000755",
     "descricaoLoja": "PENTEADEIRA CAMARIM ROUGE BRANCO",
     "preco": null,
@@ -6188,9 +7274,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Branco",
+    "campo": "foto Branco",
     "codigo": "000755",
-    "url": "https://www.pontofrio.com.br/penteadeira-camarim-rouge-branco-naturalle-bechara-moveis/p/1582176367"
+    "url": "https://www.casasbahia.com.br/penteadeira-camarim-com-espelho-rouge-branco/p/1570972589"
    },
    {
     "campo": "códigos e estoque",
@@ -6200,7 +7286,7 @@ export const produtosLoja = [
  },
  {
   "id": "bicama-ib",
-  "ref": "NSC-211",
+  "ref": "NSC-225",
   "fabricante": "IB Estofados",
   "name": "Bicama",
   "category": "quarto",
@@ -6240,7 +7326,7 @@ export const produtosLoja = [
  },
  {
   "id": "cabeceira-reta-balao",
-  "ref": "NSC-212",
+  "ref": "NSC-226",
   "fabricante": null,
   "name": "Cabeceira reta Balão",
   "category": "quarto",
@@ -6370,7 +7456,7 @@ export const produtosLoja = [
  },
  {
   "id": "cabeceira-reta-quadrada",
-  "ref": "NSC-213",
+  "ref": "NSC-227",
   "fabricante": null,
   "name": "Cabeceira reta Quadrada",
   "category": "quarto",
@@ -6500,7 +7586,7 @@ export const produtosLoja = [
  },
  {
   "id": "cabeceira-reta-vertical",
-  "ref": "NSC-214",
+  "ref": "NSC-228",
   "fabricante": null,
   "name": "Cabeceira reta Vertical",
   "category": "quarto",
@@ -6542,7 +7628,7 @@ export const produtosLoja = [
  },
  {
   "id": "cabeceira-balao-suede",
-  "ref": "NSC-215",
+  "ref": "NSC-229",
   "fabricante": null,
   "name": "Cabeceira Balão suede",
   "category": "quarto",
@@ -6584,7 +7670,7 @@ export const produtosLoja = [
  },
  {
   "id": "cabeceira-quadrado-suede",
-  "ref": "NSC-216",
+  "ref": "NSC-230",
   "fabricante": null,
   "name": "Cabeceira Quadrado suede",
   "category": "quarto",
@@ -6648,7 +7734,7 @@ export const produtosLoja = [
  },
  {
   "id": "base-box-bege",
-  "ref": "NSC-217",
+  "ref": "NSC-231",
   "fabricante": null,
   "name": "Base box bege 30 cm",
   "category": "colchoes",
@@ -6695,7 +7781,7 @@ export const produtosLoja = [
    {
     "campo": "imagem ilustrativa Queen 158 × 198",
     "codigo": "000486",
-    "url": "https://www.extra.com.br/base-box-queen-30cmx158cmx198cm-ortobom-bege/p/1547772834"
+    "url": "https://www.madeiramadeira.com.br/cama-box-base-queen-sommier-linho-bege-158x198x30-ortobom-437903543.html"
    },
    {
     "campo": "imagem ilustrativa King 193 × 203",
@@ -6710,7 +7796,7 @@ export const produtosLoja = [
  },
  {
   "id": "base-box-cinza",
-  "ref": "NSC-218",
+  "ref": "NSC-232",
   "fabricante": null,
   "name": "Base box cinza 30 cm",
   "category": "colchoes",
@@ -6772,7 +7858,7 @@ export const produtosLoja = [
  },
  {
   "id": "base-box-palace",
-  "ref": "NSC-219",
+  "ref": "NSC-233",
   "fabricante": null,
   "name": "Base box Palace casal",
   "category": "colchoes",
@@ -6813,7 +7899,7 @@ export const produtosLoja = [
  },
  {
   "id": "base-realeza",
-  "ref": "NSC-220",
+  "ref": "NSC-234",
   "fabricante": null,
   "name": "Base box Realeza 198 × 198",
   "category": "colchoes",
@@ -6854,7 +7940,7 @@ export const produtosLoja = [
  },
  {
   "id": "cama-box-ortonobre",
-  "ref": "NSC-221",
+  "ref": "NSC-235",
   "fabricante": "Ortonobre",
   "name": "Cama box casal Ortonobre com pillow",
   "category": "colchoes",
@@ -6918,7 +8004,7 @@ export const produtosLoja = [
  },
  {
   "id": "cama-box-simples-conjugada",
-  "ref": "NSC-222",
+  "ref": "NSC-236",
   "fabricante": null,
   "name": "Cama box simples conjugada",
   "category": "colchoes",
@@ -6980,7 +8066,7 @@ export const produtosLoja = [
  },
  {
   "id": "cama-unibox-d28-premium",
-  "ref": "NSC-223",
+  "ref": "NSC-237",
   "fabricante": null,
   "name": "Cama Unibox D28 Premium casal",
   "category": "colchoes",
@@ -7023,7 +8109,7 @@ export const produtosLoja = [
  },
  {
   "id": "cama-unibox-star",
-  "ref": "NSC-224",
+  "ref": "NSC-238",
   "fabricante": null,
   "name": "Cama Unibox Star + espuma casal",
   "category": "colchoes",
@@ -7065,7 +8151,7 @@ export const produtosLoja = [
  },
  {
   "id": "unibox-rubi-solteiro",
-  "ref": "NSC-225",
+  "ref": "NSC-239",
   "fabricante": null,
   "name": "Unibox Rubi solteiro",
   "category": "colchoes",
@@ -7106,7 +8192,7 @@ export const produtosLoja = [
  },
  {
   "id": "colchao-eurosono-infantil",
-  "ref": "NSC-226",
+  "ref": "NSC-240",
   "fabricante": "Eurosono",
   "name": "Colchão infantil Eurosono D18",
   "category": "colchoes",
@@ -7170,7 +8256,7 @@ export const produtosLoja = [
  },
  {
   "id": "colchao-gazin-d20",
-  "ref": "NSC-227",
+  "ref": "NSC-241",
   "fabricante": "Gazin",
   "name": "Colchão de espuma D20 Gazin solteiro",
   "category": "colchoes",
@@ -7213,7 +8299,7 @@ export const produtosLoja = [
  },
  {
   "id": "travesseiro-ortobom",
-  "ref": "NSC-228",
+  "ref": "NSC-242",
   "fabricante": "Ortobom",
   "name": "Travesseiro Ortobom",
   "category": "colchoes",
@@ -7252,7 +8338,7 @@ export const produtosLoja = [
  },
  {
   "id": "estofado-vital-2x3",
-  "ref": "NSC-229",
+  "ref": "NSC-243",
   "fabricante": null,
   "name": "Conjunto de estofados Vital 2 e 3 lugares",
   "category": "estofados",
@@ -7360,7 +8446,7 @@ export const produtosLoja = [
  },
  {
   "id": "estofado-ibiza-2x3",
-  "ref": "NSC-230",
+  "ref": "NSC-244",
   "fabricante": null,
   "name": "Conjunto de estofados Ibiza 2 e 3 lugares",
   "category": "estofados",
@@ -7402,7 +8488,7 @@ export const produtosLoja = [
  },
  {
   "id": "estofado-soberano-2x3",
-  "ref": "NSC-231",
+  "ref": "NSC-245",
   "fabricante": null,
   "name": "Conjunto de estofados Soberano 2 e 3 lugares",
   "category": "estofados",
@@ -7443,7 +8529,7 @@ export const produtosLoja = [
  },
  {
   "id": "estofado-luna-retratil",
-  "ref": "NSC-232",
+  "ref": "NSC-246",
   "fabricante": null,
   "name": "Sofá Luna retrátil e reclinável",
   "category": "estofados",
@@ -7484,7 +8570,7 @@ export const produtosLoja = [
  },
  {
   "id": "estofado-orion-retratil",
-  "ref": "NSC-233",
+  "ref": "NSC-247",
   "fabricante": null,
   "name": "Sofá Orion retrátil e reclinável",
   "category": "estofados",
@@ -7524,7 +8610,7 @@ export const produtosLoja = [
  },
  {
   "id": "bancada-harmony",
-  "ref": "NSC-234",
+  "ref": "NSC-248",
   "fabricante": null,
   "name": "Bancada Harmony",
   "category": "sala",
@@ -7565,7 +8651,7 @@ export const produtosLoja = [
  },
  {
   "id": "bancada-river-136",
-  "ref": "NSC-235",
+  "ref": "NSC-249",
   "fabricante": null,
   "name": "Bancada River 1,36 m",
   "category": "sala",
@@ -7627,7 +8713,7 @@ export const produtosLoja = [
  },
  {
   "id": "bancada-suspensa-julia",
-  "ref": "NSC-236",
+  "ref": "NSC-250",
   "fabricante": null,
   "name": "Bancada suspensa Júlia",
   "category": "sala",
@@ -7668,7 +8754,7 @@ export const produtosLoja = [
  },
  {
   "id": "aparador-cairo",
-  "ref": "NSC-237",
+  "ref": "NSC-251",
   "fabricante": null,
   "name": "Aparador Cairo",
   "category": "sala",
@@ -7699,7 +8785,7 @@ export const produtosLoja = [
    {
     "campo": "imagem ilustrativa Off White / Jequitibá",
     "codigo": "000612",
-    "url": "https://www.extra.com.br/aparador-cairo-com-prateleira-off-white-freijo-lukaliam/p/1575304991"
+    "url": "https://www.madeiramadeira.com.br/aparador-lukaliam-moveis-sala-de-estar-ou-jantar-cairo-c-2-gavetas-c-pes-de-ferro-534762385.html"
    },
    {
     "campo": "códigos e estoque",
@@ -7709,7 +8795,7 @@ export const produtosLoja = [
  },
  {
   "id": "home-apollo-madetec",
-  "ref": "NSC-238",
+  "ref": "NSC-252",
   "fabricante": "Madetec",
   "name": "Home Apollo",
   "category": "sala",
@@ -7724,7 +8810,7 @@ export const produtosLoja = [
     "name": "Imperial Sépia",
     "color": "#7a5233",
     "image": "assets/catalogo/web-000420.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000420",
     "descricaoLoja": "HOME APOLLO IMPERIAL SÉPIA MADETEC",
     "preco": null,
@@ -7738,9 +8824,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Imperial Sépia",
+    "campo": "foto Imperial Sépia",
     "codigo": "000420",
-    "url": "https://www.pontofrio.com.br/estante-home-theater-nilo-para-tv-ate-75-madetec/p/1578454843"
+    "url": "https://www.madeiramadeira.com.br/rack-com-painel-apolo-para-tv-de-75-pol-imperial-sepia-833413067.html"
    },
    {
     "campo": "códigos e estoque",
@@ -7750,7 +8836,7 @@ export const produtosLoja = [
  },
  {
   "id": "home-florenca",
-  "ref": "NSC-239",
+  "ref": "NSC-253",
   "fabricante": null,
   "name": "Home Florença",
   "category": "sala",
@@ -7791,7 +8877,7 @@ export const produtosLoja = [
  },
  {
   "id": "home-taurus",
-  "ref": "NSC-240",
+  "ref": "NSC-254",
   "fabricante": null,
   "name": "Home Taurus ripado",
   "category": "sala",
@@ -7832,7 +8918,7 @@ export const produtosLoja = [
  },
  {
   "id": "painel-eros",
-  "ref": "NSC-241",
+  "ref": "NSC-255",
   "fabricante": null,
   "name": "Painel para TV Eros",
   "category": "sala",
@@ -7847,7 +8933,7 @@ export const produtosLoja = [
     "name": "Nogal Trend",
     "color": "#6d4c35",
     "image": "assets/catalogo/web-000643.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000643",
     "descricaoLoja": "PAINEL EROS NOGAL TREND/ NOGAL",
     "preco": null,
@@ -7861,9 +8947,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Nogal Trend",
+    "campo": "foto Nogal Trend",
     "codigo": "000643",
-    "url": "https://www.pontofrio.com.br/painel-para-tv-ate-49-polegadas-com-nicho-eros-nogal-trend-notavel-moveis/p/1501947259"
+    "url": "https://www.madeiramadeira.com.br/-595779.html"
    },
    {
     "campo": "códigos e estoque",
@@ -7873,7 +8959,7 @@ export const produtosLoja = [
  },
  {
   "id": "painel-frank",
-  "ref": "NSC-242",
+  "ref": "NSC-256",
   "fabricante": null,
   "name": "Painel Frank tábua única",
   "category": "sala",
@@ -7888,7 +8974,7 @@ export const produtosLoja = [
     "name": "Frank",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000566.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000566",
     "descricaoLoja": "PAINEL FRANK TÁBUA ÚNICA",
     "preco": null,
@@ -7900,9 +8986,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Frank",
+    "campo": "foto Frank",
     "codigo": "000566",
-    "url": "https://www.pontofrio.com.br/rack-para-tv-ate-50-polegadas-frank-cinamomo-off-white-artely/p/1570560358"
+    "url": "https://www.madeiramadeira.com.br/painel-para-tv-ate-50-polegadas-frank-madetec-166878.html"
    },
    {
     "campo": "códigos e estoque",
@@ -7912,7 +8998,7 @@ export const produtosLoja = [
  },
  {
   "id": "painel-link",
-  "ref": "NSC-243",
+  "ref": "NSC-257",
   "fabricante": null,
   "name": "Painel Link",
   "category": "sala",
@@ -7951,7 +9037,7 @@ export const produtosLoja = [
  },
  {
   "id": "painel-river-136",
-  "ref": "NSC-244",
+  "ref": "NSC-258",
   "fabricante": null,
   "name": "Painel River 1,36 m",
   "category": "sala",
@@ -8013,7 +9099,7 @@ export const produtosLoja = [
  },
  {
   "id": "rack-lisboa",
-  "ref": "NSC-245",
+  "ref": "NSC-259",
   "fabricante": null,
   "name": "Rack Lisboa",
   "category": "sala",
@@ -8054,7 +9140,7 @@ export const produtosLoja = [
  },
  {
   "id": "rack-orion",
-  "ref": "NSC-246",
+  "ref": "NSC-260",
   "fabricante": null,
   "name": "Rack Orion",
   "category": "sala",
@@ -8094,7 +9180,7 @@ export const produtosLoja = [
  },
  {
   "id": "conjunto-marsala",
-  "ref": "NSC-247",
+  "ref": "NSC-261",
   "fabricante": null,
   "name": "Conjunto Marsala com 4 cadeiras",
   "category": "jantar",
@@ -8157,7 +9243,7 @@ export const produtosLoja = [
  },
  {
   "id": "conjunto-palma-120",
-  "ref": "NSC-248",
+  "ref": "NSC-262",
   "fabricante": null,
   "name": "Conjunto Palma 1,20 m com 4 cadeiras",
   "category": "jantar",
@@ -8220,7 +9306,7 @@ export const produtosLoja = [
  },
  {
   "id": "cadeiras-ana-valdemoveis",
-  "ref": "NSC-249",
+  "ref": "NSC-263",
   "fabricante": "Valdemóveis",
   "name": "Kit 2 cadeiras Ana",
   "category": "jantar",
@@ -8235,7 +9321,7 @@ export const produtosLoja = [
     "name": "Bege / Cinamomo",
     "color": "#d8c8a8",
     "image": "assets/catalogo/web-000764.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000764",
     "descricaoLoja": "CONJUNTO 2 CADEIRAS VALDEMOVEIS ANA - BG02 CIN",
     "preco": null,
@@ -8249,9 +9335,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Bege / Cinamomo",
+    "campo": "foto Bege / Cinamomo",
     "codigo": "000764",
-    "url": "https://www.pontofrio.com.br/mesa-de-jantar-ana-135cm-redonda-vidro18mm-cinamomo-off-white-com-kit-4-cadeiras-ana-linho-bege-valdemoveis/p/1582901565"
+    "url": "https://www.madeiramadeira.com.br/conjunto-2-cadeiras-para-sala-de-jantar-com-pes-em-madeira-macica-ana-cinza-cinamomo-linho-prata-979239006.html"
    },
    {
     "campo": "códigos e estoque",
@@ -8261,7 +9347,7 @@ export const produtosLoja = [
  },
  {
   "id": "mesa-maia-valdemoveis",
-  "ref": "NSC-250",
+  "ref": "NSC-264",
   "fabricante": "Valdemóveis",
   "name": "Mesa de jantar Maia 1,60 m",
   "category": "jantar",
@@ -8303,7 +9389,7 @@ export const produtosLoja = [
  },
  {
   "id": "mesa-londres",
-  "ref": "NSC-251",
+  "ref": "NSC-265",
   "fabricante": null,
   "name": "Mesa de madeira Londres com 4 cadeiras",
   "category": "jantar",
@@ -8344,7 +9430,7 @@ export const produtosLoja = [
  },
  {
   "id": "mesa-marmore-4",
-  "ref": "NSC-252",
+  "ref": "NSC-266",
   "fabricante": null,
   "name": "Mesa de mármore com 4 cadeiras",
   "category": "jantar",
@@ -8408,7 +9494,7 @@ export const produtosLoja = [
  },
  {
   "id": "mesa-havai-granito",
-  "ref": "NSC-253",
+  "ref": "NSC-267",
   "fabricante": null,
   "name": "Mesa Havaí de granito com 4 cadeiras",
   "category": "jantar",
@@ -8473,7 +9559,7 @@ export const produtosLoja = [
  },
  {
   "id": "mesa-paris",
-  "ref": "NSC-254",
+  "ref": "NSC-268",
   "fabricante": null,
   "name": "Mesa Paris com cadeiras",
   "category": "jantar",
@@ -8603,7 +9689,7 @@ export const produtosLoja = [
  },
  {
   "id": "organizador-delta",
-  "ref": "NSC-255",
+  "ref": "NSC-269",
   "fabricante": null,
   "name": "Organizador Delta New",
   "category": "complementos",
@@ -8665,7 +9751,7 @@ export const produtosLoja = [
  },
  {
   "id": "conjunto-area-vitoria",
-  "ref": "NSC-256",
+  "ref": "NSC-270",
   "fabricante": null,
   "name": "Conjunto para área Vitória com mesa de centro",
   "category": "complementos",
@@ -8704,7 +9790,7 @@ export const produtosLoja = [
  },
  {
   "id": "conjunto-paradao-fibra",
-  "ref": "NSC-257",
+  "ref": "NSC-271",
   "fabricante": null,
   "name": "Conjunto Paradão em fibra com mesa de centro",
   "category": "complementos",
@@ -8743,7 +9829,7 @@ export const produtosLoja = [
  },
  {
   "id": "cadeira-balanco-naja",
-  "ref": "NSC-258",
+  "ref": "NSC-272",
   "fabricante": null,
   "name": "Cadeira de balanço Naja em fibra",
   "category": "complementos",
@@ -8782,7 +9868,7 @@ export const produtosLoja = [
  },
  {
   "id": "poltrona-plastica-thai",
-  "ref": "NSC-259",
+  "ref": "NSC-273",
   "fabricante": null,
   "name": "Poltrona plástica Thai",
   "category": "complementos",
@@ -8823,7 +9909,7 @@ export const produtosLoja = [
  },
  {
   "id": "cadeira-plastica-bistro",
-  "ref": "NSC-260",
+  "ref": "NSC-274",
   "fabricante": null,
   "name": "Cadeira plástica Bistrô sem braços",
   "category": "complementos",
@@ -8862,7 +9948,7 @@ export const produtosLoja = [
  },
  {
   "id": "cadeira-plastica",
-  "ref": "NSC-261",
+  "ref": "NSC-275",
   "fabricante": null,
   "name": "Cadeira plástica",
   "category": "complementos",
@@ -8901,7 +9987,7 @@ export const produtosLoja = [
  },
  {
   "id": "banquinho-plastico",
-  "ref": "NSC-262",
+  "ref": "NSC-276",
   "fabricante": null,
   "name": "Banquinho plástico",
   "category": "complementos",
@@ -8942,7 +10028,7 @@ export const produtosLoja = [
  },
  {
   "id": "mesa-plastica-duo",
-  "ref": "NSC-263",
+  "ref": "NSC-277",
   "fabricante": null,
   "name": "Mesa plástica Duo",
   "category": "complementos",
@@ -8981,7 +10067,7 @@ export const produtosLoja = [
  },
  {
   "id": "mesa-plastica-plasmaster",
-  "ref": "NSC-264",
+  "ref": "NSC-278",
   "fabricante": "Plasmaster",
   "name": "Mesa plástica Plasmaster",
   "category": "complementos",
@@ -9022,7 +10108,7 @@ export const produtosLoja = [
  },
  {
   "id": "tabua-passar",
-  "ref": "NSC-265",
+  "ref": "NSC-279",
   "fabricante": null,
   "name": "Tábua de passar",
   "category": "complementos",
@@ -9084,7 +10170,7 @@ export const produtosLoja = [
  },
  {
   "id": "tabua-passar-miami",
-  "ref": "NSC-266",
+  "ref": "NSC-280",
   "fabricante": null,
   "name": "Tábua de passar Miami",
   "category": "complementos",
@@ -9125,7 +10211,7 @@ export const produtosLoja = [
  },
  {
   "id": "bicicleta-colli-a29",
-  "ref": "NSC-267",
+  "ref": "NSC-281",
   "fabricante": "Colli",
   "name": "Bicicleta Colli aro 29",
   "category": "complementos",
@@ -9168,7 +10254,7 @@ export const produtosLoja = [
  },
  {
   "id": "bicicleta-colli-montadinha",
-  "ref": "NSC-268",
+  "ref": "NSC-282",
   "fabricante": "Colli",
   "name": "Bicicleta Colli Montadinha",
   "category": "complementos",
@@ -9209,7 +10295,7 @@ export const produtosLoja = [
  },
  {
   "id": "bicicleta-monaco-a26",
-  "ref": "NSC-269",
+  "ref": "NSC-283",
   "fabricante": null,
   "name": "Bicicleta Mônaco aro 26",
   "category": "complementos",
@@ -9250,7 +10336,7 @@ export const produtosLoja = [
  },
  {
   "id": "bicicleta-celina-a16",
-  "ref": "NSC-270",
+  "ref": "NSC-284",
   "fabricante": null,
   "name": "Bicicleta infantil Celina aro 16",
   "category": "complementos",
@@ -9293,7 +10379,7 @@ export const produtosLoja = [
  },
  {
   "id": "bicicleta-spimossauro",
-  "ref": "NSC-271",
+  "ref": "NSC-285",
   "fabricante": null,
   "name": "Bicicleta infantil Spimossauro",
   "category": "complementos",
@@ -9334,7 +10420,7 @@ export const produtosLoja = [
  },
  {
   "id": "liquidificador-agratto-forza",
-  "ref": "NSC-272",
+  "ref": "NSC-286",
   "fabricante": "Agratto",
   "name": "Liquidificador Agratto Forza 850 W",
   "category": "eletros",
@@ -9367,7 +10453,7 @@ export const produtosLoja = [
     "name": "Forza copo leitoso",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000001.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000001",
     "descricaoLoja": "LIQUIDIFICADOR AGRATO FORZA COPO LEITOSO 850 W",
     "preco": null,
@@ -9400,7 +10486,7 @@ export const produtosLoja = [
     "url": "https://www.pontofrio.com.br/liquidificador-850w-220v-forza-cristal-lqlf-02-leitoso-agratto/p/1577398731"
    },
    {
-    "campo": "imagem ilustrativa Forza copo leitoso",
+    "campo": "foto Forza copo leitoso",
     "codigo": "000001",
     "url": "https://www.pontofrio.com.br/liquidificador-agratto-lqlf-01-leitoso-850w-cristal-127v/p/1571446028"
    },
@@ -9417,7 +10503,7 @@ export const produtosLoja = [
  },
  {
   "id": "ferro-agratto",
-  "ref": "NSC-273",
+  "ref": "NSC-287",
   "fabricante": "Agratto",
   "name": "Ferro de passar Agratto",
   "category": "eletros",
@@ -9456,7 +10542,7 @@ export const produtosLoja = [
  },
  {
   "id": "fogao-clarice-delicato-plus",
-  "ref": "NSC-274",
+  "ref": "NSC-288",
   "fabricante": "Clarice",
   "name": "Fogão a gás Delicato Plus",
   "category": "eletros",
@@ -9471,7 +10557,7 @@ export const produtosLoja = [
     "name": "6 bocas · Branco",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000621.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000621",
     "descricaoLoja": "FG GAS DELICATO PLUS 6B - BRANCOV2",
     "preco": null,
@@ -9488,7 +10574,7 @@ export const produtosLoja = [
     "name": "6 bocas · Preto fosco",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000620.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000620",
     "descricaoLoja": "FG GAS DELICATO PLUS 6B - PRETO FOSCO",
     "preco": null,
@@ -9520,14 +10606,14 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa 6 bocas · Branco",
+    "campo": "foto 6 bocas · Branco",
     "codigo": "000621",
-    "url": "https://www.pontofrio.com.br/fogao-itatiaia-5-bocas-itaglass-plus-branco-bivolt/p/1568752496"
+    "url": "https://www.madeiramadeira.com.br/fogao-de-piso-a-gas-6-bocas-acendimento-automatico-delicato-plus-900158.html"
    },
    {
-    "campo": "imagem ilustrativa 6 bocas · Preto fosco",
+    "campo": "foto 6 bocas · Preto fosco",
     "codigo": "000620",
-    "url": "https://www.pontofrio.com.br/fogao-a-gas-6-bocas-delicato-clarice-preto-fosco/p/1580591674"
+    "url": "https://www.madeiramadeira.com.br/fogao-de-piso-a-gas-6-bocas-acendimento-automatico-delicato-plus-900153.html"
    },
    {
     "campo": "imagem ilustrativa Glass 5 bocas com respaldo · Preto fosco",
@@ -9542,7 +10628,7 @@ export const produtosLoja = [
  },
  {
   "id": "fogao-braslar-fenix-glass",
-  "ref": "NSC-275",
+  "ref": "NSC-289",
   "fabricante": "Braslar",
   "name": "Fogão Braslar Fênix Glass 5 bocas",
   "category": "eletros",
@@ -9558,7 +10644,7 @@ export const produtosLoja = [
     "name": "Branco",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000362.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000362",
     "descricaoLoja": "FOGÃO 5 BC BRASLAR FENIX GLASS MESA DE VIDRO BRANCO",
     "preco": null,
@@ -9572,9 +10658,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Branco",
+    "campo": "foto Branco",
     "codigo": "000362",
-    "url": "https://www.pontofrio.com.br/fogao-5-bocas-dako-supreme-glass-com-mesa-de-vidro-e-acendimento-automatico-preto-bivolt/p/55068999"
+    "url": "https://www.gazin.com.br/produto/fogao-braslar-5-bocas-fenix-glass-automatico-mesa-de-vidro-forno-722l/7182/branco/bivolt"
    },
    {
     "campo": "códigos e estoque",
@@ -9584,7 +10670,7 @@ export const produtosLoja = [
  },
  {
   "id": "fogao-gourmet-4b-vidro",
-  "ref": "NSC-276",
+  "ref": "NSC-290",
   "fabricante": null,
   "name": "Fogão Gourmet 4 bocas tampo de vidro",
   "category": "eletros",
@@ -9626,7 +10712,7 @@ export const produtosLoja = [
  },
  {
   "id": "air-fryer-agratto-supremma",
-  "ref": "NSC-277",
+  "ref": "NSC-291",
   "fabricante": "Agratto",
   "name": "Air fryer Agratto Supremma 4 L",
   "category": "eletros",
@@ -9670,7 +10756,7 @@ export const produtosLoja = [
  },
  {
   "id": "sanduicheira-britania-crome",
-  "ref": "NSC-278",
+  "ref": "NSC-292",
   "fabricante": "Britânia",
   "name": "Grill e sanduicheira Britânia Crome Inox",
   "category": "eletros",
@@ -9711,7 +10797,7 @@ export const produtosLoja = [
  },
  {
   "id": "sanduicheira-grill",
-  "ref": "NSC-279",
+  "ref": "NSC-293",
   "fabricante": null,
   "name": "Sanduicheira e grill",
   "category": "eletros",
@@ -9773,7 +10859,7 @@ export const produtosLoja = [
  },
  {
   "id": "panela-pressao-panelux-45",
-  "ref": "NSC-280",
+  "ref": "NSC-294",
   "fabricante": "Panelux",
   "name": "Panela de pressão Panelux 4,5 L",
   "category": "eletros",
@@ -9812,7 +10898,7 @@ export const produtosLoja = [
  },
  {
   "id": "tv-semp-32-roku",
-  "ref": "NSC-281",
+  "ref": "NSC-295",
   "fabricante": "Semp",
   "name": "Smart TV Semp 32\" Roku",
   "category": "eletros",
@@ -9829,7 +10915,7 @@ export const produtosLoja = [
     "name": "Preto",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000792.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000792",
     "descricaoLoja": "TV 32P SEMP LED SMART ROKU FULL HD WIFI 32S42R",
     "preco": null,
@@ -9843,9 +10929,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Preto",
+    "campo": "foto Preto",
     "codigo": "000792",
-    "url": "https://www.pontofrio.com.br/smart-tv-philco-32-quot-led-roku-ptv32k34rkgb/p/1572005800"
+    "url": "https://www.kabum.com.br/produto/1065087/smart-tv-semp-32-led-full-hd-s42r-roku-tv-wi-fi-dolby-audio-brilho-ate-220-nits-32s42r"
    },
    {
     "campo": "códigos e estoque",
@@ -9855,7 +10941,7 @@ export const produtosLoja = [
  },
  {
   "id": "tv-aoc-43-roku",
-  "ref": "NSC-282",
+  "ref": "NSC-296",
   "fabricante": "AOC",
   "name": "Smart TV AOC 43\" Roku Full HD",
   "category": "eletros",
@@ -9898,7 +10984,7 @@ export const produtosLoja = [
  },
  {
   "id": "conversor-keo",
-  "ref": "NSC-283",
+  "ref": "NSC-297",
   "fabricante": "Keo",
   "name": "Conversor e gravador digital Keo",
   "category": "eletros",
@@ -9937,7 +11023,7 @@ export const produtosLoja = [
  },
  {
   "id": "home-theater-zeus",
-  "ref": "NSC-284",
+  "ref": "NSC-298",
   "fabricante": null,
   "name": "Home theater Zeus",
   "category": "eletros",
@@ -9976,7 +11062,7 @@ export const produtosLoja = [
  },
  {
   "id": "ventilador-ventisol-40",
-  "ref": "NSC-285",
+  "ref": "NSC-299",
   "fabricante": "Ventisol",
   "name": "Ventilador Ventisol 40 cm preto",
   "category": "eletros",
@@ -10017,7 +11103,7 @@ export const produtosLoja = [
  },
  {
   "id": "ventilador-parede-50",
-  "ref": "NSC-286",
+  "ref": "NSC-300",
   "fabricante": null,
   "name": "Ventilador de parede 50 cm",
   "category": "eletros",
@@ -10059,145 +11145,4 @@ export const produtosLoja = [
  }
 ];
 
-export const pendentesLoja = [
- {
-  "codigo": "000704",
-  "descricaoLoja": "BASE BERLIM 188X138X40 CM",
-  "motivo": "Base Berlim: relatório diz 40 cm de altura; catálogo Titanio mostra base de 30 cm."
- },
- {
-  "codigo": "000667",
-  "descricaoLoja": "BASE MAXIMO CASAL PADRÃO - 1,38 X 1,88 X 0,3 M",
-  "motivo": "Base Máximo: existe linha Máximo na J.Confort e na Titanio; confirmar fabricante."
- },
- {
-  "codigo": "000740",
-  "descricaoLoja": "COLCHAO ATHENAS ICE 32CM X 1,93M X 2,03M BEGE",
-  "motivo": "Colchão Athenas Ice 32 cm: catálogos têm Athenas 18/20 cm (J.Confort) e Athenas Premium (Caza Nobre); confirmar."
- },
- {
-  "codigo": "000742",
-  "descricaoLoja": "COLCHAO ATHENAS ICE 32CM X 1,93M X 2,03M AZUL",
-  "motivo": "Colchão Athenas Ice 32 cm azul: mesma dúvida do 000740."
- },
- {
-  "codigo": "000653",
-  "descricaoLoja": "COLCHÃO MONTEVIDÉU 30CM 1.88X88 SOLTEIRÃO",
-  "motivo": "Colchão Montevidéu solteirão: cor não informada (catálogo tem cinza e azul)."
- },
- {
-  "codigo": "000641",
-  "descricaoLoja": "COLCHAO OXFORD 24 CM 1,88 X 1,38 MPS",
-  "motivo": "Colchão Oxford casal \"MPS\": mesma medida do 000736; confirmar se é duplicidade no sistema."
- },
- {
-  "codigo": "000737",
-  "descricaoLoja": "COLCHAO LOTUS 14CM X 1,88M X 1,38M CHUMBO",
-  "motivo": "Colchão Lotus 14 cm chumbo: catálogo mostra Lotus em azul-marinho."
- },
- {
-  "codigo": "000738",
-  "descricaoLoja": "COLCHAO LOTUS 14CM X 1,88M X 88CM CHUMBO",
-  "motivo": "Colchão Lotus 14 cm solteiro chumbo: idem."
- },
- {
-  "codigo": "000284",
-  "descricaoLoja": "COLCHAO D 20 12 CM 1,88 X 78 / SOLTEIRO/ OURO",
-  "motivo": "Colchão D20 12 cm 78 × 188 \"Ouro\": mesma medida do 000734; confirmar se é duplicidade."
- },
- {
-  "codigo": "000639",
-  "descricaoLoja": "COLCHÃO D45 J. CONFORT 0,88X1,38 BORDADO",
-  "motivo": "Colchão D45 J.Confort: medida no sistema \"0,88 × 1,38\" parece erro de digitação (provável 0,88 × 1,88)."
- },
- {
-  "codigo": "000769",
-  "descricaoLoja": "SALA TAIS 1,60 +6 CAD STAR",
-  "motivo": "Sala Taís 1,60 + 6 cadeiras Star: catálogo só mostra a 1,60 com cadeira Eduarda."
- },
- {
-  "codigo": "000699",
-  "descricaoLoja": "COZINHA NICE - CINAMO/OFF",
-  "motivo": "Cozinha Nice: sistema diz Cinamo/Off; catálogo Tuboarte usa Freijó/Off White e Freijó/Cinza."
- },
- {
-  "codigo": "000770",
-  "descricaoLoja": "PAINEL SEVILHA PTV ATE 70\"",
-  "motivo": "Painel Sevilha: sistema diz TV até 70\"; catálogo Tuboarte diz até 65\"."
- },
- {
-  "codigo": "000777",
-  "descricaoLoja": "APARADOR OREGON CTAMPO MADEIRA",
-  "motivo": "Aparador Oregon: sistema diz \"c/ tampo madeira\"; catálogo mostra tampo Off White."
- },
- {
-  "codigo": "000773",
-  "descricaoLoja": "SALA HELENA 1,20 +4 CAD CORAL (PES MAD)",
-  "motivo": "Sala Helena 1,20 + 4 cadeiras Coral pés madeira: catálogo mostra Coral com pé MDF."
- },
- {
-  "codigo": "000774",
-  "descricaoLoja": "SALA HELENA 1,20 +4 CAD CORAL (PES MAD)",
-  "motivo": "Sala Helena 1,20 (segundo código): idem."
- },
- {
-  "codigo": "000775",
-  "descricaoLoja": "SALA HELENA 1,60 +6 CAD CORAL (PES MAD)",
-  "motivo": "Sala Helena 1,60 + 6 cadeiras Coral: sem foto exata no catálogo."
- },
- {
-  "codigo": "000776",
-  "descricaoLoja": "SALA HELENA 1,60 +6 CAD CORAL (PES MAD)",
-  "motivo": "Sala Helena 1,60 (segundo código): idem."
- },
- {
-  "codigo": "000725",
-  "descricaoLoja": "CJ VALENCIA 2/3L - VELUDO CASTOR T04",
-  "motivo": "Conjunto Valência veludo castor: catálogo JW mostra Valência só em azul."
- },
- {
-  "codigo": "000726",
-  "descricaoLoja": "CJ VALENCIA 2/3L - VELUDO CINZA (T13)",
-  "motivo": "Conjunto Valência veludo cinza: idem."
- },
- {
-  "codigo": "000539",
-  "descricaoLoja": "ESTOFADO VALÊNCIA VELUDO CINZA",
-  "motivo": "Estofado Valência veludo cinza: idem."
- },
- {
-  "codigo": "000723",
-  "descricaoLoja": "CJ NAPOLES 2/3L - VELUDO TERRACOTA T08",
-  "motivo": "Conjunto Nápoles veludo terracota: catálogo JW mostra Nápoles em cinza."
- },
- {
-  "codigo": "000724",
-  "descricaoLoja": "CJ NAPOLES 2/3L - VELUDO VERMELHO (T14)",
-  "motivo": "Conjunto Nápoles veludo vermelho: idem."
- },
- {
-  "codigo": "000533",
-  "descricaoLoja": "ESTOFADO NÁPOLES VELUDO CASTOR",
-  "motivo": "Estofado Nápoles veludo castor: idem."
- },
- {
-  "codigo": "000535",
-  "descricaoLoja": "ESTOFADO NÁPOLES BOUCLE MARROM",
-  "motivo": "Estofado Nápoles bouclê marrom: idem."
- },
- {
-  "codigo": "000542",
-  "descricaoLoja": "ESTOFADO RETRÁTIL E RECLINÁVEL MONTANA VELUDO",
-  "motivo": "Estofado Montana veludo: catálogo JW tem \"Montana New\"; confirmar modelo e cor."
- },
- {
-  "codigo": "000536",
-  "descricaoLoja": "ESTOFADO SANTIAGO LINHO BEGE",
-  "motivo": "Estofado Santiago linho bege: catálogo JW mostra Santiago em outro tom."
- },
- {
-  "codigo": "000731",
-  "descricaoLoja": "CJ MONTREAL 47CM X 1,88M X 88CM",
-  "motivo": "Conjunto Montreal 47 cm: catálogo Caza Nobre tem Montreal e Montreal Premium; confirmar qual."
- }
-];
+export const pendentesLoja = [];
