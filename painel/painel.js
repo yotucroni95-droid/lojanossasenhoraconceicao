@@ -278,7 +278,7 @@ async function telaEquipe() {
   conteudo().innerHTML = '<ul class="pn-lista pn-hist">' + lista.map(r => '<li><div><b>' + esc(mostrarUsuario(r.email)) + '</b><small>' + esc(nomePapel[r.papel] || r.papel) + '</small></div><div class="pn-acoes">' +
       (r.email !== email.toLowerCase() ? '<button class="pn-bt" data-senha-de="' + esc(r.email) + '">Nova senha</button><button class="pn-bt pn-perigo" data-tirar="' + esc(r.email) + '">Tirar acesso</button>' : '<small>você</small>') + '</div></li>').join('') + '</ul>' +
     '<form class="pn-caixa" data-add-pessoa><h2>Cadastrar pessoa</h2><p class="pn-nota">Crie o usuário aqui e passe o usuário e a senha para a pessoa. Ela entra neste mesmo endereço e pode trocar a senha depois.</p>' +
-    '<label>Nome de usuário (ex.: joao)<input name="email" required autocomplete="off" autocapitalize="none" spellcheck="false" pattern="[a-zA-Z0-9._@-]{3,60}"></label><label>Senha inicial (mínimo 8 caracteres)<input name="senha" type="text" minlength="8" required autocomplete="off"></label>' +
+    '<label>Nome de usuário (ex.: joao)<input name="email" required autocomplete="off" autocapitalize="none" spellcheck="false" pattern="[a-zA-Z0-9._@\\-]{3,60}"></label><label>Senha inicial (mínimo 8 caracteres)<input name="senha" type="text" minlength="8" required autocomplete="off"></label>' +
     (orbita ? '<label>Função<select name="papel"><option value="funcionario">Funcionário</option><option value="dono">Dono</option></select></label>' : '') +
     '<button class="pn-bt pn-principal">Cadastrar</button></form>';
   conteudo().querySelector('[data-add-pessoa]').onsubmit = async e => {
