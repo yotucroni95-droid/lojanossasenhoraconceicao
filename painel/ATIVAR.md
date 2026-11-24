@@ -5,7 +5,7 @@ O banco é o **Órbita Sites**: um banco só para todos os sites de clientes da 
 O painel fica em `…/lojanossasenhoraconceicao/#/painel`. Lá a equipe entra com e-mail e senha e muda produtos, descrições, fotos, estoque e a Black Friday, sem mexer em código. Os dados ficam num banco gratuito (Supabase).
 
 ## 1. Criar o banco
-1. Entre em https://supabase.com e clique em **New project** (plano Free), com o nome **Órbita Sites**. Se já existir, pule para o passo 2 do item 2. Região: **South America (São Paulo)**. Guarde a senha do banco num lugar seguro (não é a senha do painel).
+1. Entre em https://supabase.com e clique em **New project** (plano Free), com o nome **Órbita Sites**. Se ele já existir, vá direto ao passo 2. Região: **South America (São Paulo)**. Guarde a senha do banco num lugar seguro (não é a senha do painel).
 2. No menu da esquerda, abra **SQL Editor** → **New query**, cole todo o arquivo `painel/banco.sql` e clique **Run**.
 
 ## 2. Criar o login da equipe
