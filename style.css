@@ -140,3 +140,93 @@ body[data-rota="produto"] .wa-float,body[data-rota="checkout"] .wa-float,body.di
  .wa-float span{display:none}
 }
 .photo-thumbnail img,.cart-item>img{object-fit:contain;background:#f6f1ea}
+/* ===== v8 · identidade em movimento (café + ouro) ===== */
+:root{--cafe:#1a120d;--cafe2:#271b13;--cafe3:#3a2919;--ouro:#c9a46a;--ouro2:#e6c88f;--creme:#f3eadb}
+.site-header{background:#1a120df0;border-bottom:1px solid #c9a46a33;color:var(--creme)}
+.site-header .brand strong{color:var(--creme)}.site-header .brand small{color:var(--ouro2)}
+.site-header .desktop-nav a,.site-header .cart-trigger,.site-header .icon-button,.site-header button{color:var(--creme)}
+.site-header .desktop-nav a:after{background:var(--ouro)}
+.site-header .desktop-nav a[aria-current]{color:var(--ouro2)}
+.site-header .cart-count{background:var(--ouro);color:var(--cafe);font-weight:700}
+.announcement{background:linear-gradient(90deg,#8f6a36,#d8b77c 50%,#8f6a36);background-size:200% 100%;color:var(--cafe);font-weight:600;animation:brilho 9s linear infinite}
+.announcement a{color:var(--cafe)}
+@keyframes brilho{to{background-position:-200% 0}}
+/* topo com órbitas */
+.home-search.orbita{position:relative;max-width:none;margin:0;overflow:hidden;text-align:left;padding:clamp(48px,8vw,120px) 6% clamp(40px,6vw,80px);background:radial-gradient(120% 90% at 75% 45%,#3d2a1a 0%,var(--cafe2) 45%,var(--cafe) 100%);color:var(--creme);min-height:min(640px,86vh);display:flex;align-items:center}
+.orbita-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.orbita-selo{position:absolute;right:calc(26% - 70px);top:50%;width:140px;height:140px;margin-top:-70px;border-radius:50%;box-shadow:0 0 0 1px #c9a46a55,0 0 60px #c9a46a55,0 0 140px #c9a46a33;animation:flutua 7s ease-in-out infinite}
+.orbita-selo img{width:100%;height:100%;border-radius:50%;display:block}
+@keyframes flutua{50%{transform:translateY(-10px) rotate(2deg)}}
+.orbita-conteudo{position:relative;z-index:1;width:min(640px,100%)}
+.orbita .eyebrow{color:var(--ouro)}
+.orbita .home-title{color:var(--creme);font-size:clamp(42px,6.2vw,88px);line-height:1;letter-spacing:-1px;margin-bottom:30px}
+.orbita .home-title em{font-style:normal;color:var(--ouro2);display:inline-block;background:linear-gradient(100deg,#b88a4b,#f3dcae 45%,#b88a4b);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;transition:opacity .35s,transform .45s var(--ease),filter .35s}
+.orbita .home-title em.saindo{opacity:0;transform:translateY(-.35em);filter:blur(4px)}
+.orbita .home-title em.entrando{opacity:0;transform:translateY(.35em);transition:none}
+.orbita .quick-search{margin:0;max-width:600px}
+.orbita .quick-search .search-field{background:#fffdf8;border-color:transparent;box-shadow:0 18px 50px #0006}
+.orbita .quick-search .button{background:var(--ouro);color:var(--cafe);border-color:var(--ouro);font-weight:700}
+.orbita .quick-search .button:hover{background:var(--ouro2)}
+.orbita .category-chips{justify-content:flex-start}
+.orbita .category-chips a{background:#ffffff0d;border-color:#c9a46a40;color:var(--creme);backdrop-filter:blur(6px);transition:background .25s,border-color .25s,transform .25s}
+.orbita .category-chips a:hover{background:#c9a46a26;border-color:var(--ouro);transform:translateY(-2px)}
+.orbita .category-chips a small{color:var(--ouro2)}
+.orbita-numeros{display:flex;flex-wrap:wrap;gap:10px 34px;margin-top:26px;font-size:12px;color:#d9ccb8}
+.orbita-numeros b{display:block;font:34px/1 Italiana,serif;color:var(--ouro2);font-weight:400}
+.orbita-numeros span:last-child b{font:600 13px/1.6 Manrope,sans-serif;letter-spacing:1px;text-transform:uppercase}
+/* faixa em movimento */
+.faixa{background:var(--ouro);color:var(--cafe);overflow:hidden;white-space:nowrap;border-block:1px solid #00000020}
+.faixa-trilho{display:inline-flex;animation:faixa 38s linear infinite}
+.faixa-trilho span{display:inline-flex;align-items:center;gap:26px;padding:15px 13px;font:22px Italiana,serif;letter-spacing:.5px}
+.faixa-trilho em{font-style:normal;font-size:13px;opacity:.7}
+@keyframes faixa{to{transform:translateX(-50%)}}
+.faixa:hover .faixa-trilho{animation-play-state:paused}
+/* bandas de cor */
+.banda-escura{background:linear-gradient(180deg,var(--cafe) 0%,var(--cafe2) 100%);color:var(--creme)}
+.banda-escura .eyebrow{color:var(--ouro)}.banda-escura h2{color:var(--creme)}.banda-escura h2 em{color:var(--ouro2)}
+.banda-escura .text-link{color:var(--ouro2)}
+.room-tile{border-radius:4px;box-shadow:0 0 0 1px #c9a46a26}
+.room-tile:before{content:'';position:absolute;inset:0;z-index:2;border:1px solid var(--ouro);opacity:0;transition:opacity .4s,inset .4s var(--ease);pointer-events:none}
+.room-tile:hover:before{opacity:1;inset:10px}
+.room-tile b{color:#fff}.room-tile small{color:var(--ouro2)}
+.offers{background:linear-gradient(180deg,var(--creme),var(--paper));max-width:none}
+.section-heading h2 em,.selection h2 em{color:#a17a3f}
+.product-card{transition:transform .45s var(--ease)}
+.product-card:hover{transform:translateY(-6px)}
+.product-card img{transition:transform .8s var(--ease)}
+.product-card:hover img{transform:scale(1.04)}
+/* manifesto: palavras acendem com a rolagem */
+.manifesto{background:var(--cafe);color:var(--creme);padding:clamp(70px,11vw,150px) 6%;text-align:center;position:relative;overflow:hidden}
+.manifesto:before{content:'';position:absolute;width:900px;height:900px;left:50%;top:50%;margin:-450px 0 0 -450px;border-radius:50%;border:1px solid #c9a46a22;box-shadow:0 0 0 90px #c9a46a08,0 0 0 180px #c9a46a06;animation:gira 60s linear infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+.manifesto .eyebrow{color:var(--ouro);position:relative}
+.manifesto-texto{position:relative;max-width:1050px;margin:auto;font:clamp(30px,4.3vw,62px)/1.15 Italiana,serif;letter-spacing:-.5px}
+.manifesto-texto .pal{color:#ffffff26;transition:color .5s}
+.manifesto-texto .pal.acesa{color:var(--creme)}
+.manifesto-texto .pal.acesa:nth-child(7n+3){color:var(--ouro2)}
+/* processo em café */
+.process{background:var(--cafe2);color:var(--creme)}
+.process .eyebrow{color:var(--ouro)}.process h2{color:var(--creme)}.process h2 em{color:var(--ouro2)}
+.process-grid article{border-top-color:#c9a46a55;transition:border-color .4s}
+.process-grid article:hover{border-top-color:var(--ouro)}
+.process-grid article>span{color:var(--ouro);font-size:64px}
+.process-grid p{color:#cbbda9}
+.vip-banner{background:radial-gradient(90% 120% at 85% 20%,#4a3420,var(--cafe))}
+/* entradas */
+.anima{opacity:0;transform:translateY(34px);transition:opacity .8s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--i,0)*90ms)}
+.anima.visto{opacity:1;transform:none}
+.sem-movimento .anima{opacity:1;transform:none}
+.wa-float{box-shadow:0 0 0 0 #1f7a4a66;animation:pulsa 2.8s ease-out infinite}
+@keyframes pulsa{70%{box-shadow:0 0 0 16px #1f7a4a00}100%{box-shadow:0 0 0 0 #1f7a4a00}}
+@media (max-width:860px){
+.home-search.orbita{min-height:0;padding:150px 5% 40px;align-items:flex-end}
+.orbita-selo{right:auto;left:50%;top:26px;margin:0 0 0 -50px;width:100px;height:100px}
+.orbita .home-title{font-size:clamp(38px,11vw,52px);margin-bottom:20px}
+.orbita .category-chips{margin:0 -5%;padding-left:5%;padding-right:5%}
+.orbita-numeros{gap:8px 22px}.orbita-numeros b{font-size:28px}
+.faixa-trilho span{font-size:18px;gap:18px;padding:12px 9px}
+.manifesto-texto{font-size:30px}
+.process-grid article>span{font-size:44px}
+}
+@media (prefers-reduced-motion:reduce){.announcement,.faixa-trilho,.orbita-selo,.manifesto:before,.wa-float{animation:none}.orbita .home-title em,.product-card,.product-card img{transition:none}}
+.site-header .menu-toggle span{background:var(--creme)}
