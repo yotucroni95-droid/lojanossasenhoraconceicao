@@ -4,6 +4,11 @@
 const host = typeof location !== 'undefined' ? location.hostname : '';
 export const modo = host.endsWith('github.io') ? 'producao' : 'teste';
 
+// Banco do painel da loja (Supabase). "chave" é a chave pública (anon/publishable): pode ficar no site,
+// quem protege os dados são as regras do banco. NUNCA coloque aqui a chave "service_role" ou "secret".
+// Vazio = o site usa só o catálogo dos arquivos e o painel mostra como ativar.
+export const banco = {url: '', chave: ''};
+
 export const loja = {
   nome: 'Nossa Senhora da Conceição',
   // Decisão da loja (23/11/2026): o site não mostra preços; o cliente consulta pelo WhatsApp.

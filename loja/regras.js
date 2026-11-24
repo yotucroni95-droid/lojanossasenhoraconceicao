@@ -1,8 +1,8 @@
 // Regras compartilhadas entre o site e o servidor de pagamento: preço vigente, campanha,
 // estoque, frete e mensagens. O servidor recalcula tudo com este mesmo código antes de cobrar.
-import {products, categories} from '../catalogo.js?v=9';
-import {campanhas, entrega, loja} from '../config.js?v=9';
-import {variantesTeste, ofertasTeste} from '../dados-teste.js?v=9';
+import {products, categories} from '../catalogo.js?v=10';
+import {campanhas, entrega, loja} from '../config.js?v=10';
+import {variantesTeste, ofertasTeste} from '../dados-teste.js?v=10';
 
 export {categories, campanhas, loja, entrega};
 
@@ -26,7 +26,7 @@ export function montarCatalogo({modo = 'producao', ajustes = {}, agora = new Dat
     if (!precos || faseCampanha(c, agora) !== 'ativa') continue;
     for (const o of [...(c.ofertas || []), ...(teste ? ofertasTeste[c.id] || [] : [])]) ofertas.set(o.produto + '/' + o.variante, {...o, campanha: c.id, nomeCampanha: c.nome});
   }
-  return products.filter(p => p.status !== 'pendente').map(p => ({
+  return products.filter(p => p.status !== 'pendente' && p.status !== 'oculto').map(p => ({
     ...p,
     variants: p.variants.map(v => {
       const t = teste ? variantesTeste[p.id]?.[v.id] || {} : {};

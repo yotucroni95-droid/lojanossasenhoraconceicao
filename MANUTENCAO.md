@@ -2,6 +2,9 @@
 
 Site estático publicado no GitHub Pages (branch `main`). Rotas após `#/`. Links de produto: `#/produto/<id>?cor=<variante>`. **Nunca mude ids**: são os links já divulgados.
 
+## Painel da loja (sem código)
+A equipe edita produtos, fotos, estoque e campanhas em `#/painel`. Ativação: `painel/ATIVAR.md`. Banco: `painel/banco.sql`. Depois de ativado, o banco vale mais que `catalogo-loja.js` (o arquivo vira só reserva); para reimportar um relatório novo, gere o catálogo e use o painel com cuidado para não sobrescrever edições.
+
 ## Ver a prévia antes de publicar
 ```
 node servidor/servidor.mjs
