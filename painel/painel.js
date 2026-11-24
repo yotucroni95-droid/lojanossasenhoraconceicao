@@ -260,7 +260,7 @@ async function telaLoja() {
 // ---------- equipe (dono e Órbita) ----------
 // Criar login e trocar senha precisa da chave secreta, então isso roda na função "equipe" do Supabase (servidor), nunca aqui.
 async function chamarEquipe(corpo) {
-  const {data, error} = await sb.functions.invoke('equipe', {body: {site: siteAtual, ...corpo}});
+  const {data, error} = await sb.functions.invoke(banco.funcaoEquipe || 'equipe', {body: {site: siteAtual, ...corpo}});
   if (!error) return data;
   let msg = 'Não foi possível falar com o banco.';
   try { msg = (await error.context.json()).erro || msg; } catch {}

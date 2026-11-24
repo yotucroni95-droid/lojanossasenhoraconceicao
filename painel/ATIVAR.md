@@ -27,7 +27,7 @@ Coloque as duas em `config.js` → `export const banco = {url: '...', chave: '..
 
 ## 3b. Instalar a função "equipe" (para o dono cadastrar funcionários pelo painel)
 1. No Supabase, menu da esquerda: **Edge Functions** → **Deploy a new function** → **Via Editor**.
-2. Nome da função: `equipe`. Apague o exemplo, cole todo o arquivo `painel/funcao-equipe.ts` e clique **Deploy function**.
+2. Nome da função: `equipe` (se o Supabase der outro nome, ex. `quick-task`, ponha esse nome em `config.js` → `banco.funcaoEquipe`). Apague o exemplo, cole todo o arquivo `painel/funcao-equipe.ts` e clique **Deploy function**.
 3. Na página da função, em **Details/Settings**, desligue **Verify JWT** (a função confere o login sozinha) e salve.
 A chave secreta fica só no servidor do Supabase; o site nunca a vê.
 

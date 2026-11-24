@@ -8,7 +8,7 @@ export const modo = host.endsWith('github.io') ? 'producao' : 'teste';
 // quem protege os dados são as regras do banco. NUNCA coloque aqui a chave "service_role" ou "secret".
 // "site" separa esta loja das outras no mesmo banco da Órbita.
 // Vazio = o site usa só o catálogo dos arquivos e o painel mostra como ativar.
-export const banco = {url: 'https://mjtylmggvcafznwbntig.supabase.co', chave: 'sb_publishable_pOGa2QxNMNyQediSmB9b0A_CKhMapPS', site: 'conceicao'};
+export const banco = {url: 'https://mjtylmggvcafznwbntig.supabase.co', chave: 'sb_publishable_pOGa2QxNMNyQediSmB9b0A_CKhMapPS', site: 'conceicao', funcaoEquipe: 'quick-task'};
 
 export const loja = {
   nome: 'Nossa Senhora da Conceição',
