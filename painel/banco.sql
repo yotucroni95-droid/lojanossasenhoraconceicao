@@ -35,6 +35,14 @@ create table if not exists public.equipe (
   site text not null,
   primary key (email, site)
 );
+-- Função de cada pessoa: 'dono' (cadastra a equipe da loja) ou 'funcionario'.
+alter table public.equipe add column if not exists papel text not null default 'funcionario';
+alter table public.equipe drop constraint if exists equipe_papel_ok;
+alter table public.equipe add constraint equipe_papel_ok check (papel in ('dono', 'funcionario'));
+update public.equipe set papel = 'dono' where site = '*';
+update public.equipe set email = lower(trim(email)) where email <> lower(trim(email));
+alter table public.equipe drop constraint if exists equipe_email_minusculo;
+alter table public.equipe add constraint equipe_email_minusculo check (email = lower(email));
 
 -- Histórico: versão anterior de cada produto alterado ou apagado (para desfazer).
 create table if not exists public.historico (
@@ -84,6 +92,10 @@ alter table public.historico enable row level security;
 -- Qualquer visitante pode LER produtos e ajustes (o site público precisa). Só a equipe do site pode mudar.
 drop policy if exists "todos leem sites" on public.sites;
 create policy "todos leem sites" on public.sites for select using (true);
+drop policy if exists "orbita cria sites" on public.sites;
+create policy "orbita cria sites" on public.sites for insert to authenticated with check (public.eh_equipe('*'));
+drop policy if exists "orbita edita sites" on public.sites;
+create policy "orbita edita sites" on public.sites for update to authenticated using (public.eh_equipe('*')) with check (public.eh_equipe('*'));
 
 drop policy if exists "site le produtos" on public.produtos;
 create policy "site le produtos" on public.produtos for select using (true);
@@ -122,7 +134,8 @@ create policy "equipe apaga fotos" on storage.objects for delete to authenticate
 insert into public.sites (id, nome) values ('conceicao', 'Loja Nossa Senhora da Conceição') on conflict (id) do nothing;
 
 -- >>> Para liberar uma pessoa, troque o e-mail e rode (uma linha por pessoa):
--- insert into public.equipe (email, site) values ('pessoa.da.loja@gmail.com', 'conceicao');
+-- (Depois de instalar a função "equipe", o dono cadastra a equipe pelo próprio painel, aba Equipe.)
+-- insert into public.equipe (email, site, papel) values ('dono.da.loja@gmail.com', 'conceicao', 'dono');
 -- Você (Órbita), com acesso a todos os sites:
--- insert into public.equipe (email, site) values ('seu.email@gmail.com', '*');
+-- insert into public.equipe (email, site, papel) values ('seu.email@gmail.com', '*', 'dono');
 -- >>> Novo cliente: insert into public.sites (id, nome) values ('nome-do-cliente', 'Nome do Cliente');

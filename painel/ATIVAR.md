@@ -12,8 +12,8 @@ O painel fica em `…/lojanossasenhoraconceicao/#/painel`. Lá a equipe entra co
 1. **Authentication → Sign In / Providers**: desligue **Allow new users to sign up** (ninguém de fora cria conta).
 2. **Authentication → Users → Add user → Create new user**: e-mail e senha de cada pessoa da loja (marque *Auto Confirm User*).
 3. Volte ao **SQL Editor** e rode, uma linha por pessoa:
-   `insert into public.equipe (email, site) values ('email.da.pessoa@gmail.com', 'conceicao');`
-   Para você (Órbita) editar todos os sites: `insert into public.equipe (email, site) values ('seu.email@gmail.com', '*');`
+   Você (Órbita), com acesso a todos os sites: `insert into public.equipe (email, site, papel) values ('seu.email@gmail.com', '*', 'dono');`
+   Os demais (dono e funcionários) você ou o dono cadastram depois pelo painel, aba **Equipe**.
    Só quem está nessa lista consegue editar, mesmo tendo login.
 
 ## 3. Ligar o site ao banco
@@ -24,6 +24,12 @@ Em **Project Settings → API** (ou **Data API / API Keys**), copie:
 Coloque as duas em `config.js` → `export const banco = {url: '...', chave: '...', site: 'conceicao'};`
 
 **Nunca** use a chave `service_role` / `secret` no site: ela abre o banco inteiro.
+
+## 3b. Instalar a função "equipe" (para o dono cadastrar funcionários pelo painel)
+1. No Supabase, menu da esquerda: **Edge Functions** → **Deploy a new function** → **Via Editor**.
+2. Nome da função: `equipe`. Apague o exemplo, cole todo o arquivo `painel/funcao-equipe.ts` e clique **Deploy function**.
+3. Na página da função, em **Details/Settings**, desligue **Verify JWT** (a função confere o login sozinha) e salve.
+A chave secreta fica só no servidor do Supabase; o site nunca a vê.
 
 ## 4. Primeiro acesso
 Abra `#/painel`, entre com um login da equipe e clique **Importar o catálogo atual**. A partir daí o site mostra o que está no banco.
@@ -38,6 +44,6 @@ Abra `#/painel`, entre com um login da equipe e clique **Importar o catálogo at
 
 ## Outro cliente no mesmo banco
 1. No **SQL Editor**: `insert into public.sites (id, nome) values ('codigo-do-cliente', 'Nome do Cliente');`
-2. Libere a equipe dele: `insert into public.equipe (email, site) values ('email@cliente.com', 'codigo-do-cliente');`
+2. Ou crie pelo painel: aba **Sites (Órbita)** → Novo site. Depois troque para ele e cadastre o dono na aba **Equipe** (função Dono).
 3. No site do cliente, use a mesma URL e chave, com `site: 'codigo-do-cliente'`.
 Os dados de um site nunca aparecem no outro, e a equipe de um cliente não consegue mexer no site de outro.

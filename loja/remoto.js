@@ -1,7 +1,7 @@
 // Catálogo editável pelo painel da loja (#/painel). Os dados ficam no banco (Supabase).
 // Se o banco não estiver configurado ou não responder, o site usa o catálogo fixo dos arquivos.
-import {products} from '../catalogo.js?v=10';
-import {campanhas, banco} from '../config.js?v=10';
+import {products} from '../catalogo.js?v=11';
+import {campanhas, banco, loja} from '../config.js?v=11';
 
 const CACHE = 'conceicao-catalogo-remoto';
 export const bancoAtivo = () => Boolean(banco?.url && banco?.chave && banco?.site);
@@ -24,6 +24,8 @@ function aplicar(dados) {
   products.splice(0, products.length, ...lista);
   const camp = dados.ajustes?.find(a => a.chave === 'campanhas')?.dados;
   if (Array.isArray(camp) && camp.length) campanhas.splice(0, campanhas.length, ...camp);
+  const aj = dados.ajustes?.find(a => a.chave === 'loja')?.dados;
+  if (typeof aj?.exibirPrecos === 'boolean') loja.exibirPrecos = aj.exibirPrecos;
   origemCatalogo = 'banco';
   return true;
 }

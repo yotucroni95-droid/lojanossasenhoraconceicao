@@ -1,10 +1,10 @@
-import {modo, loja, entrega, pagamento, campanhas} from './config.js?v=10';
-import {products as produtosBase} from './catalogo.js?v=10';
-import {pendentesLoja, produtosLoja} from './catalogo-loja.js?v=10';
+import {modo, loja, entrega, pagamento, campanhas} from './config.js?v=11';
+import {products as produtosBase} from './catalogo.js?v=11';
+import {pendentesLoja, produtosLoja} from './catalogo-loja.js?v=11';
 import {categories, montarCatalogo, acharProduto, acharVariante, disponibilidade, medidasTexto, pendencias, galeria, cotar, faseCampanha,
-  mensagemProduto, mensagemPedido, linkWhatsapp, reais} from './loja/regras.js?v=10';
-import {animarPagina} from './movimento.js?v=10';
-import {carregarCatalogoRemoto} from './loja/remoto.js?v=10';
+  mensagemProduto, mensagemPedido, linkWhatsapp, reais} from './loja/regras.js?v=11';
+import {animarPagina} from './movimento.js?v=11';
+import {carregarCatalogoRemoto} from './loja/remoto.js?v=11';
 await carregarCatalogoRemoto();
 
 const $ = (s, root = document) => root.querySelector(s);
@@ -309,7 +309,7 @@ const api = {
   },
   async local() {
     if (this.nucleoLocal) return this.nucleoLocal;
-    const {criarNucleo} = await import('./loja/pedidos.js?v=10');
+    const {criarNucleo} = await import('./loja/pedidos.js?v=11');
     this.nucleoLocal = criarNucleo({modo: 'teste', segredo: 'simulacao-no-navegador-0001',
       armazenamento: {async ler() { return ls.get('conceicao-simulacao-pagamentos', null); }, async gravar(s) { ls.set('conceicao-simulacao-pagamentos', s); }},
       provedor: {async criarCobranca(p) { return {url: '#/pagamento-teste/' + p.id, referencia: 'simulado'}; }}});
@@ -397,7 +397,7 @@ async function simulatedProviderPage(id) {
   main.dataset.order = p.id;
 }
 async function simulate(status) {
-  const {assinar} = await import('./loja/pedidos.js?v=10');
+  const {assinar} = await import('./loja/pedidos.js?v=11');
   const n = await api.local(), p = await n.consultar(main.dataset.order);
   const corpo = JSON.stringify({id: 'evt_' + Math.random().toString(36).slice(2), pedido: p.id, status, valor: p.total});
   const sig = await assinar('simulacao-no-navegador-0001', corpo);
@@ -443,7 +443,7 @@ function route() {
   else if (path.startsWith('/pedido/')) orderPage(decodeURIComponent(path.split('/')[2] || ''));
   else if (path.startsWith('/pagamento-teste/')) simulatedProviderPage(decodeURIComponent(path.split('/')[2] || ''));
   else if (path === '/manutencao') maintenancePage();
-  else if (path === '/painel') { document.title = 'Painel da loja | Nossa Senhora da Conceição'; main.innerHTML = '<section class="painel" id="painel"><p>Carregando o painel…</p></section>'; import('./painel/painel.js?v=10').then(m => m.abrirPainel($("#painel"), {produtosBase, idsLoja, categorias: categories, campanhas})).catch(() => { main.innerHTML = '<section class="painel"><p>Não foi possível abrir o painel. Verifique a internet e tente de novo.</p></section>'; }); }
+  else if (path === '/painel') { document.title = 'Painel da loja | Nossa Senhora da Conceição'; main.innerHTML = '<section class="painel" id="painel"><p>Carregando o painel…</p></section>'; import('./painel/painel.js?v=11').then(m => m.abrirPainel($("#painel"), {produtosBase, idsLoja, categorias: categories, campanhas, exibirPrecos: loja.exibirPrecos})).catch(() => { main.innerHTML = '<section class="painel"><p>Não foi possível abrir o painel. Verifique a internet e tente de novo.</p></section>'; }); }
   else if (path === '/' || !path) home();
   else notFound();
   document.body.dataset.rota = path.split('/')[1] || 'inicio';
