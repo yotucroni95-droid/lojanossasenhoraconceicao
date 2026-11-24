@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Órbita Virtual">
+  <defs>
+    <linearGradient id="ov-navy" x1="10" y1="80" x2="90" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0A2470"/>
+      <stop offset="1" stop-color="#16388F"/>
+    </linearGradient>
+    <linearGradient id="ov-blue" x1="15" y1="60" x2="70" y2="65" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F6BFF"/>
+      <stop offset="1" stop-color="#0F4FE0"/>
+    </linearGradient>
+    <radialGradient id="ov-ball" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#6E9CFF"/>
+      <stop offset=".3" stop-color="#2A6BEF"/>
+      <stop offset="1" stop-color="#0A2470"/>
+    </radialGradient>
+  </defs>
+  <g transform="rotate(-27 50 50)">
+    <path fill="url(#ov-navy)" fill-rule="evenodd" d="M4 50a46 25 0 1 0 92 0a46 25 0 1 0-92 0ZM13.5 46.5a41 20 0 1 0 82 0a41 20 0 1 0-82 0Z"/>
+    <path fill="url(#ov-blue)" fill-rule="evenodd" d="M16 47.5a38.5 17 0 1 0 77 0a38.5 17 0 1 0-77 0ZM25 44a35 14 0 1 0 70 0a35 14 0 1 0-70 0Z"/>
+  </g>
+  <circle cx="73" cy="49" r="8.6" fill="url(#ov-ball)" stroke="#fff" stroke-width="2.2"/>
+</svg>

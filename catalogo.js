@@ -2,7 +2,7 @@
 // Nunca altere "id" de produto ou variante: eles formam os links já divulgados (#/produto/<id>?cor=<variante>).
 // Campos null = dado ainda não confirmado pela loja (aparece como pendente e "sob consulta").
 // Medidas em centímetros: largura, altura, profundidade. Preços em reais.
-import {produtosLoja} from './catalogo-loja.js?v=8';
+import {produtosLoja} from './catalogo-loja.js?v=9';
 
 export const categories = [
  {"id":"colchoes","name":"Colchões e camas box","image":"assets/catalogo/ti-realeza-amb.jpg","note":"Noites mais bem dormidas.","filtros":["tipo","tamanho","densidade"]},

@@ -1,9 +1,9 @@
-import {modo, loja, entrega, pagamento, campanhas} from './config.js?v=8';
-import {products as produtosBase} from './catalogo.js?v=8';
-import {pendentesLoja, produtosLoja} from './catalogo-loja.js?v=8';
+import {modo, loja, entrega, pagamento, campanhas} from './config.js?v=9';
+import {products as produtosBase} from './catalogo.js?v=9';
+import {pendentesLoja, produtosLoja} from './catalogo-loja.js?v=9';
 import {categories, montarCatalogo, acharProduto, acharVariante, disponibilidade, medidasTexto, pendencias, galeria, cotar, faseCampanha,
-  mensagemProduto, mensagemPedido, linkWhatsapp, reais} from './loja/regras.js?v=8';
-import {animarPagina} from './movimento.js?v=8';
+  mensagemProduto, mensagemPedido, linkWhatsapp, reais} from './loja/regras.js?v=9';
+import {animarPagina} from './movimento.js?v=9';
 
 const $ = (s, root = document) => root.querySelector(s);
 const $$ = (s, root = document) => [...root.querySelectorAll(s)];
@@ -108,7 +108,7 @@ function home() {
   const ofertas = catalogo.filter(p => p.variants.some(v => v.precoDe && v.preco != null && v.precoDe > v.preco));
   const vitrine = catalogo.filter(naVitrine);
   const conta = id => vitrine.filter(p => p.category === id).length;
-  main.innerHTML = '<section class="home-search orbita"><canvas class="orbita-canvas" aria-hidden="true"></canvas><div class="orbita-selo" aria-hidden="true"><img src="assets/simbolo.jpg" alt="" width="256" height="256"></div><div class="orbita-conteudo"><p class="eyebrow">MÓVEIS & ELETROS EM LAGOA DO OURO – PE</p><h2 class="home-title"><span class="sr-only">O que você procura para a sua casa?</span><span aria-hidden="true">O que você procura<br>para a sua <em data-roda="casa?|sala?|cozinha?|quarto?|varanda?">casa?</em></span></h2>' + searchForm() +
+  main.innerHTML = '<section class="home-search orbita"><div class="orbita-selo" aria-hidden="true"><img src="assets/simbolo.jpg" alt="" width="256" height="256"></div><div class="orbita-conteudo"><p class="eyebrow">MÓVEIS & ELETROS EM LAGOA DO OURO – PE</p><h2 class="home-title"><span class="sr-only">O que você procura para a sua casa?</span><span aria-hidden="true">O que você procura<br>para a sua <em data-roda="casa?|sala?|cozinha?|quarto?|varanda?">casa?</em></span></h2>' + searchForm() +
   '<nav class="category-chips" aria-label="Categorias">' + categoriasVisiveis.map(c => '<a href="#/catalogo?categoria=' + c.id + '">' + c.name + ' <small>' + conta(c.id) + '</small></a>').join('') + '</nav>' +
   '<div class="orbita-numeros"><span><b data-conta="' + vitrine.length + '">' + vitrine.length + '</b> produtos no catálogo</span><span><b data-conta="' + categoriasVisiveis.length + '">' + categoriasVisiveis.length + '</b> ambientes</span><span><b>WhatsApp</b> preço, entrega e disponibilidade</span></div></div></section>' +
   '<div class="faixa" aria-hidden="true"><div class="faixa-trilho">' + [0, 1].map(() => '<span>' + categoriasVisiveis.map(c => c.name).concat(['Compra pelo WhatsApp', 'Lagoa do Ouro – PE', camp?.fase === 'ativa' ? esc(camp.nome) : 'Uma casa com a sua essência']).map(t => '<i>' + t + '</i>').join('<em>✦</em>') + '<em>✦</em></span>').join('') + '</div></div>' + campaignBanner(camp) +
@@ -307,7 +307,7 @@ const api = {
   },
   async local() {
     if (this.nucleoLocal) return this.nucleoLocal;
-    const {criarNucleo} = await import('./loja/pedidos.js?v=8');
+    const {criarNucleo} = await import('./loja/pedidos.js?v=9');
     this.nucleoLocal = criarNucleo({modo: 'teste', segredo: 'simulacao-no-navegador-0001',
       armazenamento: {async ler() { return ls.get('conceicao-simulacao-pagamentos', null); }, async gravar(s) { ls.set('conceicao-simulacao-pagamentos', s); }},
       provedor: {async criarCobranca(p) { return {url: '#/pagamento-teste/' + p.id, referencia: 'simulado'}; }}});
@@ -395,7 +395,7 @@ async function simulatedProviderPage(id) {
   main.dataset.order = p.id;
 }
 async function simulate(status) {
-  const {assinar} = await import('./loja/pedidos.js?v=8');
+  const {assinar} = await import('./loja/pedidos.js?v=9');
   const n = await api.local(), p = await n.consultar(main.dataset.order);
   const corpo = JSON.stringify({id: 'evt_' + Math.random().toString(36).slice(2), pedido: p.id, status, valor: p.total});
   const sig = await assinar('simulacao-no-navegador-0001', corpo);

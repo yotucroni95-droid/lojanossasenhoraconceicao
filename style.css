@@ -230,3 +230,15 @@ body[data-rota="produto"] .wa-float,body[data-rota="checkout"] .wa-float,body.di
 }
 @media (prefers-reduced-motion:reduce){.announcement,.faixa-trilho,.orbita-selo,.manifesto:before,.wa-float{animation:none}.orbita .home-title em,.product-card,.product-card img{transition:none}}
 .site-header .menu-toggle span{background:var(--creme)}
+/* v9 · sem órbitas; rodapé mais limpo */
+.home-search.orbita{background:radial-gradient(70% 90% at 78% 40%,#4a3320 0%,transparent 70%),linear-gradient(120deg,var(--cafe) 0%,var(--cafe2) 55%,#33241a 100%)}
+.orbita-selo{animation:none;box-shadow:0 0 0 1px #c9a46a66,0 24px 60px #0008}
+.manifesto:before{display:none}
+.footer-links a{display:inline-flex;align-items:center;gap:6px}
+.footer-links a svg,.footer-bottom svg{width:11px;height:11px;stroke-width:1.6;opacity:.8}
+.footer-links div>a{display:flex}
+.credito-orbita{display:inline-flex;align-items:center;gap:8px;color:#d8c9b5}
+.credito-orbita img{width:18px;height:18px;padding:2px;border-radius:50%;background:#f3eadb;box-sizing:content-box}
+.credito-orbita:hover{color:#fff}
+@media (max-width:860px){.footer-bottom .credito-orbita{display:inline-flex;margin-top:10px}}
+@media (min-width:861px){.site-footer{padding-bottom:34px}.footer-bottom{padding-right:190px}}
