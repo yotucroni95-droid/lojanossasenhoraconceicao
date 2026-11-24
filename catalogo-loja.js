@@ -3186,7 +3186,7 @@ export const produtosLoja = [
     "name": "Carvalho / Titânio",
     "color": "#6f777b",
     "image": "assets/catalogo/web-000713.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000713",
     "descricaoLoja": "- BALCAO 2 PORTAS 2 GAVETAS NESHER REALEZA PREMIUM",
     "preco": null,
@@ -3205,9 +3205,9 @@ export const produtosLoja = [
     "url": "https://www.madeiramadeira.com.br/balcao-de-cozinha-realeza-premium-120cm-2-portas-e-2-gavetas-carvalho-greige-com-tampo-mdf-nesher-257000523.html"
    },
    {
-    "campo": "imagem ilustrativa Carvalho / Titânio",
+    "campo": "foto Carvalho / Titânio",
     "codigo": "000713",
-    "url": "https://www.extra.com.br/balcao-cozinha-nesher-realeza-c-2-portas-2gavs-120cm-carvalho-titanio/p/1580819675"
+    "url": "https://www.prmoveis.com.br/produto/balcao-de-cozinha-realeza-premium-120cm-2-portas-e-2-gavetas-carvalho-titanio-com-tampo-mdf-nesher-123922?srsltid="
    },
    {
     "campo": "códigos e estoque",
@@ -3545,7 +3545,7 @@ export const produtosLoja = [
     "name": "Castanho / Off White",
     "color": "#6b4a33",
     "image": "assets/catalogo/web-000386.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000386",
     "descricaoLoja": "KIT DUDA 90 CASTANHO/OFF WHITE",
     "preco": null,
@@ -3564,9 +3564,9 @@ export const produtosLoja = [
     "url": "https://www.extra.com.br/kit-duda-2pts-correr-1gav-090-damasco-ripado-off-white/p/1576679315"
    },
    {
-    "campo": "imagem ilustrativa Castanho / Off White",
+    "campo": "foto Castanho / Off White",
     "codigo": "000386",
-    "url": "https://www.pontofrio.com.br/cozinha-compacta-duda-em-mdp-com-4-portas-1-gaveta-poquema-castanho-off-white/p/1571328055"
+    "url": "https://www.madeiramadeira.com.br/armario-cozinha-kit-duda-90cm-com-4-portas-e-1-gaveta-castanho-off-white-castanho-off-white-172865599.html"
    },
    {
     "campo": "códigos e estoque",
@@ -3649,7 +3649,7 @@ export const produtosLoja = [
     "name": "Damasco / Off White · conjunto com balcão",
     "color": "#c8a27a",
     "image": "assets/catalogo/web-000585.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000585",
     "descricaoLoja": "680.49 COZ.DORA CONJ.C/BALCAO DM/OFF",
     "preco": null,
@@ -3668,9 +3668,9 @@ export const produtosLoja = [
     "url": "https://www.extra.com.br/kit-cozinha-dora-com-balcao-damasco-ripado-off-white-poquema/p/1576374091"
    },
    {
-    "campo": "imagem ilustrativa Damasco / Off White · conjunto com balcão",
+    "campo": "foto Damasco / Off White · conjunto com balcão",
     "codigo": "000585",
-    "url": "https://www.extra.com.br/kit-cozinha-dora-com-balcao-damasco-ripado-off-white-poquema/p/1582438418"
+    "url": "https://www.unnishop.com.br/680-49-coz-dora-conj-cbalcao-dmoff-a68049001-poquema?srsltid=AYCX9vL59K_OPGrEoxe8UhoEtUuHhHhjAXb9oSIJUCTkqenDsRyLjXpW"
    },
    {
     "campo": "códigos e estoque",
@@ -3712,7 +3712,7 @@ export const produtosLoja = [
     "name": "Freijó / Chumbo",
     "color": "#4a4a4a",
     "image": "assets/catalogo/web-000682.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000682",
     "descricaoLoja": "KIT SANTIAGO 90 MDP FREIJO / CHUMBO / FREIJO",
     "preco": null,
@@ -3728,7 +3728,7 @@ export const produtosLoja = [
     "name": "Freijó / Moka",
     "color": "#6d5444",
     "image": "assets/catalogo/web-000684.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000684",
     "descricaoLoja": "KIT SANTIAGO 90 MDP FREIJO / MOKA / FREIJO",
     "preco": null,
@@ -3747,14 +3747,14 @@ export const produtosLoja = [
     "url": "https://www.extra.com.br/armario-de-cozinha-santiago-90cm-freijo-baunilha/p/1575339736"
    },
    {
-    "campo": "imagem ilustrativa Freijó / Chumbo",
+    "campo": "foto Freijó / Chumbo",
     "codigo": "000682",
-    "url": "https://www.pontofrio.com.br/armario-de-cozinha-santiago-90-cm-com-6-portas-e-1-gaveta/p/1571262115"
+    "url": "https://www.casaraomoveis.com.br/kit-santiago-90-mdp-freijo-chumbo-freijo"
    },
    {
-    "campo": "imagem ilustrativa Freijó / Moka",
+    "campo": "foto Freijó / Moka",
     "codigo": "000684",
-    "url": "https://www.pontofrio.com.br/armario-de-cozinha-santiago-90-cm-com-6-portas-e-1-gaveta/p/1571300175"
+    "url": "https://www.madeiramadeira.com.br/armario-de-cozinha-santiago-90-cm-com-6-portas-e-1-gaveta-freijo-moka-898003932.html"
    },
    {
     "campo": "códigos e estoque",
@@ -3985,7 +3985,7 @@ export const produtosLoja = [
     "name": "Jequitibá",
     "color": "#b07a4a",
     "image": "assets/catalogo/web-000602.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000602",
     "descricaoLoja": "BANCADA DALLAS JEQUITIBA",
     "preco": null,
@@ -4004,9 +4004,9 @@ export const produtosLoja = [
     "url": "https://www.extra.com.br/bancada-dallas-3-portas-jequitiba-off-white-perolizado-lukaliam/p/1579456281"
    },
    {
-    "campo": "imagem ilustrativa Jequitibá",
+    "campo": "foto Jequitibá",
     "codigo": "000602",
-    "url": "https://www.extra.com.br/bancada-dallas-suporte-para-tvs-c-3-portas-e-nichos-jequitiba-off-white-perolizado/p/1574813359"
+    "url": "https://lukaliam.com.br/produto/bancada-dallas/"
    },
    {
     "campo": "códigos e estoque",
@@ -4493,7 +4493,7 @@ export const produtosLoja = [
    {
     "campo": "foto Preto (LX1022PT, 220 V)",
     "codigo": "000655",
-    "url": "https://www.pontofrio.com.br/tanquinho-semiautomatico-suggar-lavamax-eco-10kg-preta/p/1554654456"
+    "url": "https://www.madeiramadeira.com.br/lavadora-suggar-lavamax-eco-10kg-preto-le1022pt-220v-978334121.html"
    },
    {
     "campo": "códigos e estoque",
@@ -5770,7 +5770,7 @@ export const produtosLoja = [
     "name": "Carvalho / Titânio",
     "color": "#6f777b",
     "image": "assets/catalogo/web-000711.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000711",
     "descricaoLoja": "- ARMARIO AEREO 1 PORTA BASC NESHER REALEZA PREMIUM",
     "preco": null,
@@ -5789,9 +5789,9 @@ export const produtosLoja = [
     "url": "https://www.extra.com.br/armario-aereo-1-porta-basculante-e-nicho-120cm-100-mdf-realeza-premium-carvalho-greige/p/1580573609"
    },
    {
-    "campo": "imagem ilustrativa Carvalho / Titânio",
+    "campo": "foto Carvalho / Titânio",
     "codigo": "000711",
-    "url": "https://www.extra.com.br/armario-aereo-cozinha-nesher-realeza-1-porta-120cm-carvalho-titanio/p/1580819682"
+    "url": "https://www.mercadolivre.com.br/armario-aereo-1-porta-basc-realeza-premium--nesher-cozinhas/up/MLBU3838490568"
    },
    {
     "campo": "códigos e estoque",
@@ -5818,7 +5818,7 @@ export const produtosLoja = [
     "name": "Freijó",
     "color": "#b38b5d",
     "image": "assets/catalogo/web-000461.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000461",
     "descricaoLoja": "AEREO DIVINA 80CM GELADEIRA 1PT BASCULANTE - FREIJO",
     "preco": null,
@@ -5832,9 +5832,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Freijó",
+    "campo": "foto Freijó",
     "codigo": "000461",
-    "url": "https://www.pontofrio.com.br/armario-aereo-80cm-1-porta-basculante-isabelle-freijo-arenas/p/1567443739"
+    "url": "https://www.madeiramadeira.com.br/armario-aereo-divina-80-cm-geladeira-1-porta-basculante-cinamomo-629136118.html"
    },
    {
     "campo": "códigos e estoque",
@@ -5902,7 +5902,7 @@ export const produtosLoja = [
     "name": "Freijó / Chumbo",
     "color": "#4a4a4a",
     "image": "assets/catalogo/web-000685.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000685",
     "descricaoLoja": "KIT NEW MONTEVIDEU 1.505 MDP FREIJO / FREIJO / CHUMBO",
     "preco": null,
@@ -5932,9 +5932,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Freijó / Chumbo",
+    "campo": "foto Freijó / Chumbo",
     "codigo": "000685",
-    "url": "https://www.pontofrio.com.br/armario-de-cozinha-new-jully-184-cm-com-8-portas-e-2-gavetas-freijo-chumbo/p/1579460623"
+    "url": "https://www.mercadolivre.com.br/kit-new-montevideu-mdp-freijochumbo/up/MLBU2375169927"
    },
    {
     "campo": "imagem ilustrativa Freijó / Moka",
@@ -6028,7 +6028,7 @@ export const produtosLoja = [
     "name": "Freijó / Baunilha",
     "color": "#b38b5d",
     "image": "assets/catalogo/web-000681.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000681",
     "descricaoLoja": "FRUTEIRA AGATA 38 MDP FREIJO / BAUNILHA",
     "preco": null,
@@ -6042,9 +6042,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Freijó / Baunilha",
+    "campo": "foto Freijó / Baunilha",
     "codigo": "000681",
-    "url": "https://www.pontofrio.com.br/fruteira-agata-38-mdp-branco/p/1572410815"
+    "url": "https://www.madeiramadeira.com.br/fruteira-balcao-multiuso-agata-1-gaveta-2-cestos-mdp-freijo-baunilha-413935309.html"
    },
    {
     "campo": "códigos e estoque",
@@ -6298,7 +6298,7 @@ export const produtosLoja = [
     "name": "Damasco / Off White",
     "color": "#c8a27a",
     "image": "assets/catalogo/web-000387.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000387",
     "descricaoLoja": "ROUPEIRO CAPRI 4P2G DAMASCO/OFF WHITE",
     "preco": null,
@@ -6314,7 +6314,7 @@ export const produtosLoja = [
     "name": "Castanho / Off White",
     "color": "#6b4a33",
     "image": "assets/catalogo/web-000388.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000388",
     "descricaoLoja": "ROUPEIRO CAPRI 4P2G CASTANHO/OFFWHITE",
     "preco": null,
@@ -6328,14 +6328,14 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Damasco / Off White",
+    "campo": "foto Damasco / Off White",
     "codigo": "000387",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-solteiro-capri-2-portas-6-gav-c-espelho/p/1557214034"
+    "url": "https://www.casasbahia.com.br/guarda-roupa-capri-4-portas-2-gavetas-poquema-damasco-off-white/p/1572044150"
    },
    {
-    "campo": "imagem ilustrativa Castanho / Off White",
+    "campo": "foto Castanho / Off White",
     "codigo": "000388",
-    "url": "https://www.extra.com.br/guarda-roupa-poquema-capri-6-portas-2-gavetas-castanho-off-white/p/1575361921"
+    "url": "https://adrianomoveiseeletros.com.br/produto/roupeiro-pquema-capri-4p2g-ct-of/"
    },
    {
     "campo": "códigos e estoque",
@@ -6423,7 +6423,7 @@ export const produtosLoja = [
     "name": "Jequitibá",
     "color": "#b07a4a",
     "image": "assets/catalogo/web-000579.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000579",
     "descricaoLoja": "ROUPEIRO CLARA 6 PORTAS FLEX COM ESPELHO GIRATÓRIO",
     "preco": null,
@@ -6437,9 +6437,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Jequitibá",
+    "campo": "foto Jequitibá",
     "codigo": "000579",
-    "url": "https://www.madeiramadeira.com.br/roupeiro-panan-clara-flex-6-portas-3-gavetas-espelho-interior-642219655.html"
+    "url": "https://www.casaecompanhia.com.br/roupeiro-guarda-roupas-panam-clara-6-portas-flex-com-kit-divisao-giratorio-espelho-branco"
    },
    {
     "campo": "códigos e estoque",
@@ -6464,7 +6464,7 @@ export const produtosLoja = [
     "name": "Fortaleza Plus",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000645.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000645",
     "descricaoLoja": "ROUPEIRO FORTALEZA PLUS 6 PORTAS 2 GV .",
     "preco": null,
@@ -6476,9 +6476,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Fortaleza Plus",
+    "campo": "foto Fortaleza Plus",
     "codigo": "000645",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-com-espelho-6-portas-fortaleza-atualle-canelato-rustico-com-off-white/p/1580617791"
+    "url": "https://maxxxmoveis.com.br/products/guarda-roupa-fortaleza-fortaleza"
    },
    {
     "campo": "códigos e estoque",
@@ -6504,7 +6504,7 @@ export const produtosLoja = [
     "name": "Branco",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000688.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000688",
     "descricaoLoja": "ROUPEIRO LIGHT PLUS 4 PTS COM PE - BRANCO",
     "preco": null,
@@ -6520,7 +6520,7 @@ export const produtosLoja = [
     "name": "Cinamomo / Off White",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000690.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000690",
     "descricaoLoja": "ROUPEIRO LIGHT PLUS 4 PTS COM PE - CINAMO/OFF",
     "preco": null,
@@ -6550,14 +6550,14 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Branco",
+    "campo": "foto Branco",
     "codigo": "000688",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-4-portas-4-gavetas-com-pes-domo-branco-branco/p/1582891394"
+    "url": "https://www.lojas2000.com.br/g-roupa-josan-light-plus-4-portas-2-gavetas-cpe-branco"
    },
    {
-    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "campo": "foto Cinamomo / Off White",
     "codigo": "000690",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-solteiro-4-portas-4-gavetas-e-pes-mdf-cambori-cinamomo-off-white-cinamomo-off-white/p/1583006731"
+    "url": "https://comercialnossolarmacapa.gopage.bio/produto/roupeiro-4-portas-e-2-gavetas-cpes-cinamomooff-white-be12-221"
    },
    {
     "campo": "imagem ilustrativa Cinamomo",
@@ -6588,7 +6588,7 @@ export const produtosLoja = [
     "name": "Branco",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000691.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000691",
     "descricaoLoja": "ROUPEIRO LIGHT PLUS 6 PTS COM PE - BRANCO",
     "preco": null,
@@ -6634,14 +6634,14 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Branco",
+    "campo": "foto Branco",
     "codigo": "000691",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-6-portas-6-gavetas-com-pes-denver-branco/p/1576350244"
+    "url": "https://www.casaraomoveis.com.br/roupeiro-light-plus-6-pts-com-pe-branco"
    },
    {
     "campo": "foto Cinamomo / Off White",
     "codigo": "000693",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-6-portas-2-gavetas-e-pes-light-plus-cinamomo-off-white-cinamomo-off-white/p/1583006621"
+    "url": "https://www.casaraomoveis.com.br/roupeiro-light-plus-6-pts-com-pe-cinamooff"
    },
    {
     "campo": "imagem ilustrativa Cinamomo",
@@ -6708,7 +6708,7 @@ export const produtosLoja = [
    {
     "campo": "foto Chocolate / Off White",
     "codigo": "000383",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-solteiro-milao-3-portas-2-gavetas-poquema-chocolate/p/1571327741"
+    "url": "https://www.lojasmoveletro.com.br/moveis/moveis-e-decoracoes/guarda-roupas/roupeiro-03-portas-02-gavetas-milao-com-pes-83579-chocolateoff-white-poquema"
    },
    {
     "campo": "códigos e estoque",
@@ -6734,7 +6734,7 @@ export const produtosLoja = [
     "name": "Cinamomo / Off White",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000697.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000697",
     "descricaoLoja": "ROUPEIRO MIRABILIS COM PE E ESPELHO - CINAMO/OFF",
     "preco": null,
@@ -6748,9 +6748,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "campo": "foto Cinamomo / Off White",
     "codigo": "000697",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-solteiro-capelinha-com-espelho-4-portas-3-gavetas-e-pes-mirabilis-cinamomo-off-white-cinamomo-off-white/p/1583004666"
+    "url": "https://www.casaraomoveis.com.br/roupeiro-mirabilis-com-pe-e-espelho-cinamooff"
    },
    {
     "campo": "códigos e estoque",
@@ -6816,7 +6816,7 @@ export const produtosLoja = [
     "name": "Nogueira",
     "color": "#7a5233",
     "image": "assets/catalogo/web-000646.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000646",
     "descricaoLoja": "ROUPEIRO 6 PTS 2 GV SAO LUIS NEW NOGUE.",
     "preco": null,
@@ -6830,9 +6830,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Nogueira",
+    "campo": "foto Nogueira",
     "codigo": "000646",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-bartira-new-brusque-6-portas-2-gavetas-pintura-uv/p/55070836"
+    "url": "https://www.liliani.com.br/guarda-roupa-atualle-sao-luis-new-6-portas-com-2-gavetas-p7203"
    },
    {
     "campo": "códigos e estoque",
@@ -6857,7 +6857,7 @@ export const produtosLoja = [
     "name": "4 portas e 2 gavetas",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000651.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000651",
     "descricaoLoja": "ROUPEIRO CAPELINHA CASAL 4 PORTAS 2 GV",
     "preco": null,
@@ -6871,7 +6871,7 @@ export const produtosLoja = [
     "name": "Com espelho",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000652.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000652",
     "descricaoLoja": "ROUPEIRO CAPELINHA CASAL C/ ESPELHO",
     "preco": null,
@@ -6883,14 +6883,14 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa 4 portas e 2 gavetas",
+    "campo": "foto 4 portas e 2 gavetas",
     "codigo": "000651",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-capelinha-com-4-portas-2-gavetas/p/1567763233"
+    "url": "https://shopee.com.br/Guarda-Roupas-Casal-4-Portas-2-Gavetas-Capelinha-Roupeiro-Amplo-Compacto-Armário-Gavetas-Espaçoso-i.318557951.41265159846"
    },
    {
-    "campo": "imagem ilustrativa Com espelho",
+    "campo": "foto Com espelho",
     "codigo": "000652",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-casal-com-espelho-4-portas-2-gavetas-capelinha-atualle/p/1582696949"
+    "url": "https://www.leroymerlin.com.br/guarda-roupa-casal-com-espelho-e-capelinha-4-portas-3-gavetas-persia-cinamomo-off-white-cinamono-off-white_1572567176"
    },
    {
     "campo": "códigos e estoque",
@@ -6915,7 +6915,7 @@ export const produtosLoja = [
     "name": "Lolly",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000276.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000276",
     "descricaoLoja": "GUARDA ROUPAS LOLLY / INFANTIL .",
     "preco": null,
@@ -6927,9 +6927,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Lolly",
+    "campo": "foto Lolly",
     "codigo": "000276",
-    "url": "https://www.pontofrio.com.br/guarda-roupa-infantil/p/1576692441"
+    "url": "https://www.madeiramadeira.com.br/guarda-roupa-infantil-3-portas-2-gavetas-lolly-estrela-branco-com-almendra-356671942.html"
    },
    {
     "campo": "códigos e estoque",
@@ -6954,7 +6954,7 @@ export const produtosLoja = [
     "name": "Esmeralda",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000351.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000351",
     "descricaoLoja": "COMODA ESMERALDA",
     "preco": null,
@@ -6966,9 +6966,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Esmeralda",
+    "campo": "foto Esmeralda",
     "codigo": "000351",
-    "url": "https://www.pontofrio.com.br/comoda-para-quarto-2-portas-8-gavetas-esmeralda-expresso-moveis-cinamomo/p/1571742998"
+    "url": "https://www.santimorumbi.com.br/comoda-albatroz-esmeralda-5-gavetas-com-pes-cinamomo-290-4869-188660?srsltid=AYCX9vIZHmCm_etmZ6g6WCP7f6ltEdfU_yEXbaOe4"
    },
    {
     "campo": "códigos e estoque",
@@ -6993,7 +6993,7 @@ export const produtosLoja = [
     "name": "Cinamomo / Off White",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000687.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000687",
     "descricaoLoja": "COMODA FREE - COM PE CINAMO/OFF",
     "preco": null,
@@ -7007,9 +7007,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "campo": "foto Cinamomo / Off White",
     "codigo": "000687",
-    "url": "https://www.pontofrio.com.br/comoda-5-gavetas-premium-com-pes-tcil-moveis-cinamomo-off-white/p/1556802820"
+    "url": "https://www.psmoveisnordeste.com.br/comoda-josan-free/"
    },
    {
     "campo": "códigos e estoque",
@@ -7034,7 +7034,7 @@ export const produtosLoja = [
     "name": "Cinamomo / Off White",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000698.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000698",
     "descricaoLoja": "COMODA ITAUNA - COM PE CINAMO/OFF",
     "preco": null,
@@ -7048,9 +7048,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "campo": "foto Cinamomo / Off White",
     "codigo": "000698",
-    "url": "https://www.pontofrio.com.br/comoda-2-portas-5-gavetas-cinnamomo-evidencia-moveis-com-pes-cinnamomo/p/1564876504"
+    "url": "https://www.lojasimperio.com.br/produto/comoda-6-gavetas-2-portas-1-00m-itauna-cinamomo-off-12-12mm-a178xl100xp37-josan-088011118.html?srsltid=AYCX9vI"
    },
    {
     "campo": "códigos e estoque",
@@ -7075,7 +7075,7 @@ export const produtosLoja = [
     "name": "Jequitibá",
     "color": "#b07a4a",
     "image": "assets/catalogo/web-000582.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000582",
     "descricaoLoja": "COMÔDA MALU JEQUITIBÁ",
     "preco": null,
@@ -7089,9 +7089,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Jequitibá",
+    "campo": "foto Jequitibá",
     "codigo": "000582",
-    "url": "https://www.pontofrio.com.br/comoda-com-pes-1-porta-4-gavetas-jequitiba-new-opcao-jequitiba/p/1570954478"
+    "url": "https://www.costaricacolchoes.com.br/moveis-de-quarto/comoda-malu-1-porta-e-4-gavetas-c-pes-panan_39987-S-9257.html?srsltid=AYCX9vJKXgir7_5OKQgItw7DLP"
    },
    {
     "campo": "códigos e estoque",
@@ -7116,7 +7116,7 @@ export const produtosLoja = [
     "name": "Cinamomo / Off White",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000695.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000695",
     "descricaoLoja": "MULTIUSO VERSATILE COM PE - CINAMO/OFF",
     "preco": null,
@@ -7146,9 +7146,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "campo": "foto Cinamomo / Off White",
     "codigo": "000695",
-    "url": "https://www.pontofrio.com.br/comoda-madri-com-armario-multiuso-versatile-carvalho-americano-off-white-incorplac/p/1570706733"
+    "url": "https://compresoumais.com.br/product/multiuso-josan-versatile-cinamomo-off-white/"
    },
    {
     "campo": "imagem ilustrativa Cinamomo",
@@ -7178,7 +7178,7 @@ export const produtosLoja = [
     "name": "Freijó / Baunilha",
     "color": "#b38b5d",
     "image": "assets/catalogo/web-000680.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000680",
     "descricaoLoja": "SAPATEIRA PARIS MDP FREIJO / BAUNILHA",
     "preco": null,
@@ -7192,9 +7192,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Freijó / Baunilha",
+    "campo": "foto Freijó / Baunilha",
     "codigo": "000680",
-    "url": "https://www.pontofrio.com.br/sapateira-para-quarto-24-pares-lisboa-creme-freijo/p/1581670984"
+    "url": "https://www.madeiramadeira.com.br/sapateira-1-porta-com-espelho-paris-fidelita-freijo-186903983.html"
    },
    {
     "campo": "códigos e estoque",
@@ -7956,7 +7956,7 @@ export const produtosLoja = [
     "name": "Casal · Preta",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000623.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000623",
     "descricaoLoja": "CAMA BOX CASAL ORTONOBRE COM PILLOW PRETA",
     "preco": null,
@@ -7987,9 +7987,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Casal · Preta",
+    "campo": "foto Casal · Preta",
     "codigo": "000623",
-    "url": "https://www.pontofrio.com.br/cama-box-casal-colchao-molas-qatar-138x188x60cm-branco-preto-suporta-ate-200kg-por-pessoa/p/1550064283"
+    "url": "https://www.lucasmoveis.com.br/cama-box-casal-conjugada-nobre-138x188x55cm-tecido-preto-floral?srsltid=AYCX9vKcoTObdJbEktY8hS-EuJFSizqjhUwk4rKxpHmEkFE"
    },
    {
     "campo": "imagem ilustrativa Casal · Europillow Deluxe",
@@ -8082,7 +8082,7 @@ export const produtosLoja = [
     "name": "Casal 138 × 188",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000318.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000318",
     "descricaoLoja": "CAMA UNIBOX D28 PREMIUM 1380 X 1880 X 520 MM",
     "preco": null,
@@ -8097,9 +8097,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Casal 138 × 188",
+    "campo": "foto Casal 138 × 188",
     "codigo": "000318",
-    "url": "https://www.pontofrio.com.br/cama-box-casal-conjugada-unyco-d28-ortopedico/p/14069534"
+    "url": "https://www.lojasguido.com.br/unibox-bonsono-d28-premium-euro-new-138x188x52-brcz"
    },
    {
     "campo": "códigos e estoque",
@@ -8461,7 +8461,7 @@ export const produtosLoja = [
     "name": "Ibiza",
     "color": "#6b4a33",
     "image": "assets/catalogo/web-000374.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000374",
     "descricaoLoja": "ESTOFADO IBIZA 2 X 3 LUGARES",
     "preco": null,
@@ -8476,9 +8476,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Ibiza",
+    "campo": "foto Ibiza",
     "codigo": "000374",
-    "url": "https://www.pontofrio.com.br/conjunto-sofa-2-e-3-lugares-linoforte-mercury-revestido-em-tecido-suede-encosto-fixo/p/1001182934"
+    "url": "https://www.leroymerlin.com.br/conjunto-sofa-ibiza-living-2-e-3-lugares-capuccino-confortavel-sala-de-estar_1572461880"
    },
    {
     "campo": "códigos e estoque",
@@ -8625,7 +8625,7 @@ export const produtosLoja = [
     "name": "Havana / Off White",
     "color": "#8a5a3c",
     "image": "assets/catalogo/web-000176.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000176",
     "descricaoLoja": "BANCADA HARMONY HAVANA/OFF WHITE",
     "preco": null,
@@ -8639,9 +8639,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Havana / Off White",
+    "campo": "foto Havana / Off White",
     "codigo": "000176",
-    "url": "https://www.extra.com.br/rack-2-portas-havana-cinamomo-off-white/p/1572580934"
+    "url": "https://www.madeiramadeira.com.br/bancada-para-tv-75-polegadas-harmony-havana-off-white-caemmun-2743588.html"
    },
    {
     "campo": "códigos e estoque",
@@ -8682,7 +8682,7 @@ export const produtosLoja = [
     "name": "Jequitibá / Off White",
     "color": "#b07a4a",
     "image": "assets/catalogo/web-000607.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000607",
     "descricaoLoja": "BANCADA RIVER 1.36 JEQUITIBA/OFF WHITE NEW",
     "preco": null,
@@ -8701,9 +8701,9 @@ export const produtosLoja = [
     "url": "https://www.extra.com.br/rack-movelove-2-portas-e-1-gaveta-com-painel-led-para-70-polegadas-river-183cm-jequitiba-jequitiba/p/1575485403"
    },
    {
-    "campo": "imagem ilustrativa Jequitibá / Off White",
+    "campo": "foto Jequitibá / Off White",
     "codigo": "000607",
-    "url": "https://www.extra.com.br/painel-bancada-riade-jequitiba-off-white-perolizado/p/1579458774"
+    "url": "https://www.madeiramadeira.com.br/rack-bancada-para-tv-com-pes-em-madeira-river-1-36-lukaliam-jequitiba-off-white-865011192.html"
    },
    {
     "campo": "códigos e estoque",
@@ -8728,7 +8728,7 @@ export const produtosLoja = [
     "name": "Titanium / Carvalho",
     "color": "#6f777b",
     "image": "assets/catalogo/web-000274.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000274",
     "descricaoLoja": "BANCADA SUSPENSA JULIA/ COR TITANIUM COM CARVALHO",
     "preco": null,
@@ -8742,9 +8742,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Titanium / Carvalho",
+    "campo": "foto Titanium / Carvalho",
     "codigo": "000274",
-    "url": "https://www.extra.com.br/painel-bancada-suspensa-tv-50-frizz-select-titanio-carvalho/p/1540377664"
+    "url": "https://www.apamoveis.com.br/bancada-suspensa-julia-titanio-carvalho-madetec-p12367"
    },
    {
     "campo": "códigos e estoque",
@@ -8769,7 +8769,7 @@ export const produtosLoja = [
     "name": "Off White / Jequitibá",
     "color": "#ece6da",
     "image": "assets/catalogo/web-000612.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000612",
     "descricaoLoja": "APARADOR CAIRO 2024 OFF WHITE NEW/JEQUITIBA",
     "preco": null,
@@ -8783,9 +8783,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Off White / Jequitibá",
+    "campo": "foto Off White / Jequitibá",
     "codigo": "000612",
-    "url": "https://www.madeiramadeira.com.br/aparador-lukaliam-moveis-sala-de-estar-ou-jantar-cairo-c-2-gavetas-c-pes-de-ferro-534762385.html"
+    "url": "https://lukaliam.com.br/produto/aparador-cairo/"
    },
    {
     "campo": "códigos e estoque",
@@ -8851,7 +8851,7 @@ export const produtosLoja = [
     "name": "Jequitibá",
     "color": "#b07a4a",
     "image": "assets/catalogo/web-000605.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000605",
     "descricaoLoja": "HOME FLORENCA 2024 JEQUITIBA",
     "preco": null,
@@ -8865,9 +8865,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Jequitibá",
+    "campo": "foto Jequitibá",
     "codigo": "000605",
-    "url": "https://www.pontofrio.com.br/estante-home-painel-p-tv-65-pol-valenca-162cm-jequitiba-off-linea/p/1583027091"
+    "url": "http://lukaliam.com.br/produto/home-florenca/"
    },
    {
     "campo": "códigos e estoque",
@@ -8892,7 +8892,7 @@ export const produtosLoja = [
     "name": "Natural / Off White ripado",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000754.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000754",
     "descricaoLoja": "HOME TAURUS NAT/OFF/RIP",
     "preco": null,
@@ -8906,9 +8906,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Natural / Off White ripado",
+    "campo": "foto Natural / Off White ripado",
     "codigo": "000754",
-    "url": "https://www.pontofrio.com.br/home-para-tvs-47-taurus-cinamomo-e-off-white-ripado-bechara/p/1575073584"
+    "url": "https://www.extra.com.br/home-theater-taurus-ripado-naturalle-off-white-bechara-moveis/p/1582176369"
    },
    {
     "campo": "códigos e estoque",
@@ -9013,7 +9013,7 @@ export const produtosLoja = [
     "name": "Link",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000296.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000296",
     "descricaoLoja": "PAINEL LINK",
     "preco": null,
@@ -9025,9 +9025,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Link",
+    "campo": "foto Link",
     "codigo": "000296",
-    "url": "https://www.pontofrio.com.br/painel-para-tv-orlando/p/1563350767"
+    "url": "https://www.mobly.com.br/painel-suspenso-link-1-6-ripado-castanho-para-tv-ate-60-hb-moveis-1693848.html"
    },
    {
     "campo": "códigos e estoque",
@@ -9052,7 +9052,7 @@ export const produtosLoja = [
     "name": "Jequitibá",
     "color": "#b07a4a",
     "image": "assets/catalogo/web-000606.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000606",
     "descricaoLoja": "PAINEL RIVER 1.36 JEQUITIBA",
     "preco": null,
@@ -9068,7 +9068,7 @@ export const produtosLoja = [
     "name": "Jequitibá ripado 3D",
     "color": "#b07a4a",
     "image": "assets/catalogo/web-000611.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000611",
     "descricaoLoja": "PAINEL RIVER 1.36 JEQUITIBA RIPADO 3D",
     "preco": null,
@@ -9082,14 +9082,14 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Jequitibá",
+    "campo": "foto Jequitibá",
     "codigo": "000606",
-    "url": "https://www.pontofrio.com.br/painel-tv-berlim-jequitiba/p/1576275215"
+    "url": "https://www.lojademoveisonline.com.br/rack-com-painel-river-136-lukaliam-jequitiba.html"
    },
    {
-    "campo": "imagem ilustrativa Jequitibá ripado 3D",
+    "campo": "foto Jequitibá ripado 3D",
     "codigo": "000611",
-    "url": "https://www.pontofrio.com.br/painel-para-tv-de-ate-65-2-gavetas-elise-jequitiba-ripado/p/1577733951"
+    "url": "https://www.lojademoveisonline.com.br/painel-pequeno-136x180cm-para-tv-55-river-1-36-lukaliam-jequitiba-ripado-3d.html"
    },
    {
     "campo": "códigos e estoque",
@@ -9114,7 +9114,7 @@ export const produtosLoja = [
     "name": "Jequitibá",
     "color": "#b07a4a",
     "image": "assets/catalogo/web-000615.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000615",
     "descricaoLoja": "RACK LISBOA JEQUITIBA",
     "preco": null,
@@ -9128,9 +9128,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Jequitibá",
+    "campo": "foto Jequitibá",
     "codigo": "000615",
-    "url": "https://www.pontofrio.com.br/rack-bancada-tv-lisboa-lukaliam-moveis-ate-32-40-42-50-polegadas-off-white-new-jequitiba/p/1582456452"
+    "url": "https://shopping.inter.co/Rack-Para-Tv-Lisboa-Jequitiba/p/12673544"
    },
    {
     "campo": "códigos e estoque",
@@ -9155,7 +9155,7 @@ export const produtosLoja = [
     "name": "Orion",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000076.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000076",
     "descricaoLoja": "RACK ORION",
     "preco": null,
@@ -9168,9 +9168,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Orion",
+    "campo": "foto Orion",
     "codigo": "000076",
-    "url": "https://www.pontofrio.com.br/rack-bancada-orion-180cm-para-tv-ate-80-moveis-henn/p/1582461389"
+    "url": "https://www.lucasmoveis.com.br/rack-para-tv-ate-65-polegadas-180cm-03-portas-orion-off-whtecinamomo"
    },
    {
     "campo": "códigos e estoque",
@@ -9363,7 +9363,7 @@ export const produtosLoja = [
     "name": "Cinamomo / Off White",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000765.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000765",
     "descricaoLoja": "MESA DE JANTAR VALDEMOVEIS MAIA (25MM) - 1600X800",
     "preco": null,
@@ -9377,9 +9377,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Cinamomo / Off White",
+    "campo": "foto Cinamomo / Off White",
     "codigo": "000765",
-    "url": "https://www.pontofrio.com.br/mesa-de-jantar-julia-160x80cm-cinamomo-off-white-valdemoveis/p/1568527646"
+    "url": "https://www.valdemoveis.com.br/produto/79"
    },
    {
     "campo": "códigos e estoque",
@@ -9404,7 +9404,7 @@ export const produtosLoja = [
     "name": "Madeira",
     "color": "#a8754a",
     "image": "assets/catalogo/web-000628.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000628",
     "descricaoLoja": "MESA DE MADEIRA 4 CADEIRAS LONDRES",
     "preco": null,
@@ -9418,9 +9418,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Madeira",
+    "campo": "foto Madeira",
     "codigo": "000628",
-    "url": "https://www.pontofrio.com.br/conjunto-sala-de-jantar-madesa-talita-mesa-tampo-de-madeira-com-4-cadeiras/p/1500377758"
+    "url": "https://www.madeiramadeira.com.br/conjunto-de-mesa-londres-imbuia-off-white-4-cadeiras-roma-696987377.html"
    },
    {
     "campo": "códigos e estoque",
@@ -9510,7 +9510,7 @@ export const produtosLoja = [
     "name": "Branca",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000715.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000715",
     "descricaoLoja": "MESA HAVAÍ DE GRANITO 4 CADEIRAS BRANCA",
     "preco": null,
@@ -9527,7 +9527,7 @@ export const produtosLoja = [
     "name": "Preta",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000041.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000041",
     "descricaoLoja": "MESA HAVAÍ GRANITO 04 CADEIRAS PRETA",
     "preco": null,
@@ -9542,14 +9542,14 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Branca",
+    "campo": "foto Branca",
     "codigo": "000715",
-    "url": "https://www.pontofrio.com.br/conjunto-de-mesa-tubular-100x60cm-tampo-em-granito-com-4-cadeiras-arabesco-branco/p/1570970508"
+    "url": "https://www.leroymerlin.com.br/conjunto-de-cozinha-mesa-quadrada-havai-4-cadeiras--branco-matelado-branco-flame_1569694568"
    },
    {
-    "campo": "imagem ilustrativa Preta",
+    "campo": "foto Preta",
     "codigo": "000041",
-    "url": "https://www.pontofrio.com.br/conjunto-de-mesa-tubular-100x60cm-tampo-em-granito-com-4-cadeiras-preto/p/1570970050"
+    "url": "https://www.madeiramadeira.com.br/mesa-pequena-para-cozinha-4-cadeiras-preto-havai-shop-jm-163458545.html"
    },
    {
     "campo": "códigos e estoque",
@@ -9574,7 +9574,7 @@ export const produtosLoja = [
     "name": "4 cadeiras · Branca",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000562.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000562",
     "descricaoLoja": "MESA PARIS 4 CADEIRAS BRANCA",
     "preco": null,
@@ -9608,7 +9608,7 @@ export const produtosLoja = [
     "name": "6 cadeiras · Branca",
     "color": "#f4f4f2",
     "image": "assets/catalogo/web-000457.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000457",
     "descricaoLoja": "MESA PARIS 6 CADEIRAS BRANCA",
     "preco": null,
@@ -9642,7 +9642,7 @@ export const produtosLoja = [
     "name": "8 cadeiras · Preta",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000561.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000561",
     "descricaoLoja": "MESA PARIS 8 CADEIRAS PRETA",
     "preco": null,
@@ -9657,9 +9657,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa 4 cadeiras · Branca",
+    "campo": "foto 4 cadeiras · Branca",
     "codigo": "000562",
-    "url": "https://www.pontofrio.com.br/conjunto-mesa-de-jantar-eiffel-branca-80cm-4-cadeiras-italia/p/1579470676"
+    "url": "https://www.carrefour.com.br/conjunto-de-mesa-paris-120m-com-4-cadeiras-branco-teixeira-branco-mp938148146/p"
    },
    {
     "campo": "imagem ilustrativa 4 cadeiras · Preta",
@@ -9667,9 +9667,9 @@ export const produtosLoja = [
     "url": "https://www.pontofrio.com.br/conjunto-mesa-de-jantar-redonda-venezia-70x70cm-preta-com-4-cadeiras-roma-preto/p/1581561843"
    },
    {
-    "campo": "imagem ilustrativa 6 cadeiras · Branca",
+    "campo": "foto 6 cadeiras · Branca",
     "codigo": "000457",
-    "url": "https://www.pontofrio.com.br/conjunto-mesa-de-jantar-hairpin-130x80-branca-com-6-cadeiras-eiffel-slim-preto/p/1566812477"
+    "url": "https://www.leroymerlin.com.br/mesa-de-jantar-paris-6-cadeiras-mosaico-branca-e-tampo-amendoa_1567317151"
    },
    {
     "campo": "imagem ilustrativa 6 cadeiras · Preta",
@@ -9677,9 +9677,9 @@ export const produtosLoja = [
     "url": "https://www.pontofrio.com.br/conjunto-mesa-de-jantar-6-cadeiras-nairobi-cinamo-preto-preto-ma/p/1562327102"
    },
    {
-    "campo": "imagem ilustrativa 8 cadeiras · Preta",
+    "campo": "foto 8 cadeiras · Preta",
     "codigo": "000561",
-    "url": "https://www.pontofrio.com.br/conjunto-mesa-de-jantar-rustica-madeira-macica-com-8-cadeiras-mona-marrom-preto/p/1564186701"
+    "url": "https://www.lojasguido.com.br/cj-paris-granito-com-8-cadeiras-180x75-martela"
    },
    {
     "campo": "códigos e estoque",
@@ -9704,7 +9704,7 @@ export const produtosLoja = [
     "name": "Freijó",
     "color": "#b38b5d",
     "image": "assets/catalogo/web-000599.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000599",
     "descricaoLoja": "ORGANIZADOR DELTA NEW FREIJO TOQUE BP",
     "preco": null,
@@ -9720,7 +9720,7 @@ export const produtosLoja = [
     "name": "Jequitibá",
     "color": "#b07a4a",
     "image": "assets/catalogo/web-000613.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000613",
     "descricaoLoja": "ORGANIZADOR DELTA NEW JEQUITIBA",
     "preco": null,
@@ -9734,14 +9734,14 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Freijó",
+    "campo": "foto Freijó",
     "codigo": "000599",
-    "url": "https://www.pontofrio.com.br/organizador-delta-2-portas-para-livros-e-materiais-diversos-freijo/p/1574964083"
+    "url": "https://www.angeloni.com.br/eletro/organizador-delta-2-portas-para-livros-e-materiais-diversos---freijo-562136/p"
    },
    {
-    "campo": "imagem ilustrativa Jequitibá",
+    "campo": "foto Jequitibá",
     "codigo": "000613",
-    "url": "https://www.pontofrio.com.br/organizador-delta-2-portas-para-livros-e-materiais-diversos-freijo/p/1576588869"
+    "url": "https://lukaliam.com.br/produto/organizador-delta-new/"
    },
    {
     "campo": "códigos e estoque",
@@ -9766,7 +9766,7 @@ export const produtosLoja = [
     "name": "Vitória",
     "color": "#6b4a33",
     "image": "assets/catalogo/web-000662.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000662",
     "descricaoLoja": "CONJUNTO AREA VITORIA COM CENTRO",
     "preco": null,
@@ -9778,9 +9778,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Vitória",
+    "campo": "foto Vitória",
     "codigo": "000662",
-    "url": "https://www.pontofrio.com.br/conjunto-2-poltronas-e-mesa-de-centro-com-tampo-de-vidro-em-aco-e-corda-nautica-rami-makuni/p/1582802511"
+    "url": "https://www.atacadaomoveischapeco.com.br/conjunto-vitoria-area-externa-4-cadeiras-mesa-de-centro-em-ferro-tabaco-famais?srsltid=AYCX9vKtMPm-GOd-M5WRrx"
    },
    {
     "campo": "códigos e estoque",
@@ -9844,7 +9844,7 @@ export const produtosLoja = [
     "name": "Naja",
     "color": "#6b4a33",
     "image": "assets/catalogo/web-000664.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000664",
     "descricaoLoja": "CADEIRA BALANCO NAJA FIBRA",
     "preco": null,
@@ -9856,9 +9856,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Naja",
+    "campo": "foto Naja",
     "codigo": "000664",
-    "url": "https://www.pontofrio.com.br/cadeira-balanco-sem-mola-fibra-sintetica-argila/p/1566061754"
+    "url": "https://www.lojaoriodopeixe.com.br/produtos/cadeira-de-balanco-naja-com-fibra-metal-monteiro?srsltid=AYCX9vI2nCR90F3h-PvydiJ8l1FUfa_pqldps6sWbt1iBu7o-"
    },
    {
     "campo": "códigos e estoque",
@@ -9883,7 +9883,7 @@ export const produtosLoja = [
     "name": "Vinho",
     "color": "#6b1f2a",
     "image": "assets/catalogo/web-000545.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000545",
     "descricaoLoja": "POLTRONA PLÁSTICA THAI VINHO",
     "preco": null,
@@ -9897,9 +9897,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Vinho",
+    "campo": "foto Vinho",
     "codigo": "000545",
-    "url": "https://www.pontofrio.com.br/poltrona-de-pl-stico-thai-duoplastic/p/1576543729"
+    "url": "https://www.baldosplasticos.com.br/produto/poltrona-thai-duo-vinho-182kg"
    },
    {
     "campo": "códigos e estoque",
@@ -10043,7 +10043,7 @@ export const produtosLoja = [
     "name": "Duo",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000547.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000547",
     "descricaoLoja": "MESA PLÁSTICA DUO PLÁSTICO",
     "preco": null,
@@ -10055,9 +10055,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Duo",
+    "campo": "foto Duo",
     "codigo": "000547",
-    "url": "https://www.pontofrio.com.br/mesa-diana-4-lugares-quadrada-plastico-70cm-preto-tramontina-polipropileno-aluminio/p/1582830693"
+    "url": "https://www.savegnago.com.br/mesa-plastica-duo-plastic-juliana-branca/p"
    },
    {
     "campo": "códigos e estoque",
@@ -10185,7 +10185,7 @@ export const produtosLoja = [
     "name": "Freijó / Baunilha",
     "color": "#b38b5d",
     "image": "assets/catalogo/web-000679.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000679",
     "descricaoLoja": "TABUA DE PASSAR MIAMI MDP FREIJO / BAUNILHA",
     "preco": null,
@@ -10199,9 +10199,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Freijó / Baunilha",
+    "campo": "foto Freijó / Baunilha",
     "codigo": "000679",
-    "url": "https://www.pontofrio.com.br/tabua-de-passar-roupa-miami-com-1-porta-e-nicho/p/1571276355"
+    "url": "https://www.madeiramadeira.com.br/tabua-de-passar-roupa-miami-com-1-porta-e-nicho-freijo-baunilha-111175650.html"
    },
    {
     "campo": "códigos e estoque",
@@ -10227,7 +10227,7 @@ export const produtosLoja = [
     "name": "Preto fosco / Amarelo neon",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000550.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000550",
     "descricaoLoja": "BICICLETA COLLI A29 TM17 PRETO FOSCO/AMARELO NEON",
     "preco": null,
@@ -10242,9 +10242,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Preto fosco / Amarelo neon",
+    "campo": "foto Preto fosco / Amarelo neon",
     "codigo": "000550",
-    "url": "https://www.extra.com.br/bicicleta-aro-29-colli-nantes-21-marchas-freio-a-disco-quadro-preto-fosco-e-amarelo-neon/p/55073611"
+    "url": "https://www.formosa.com.br/bicicleta-collina-a-29-tm-17-alu-cambio-traseiro-shimano-21v-preto-fosco-com-laranja-neon-colli-11232072/p?srsltid=AYCX9vJx"
    },
    {
     "campo": "códigos e estoque",
@@ -10394,7 +10394,7 @@ export const produtosLoja = [
     "name": "Azul",
     "color": "#2d5fb0",
     "image": "assets/catalogo/web-000555.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000555",
     "descricaoLoja": "BICICLETA SPIMOSSAURO AZUL INFATIL MASCULINA",
     "preco": null,
@@ -10408,9 +10408,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Azul",
+    "campo": "foto Azul",
     "codigo": "000555",
-    "url": "https://www.extra.com.br/bicicleta-infantil-pro-aventura-aro-16-com-rodinhas-azul/p/1582592955"
+    "url": "https://www.eletrolarcenter.com.br/product-page/bicicleta-colli-spinossauro-aventuras-a-16-s-m-masculino-202-04d-azul"
    },
    {
     "campo": "códigos e estoque",
@@ -10467,7 +10467,7 @@ export const produtosLoja = [
     "name": "Preto copo leitoso",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000146.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000146",
     "descricaoLoja": "LIQUIDIFICADOR AGRATO COPO LEITOSO PRETO 850 W",
     "preco": null,
@@ -10483,7 +10483,7 @@ export const produtosLoja = [
    {
     "campo": "foto Preto (LQLF-02, 220 V)",
     "codigo": "000412",
-    "url": "https://www.pontofrio.com.br/liquidificador-850w-220v-forza-cristal-lqlf-02-leitoso-agratto/p/1577398731"
+    "url": "https://www.mercadolivre.com.br/liquidificador-agratto-forza-lqlf02--15l-220v-leitoso/up/MLBU3183087483"
    },
    {
     "campo": "foto Forza copo leitoso",
@@ -10491,9 +10491,9 @@ export const produtosLoja = [
     "url": "https://www.pontofrio.com.br/liquidificador-agratto-lqlf-01-leitoso-850w-cristal-127v/p/1571446028"
    },
    {
-    "campo": "imagem ilustrativa Preto copo leitoso",
+    "campo": "foto Preto copo leitoso",
     "codigo": "000146",
-    "url": "https://www.pontofrio.com.br/liquidificador-agrato-forza-850w-jarra-15l-127v-preto/p/1571446685"
+    "url": "https://www.mercadolivre.com.br/liquidificador-forza-leitoso-agratto-15l-850w-preto-127v/up/MLBU3024777689"
    },
    {
     "campo": "códigos e estoque",
@@ -10591,7 +10591,7 @@ export const produtosLoja = [
     "name": "Glass 5 bocas com respaldo · Preto fosco",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000659.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000659",
     "descricaoLoja": "FG GAS DELICATO PLUS GLASS 5B COM RESPALDO - PRETO",
     "preco": null,
@@ -10616,9 +10616,9 @@ export const produtosLoja = [
     "url": "https://www.madeiramadeira.com.br/fogao-de-piso-a-gas-6-bocas-acendimento-automatico-delicato-plus-900153.html"
    },
    {
-    "campo": "imagem ilustrativa Glass 5 bocas com respaldo · Preto fosco",
+    "campo": "foto Glass 5 bocas com respaldo · Preto fosco",
     "codigo": "000659",
-    "url": "https://www.pontofrio.com.br/fogao-itatiaia-5-bocas-electra-glass-plus-preto-bivolt/p/1575575206"
+    "url": "https://www.madeiramadeira.com.br/fogao-a-gas-5-bocas-com-respaldo-delicato-glass-clarice-eletrodomesticos-528632.html"
    },
    {
     "campo": "códigos e estoque",
@@ -10729,7 +10729,7 @@ export const produtosLoja = [
     "name": "Preta",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000727.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000727",
     "descricaoLoja": "FRITADEIRA ELETRICA AIR FRYER SUPREMMA AFSC01N-02",
     "preco": null,
@@ -10744,9 +10744,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Preta",
+    "campo": "foto Preta",
     "codigo": "000727",
-    "url": "https://www.pontofrio.com.br/fritadeira-eletrica-sem-oleo-air-fryer-36l-1500w-preta-supremma-fes02-220v/p/1553159232"
+    "url": "https://patinha.com.br/produto/fritadeira-eletrica-air-fryer-agratto-supremma-40l-1400w-220v-preta-afsc01-02/"
    },
    {
     "campo": "códigos e estoque",
@@ -10787,7 +10787,7 @@ export const produtosLoja = [
    {
     "campo": "foto Inox",
     "codigo": "000006",
-    "url": "https://www.pontofrio.com.br/grill-e-sanduicheira-britania-crome-inox/p/298901"
+    "url": "https://www.madeiramadeira.com.br/sanduicheira-grill-britania-crome-inox-220v-665352743.html"
    },
    {
     "campo": "códigos e estoque",
@@ -10812,7 +10812,7 @@ export const produtosLoja = [
     "name": "Preta",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000235.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000235",
     "descricaoLoja": "SANDUICHEIRA E GRIL / BLACK",
     "preco": null,
@@ -10842,9 +10842,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Preta",
+    "campo": "foto Preta",
     "codigo": "000235",
-    "url": "https://www.pontofrio.com.br/sanduicheira-fast-grill-e-sandwich-mondial-s-12-750w-preta/p/3230329"
+    "url": "https://shopee.com.br/Sanduicheira-E-Grill-Antiaderente-Agratto-Black-110v-220v-i.332391901.23796237212"
    },
    {
     "campo": "imagem ilustrativa Inox",
@@ -10888,7 +10888,7 @@ export const produtosLoja = [
    {
     "campo": "foto Alumínio polido",
     "codigo": "000313",
-    "url": "https://www.pontofrio.com.br/panela-de-pressao-panelux-aluminio-polido-45-l/p/438304"
+    "url": "https://www.madeiramadeira.com.br/panela-de-pressao-4-5-litros-polida-panelux-1018308.html"
    },
    {
     "campo": "códigos e estoque",
@@ -10974,7 +10974,7 @@ export const produtosLoja = [
    {
     "campo": "foto Preto",
     "codigo": "000791",
-    "url": "https://www.pontofrio.com.br/smart-tv-43-aoc-43s5155-78g-full-hd-led-wi-fi-roku-tv-dolby-audio/p/55071718"
+    "url": "https://www.moveislinhares.com.br/smart-tv-aoc-full-hd-43-43s5155-roku-tv-com-wi-fi/p"
    },
    {
     "campo": "códigos e estoque",
@@ -10999,7 +10999,7 @@ export const produtosLoja = [
     "name": "Keo",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000019.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000019",
     "descricaoLoja": "CONVERSOR E GRAVADOR DIGITAL KEO",
     "preco": null,
@@ -11011,9 +11011,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Keo",
+    "campo": "foto Keo",
     "codigo": "000019",
-    "url": "https://www.pontofrio.com.br/conversor-e-gravador-digital-full-hd-dtv-9000/p/1578591914"
+    "url": "https://www.eletricasantaefigenia.com.br/conversor-digital-e-gravador-keo-k900-c-usb-hdmi-rca/prod-6707662/"
    },
    {
     "campo": "códigos e estoque",
@@ -11038,7 +11038,7 @@ export const produtosLoja = [
     "name": "Zeus",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000066.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000066",
     "descricaoLoja": "HOME THEATER ZEUS",
     "preco": null,
@@ -11050,9 +11050,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Zeus",
+    "campo": "foto Zeus",
     "codigo": "000066",
-    "url": "https://www.pontofrio.com.br/soundbar-lg-sh5a-bluetooth-600w-rms-4-1-canais-subwoofer-preto/p/55071389"
+    "url": "https://www.madeiramadeira.com.br/home-theater-zeus-para-tv-ate-65-polegadas-fendi-naturale-madetec-923311161.html"
    },
    {
     "campo": "códigos e estoque",
@@ -11077,7 +11077,7 @@ export const produtosLoja = [
     "name": "Preto",
     "color": "#1d1d1d",
     "image": "assets/catalogo/web-000136.jpg",
-    "imageTipo": "ilustrativa",
+    "imageTipo": "catalogo",
     "sku": "000136",
     "descricaoLoja": "VENTILADOR 40 CM VENTISOL COR PT",
     "preco": null,
@@ -11091,9 +11091,9 @@ export const produtosLoja = [
   ],
   "fontes": [
    {
-    "campo": "imagem ilustrativa Preto",
+    "campo": "foto Preto",
     "codigo": "000136",
-    "url": "https://www.pontofrio.com.br/ventilador-de-coluna-40-cm-220v-turbo6-preto-ventisol/p/1554600410"
+    "url": "https://www.balaroti.com.br/produto/ventilador-ventisol-turbo-preto-40cm-127v-166260"
    },
    {
     "campo": "códigos e estoque",
